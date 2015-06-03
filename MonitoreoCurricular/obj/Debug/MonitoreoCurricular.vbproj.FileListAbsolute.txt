@@ -1,0 +1,10 @@
+E:\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.dll.config
+E:\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.dll
+E:\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.pdb
+E:\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.xml
+E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.Resources.resources
+E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.GenerateResource.Cache
+E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
+E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
+E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb
+E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbprojResolveAssemblyReference.cache

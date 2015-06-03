@@ -1,0 +1,16 @@
+E:\MonitoreoCurricular\WcfController\bin\Debug\WcfController.dll.config
+E:\MonitoreoCurricular\WcfController\bin\Debug\WcfController.dll
+E:\MonitoreoCurricular\WcfController\bin\Debug\WcfController.pdb
+E:\MonitoreoCurricular\WcfController\bin\Debug\WcfController.xml
+E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.Resources.resources
+E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbproj.GenerateResource.Cache
+E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.dll
+E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.xml
+E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.pdb
+E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbprojResolveAssemblyReference.cache
+E:\MonitoreoCurricular\WcfController\bin\Debug\Conexion.dll
+E:\MonitoreoCurricular\WcfController\bin\Debug\Models.dll
+E:\MonitoreoCurricular\WcfController\bin\Debug\Models.pdb
+E:\MonitoreoCurricular\WcfController\bin\Debug\Models.xml
+E:\MonitoreoCurricular\WcfController\bin\Debug\Conexion.pdb
+E:\MonitoreoCurricular\WcfController\bin\Debug\Conexion.xml
