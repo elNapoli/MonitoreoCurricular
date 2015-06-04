@@ -19,6 +19,12 @@
   <wsdl:message name="IController_TraeEscuelaPorFacultad_OutputMessage">
     <wsdl:part name="parameters" element="tns:TraeEscuelaPorFacultadResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_TraeCarreraPorEscuela_InputMessage">
+    <wsdl:part name="parameters" element="tns:TraeCarreraPorEscuela" />
+  </wsdl:message>
+  <wsdl:message name="IController_TraeCarreraPorEscuela_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TraeCarreraPorEscuelaResponse" />
+  </wsdl:message>
   <wsdl:portType name="IController">
     <wsdl:operation name="TraeFacultad">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeFacultad" message="tns:IController_TraeFacultad_InputMessage" />
@@ -27,6 +33,10 @@
     <wsdl:operation name="TraeEscuelaPorFacultad">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeEscuelaPorFacultad" message="tns:IController_TraeEscuelaPorFacultad_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeEscuelaPorFacultadResponse" message="tns:IController_TraeEscuelaPorFacultad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TraeCarreraPorEscuela">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeCarreraPorEscuela" message="tns:IController_TraeCarreraPorEscuela_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeCarreraPorEscuelaResponse" message="tns:IController_TraeCarreraPorEscuela_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IController" type="tns:IController">
@@ -42,6 +52,15 @@
     </wsdl:operation>
     <wsdl:operation name="TraeEscuelaPorFacultad">
       <soap:operation soapAction="http://tempuri.org/IController/TraeEscuelaPorFacultad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraeCarreraPorEscuela">
+      <soap:operation soapAction="http://tempuri.org/IController/TraeCarreraPorEscuela" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

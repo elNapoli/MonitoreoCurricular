@@ -31,7 +31,7 @@
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione facultad</label>
                             <div class="col-lg-8">
-                                <asp:DropDownList ID="DDFacultad" class="form-control" runat="server" AutoPostBack="true" CausesValidation="false"></asp:DropDownList>
+                                <asp:DropDownList ID="DDFacultad" class="form-control" autopostback="true" runat="server" OnSelectedIndexChanged="SelectIndexChangeFacultad"></asp:DropDownList>
                               
                          
                             </div>
@@ -40,7 +40,7 @@
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione Escuela</label>
                             <div class="col-lg-8">
-                                <asp:DropDownList ID="DDEscuela" class="form-control" runat="server" AutoPostBack="true" CausesValidation="false" ><asp:ListItem Text="--Seleccione escuela--" Value="0" /></asp:DropDownList>
+                                <asp:DropDownList ID="DDEscuela" class="form-control" runat="server" AutoPostBack="true" CausesValidation="false" OnSelectedIndexChanged="SelectIndexChangeEscuela"></asp:DropDownList>
                                
                                     
                                
@@ -50,7 +50,7 @@
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione carrera</label>
                             <div class="col-lg-8">
-                                <asp:DropDownList ID="DDCarrera" class="form-control" runat="server" AutoPostBack="true" CausesValidation="false" ><asp:ListItem Text="--Seleccione carrera--" Value="0" /></asp:DropDownList>
+                                <asp:DropDownList ID="DDCarrera" class="form-control" runat="server" AutoPostBack="true" CausesValidation="false" ></asp:DropDownList>
                          
                             </div>
                         </div><!-- /.form-group -->

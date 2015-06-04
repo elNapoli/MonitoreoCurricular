@@ -27,4 +27,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="TraeCarreraPorEscuela">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idEscuela" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TraeCarreraPorEscuelaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeCarreraPorEscuelaResult" nillable="true" type="q3:ArrayOfFacultad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

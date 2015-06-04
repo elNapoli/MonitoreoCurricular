@@ -9,4 +9,7 @@ Public Interface IController
 
     <OperationContract()>
     Function TraeEscuelaPorFacultad(idFacultad As Integer) As IEnumerable(Of Facultad)
+
+    <OperationContract()>
+    Function TraeCarreraPorEscuela(idEscuela As Integer) As IEnumerable(Of Facultad)
 End Interface

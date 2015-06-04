@@ -8,7 +8,6 @@ E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.dll
 E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.xml
 E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.pdb
 E:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbprojResolveAssemblyReference.cache
-E:\MonitoreoCurricular\WcfController\bin\Debug\Conexion.dll
 E:\MonitoreoCurricular\WcfController\bin\Debug\Models.dll
 E:\MonitoreoCurricular\WcfController\bin\Debug\Models.pdb
 E:\MonitoreoCurricular\WcfController\bin\Debug\Models.xml

@@ -94,6 +94,12 @@ Namespace SrController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeEscuelaPorFacultad", ReplyAction:="http://tempuri.org/IController/TraeEscuelaPorFacultadResponse")>  _
         Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of SrController.Facultad())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeCarreraPorEscuela", ReplyAction:="http://tempuri.org/IController/TraeCarreraPorEscuelaResponse")>  _
+        Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As SrController.Facultad()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeCarreraPorEscuela", ReplyAction:="http://tempuri.org/IController/TraeCarreraPorEscuelaResponse")>  _
+        Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of SrController.Facultad())
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -141,6 +147,14 @@ Namespace SrController
         
         Public Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of SrController.Facultad()) Implements SrController.IController.TraeEscuelaPorFacultadAsync
             Return MyBase.Channel.TraeEscuelaPorFacultadAsync(idFacultad)
+        End Function
+        
+        Public Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As SrController.Facultad() Implements SrController.IController.TraeCarreraPorEscuela
+            Return MyBase.Channel.TraeCarreraPorEscuela(idEscuela)
+        End Function
+        
+        Public Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of SrController.Facultad()) Implements SrController.IController.TraeCarreraPorEscuelaAsync
+            Return MyBase.Channel.TraeCarreraPorEscuelaAsync(idEscuela)
         End Function
     End Class
 End Namespace
