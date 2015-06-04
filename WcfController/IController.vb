@@ -5,11 +5,11 @@ Public Interface IController
 
 
     <OperationContract()>
-    Function TraeFacultad() As IEnumerable(Of Facultad)
+    Function TraeFacultad() As IEnumerable(Of Parametros)
 
     <OperationContract()>
-    Function TraeEscuelaPorFacultad(idFacultad As Integer) As IEnumerable(Of Facultad)
+    Function TraeEscuelaPorFacultad(idFacultad As Integer) As IEnumerable(Of Parametros)
 
     <OperationContract()>
-    Function TraeCarreraPorEscuela(idEscuela As Integer) As IEnumerable(Of Facultad)
+    Function TraeCarreraPorEscuela(idEscuela As Integer) As IEnumerable(Of Parametros)
 End Interface

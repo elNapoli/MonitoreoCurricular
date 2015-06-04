@@ -20,22 +20,22 @@ Public Class Controller
         Threading.Thread.CurrentThread.CurrentUICulture = ci
     End Sub
 
-    Public Function TraeFacultad() As IEnumerable(Of Facultad) Implements IController.TraeFacultad
+    Public Function TraeFacultad() As IEnumerable(Of Parametros) Implements IController.TraeFacultad
         Dim dr As IEnumerable(Of DataRow) = Nothing
         Try
-            dr = cnn.Ejecuta("TraeFacultad") ' colocar nombre del procedimiento
+            dr = cnn.Ejecuta("getFacultad") ' colocar nombre del procedimiento
 
         Catch ex As Exception
             'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
-        Dim ret As New List(Of Facultad)
+        Dim ret As New List(Of Parametros)
         'Tipos
         For Each item As DataRow In dr
 
 
-            ret.Add(New Facultad With {
+            ret.Add(New Parametros With {
                     .id = item(0),
                     .nombre = item(1)
                 }
@@ -43,24 +43,24 @@ Public Class Controller
         Next
         Return ret.AsEnumerable
     End Function
-    Public Function TraeEscuelaPorFacultad(idFacultad As Integer) As IEnumerable(Of Facultad) Implements IController.TraeEscuelaPorFacultad
+    Public Function TraeEscuelaPorFacultad(idFacultad As Integer) As IEnumerable(Of Parametros) Implements IController.TraeEscuelaPorFacultad
         Dim dr As IEnumerable(Of DataRow) = Nothing
         Dim Parametros As New List(Of Parameter)
         Parametros.Add(New Parameter With {.Nombre = "@idFacultad", .Valor = idFacultad, .Tipo = Parameter.TypeDB.DbInt})
         Try
-            dr = cnn.Ejecuta("TraeEscuelaPorFacultad", Parametros) ' colocar nombre del procedimiento
+            dr = cnn.Ejecuta("getEscuelaByFacultad", Parametros) ' colocar nombre del procedimiento
 
         Catch ex As Exception
             'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
-        Dim ret As New List(Of Facultad)
+        Dim ret As New List(Of Parametros)
         'Tipos
         For Each item As DataRow In dr
 
 
-            ret.Add(New Facultad With {
+            ret.Add(New Parametros With {
                     .id = item(0),
                     .nombre = item(1)
                 }
@@ -69,24 +69,24 @@ Public Class Controller
         Return ret.AsEnumerable
     End Function
 
-    Public Function TraeCarreraPorEscuela(idEscuela As Integer) As IEnumerable(Of Facultad) Implements IController.TraeCarreraPorEscuela
+    Public Function TraeCarreraPorEscuela(idEscuela As Integer) As IEnumerable(Of Parametros) Implements IController.TraeCarreraPorEscuela
         Dim dr As IEnumerable(Of DataRow) = Nothing
         Dim Parametros As New List(Of Parameter)
         Parametros.Add(New Parameter With {.Nombre = "@idEscuela", .Valor = idEscuela, .Tipo = Parameter.TypeDB.DbInt})
         Try
-            dr = cnn.Ejecuta("TraeCarreraPorEscuela", Parametros) ' colocar nombre del procedimiento
+            dr = cnn.Ejecuta("getCarreraByEscuela", Parametros) ' colocar nombre del procedimiento
 
         Catch ex As Exception
             'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
-        Dim ret As New List(Of Facultad)
+        Dim ret As New List(Of Parametros)
         'Tipos
         For Each item As DataRow In dr
 
 
-            ret.Add(New Facultad With {
+            ret.Add(New Parametros With {
                     .id = item(0),
                     .nombre = item(1)
                 }

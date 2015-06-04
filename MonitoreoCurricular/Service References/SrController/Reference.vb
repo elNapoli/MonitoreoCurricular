@@ -18,9 +18,9 @@ Namespace SrController
     
     <System.Diagnostics.DebuggerStepThroughAttribute(),  _
      System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
-     System.Runtime.Serialization.DataContractAttribute(Name:="Facultad", [Namespace]:="http://schemas.datacontract.org/2004/07/Models"),  _
+     System.Runtime.Serialization.DataContractAttribute(Name:="Parametros", [Namespace]:="http://schemas.datacontract.org/2004/07/Models"),  _
      System.SerializableAttribute()>  _
-    Partial Public Class Facultad
+    Partial Public Class Parametros
         Inherits Object
         Implements System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged
         
@@ -84,22 +84,22 @@ Namespace SrController
     Public Interface IController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeFacultad", ReplyAction:="http://tempuri.org/IController/TraeFacultadResponse")>  _
-        Function TraeFacultad() As SrController.Facultad()
+        Function TraeFacultad() As SrController.Parametros()
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeFacultad", ReplyAction:="http://tempuri.org/IController/TraeFacultadResponse")>  _
-        Function TraeFacultadAsync() As System.Threading.Tasks.Task(Of SrController.Facultad())
+        Function TraeFacultadAsync() As System.Threading.Tasks.Task(Of SrController.Parametros())
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeEscuelaPorFacultad", ReplyAction:="http://tempuri.org/IController/TraeEscuelaPorFacultadResponse")>  _
-        Function TraeEscuelaPorFacultad(ByVal idFacultad As Integer) As SrController.Facultad()
+        Function TraeEscuelaPorFacultad(ByVal idFacultad As Integer) As SrController.Parametros()
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeEscuelaPorFacultad", ReplyAction:="http://tempuri.org/IController/TraeEscuelaPorFacultadResponse")>  _
-        Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of SrController.Facultad())
+        Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of SrController.Parametros())
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeCarreraPorEscuela", ReplyAction:="http://tempuri.org/IController/TraeCarreraPorEscuelaResponse")>  _
-        Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As SrController.Facultad()
+        Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As SrController.Parametros()
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeCarreraPorEscuela", ReplyAction:="http://tempuri.org/IController/TraeCarreraPorEscuelaResponse")>  _
-        Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of SrController.Facultad())
+        Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of SrController.Parametros())
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -133,27 +133,27 @@ Namespace SrController
             MyBase.New(binding, remoteAddress)
         End Sub
         
-        Public Function TraeFacultad() As SrController.Facultad() Implements SrController.IController.TraeFacultad
+        Public Function TraeFacultad() As SrController.Parametros() Implements SrController.IController.TraeFacultad
             Return MyBase.Channel.TraeFacultad
         End Function
         
-        Public Function TraeFacultadAsync() As System.Threading.Tasks.Task(Of SrController.Facultad()) Implements SrController.IController.TraeFacultadAsync
+        Public Function TraeFacultadAsync() As System.Threading.Tasks.Task(Of SrController.Parametros()) Implements SrController.IController.TraeFacultadAsync
             Return MyBase.Channel.TraeFacultadAsync
         End Function
         
-        Public Function TraeEscuelaPorFacultad(ByVal idFacultad As Integer) As SrController.Facultad() Implements SrController.IController.TraeEscuelaPorFacultad
+        Public Function TraeEscuelaPorFacultad(ByVal idFacultad As Integer) As SrController.Parametros() Implements SrController.IController.TraeEscuelaPorFacultad
             Return MyBase.Channel.TraeEscuelaPorFacultad(idFacultad)
         End Function
         
-        Public Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of SrController.Facultad()) Implements SrController.IController.TraeEscuelaPorFacultadAsync
+        Public Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of SrController.Parametros()) Implements SrController.IController.TraeEscuelaPorFacultadAsync
             Return MyBase.Channel.TraeEscuelaPorFacultadAsync(idFacultad)
         End Function
         
-        Public Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As SrController.Facultad() Implements SrController.IController.TraeCarreraPorEscuela
+        Public Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As SrController.Parametros() Implements SrController.IController.TraeCarreraPorEscuela
             Return MyBase.Channel.TraeCarreraPorEscuela(idEscuela)
         End Function
         
-        Public Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of SrController.Facultad()) Implements SrController.IController.TraeCarreraPorEscuelaAsync
+        Public Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of SrController.Parametros()) Implements SrController.IController.TraeCarreraPorEscuelaAsync
             Return MyBase.Channel.TraeCarreraPorEscuelaAsync(idEscuela)
         End Function
     End Class

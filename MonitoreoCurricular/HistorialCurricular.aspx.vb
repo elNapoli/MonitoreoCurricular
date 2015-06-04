@@ -58,8 +58,8 @@
 
         End If
     End Sub
-    Private Function CallFacultad() As IEnumerable(Of SrController.Facultad)
-        Dim Lista As IEnumerable(Of SrController.Facultad) = Nothing
+    Private Function CallFacultad() As IEnumerable(Of SrController.Parametros)
+        Dim Lista As IEnumerable(Of SrController.Parametros) = Nothing
         Try
             Lista = Conexion.TraeFacultad()
         Catch
@@ -70,8 +70,8 @@
         Return Lista
     End Function
 
-    Private Function CallEscuelaPorFacultad(idFacultad As Integer) As IEnumerable(Of SrController.Facultad)
-        Dim Lista As IEnumerable(Of SrController.Facultad) = Nothing
+    Private Function CallEscuelaPorFacultad(idFacultad As Integer) As IEnumerable(Of SrController.Parametros)
+        Dim Lista As IEnumerable(Of SrController.Parametros) = Nothing
         Try
             Lista = Conexion.TraeEscuelaPorFacultad(idFacultad)
         Catch
@@ -82,8 +82,8 @@
         Return Lista
     End Function
 
-    Private Function CallCarreraPorEscuela(idEscuela As Integer) As IEnumerable(Of SrController.Facultad)
-        Dim Lista As IEnumerable(Of SrController.Facultad) = Nothing
+    Private Function CallCarreraPorEscuela(idEscuela As Integer) As IEnumerable(Of SrController.Parametros)
+        Dim Lista As IEnumerable(Of SrController.Parametros) = Nothing
         Try
             Lista = Conexion.TraeCarreraPorEscuela(idEscuela)
         Catch

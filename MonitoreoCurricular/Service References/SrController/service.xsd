@@ -9,7 +9,7 @@
   <xs:element name="TraeFacultadResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeFacultadResult" nillable="true" type="q1:ArrayOfFacultad" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeFacultadResult" nillable="true" type="q1:ArrayOfParametros" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -23,7 +23,7 @@
   <xs:element name="TraeEscuelaPorFacultadResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeEscuelaPorFacultadResult" nillable="true" type="q2:ArrayOfFacultad" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeEscuelaPorFacultadResult" nillable="true" type="q2:ArrayOfParametros" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -37,7 +37,7 @@
   <xs:element name="TraeCarreraPorEscuelaResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeCarreraPorEscuelaResult" nillable="true" type="q3:ArrayOfFacultad" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeCarreraPorEscuelaResult" nillable="true" type="q3:ArrayOfParametros" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
