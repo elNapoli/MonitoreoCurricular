@@ -86,11 +86,25 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\demo.css" />
+    <Content Include="css\jquery.dataTables.css" />
+    <Content Include="css\shCore.css" />
+    <Content Include="demoTable.aspx" />
     <Content Include="HistorialCurricular.aspx" />
+    <Content Include="img\details_close.png" />
+    <Content Include="img\details_open.png" />
     <Content Include="img\pattern\README.md" />
+    <Content Include="img\sort_asc.png" />
+    <Content Include="img\sort_asc_disabled.png" />
+    <Content Include="img\sort_both.png" />
+    <Content Include="img\sort_desc.png" />
+    <Content Include="img\sort_desc_disabled.png" />
     <Content Include="js\app.js.map" />
     <Content Include="js\core.js.map" />
     <Content Include="js\countdown.js.map" />
+    <Content Include="js\demo.js" />
+    <Content Include="js\jquery.dataTables.js" />
+    <Content Include="js\shCore.js" />
     <Content Include="js\style-switcher.js.map" />
     <Content Include="less\theme.less" />
     <Content Include="lib\bootstrap-daterangepicker\bower.json" />
@@ -296,6 +310,7 @@
     <Content Include="lib\wysihtml5x\package.json" />
     <Content Include="lib\wysihtml5x\README.markdown" />
     <Content Include="Layout.Master" />
+    <Content Include="img\Sorting icons.psd" />
     <None Include="Service References\SrController\configuration91.svcinfo" />
     <None Include="Service References\SrController\configuration.svcinfo" />
     <Content Include="css\countdown.css" />
@@ -1140,6 +1155,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="demoTable.aspx.designer.vb">
+      <DependentUpon>demoTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoTable.aspx.vb">
+      <DependentUpon>demoTable.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="HistorialCurricular.aspx.designer.vb">
       <DependentUpon>HistorialCurricular.aspx</DependentUpon>
     </Compile>
