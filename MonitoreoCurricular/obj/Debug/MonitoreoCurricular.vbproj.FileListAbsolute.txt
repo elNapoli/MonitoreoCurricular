@@ -8,3 +8,7 @@ E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
 E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
 E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb
 E:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbprojResolveAssemblyReference.cache
+E:\MonitoreoCurricular\MonitoreoCurricular\bin\AjaxControlToolkit.dll
+E:\MonitoreoCurricular\MonitoreoCurricular\bin\Models.dll
+E:\MonitoreoCurricular\MonitoreoCurricular\bin\Models.pdb
+E:\MonitoreoCurricular\MonitoreoCurricular\bin\Models.xml
