@@ -22,9 +22,25 @@ Control ContentPlaceHolder1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:MonitoreoCurricular.HistorialCurricular.ScriptManager1">
+	<summary>
+Control ScriptManager1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member><member name="F:MonitoreoCurricular.HistorialCurricular.DDFacultad">
 	<summary>
 Control DDFacultad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.HistorialCurricular.CDFacultad">
+	<summary>
+Control CDFacultad.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -38,9 +54,25 @@ Control DDEscuela.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:MonitoreoCurricular.HistorialCurricular.CDEscuela">
+	<summary>
+Control CDEscuela.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member><member name="F:MonitoreoCurricular.HistorialCurricular.DDCarrera">
 	<summary>
 Control DDCarrera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.HistorialCurricular.CDCarrera">
+	<summary>
+Control CDCarrera.
 </summary>
 	<remarks>
 Campo generado automáticamente.

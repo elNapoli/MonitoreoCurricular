@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Layout.Master" CodeBehind="HistorialCurricular.aspx.vb" Inherits="MonitoreoCurricular.HistorialCurricular" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <div class="row">
         <div class="col-lg-12">
             <div class="box dark">
@@ -31,18 +32,36 @@
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione facultad</label>
                             <div class="col-lg-8">
-                                <asp:DropDownList ID="DDFacultad" class="form-control" autopostback="true" runat="server" OnSelectedIndexChanged="SelectIndexChangeFacultad"></asp:DropDownList>
-                              
-                         
+                                <asp:DropDownList ID="DDFacultad" class="form-control" runat="server">
+            
+                                </asp:DropDownList>
+                                <cc1:CascadingDropDown 
+                                    ID="CDFacultad" 
+                                    TargetControlID="DDFacultad" 
+                                    PromptText="Seleccione Facultad"
+                                    PromptValue="" 
+                                    ServicePath="HistorialCurricular.asmx" 
+                                    ServiceMethod="CallFacultad" runat="server"
+                                    Category="FacultadId" LoadingText = "Cargando..." />
                             </div>
                         </div><!-- /.form-group -->
 
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione Escuela</label>
                             <div class="col-lg-8">
-                                <asp:DropDownList ID="DDEscuela" class="form-control" runat="server" AutoPostBack="true" CausesValidation="false" OnSelectedIndexChanged="SelectIndexChangeEscuela"></asp:DropDownList>
-                               
-                                    
+                                <asp:DropDownList ID="DDEscuela"  class="form-control" runat="server">
+                                </asp:DropDownList>
+                                <cc1:CascadingDropDown 
+                                    ID="CDEscuela" 
+                                    TargetControlID="DDEscuela" 
+                                    PromptText="Seleccione Escuela"
+                                    PromptValue="" 
+                                    ServicePath="HistorialCurricular.asmx" 
+                                    ServiceMethod="CallEscuelaPorFacultad" 
+                                    runat="server"
+                                    Category="EscuelaId" 
+                                    ParentControlID="DDFacultad" 
+                                    LoadingText = "Cargando..."  />
                                
                             </div>
                         </div><!-- /.form-group -->
@@ -50,8 +69,19 @@
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione carrera</label>
                             <div class="col-lg-8">
-                                <asp:DropDownList ID="DDCarrera" class="form-control" runat="server" AutoPostBack="true" CausesValidation="false" ></asp:DropDownList>
-                         
+                                <asp:DropDownList ID="DDCarrera" class="form-control" runat="server">
+                                </asp:DropDownList>
+                                <cc1:CascadingDropDown 
+                                    ID="CDCarrera" 
+                                    TargetControlID="DDCarrera" 
+                                    PromptText="Seleccione Carrera"
+                                    PromptValue="" 
+                                    ServicePath="HistorialCurricular.asmx" 
+                                    ServiceMethod="CallCarreraPorEscuela" 
+                                    runat="server"
+                                    Category="CarreraId" 
+                                    ParentControlID="DDEscuela" 
+                                    LoadingText = "Cargando..."  />
                             </div>
                         </div><!-- /.form-group -->
                     </div>

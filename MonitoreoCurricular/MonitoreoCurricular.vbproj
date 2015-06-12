@@ -90,8 +90,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CascadingDropdown0.vb.asmx" />
-    <Content Include="CascadingDropdown0.vb.aspx" />
+    <Content Include="HistorialCurricular.asmx" />
     <Content Include="css\demo.css" />
     <Content Include="css\jquery.dataTables.css" />
     <Content Include="css\shCore.css" />
