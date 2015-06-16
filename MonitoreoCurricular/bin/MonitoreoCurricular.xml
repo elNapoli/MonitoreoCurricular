@@ -6,22 +6,31 @@ MonitoreoCurricular
 </name>
 </assembly>
 <members>
-<member name="F:MonitoreoCurricular.Layout.form1">
+<member name="P:MonitoreoCurricular.My.MyWebExtension.Computer">
 	<summary>
-Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.Layout.ContentPlaceHolder1">
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:MonitoreoCurricular.My.MyWebExtension.User">
 	<summary>
-Control ContentPlaceHolder1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
+ Devuelve información del usuario web actual.
+ </summary>
+</member><member name="P:MonitoreoCurricular.My.MyWebExtension.Request">
+	<summary>
+ Devuelve un objeto Request.
+ </summary>
+</member><member name="P:MonitoreoCurricular.My.MyWebExtension.Response">
+	<summary>
+ Devuelve un objeto Response.
+ </summary>
+</member><member name="P:MonitoreoCurricular.My.MyWebExtension.Log">
+	<summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member><member name="T:MonitoreoCurricular.My.MyWebExtension">
+	<summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+	<remarks></remarks>
 </member><member name="F:MonitoreoCurricular.HistorialCurricular.ScriptManager1">
 	<summary>
 Control ScriptManager1.
@@ -78,31 +87,22 @@ Control CDCarrera.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="P:MonitoreoCurricular.My.MyWebExtension.Computer">
+</member><member name="F:MonitoreoCurricular.Layout.form1">
 	<summary>
- Devuelve información sobre el equipo host.
- </summary>
-</member><member name="P:MonitoreoCurricular.My.MyWebExtension.User">
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.Layout.ContentPlaceHolder1">
 	<summary>
- Devuelve información del usuario web actual.
- </summary>
-</member><member name="P:MonitoreoCurricular.My.MyWebExtension.Request">
-	<summary>
- Devuelve un objeto Request.
- </summary>
-</member><member name="P:MonitoreoCurricular.My.MyWebExtension.Response">
-	<summary>
- Devuelve un objeto Response.
- </summary>
-</member><member name="P:MonitoreoCurricular.My.MyWebExtension.Log">
-	<summary>
- Devuelve el objeto de registro Asp.
- </summary>
-</member><member name="T:MonitoreoCurricular.My.MyWebExtension">
-	<summary>
- Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
- </summary>
-	<remarks></remarks>
+Control ContentPlaceHolder1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member>
 </members>
 </doc>

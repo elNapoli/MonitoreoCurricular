@@ -12,3 +12,17 @@ E:\MonitoreoCurricular\MonitoreoCurricular\bin\AjaxControlToolkit.dll
 E:\MonitoreoCurricular\MonitoreoCurricular\bin\Models.dll
 E:\MonitoreoCurricular\MonitoreoCurricular\bin\Models.pdb
 E:\MonitoreoCurricular\MonitoreoCurricular\bin\Models.xml
+E:\fd\MonitoreoCurricular\bin\MonitoreoCurricular.dll.config
+E:\fd\MonitoreoCurricular\bin\MonitoreoCurricular.dll
+E:\fd\MonitoreoCurricular\bin\MonitoreoCurricular.pdb
+E:\fd\MonitoreoCurricular\bin\MonitoreoCurricular.xml
+E:\fd\MonitoreoCurricular\bin\AjaxControlToolkit.dll
+E:\fd\MonitoreoCurricular\bin\Models.dll
+E:\fd\MonitoreoCurricular\bin\Models.pdb
+E:\fd\MonitoreoCurricular\bin\Models.xml
+E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbprojResolveAssemblyReference.cache
+E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.Resources.resources
+E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.GenerateResource.Cache
+E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
+E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
+E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb
