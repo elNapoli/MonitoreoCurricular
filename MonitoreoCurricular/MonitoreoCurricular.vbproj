@@ -316,6 +316,8 @@
     <Content Include="lib\wysihtml5x\README.markdown" />
     <Content Include="Layout.Master" />
     <Content Include="img\Sorting icons.psd" />
+    <Content Include="Models.HistorialCurricular.datasource" />
+    <Content Include="Models.Parametros.datasource" />
     <None Include="Service References\SrController\configuration91.svcinfo" />
     <None Include="Service References\SrController\configuration.svcinfo" />
     <Content Include="css\countdown.css" />

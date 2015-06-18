@@ -11,95 +11,42 @@
 Option Strict On
 Option Explicit On
 
-Imports System
-Imports System.Runtime.Serialization
 
 Namespace SrController
-    
-    <System.Diagnostics.DebuggerStepThroughAttribute(),  _
-     System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0"),  _
-     System.Runtime.Serialization.DataContractAttribute(Name:="Parametros", [Namespace]:="http://schemas.datacontract.org/2004/07/Models"),  _
-     System.SerializableAttribute()>  _
-    Partial Public Class Parametros
-        Inherits Object
-        Implements System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged
-        
-        <System.NonSerializedAttribute()>  _
-        Private extensionDataField As System.Runtime.Serialization.ExtensionDataObject
-        
-        <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private idField As String
-        
-        <System.Runtime.Serialization.OptionalFieldAttribute()>  _
-        Private nombreField As String
-        
-        <Global.System.ComponentModel.BrowsableAttribute(false)>  _
-        Public Property ExtensionData() As System.Runtime.Serialization.ExtensionDataObject Implements System.Runtime.Serialization.IExtensibleDataObject.ExtensionData
-            Get
-                Return Me.extensionDataField
-            End Get
-            Set
-                Me.extensionDataField = value
-            End Set
-        End Property
-        
-        <System.Runtime.Serialization.DataMemberAttribute()>  _
-        Public Property id() As String
-            Get
-                Return Me.idField
-            End Get
-            Set
-                If (Object.ReferenceEquals(Me.idField, value) <> true) Then
-                    Me.idField = value
-                    Me.RaisePropertyChanged("id")
-                End If
-            End Set
-        End Property
-        
-        <System.Runtime.Serialization.DataMemberAttribute()>  _
-        Public Property nombre() As String
-            Get
-                Return Me.nombreField
-            End Get
-            Set
-                If (Object.ReferenceEquals(Me.nombreField, value) <> true) Then
-                    Me.nombreField = value
-                    Me.RaisePropertyChanged("nombre")
-                End If
-            End Set
-        End Property
-        
-        Public Event PropertyChanged As System.ComponentModel.PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-        
-        Protected Sub RaisePropertyChanged(ByVal propertyName As String)
-            Dim propertyChanged As System.ComponentModel.PropertyChangedEventHandler = Me.PropertyChangedEvent
-            If (Not (propertyChanged) Is Nothing) Then
-                propertyChanged(Me, New System.ComponentModel.PropertyChangedEventArgs(propertyName))
-            End If
-        End Sub
-    End Class
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0"),  _
      System.ServiceModel.ServiceContractAttribute(ConfigurationName:="SrController.IController")>  _
     Public Interface IController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeFacultad", ReplyAction:="http://tempuri.org/IController/TraeFacultadResponse")>  _
-        Function TraeFacultad() As SrController.Parametros()
+        Function TraeFacultad() As Models.Parametros()
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeFacultad", ReplyAction:="http://tempuri.org/IController/TraeFacultadResponse")>  _
-        Function TraeFacultadAsync() As System.Threading.Tasks.Task(Of SrController.Parametros())
+        Function TraeFacultadAsync() As System.Threading.Tasks.Task(Of Models.Parametros())
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeEscuelaPorFacultad", ReplyAction:="http://tempuri.org/IController/TraeEscuelaPorFacultadResponse")>  _
-        Function TraeEscuelaPorFacultad(ByVal idFacultad As Integer) As SrController.Parametros()
+        Function TraeEscuelaPorFacultad(ByVal idFacultad As Integer) As Models.Parametros()
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeEscuelaPorFacultad", ReplyAction:="http://tempuri.org/IController/TraeEscuelaPorFacultadResponse")>  _
-        Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of SrController.Parametros())
+        Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of Models.Parametros())
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeCarreraPorEscuela", ReplyAction:="http://tempuri.org/IController/TraeCarreraPorEscuelaResponse")>  _
-        Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As SrController.Parametros()
+        Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As Models.Parametros()
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeCarreraPorEscuela", ReplyAction:="http://tempuri.org/IController/TraeCarreraPorEscuelaResponse")>  _
-        Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of SrController.Parametros())
+        Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of Models.Parametros())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeHistorialPorCarrera", ReplyAction:="http://tempuri.org/IController/TraeHistorialPorCarreraResponse")>  _
+        Function TraeHistorialPorCarrera(ByVal idCarrera As Integer) As Models.HistorialCurricular()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeHistorialPorCarrera", ReplyAction:="http://tempuri.org/IController/TraeHistorialPorCarreraResponse")>  _
+        Function TraeHistorialPorCarreraAsync(ByVal idCarrera As Integer) As System.Threading.Tasks.Task(Of Models.HistorialCurricular())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeAsignaturasPorHistorial", ReplyAction:="http://tempuri.org/IController/TraeAsignaturasPorHistorialResponse")>  _
+        Function TraeAsignaturasPorHistorial(ByVal idHistorial As Integer) As Models.Parametros()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeAsignaturasPorHistorial", ReplyAction:="http://tempuri.org/IController/TraeAsignaturasPorHistorialResponse")>  _
+        Function TraeAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.Parametros())
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -133,28 +80,44 @@ Namespace SrController
             MyBase.New(binding, remoteAddress)
         End Sub
         
-        Public Function TraeFacultad() As SrController.Parametros() Implements SrController.IController.TraeFacultad
+        Public Function TraeFacultad() As Models.Parametros() Implements SrController.IController.TraeFacultad
             Return MyBase.Channel.TraeFacultad
         End Function
         
-        Public Function TraeFacultadAsync() As System.Threading.Tasks.Task(Of SrController.Parametros()) Implements SrController.IController.TraeFacultadAsync
+        Public Function TraeFacultadAsync() As System.Threading.Tasks.Task(Of Models.Parametros()) Implements SrController.IController.TraeFacultadAsync
             Return MyBase.Channel.TraeFacultadAsync
         End Function
         
-        Public Function TraeEscuelaPorFacultad(ByVal idFacultad As Integer) As SrController.Parametros() Implements SrController.IController.TraeEscuelaPorFacultad
+        Public Function TraeEscuelaPorFacultad(ByVal idFacultad As Integer) As Models.Parametros() Implements SrController.IController.TraeEscuelaPorFacultad
             Return MyBase.Channel.TraeEscuelaPorFacultad(idFacultad)
         End Function
         
-        Public Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of SrController.Parametros()) Implements SrController.IController.TraeEscuelaPorFacultadAsync
+        Public Function TraeEscuelaPorFacultadAsync(ByVal idFacultad As Integer) As System.Threading.Tasks.Task(Of Models.Parametros()) Implements SrController.IController.TraeEscuelaPorFacultadAsync
             Return MyBase.Channel.TraeEscuelaPorFacultadAsync(idFacultad)
         End Function
         
-        Public Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As SrController.Parametros() Implements SrController.IController.TraeCarreraPorEscuela
+        Public Function TraeCarreraPorEscuela(ByVal idEscuela As Integer) As Models.Parametros() Implements SrController.IController.TraeCarreraPorEscuela
             Return MyBase.Channel.TraeCarreraPorEscuela(idEscuela)
         End Function
         
-        Public Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of SrController.Parametros()) Implements SrController.IController.TraeCarreraPorEscuelaAsync
+        Public Function TraeCarreraPorEscuelaAsync(ByVal idEscuela As Integer) As System.Threading.Tasks.Task(Of Models.Parametros()) Implements SrController.IController.TraeCarreraPorEscuelaAsync
             Return MyBase.Channel.TraeCarreraPorEscuelaAsync(idEscuela)
+        End Function
+        
+        Public Function TraeHistorialPorCarrera(ByVal idCarrera As Integer) As Models.HistorialCurricular() Implements SrController.IController.TraeHistorialPorCarrera
+            Return MyBase.Channel.TraeHistorialPorCarrera(idCarrera)
+        End Function
+        
+        Public Function TraeHistorialPorCarreraAsync(ByVal idCarrera As Integer) As System.Threading.Tasks.Task(Of Models.HistorialCurricular()) Implements SrController.IController.TraeHistorialPorCarreraAsync
+            Return MyBase.Channel.TraeHistorialPorCarreraAsync(idCarrera)
+        End Function
+        
+        Public Function TraeAsignaturasPorHistorial(ByVal idHistorial As Integer) As Models.Parametros() Implements SrController.IController.TraeAsignaturasPorHistorial
+            Return MyBase.Channel.TraeAsignaturasPorHistorial(idHistorial)
+        End Function
+        
+        Public Function TraeAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.Parametros()) Implements SrController.IController.TraeAsignaturasPorHistorialAsync
+            Return MyBase.Channel.TraeAsignaturasPorHistorialAsync(idHistorial)
         End Function
     End Class
 End Namespace

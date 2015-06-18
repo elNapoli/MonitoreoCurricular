@@ -7,6 +7,7 @@ Imports System.Web.Services
 Imports System.Web.Services.Protocols
 Imports System.Collections.Generic
 Imports MonitoreoCurricular
+Imports Models
 
 <ScriptService()> _
 Public Class HistorialCurricular
@@ -17,10 +18,10 @@ Public Class HistorialCurricular
     Public Function CallFacultad(ByVal knownCategoryValues As String, ByVal category As String) As CascadingDropDownNameValue()
         
         Dim l As New List(Of CascadingDropDownNameValue)
-        Dim Lista As IEnumerable(Of SrController.Parametros) = Nothing
+        Dim Lista As IEnumerable(Of Parametros) = Nothing
         
         Lista = Conexion.TraeFacultad()
-        For Each item As SrController.Parametros In Lista
+        For Each item As Parametros In Lista
             l.Add(New CascadingDropDownNameValue(item.nombre.ToString, item.id.ToString))
         Next
         Return l.ToArray()
@@ -31,11 +32,11 @@ Public Class HistorialCurricular
     Public Function CallEscuelaPorFacultad(ByVal knownCategoryValues As String, ByVal category As String) As CascadingDropDownNameValue()
  
         Dim l As New List(Of CascadingDropDownNameValue)
-        Dim Lista As IEnumerable(Of SrController.Parametros) = Nothing
+        Dim Lista As IEnumerable(Of Parametros) = Nothing
         Dim FacultadId As Integer = CascadingDropDown.ParseKnownCategoryValuesString(knownCategoryValues)("FacultadId")
         
         Lista = Conexion.TraeEscuelaPorFacultad(FacultadId)
-        For Each item As SrController.Parametros In Lista
+        For Each item As Parametros In Lista
             l.Add(New CascadingDropDownNameValue(item.nombre.ToString, item.id.ToString))
         Next
         Return l.ToArray()
@@ -46,15 +47,19 @@ Public Class HistorialCurricular
     Public Function CallCarreraPorEscuela(ByVal knownCategoryValues As String, ByVal category As String) As CascadingDropDownNameValue()
  
         Dim l As New List(Of CascadingDropDownNameValue)
-        Dim Lista As IEnumerable(Of SrController.Parametros) = Nothing
+        Dim Lista As IEnumerable(Of Parametros) = Nothing
         Dim EscuelaId As Integer = CascadingDropDown.ParseKnownCategoryValuesString(knownCategoryValues)("EscuelaId")
         
         Lista = Conexion.TraeCarreraPorEscuela(EscuelaId)
-        For Each item As SrController.Parametros In Lista
+        For Each item As Parametros In Lista
             l.Add(New CascadingDropDownNameValue(item.nombre.ToString, item.id.ToString))
         Next
         Return l.ToArray()
         
     End Function
+    
+    
+    
+
     
 End Class

@@ -25,6 +25,18 @@
   <wsdl:message name="IController_TraeCarreraPorEscuela_OutputMessage">
     <wsdl:part name="parameters" element="tns:TraeCarreraPorEscuelaResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_TraeHistorialPorCarrera_InputMessage">
+    <wsdl:part name="parameters" element="tns:TraeHistorialPorCarrera" />
+  </wsdl:message>
+  <wsdl:message name="IController_TraeHistorialPorCarrera_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TraeHistorialPorCarreraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IController_TraeAsignaturasPorHistorial_InputMessage">
+    <wsdl:part name="parameters" element="tns:TraeAsignaturasPorHistorial" />
+  </wsdl:message>
+  <wsdl:message name="IController_TraeAsignaturasPorHistorial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TraeAsignaturasPorHistorialResponse" />
+  </wsdl:message>
   <wsdl:portType name="IController">
     <wsdl:operation name="TraeFacultad">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeFacultad" message="tns:IController_TraeFacultad_InputMessage" />
@@ -37,6 +49,14 @@
     <wsdl:operation name="TraeCarreraPorEscuela">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeCarreraPorEscuela" message="tns:IController_TraeCarreraPorEscuela_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeCarreraPorEscuelaResponse" message="tns:IController_TraeCarreraPorEscuela_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TraeHistorialPorCarrera">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeHistorialPorCarrera" message="tns:IController_TraeHistorialPorCarrera_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeHistorialPorCarreraResponse" message="tns:IController_TraeHistorialPorCarrera_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TraeAsignaturasPorHistorial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeAsignaturasPorHistorial" message="tns:IController_TraeAsignaturasPorHistorial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeAsignaturasPorHistorialResponse" message="tns:IController_TraeAsignaturasPorHistorial_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IController" type="tns:IController">
@@ -61,6 +81,24 @@
     </wsdl:operation>
     <wsdl:operation name="TraeCarreraPorEscuela">
       <soap:operation soapAction="http://tempuri.org/IController/TraeCarreraPorEscuela" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraeHistorialPorCarrera">
+      <soap:operation soapAction="http://tempuri.org/IController/TraeHistorialPorCarrera" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraeAsignaturasPorHistorial">
+      <soap:operation soapAction="http://tempuri.org/IController/TraeAsignaturasPorHistorial" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

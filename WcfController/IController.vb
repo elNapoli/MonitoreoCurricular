@@ -12,4 +12,11 @@ Public Interface IController
 
     <OperationContract()>
     Function TraeCarreraPorEscuela(idEscuela As Integer) As IEnumerable(Of Parametros)
+
+    <OperationContract()>
+    Function TraeHistorialPorCarrera(idCarrera As Integer) As IEnumerable(Of HistorialCurricular)
+
+
+    <OperationContract()>
+    Function TraeAsignaturasPorHistorial(idHistorial As Integer) As IEnumerable(Of Parametros)
 End Interface

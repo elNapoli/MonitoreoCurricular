@@ -24,13 +24,15 @@ color:White;
 <script type="text/javascript">
     $(function () {
         $('#btnSubmit').click(function () {
+
+        
                 $.ajax({
                     type: "POST",
                     contentType: "application/json; charset=utf-8",
                     url: "VBCode.aspx/InsertData",
                  
                     success: function (data) {
-                        var obj = data.j;
+                        var obj = data.d;
                         var Facultades   = {
                             data: []
                         };
@@ -50,16 +52,10 @@ color:White;
                        
 
 
-                        var json = JSON.stringify(data);
+                        var json = JSON.stringify(Facultades);
                         console.log(json);
                        
                        
-                        if (obj == 'true') {
-                            $('#txtname').val('');
-                            $('#txtsubject').val('');
-                            $('#txtbody').val('');
-                            $('#lblmsg').html("Details Submitted Successfully");
-                        }
                     },
                     error: function (result) {
                         alert("Error");

@@ -41,4 +41,32 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="TraeHistorialPorCarrera">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idCarrera" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TraeHistorialPorCarreraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeHistorialPorCarreraResult" nillable="true" type="q4:ArrayOfHistorialCurricular" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TraeAsignaturasPorHistorial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idHistorial" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TraeAsignaturasPorHistorialResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeAsignaturasPorHistorialResult" nillable="true" type="q5:ArrayOfParametros" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
