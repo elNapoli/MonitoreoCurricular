@@ -8,5 +8,6 @@
     Property descripcion As String
     Property antes As String
     Property despues As String
-
+    Property resoluciones As Parametros()
+    Property asignaturas As Parametros()
 End Class

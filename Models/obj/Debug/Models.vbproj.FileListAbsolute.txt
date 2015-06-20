@@ -6,3 +6,11 @@ E:\MonitoreoCurricular\Models\obj\Debug\Models.vbproj.GenerateResource.Cache
 E:\MonitoreoCurricular\Models\obj\Debug\Models.dll
 E:\MonitoreoCurricular\Models\obj\Debug\Models.xml
 E:\MonitoreoCurricular\Models\obj\Debug\Models.pdb
+E:\fd\Models\bin\Debug\Models.dll
+E:\fd\Models\bin\Debug\Models.pdb
+E:\fd\Models\bin\Debug\Models.xml
+E:\fd\Models\obj\Debug\Models.Resources.resources
+E:\fd\Models\obj\Debug\Models.vbproj.GenerateResource.Cache
+E:\fd\Models\obj\Debug\Models.dll
+E:\fd\Models\obj\Debug\Models.xml
+E:\fd\Models\obj\Debug\Models.pdb

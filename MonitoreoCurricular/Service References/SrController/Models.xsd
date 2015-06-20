@@ -22,6 +22,7 @@
   <xs:complexType name="HistorialCurricular">
     <xs:sequence>
       <xs:element minOccurs="0" name="antes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="asignaturas" nillable="true" type="tns:ArrayOfParametros" />
       <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="despues" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
@@ -29,6 +30,7 @@
       <xs:element minOccurs="0" name="id" type="xs:int" />
       <xs:element minOccurs="0" name="idCarrera" type="xs:int" />
       <xs:element minOccurs="0" name="idPlan" type="xs:int" />
+      <xs:element minOccurs="0" name="resoluciones" nillable="true" type="tns:ArrayOfParametros" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="HistorialCurricular" nillable="true" type="tns:HistorialCurricular" />
