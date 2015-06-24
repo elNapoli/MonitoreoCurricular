@@ -29,43 +29,25 @@
                       </nav>
                     </div><!-- /.toolbar -->
                   </header>
-
+                <button runat="server" value="hola" AutoPostBack="false" onclick="perro"></button>
                 <div id="div-1" class="body">
                     <div class="form-horizontal">
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione facultad</label>
                             <div class="col-lg-8">
                  
-                                <asp:DropDownList ID="DDFacultad" class="form-control" runat="server" >
+                                <asp:DropDownList ID="DDFacultad"  class="form-control" runat="server"  AutoPostBack = "true" OnSelectedIndexChanged = "Facultad_Changed">
             
                                 </asp:DropDownList>
-                                <cc1:CascadingDropDown 
-                                    ID="CDFacultad" 
-                                    TargetControlID="DDFacultad" 
-                                    PromptText="Seleccione Facultad"
-                                    PromptValue="" 
-                                    ServicePath="HistorialCurricular.asmx" 
-                                    ServiceMethod="CallFacultad" runat="server"
-                                    Category="FacultadId" LoadingText = "Cargando..." />
                             </div>
                         </div><!-- /.form-group -->
 
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione Escuela</label>
                             <div class="col-lg-8">
-                                <asp:DropDownList ID="DDEscuela"  class="form-control" runat="server">
+                                <asp:DropDownList ID="DDEscuela"  class="form-control" runat="server" AutoPostBack = "true" OnSelectedIndexChanged = "Escuela_Changed">
                                 </asp:DropDownList>
-                                <cc1:CascadingDropDown 
-                                    ID="CDEscuela" 
-                                    TargetControlID="DDEscuela" 
-                                    PromptText="Seleccione Escuela"
-                                    PromptValue="" 
-                                    ServicePath="HistorialCurricular.asmx" 
-                                    ServiceMethod="CallEscuelaPorFacultad" 
-                                    runat="server"
-                                    Category="EscuelaId" 
-                                    ParentControlID="DDFacultad" 
-                                    LoadingText = "Cargando..."  />
+
                                
                             </div>
                         </div><!-- /.form-group -->
@@ -75,17 +57,6 @@
                             <div class="col-lg-8">
                                 <asp:DropDownList ID="DDCarrera" class="form-control" runat="server">
                                 </asp:DropDownList>
-                                <cc1:CascadingDropDown 
-                                    ID="CDCarrera" 
-                                    TargetControlID="DDCarrera" 
-                                    PromptText="Seleccione Carrera"
-                                    PromptValue="" 
-                                    ServicePath="HistorialCurricular.asmx" 
-                                    ServiceMethod="CallCarreraPorEscuela" 
-                                    runat="server"
-                                    Category="CarreraId" 
-                                    ParentControlID="DDEscuela" 
-                                    LoadingText = "Cargando..."  />
                             </div>
                         </div><!-- /.form-group -->
                     </div>

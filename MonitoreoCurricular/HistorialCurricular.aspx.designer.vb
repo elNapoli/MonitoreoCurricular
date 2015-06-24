@@ -32,15 +32,6 @@ Partial Public Class HistorialCurricular
     Protected WithEvents DDFacultad As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Control CDFacultad.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents CDFacultad As Global.AjaxControlToolkit.CascadingDropDown
-
-    '''<summary>
     '''Control DDEscuela.
     '''</summary>
     '''<remarks>
@@ -50,15 +41,6 @@ Partial Public Class HistorialCurricular
     Protected WithEvents DDEscuela As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Control CDEscuela.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents CDEscuela As Global.AjaxControlToolkit.CascadingDropDown
-
-    '''<summary>
     '''Control DDCarrera.
     '''</summary>
     '''<remarks>
@@ -66,13 +48,4 @@ Partial Public Class HistorialCurricular
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DDCarrera As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Control CDCarrera.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents CDCarrera As Global.AjaxControlToolkit.CascadingDropDown
 End Class
