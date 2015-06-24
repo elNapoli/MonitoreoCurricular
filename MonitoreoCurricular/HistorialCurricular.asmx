@@ -58,8 +58,6 @@ Public Class HistorialCurricular
         
     End Function
     
-    
-    
 
     
 End Class

@@ -154,4 +154,32 @@ Public Class Controller
         Next
         Return ret.AsEnumerable
     End Function
+
+
+    Public Function TraeResolucionPorHistorial(idHistorial As Integer) As IEnumerable(Of Resoluciones) Implements IController.TraeResolucionPorHistorial
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Dim Parametros As New List(Of Parameter)
+        Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
+        Try
+            dr = cnn.Ejecuta("getResolucionByHistorial", Parametros) ' colocar nombre del procedimiento
+
+        Catch ex As Exception
+            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+        End Try
+
+        If dr Is Nothing Then Throw New Exception("La función a valor")
+        Dim ret As New List(Of Resoluciones)
+        'Tipos
+        For Each item As DataRow In dr
+
+
+            ret.Add(New Resoluciones With {
+                    .id = item(0),
+                    .nombre = item(1),
+                    .path = item(2)
+                }
+            )
+        Next
+        Return ret.AsEnumerable
+    End Function
 End Class

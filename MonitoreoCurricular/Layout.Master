@@ -39,7 +39,19 @@
     <link rel="stylesheet" href="css/style-switcher.css"/>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.2.0/less.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="css/shCore.css">
+	<style type="text/css" class="init">
 
+td.details-control {
+	background: url('img/details_open.png') no-repeat center center;
+	cursor: pointer;
+}
+tr.shown td.details-control {
+	background: url('img/details_close.png') no-repeat center center;
+}
+
+	</style>
     <!--Modernizr-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -209,6 +221,86 @@
     <!-- Metis demo scripts -->
     <script src="js/app.js"></script>
   
-    
+    <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" language="javascript" src="js/demo.js"></script>
+	<script type="text/javascript" language="javascript" class="init">
+
+	    function format(d) {
+	        var tabla = '<table cellpadding="5"cellspacing="0" border="3" style="padding-left:50px;">';
+
+	        $.each(d, function (key, value) {
+	            console.log(key + "->" + value);
+	            if (value instanceof Object) {
+
+	                tabla = tabla +
+                        '<tr>' +
+                            '<td   colspan="2" align="center" >' + key + '</td>' +
+                        '</tr>';
+	                for (var i = 0; i < value.length; i++) {
+	                    tabla = tabla +
+                    '<tr> <td>Código:</td>' +
+                    '<td>' + value[i].id + '</td></tr>' + '<tr>' +
+                    '<td>Nombre:</td>' +
+                    '<td>' + value[i].nombre + '</td>' +
+                '</tr>';
+	                }
+	            }
+
+
+	        });
+	        tabla = tabla + '</table>';
+
+
+
+
+	        return tabla;
+	    }
+
+	    $(document).ready(function () {
+	        var table = $('#example').DataTable({
+	            "ajax": "test.txt",
+	            "language": {
+	                "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+	            },
+	            "columns": [
+                    {
+                        "className": 'details-control',
+                        "orderable": false,
+                        "data": null,
+                        "defaultContent": ''
+                    },
+                    { "data": "id" },
+                    { "data": "idPlan" },
+                    { "data": "idCarrera" },
+                    { "data": "fecha" },
+                    { "data": "hito" },
+                    { "data": "descripcion" },
+                    { "data": "antes" },
+                    { "data": "despues" }
+	            ],
+	            "order": [[1, 'asc']]
+	        });
+
+	        // Add event listener for opening and closing details
+	        $('#example tbody').on('click', 'td.details-control', function () {
+	            var tr = $(this).closest('tr');
+	            var row = table.row(tr);
+
+	            if (row.child.isShown()) {
+	                // This row is already open - close it
+	                row.child.hide();
+	                tr.removeClass('shown');
+	            }
+	            else {
+	                // Open this row
+	                row.child(format(row.data())).show();
+	                tr.addClass('shown');
+	            }
+	        });
+	    });
+
+
+	</script>
 </body>
 </html>

@@ -37,6 +37,12 @@
   <wsdl:message name="IController_TraeAsignaturasPorHistorial_OutputMessage">
     <wsdl:part name="parameters" element="tns:TraeAsignaturasPorHistorialResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_TraeResolucionPorHistorial_InputMessage">
+    <wsdl:part name="parameters" element="tns:TraeResolucionPorHistorial" />
+  </wsdl:message>
+  <wsdl:message name="IController_TraeResolucionPorHistorial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TraeResolucionPorHistorialResponse" />
+  </wsdl:message>
   <wsdl:portType name="IController">
     <wsdl:operation name="TraeFacultad">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeFacultad" message="tns:IController_TraeFacultad_InputMessage" />
@@ -57,6 +63,10 @@
     <wsdl:operation name="TraeAsignaturasPorHistorial">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeAsignaturasPorHistorial" message="tns:IController_TraeAsignaturasPorHistorial_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeAsignaturasPorHistorialResponse" message="tns:IController_TraeAsignaturasPorHistorial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TraeResolucionPorHistorial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeResolucionPorHistorial" message="tns:IController_TraeResolucionPorHistorial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeResolucionPorHistorialResponse" message="tns:IController_TraeResolucionPorHistorial_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IController" type="tns:IController">
@@ -99,6 +109,15 @@
     </wsdl:operation>
     <wsdl:operation name="TraeAsignaturasPorHistorial">
       <soap:operation soapAction="http://tempuri.org/IController/TraeAsignaturasPorHistorial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraeResolucionPorHistorial">
+      <soap:operation soapAction="http://tempuri.org/IController/TraeResolucionPorHistorial" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

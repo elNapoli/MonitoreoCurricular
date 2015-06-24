@@ -19,4 +19,7 @@ Public Interface IController
 
     <OperationContract()>
     Function TraeAsignaturasPorHistorial(idHistorial As Integer) As IEnumerable(Of Parametros)
+
+    <OperationContract()>
+    Function TraeResolucionPorHistorial(idHistorial As Integer) As IEnumerable(Of Resoluciones)
 End Interface

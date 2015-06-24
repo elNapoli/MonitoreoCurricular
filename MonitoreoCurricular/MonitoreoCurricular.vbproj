@@ -318,6 +318,7 @@
     <Content Include="img\Sorting icons.psd" />
     <Content Include="Models.HistorialCurricular.datasource" />
     <Content Include="Models.Parametros.datasource" />
+    <Content Include="Models.Resoluciones.datasource" />
     <None Include="Service References\SrController\configuration91.svcinfo" />
     <None Include="Service References\SrController\configuration.svcinfo" />
     <Content Include="css\countdown.css" />

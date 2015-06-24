@@ -22,7 +22,7 @@
   <xs:complexType name="HistorialCurricular">
     <xs:sequence>
       <xs:element minOccurs="0" name="Asignaturas" nillable="true" type="tns:ArrayOfParametros" />
-      <xs:element minOccurs="0" name="Resoluciones" nillable="true" type="tns:ArrayOfParametros" />
+      <xs:element minOccurs="0" name="Resoluciones" nillable="true" type="tns:ArrayOfResoluciones" />
       <xs:element minOccurs="0" name="antes" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="despues" nillable="true" type="xs:string" />
@@ -34,4 +34,18 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="HistorialCurricular" nillable="true" type="tns:HistorialCurricular" />
+  <xs:complexType name="ArrayOfResoluciones">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Resoluciones" nillable="true" type="tns:Resoluciones" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResoluciones" nillable="true" type="tns:ArrayOfResoluciones" />
+  <xs:complexType name="Resoluciones">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="path" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Resoluciones" nillable="true" type="tns:Resoluciones" />
 </xs:schema>

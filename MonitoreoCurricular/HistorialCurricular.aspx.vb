@@ -5,4 +5,7 @@
        
     End Sub
 
+    Protected Sub DDCarrera_SelectedIndexChanged(sender As Object, e As EventArgs)
+        MsgBox("hola")
+    End Sub
 End Class

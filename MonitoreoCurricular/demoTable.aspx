@@ -31,6 +31,7 @@ tr.shown td.details-control {
 	        var tabla = '<table cellpadding="5"cellspacing="0" border="3" style="padding-left:50px;">';
                         
 	        $.each(d, function (key, value) {
+	            console.log(key+"->"+value);
 	            if (value instanceof Object) {
 
 	                tabla = tabla + 

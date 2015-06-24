@@ -47,6 +47,12 @@ Namespace SrController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeAsignaturasPorHistorial", ReplyAction:="http://tempuri.org/IController/TraeAsignaturasPorHistorialResponse")>  _
         Function TraeAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.Parametros())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/TraeResolucionPorHistorialResponse")>  _
+        Function TraeResolucionPorHistorial(ByVal idHistorial As Integer) As Models.Resoluciones()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/TraeResolucionPorHistorialResponse")>  _
+        Function TraeResolucionPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.Resoluciones())
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -118,6 +124,14 @@ Namespace SrController
         
         Public Function TraeAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.Parametros()) Implements SrController.IController.TraeAsignaturasPorHistorialAsync
             Return MyBase.Channel.TraeAsignaturasPorHistorialAsync(idHistorial)
+        End Function
+        
+        Public Function TraeResolucionPorHistorial(ByVal idHistorial As Integer) As Models.Resoluciones() Implements SrController.IController.TraeResolucionPorHistorial
+            Return MyBase.Channel.TraeResolucionPorHistorial(idHistorial)
+        End Function
+        
+        Public Function TraeResolucionPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.Resoluciones()) Implements SrController.IController.TraeResolucionPorHistorialAsync
+            Return MyBase.Channel.TraeResolucionPorHistorialAsync(idHistorial)
         End Function
     End Class
 End Namespace

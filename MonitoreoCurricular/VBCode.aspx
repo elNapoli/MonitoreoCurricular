@@ -18,7 +18,11 @@ color:White;
 </head>
 <body>
 <form id="form1" runat="server">
-
+    
+    <asp:DropDownList runat="server" onselectedindexchanged="itemSelected">
+        <asp:ListItem Text="text1" />
+        <asp:ListItem Text="text2" />
+    </asp:DropDownList>
 <input type="button" id="btnSubmit" value="Submit" />
 </form>
 <script type="text/javascript">
@@ -65,6 +69,8 @@ color:White;
         })
     });
 </script>
+
+    
 </body>
 </html>
 
