@@ -8,6 +8,7 @@ Imports System.Web.Services.Protocols
 Imports System.Collections.Generic
 Imports MonitoreoCurricular
 Imports Models
+Imports System.Web.Script.Serialization
 
 <ScriptService()> _
 Public Class HistorialCurricular
@@ -34,7 +35,7 @@ Public Class HistorialCurricular
         Dim l As New List(Of CascadingDropDownNameValue)
         Dim Lista As IEnumerable(Of Parametros) = Nothing
         Dim FacultadId As Integer = CascadingDropDown.ParseKnownCategoryValuesString(knownCategoryValues)("FacultadId")
-        
+      '  MsgBox(FacultadId)
         Lista = Conexion.TraeEscuelaPorFacultad(FacultadId)
         For Each item As Parametros In Lista
             l.Add(New CascadingDropDownNameValue(item.nombre.ToString, item.id.ToString))
@@ -49,7 +50,7 @@ Public Class HistorialCurricular
         Dim l As New List(Of CascadingDropDownNameValue)
         Dim Lista As IEnumerable(Of Parametros) = Nothing
         Dim EscuelaId As Integer = CascadingDropDown.ParseKnownCategoryValuesString(knownCategoryValues)("EscuelaId")
-        
+        ' MsgBox(EscuelaId)
         Lista = Conexion.TraeCarreraPorEscuela(EscuelaId)
         For Each item As Parametros In Lista
             l.Add(New CascadingDropDownNameValue(item.nombre.ToString, item.id.ToString))
@@ -57,6 +58,38 @@ Public Class HistorialCurricular
         Return l.ToArray()
         
     End Function
+    
+    
+    <WebMethod()> _
+    Public Sub getIndexCarrera(ByVal knownCategoryValues As String, ByVal category As String)
+        
+        Dim CarreraId As Integer = CascadingDropDown.ParseKnownCategoryValuesString(knownCategoryValues)("CarreraId")
+        Dim FILE_NAME As String = Server.MapPath("~") & "\JSON\Carrera_historial.txt"
+        Dim objWriter As New System.IO.StreamWriter(FILE_NAME)
+        Dim Historial As IEnumerable(Of Models.HistorialCurricular) = Nothing
+        Dim Resolucion As IEnumerable(Of Models.Resoluciones) = Nothing
+        Dim serializer As New JavaScriptSerializer()
+
+        Historial = Conexion.TraeHistorialPorCarrera(CarreraId)
+
+
+        Const quote As String = """"
+        objWriter.WriteLine("{" & quote & "data" & quote & ":")
+
+        For Each ho In Historial
+            ho.Asignaturas = Conexion.TraeAsignaturasPorHistorial(ho.id)
+            ho.Resoluciones = Conexion.TraeResolucionPorHistorial(ho.id)
+        Next
+
+        Dim serializedResult = serializer.Serialize(Historial)
+
+        objWriter.WriteLine(serializedResult)
+
+        objWriter.WriteLine("}")
+
+        objWriter.Close()
+     
+    End Sub
     
 
     

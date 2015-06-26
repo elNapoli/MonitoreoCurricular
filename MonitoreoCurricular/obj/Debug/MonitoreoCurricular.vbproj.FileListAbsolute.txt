@@ -26,3 +26,16 @@ E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.GenerateResource.
 E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
 E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
 E:\fd\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb
+E:\nuevo\MonitoreoCurricular\bin\MonitoreoCurricular.dll.config
+E:\nuevo\MonitoreoCurricular\bin\MonitoreoCurricular.dll
+E:\nuevo\MonitoreoCurricular\bin\MonitoreoCurricular.pdb
+E:\nuevo\MonitoreoCurricular\bin\MonitoreoCurricular.xml
+E:\nuevo\MonitoreoCurricular\bin\Models.dll
+E:\nuevo\MonitoreoCurricular\bin\Models.pdb
+E:\nuevo\MonitoreoCurricular\bin\Models.xml
+E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbprojResolveAssemblyReference.cache
+E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.Resources.resources
+E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.GenerateResource.Cache
+E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
+E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
+E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb

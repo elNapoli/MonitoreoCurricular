@@ -259,7 +259,7 @@ tr.shown td.details-control {
 
 	    $(document).ready(function () {
 	        var table = $('#example').DataTable({
-	            "ajax": "test.txt",
+	            "ajax": "/JSON/Carrera_historial.txt",
 	            "language": {
 	                "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
 	            },
@@ -283,6 +283,10 @@ tr.shown td.details-control {
 	        });
 
 	        // Add event listener for opening and closing details
+	        $("#ContentPlaceHolder1_DDCarrera").change(function () {
+	            table.ajax.reload()
+	     
+	        });
 	        $('#example tbody').on('click', 'td.details-control', function () {
 	            var tr = $(this).closest('tr');
 	            var row = table.row(tr);

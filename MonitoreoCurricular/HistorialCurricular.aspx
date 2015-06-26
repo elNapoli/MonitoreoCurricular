@@ -86,6 +86,23 @@
                                     Category="CarreraId" 
                                     ParentControlID="DDEscuela" 
                                     LoadingText = "Cargando..."  />
+
+
+
+
+                                 <asp:DropDownList ID="DropDownList1" class="form-control"  style="display: none"  runat="server">
+                                </asp:DropDownList>
+                                <cc1:CascadingDropDown 
+                                    ID="CascadingDropDown1" 
+                                    TargetControlID="DropDownList1" 
+                                    PromptText="Seleccione Carrera"
+                                    PromptValue="" 
+                                    ServicePath="HistorialCurricular.asmx" 
+                                    ServiceMethod="getIndexCarrera" 
+                                    runat="server"
+                                    Category="CarreraId" 
+                                    ParentControlID="DDCarrera" 
+                                    LoadingText = "Cargando..."  />
                             </div>
                         </div><!-- /.form-group -->
                     </div>
