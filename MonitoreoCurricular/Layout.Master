@@ -230,20 +230,32 @@ tr.shown td.details-control {
 	        var tabla = '<table cellpadding="5"cellspacing="0" border="3" style="padding-left:50px;">';
 
 	        $.each(d, function (key, value) {
-	            console.log(key + "->" + value);
+	            
 	            if (value instanceof Object) {
-
+	                
 	                tabla = tabla +
                         '<tr>' +
                             '<td   colspan="2" align="center" >' + key + '</td>' +
                         '</tr>';
 	                for (var i = 0; i < value.length; i++) {
+	                    if (key == "Resoluciones") { console.log("hola"); }
+	      
 	                    tabla = tabla +
                     '<tr> <td>Código:</td>' +
-                    '<td>' + value[i].id + '</td></tr>' + '<tr>' +
-                    '<td>Nombre:</td>' +
-                    '<td>' + value[i].nombre + '</td>' +
-                '</tr>';
+                    '<td>' + value[i].id + '</td></tr>' + '<tr>';
+	                        
+	                    if (key == "Resoluciones") {
+	                        tabla = tabla + '<td>Nombre:</td>' +
+                                '<td><a href=' + value[i].path + '>' + value[i].nombre + '</a></td>' +
+                            '</tr>';
+	                    }
+	                    else {
+	                        tabla = tabla + '<td>Nombre:</td>' +
+                               '<td>' + value[i].nombre + '</td>' +
+                           '</tr>';
+                
+                }
+                    
 	                }
 	            }
 
@@ -259,7 +271,7 @@ tr.shown td.details-control {
 
 	    $(document).ready(function () {
 	        var table = $('#example').DataTable({
-	            "ajax": "/JSON/Carrera_historial.txt",
+	            "ajax":"/JSON/Carrera_historial.txt",
 	            "language": {
 	                "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
 	            },
@@ -279,14 +291,16 @@ tr.shown td.details-control {
                     { "data": "antes" },
                     { "data": "despues" }
 	            ],
-	            "order": [[1, 'asc']]
+	    
 	        });
 
-	        // Add event listener for opening and closing details
-	        $("#ContentPlaceHolder1_DDCarrera").change(function () {
-	            table.ajax.reload()
-	     
+
+	        $("#CargarInformacion").click(function () {
+	            table.ajax.reload();
+
+
 	        });
+
 	        $('#example tbody').on('click', 'td.details-control', function () {
 	            var tr = $(this).closest('tr');
 	            var row = table.row(tr);

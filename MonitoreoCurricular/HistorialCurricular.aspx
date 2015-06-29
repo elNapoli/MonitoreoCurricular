@@ -88,7 +88,7 @@
                                     LoadingText = "Cargando..."  />
 
 
-
+                                <a title="" data-original-title="" href="#"  id="CargarInformacion" class="btn btn-primary btn-lg">Cargar datos</a>
 
                                  <asp:DropDownList ID="DropDownList1" class="form-control"  style="display: none"  runat="server">
                                 </asp:DropDownList>
