@@ -246,7 +246,7 @@ tr.shown td.details-control {
 	                        
 	                    if (key == "Resoluciones") {
 	                        tabla = tabla + '<td>Nombre:</td>' +
-                                '<td><a href=' + value[i].path + '>' + value[i].nombre + '</a></td>' +
+                                '<td><a href=/Resoluciones/' + value[i].path + '>' + value[i].nombre + '</a></td>' +
                             '</tr>';
 	                    }
 	                    else {
