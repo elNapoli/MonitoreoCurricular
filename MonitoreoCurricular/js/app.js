@@ -666,13 +666,14 @@
     /*----------- BEGIN plupload CODE -------------------------*/
     $("#uploader").pluploadQueue({
         runtimes: 'html5,html4',
-        url: 'form-wysiwyg.html',
-        max_file_size: '128kb',
+        url: 'SubirResolucion.asmx/hola',
+        max_file_size: '4mb',
         unique_names: true,
+
         filters: [
             {
-                title: "Image files",
-                extensions: "jpg,gif,png"
+                title: "Archivos pdf",
+                extensions: "pdf"
             }
         ]
     });

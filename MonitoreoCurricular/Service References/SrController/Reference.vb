@@ -53,6 +53,24 @@ Namespace SrController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/TraeResolucionPorHistorialResponse")>  _
         Function TraeResolucionPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.Resoluciones())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraePlan", ReplyAction:="http://tempuri.org/IController/TraePlanResponse")>  _
+        Function TraePlan() As Models.Parametros()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraePlan", ReplyAction:="http://tempuri.org/IController/TraePlanResponse")>  _
+        Function TraePlanAsync() As System.Threading.Tasks.Task(Of Models.Parametros())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeCarreraPorPlan", ReplyAction:="http://tempuri.org/IController/TraeCarreraPorPlanResponse")>  _
+        Function TraeCarreraPorPlan(ByVal idPlan As Integer) As Models.Parametros()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeCarreraPorPlan", ReplyAction:="http://tempuri.org/IController/TraeCarreraPorPlanResponse")>  _
+        Function TraeCarreraPorPlanAsync(ByVal idPlan As Integer) As System.Threading.Tasks.Task(Of Models.Parametros())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeAsignatura", ReplyAction:="http://tempuri.org/IController/TraeAsignaturaResponse")>  _
+        Function TraeAsignatura() As Models.Asignaturas()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeAsignatura", ReplyAction:="http://tempuri.org/IController/TraeAsignaturaResponse")>  _
+        Function TraeAsignaturaAsync() As System.Threading.Tasks.Task(Of Models.Asignaturas())
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -132,6 +150,30 @@ Namespace SrController
         
         Public Function TraeResolucionPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.Resoluciones()) Implements SrController.IController.TraeResolucionPorHistorialAsync
             Return MyBase.Channel.TraeResolucionPorHistorialAsync(idHistorial)
+        End Function
+        
+        Public Function TraePlan() As Models.Parametros() Implements SrController.IController.TraePlan
+            Return MyBase.Channel.TraePlan
+        End Function
+        
+        Public Function TraePlanAsync() As System.Threading.Tasks.Task(Of Models.Parametros()) Implements SrController.IController.TraePlanAsync
+            Return MyBase.Channel.TraePlanAsync
+        End Function
+        
+        Public Function TraeCarreraPorPlan(ByVal idPlan As Integer) As Models.Parametros() Implements SrController.IController.TraeCarreraPorPlan
+            Return MyBase.Channel.TraeCarreraPorPlan(idPlan)
+        End Function
+        
+        Public Function TraeCarreraPorPlanAsync(ByVal idPlan As Integer) As System.Threading.Tasks.Task(Of Models.Parametros()) Implements SrController.IController.TraeCarreraPorPlanAsync
+            Return MyBase.Channel.TraeCarreraPorPlanAsync(idPlan)
+        End Function
+        
+        Public Function TraeAsignatura() As Models.Asignaturas() Implements SrController.IController.TraeAsignatura
+            Return MyBase.Channel.TraeAsignatura
+        End Function
+        
+        Public Function TraeAsignaturaAsync() As System.Threading.Tasks.Task(Of Models.Asignaturas()) Implements SrController.IController.TraeAsignaturaAsync
+            Return MyBase.Channel.TraeAsignaturaAsync
         End Function
     End Class
 End Namespace

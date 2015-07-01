@@ -48,4 +48,18 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Resoluciones" nillable="true" type="tns:Resoluciones" />
+  <xs:complexType name="ArrayOfAsignaturas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Asignaturas" nillable="true" type="tns:Asignaturas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAsignaturas" nillable="true" type="tns:ArrayOfAsignaturas" />
+  <xs:complexType name="Asignaturas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idAsignatura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nomAsignatura" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nomInstituto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Asignaturas" nillable="true" type="tns:Asignaturas" />
 </xs:schema>

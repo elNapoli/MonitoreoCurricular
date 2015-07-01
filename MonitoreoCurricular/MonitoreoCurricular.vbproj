@@ -90,25 +90,45 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\daterangepicker-bs3.css" />
+    <Content Include="css\jquery.gritter.css" />
+    <Content Include="css\jquery.inputlimiter.css" />
+    <Content Include="css\jquery.plupload.queue.css" />
     <Content Include="HistorialCurricular.asmx" />
     <Content Include="css\demo.css" />
     <Content Include="css\jquery.dataTables.css" />
     <Content Include="css\shCore.css" />
     <Content Include="demoTable.aspx" />
     <Content Include="HistorialCurricular.aspx" />
+    <Content Include="img\backgrounds.gif" />
+    <Content Include="img\buttons-disabled.png" />
+    <Content Include="img\buttons.png" />
+    <Content Include="img\delete.gif" />
     <Content Include="img\details_close.png" />
     <Content Include="img\details_open.png" />
+    <Content Include="img\done.gif" />
+    <Content Include="img\error.gif" />
     <Content Include="img\pattern\README.md" />
     <Content Include="img\sort_asc.png" />
     <Content Include="img\sort_asc_disabled.png" />
     <Content Include="img\sort_both.png" />
     <Content Include="img\sort_desc.png" />
     <Content Include="img\sort_desc_disabled.png" />
+    <Content Include="img\throbber.gif" />
+    <Content Include="img\transp50.png" />
     <Content Include="js\app.js.map" />
     <Content Include="js\core.js.map" />
     <Content Include="js\countdown.js.map" />
+    <Content Include="js\daterangepicker.js" />
     <Content Include="js\demo.js" />
+    <Content Include="js\es.js" />
     <Content Include="js\jquery.dataTables.js" />
+    <Content Include="js\jquery.form.wizard.js" />
+    <Content Include="js\jquery.gritter.min.js" />
+    <Content Include="js\jquery.inputlimiter.js" />
+    <Content Include="js\jquery.plupload.queue.min.js" />
+    <Content Include="js\jquery.validVal.min.js" />
+    <Content Include="js\plupload.full.min.js" />
     <Content Include="js\shCore.js" />
     <Content Include="js\style-switcher.js.map" />
     <Content Include="less\theme.less" />
@@ -319,6 +339,10 @@
     <Content Include="Models.HistorialCurricular.datasource" />
     <Content Include="Models.Parametros.datasource" />
     <Content Include="Models.Resoluciones.datasource" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="Models.Asignaturas.datasource" />
+    <Content Include="Handler1.ashx" />
     <None Include="Service References\SrController\configuration91.svcinfo" />
     <None Include="Service References\SrController\configuration.svcinfo" />
     <Content Include="css\countdown.css" />
@@ -1160,6 +1184,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.vb</LastGenOutput>
     </None>
+    <Content Include="SubirResolucion.asmx" />
+    <Content Include="SubirResolucion.aspx" />
     <Content Include="VBCode.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -1170,6 +1196,9 @@
     <Compile Include="demoTable.aspx.vb">
       <DependentUpon>demoTable.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Handler1.ashx.vb">
+      <DependentUpon>Handler1.ashx</DependentUpon>
     </Compile>
     <Compile Include="HistorialCurricular.aspx.designer.vb">
       <DependentUpon>HistorialCurricular.aspx</DependentUpon>
@@ -1209,9 +1238,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="SubirResolucion.asmx.vb">
+      <DependentUpon>SubirResolucion.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubirResolucion.aspx.designer.vb">
+      <DependentUpon>SubirResolucion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubirResolucion.aspx.vb">
+      <DependentUpon>SubirResolucion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="VBCode.aspx.vb">
       <DependentUpon>VBCode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.vb">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.vb">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

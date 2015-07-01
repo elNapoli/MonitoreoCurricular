@@ -182,4 +182,81 @@ Public Class Controller
         Next
         Return ret.AsEnumerable
     End Function
+
+    Public Function TraePlan() As IEnumerable(Of Parametros) Implements IController.TraePlan
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Try
+            dr = cnn.Ejecuta("getPlan") ' colocar nombre del procedimiento
+
+        Catch ex As Exception
+            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+        End Try
+
+        If dr Is Nothing Then Throw New Exception("La función a valor")
+        Dim ret As New List(Of Parametros)
+        'Tipos
+        For Each item As DataRow In dr
+
+
+            ret.Add(New Parametros With {
+                    .id = item(0),
+                    .nombre = item(1)
+                }
+            )
+        Next
+        Return ret.AsEnumerable
+    End Function
+
+
+    Public Function TraeCarreraPorPlan(idPlan As Integer) As IEnumerable(Of Parametros) Implements IController.TraeCarreraPorPlan
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Dim Parametros As New List(Of Parameter)
+        Parametros.Add(New Parameter With {.Nombre = "@idPlan", .Valor = idPlan, .Tipo = Parameter.TypeDB.DbInt})
+        Try
+            dr = cnn.Ejecuta("getCarreraByPlan", Parametros) ' colocar nombre del procedimiento
+
+        Catch ex As Exception
+            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+        End Try
+
+        If dr Is Nothing Then Throw New Exception("La función a valor")
+        Dim ret As New List(Of Parametros)
+        'Tipos
+        For Each item As DataRow In dr
+
+
+            ret.Add(New Parametros With {
+                    .id = item(0),
+                    .nombre = item(1)
+                }
+            )
+        Next
+        Return ret.AsEnumerable
+    End Function
+
+
+    Public Function TraeAsignatura() As IEnumerable(Of Asignaturas) Implements IController.TraeAsignatura
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Try
+            dr = cnn.Ejecuta("getAsignatura") ' colocar nombre del procedimiento
+
+        Catch ex As Exception
+            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+        End Try
+
+        If dr Is Nothing Then Throw New Exception("La función a valor")
+        Dim ret As New List(Of Asignaturas)
+        'Tipos
+        For Each item As DataRow In dr
+
+
+            ret.Add(New Asignaturas With {
+                    .idAsignatura = item(0),
+                    .nomAsignatura = item(1),
+                    .nomInstituto = item(2)
+                }
+            )
+        Next
+        Return ret.AsEnumerable
+    End Function
 End Class

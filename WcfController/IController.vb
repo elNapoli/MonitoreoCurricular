@@ -22,4 +22,13 @@ Public Interface IController
 
     <OperationContract()>
     Function TraeResolucionPorHistorial(idHistorial As Integer) As IEnumerable(Of Resoluciones)
+
+    <OperationContract()>
+    Function TraePlan() As IEnumerable(Of Parametros)
+
+    <OperationContract()>
+    Function TraeCarreraPorPlan(idPlan As Integer) As IEnumerable(Of Parametros)
+
+    <OperationContract()>
+    Function TraeAsignatura() As IEnumerable(Of Asignaturas)
 End Interface

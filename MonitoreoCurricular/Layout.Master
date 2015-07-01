@@ -4,26 +4,38 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-  <meta charset="UTF-8"/>
-    <title>Sistema de Apoyo al monitoreo curricular de pregrado UACh</title>
+    <meta charset="UTF-8">
+    <title>Form General</title>
 
     <!--IE Compatibility modes-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!--Mobile first-->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <!-- Metis core stylesheet -->
-    <link rel="stylesheet" href="css/main.min.css"/>
+    <link rel="stylesheet" href="css/main.min.css">
 
     <!-- metisMenu stylesheet -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.css">
+    <link rel="stylesheet" href="css/jquery.inputlimiter.css">
+    <link rel="stylesheet" href="css/daterangepicker-bs3.css">
+    <link rel="stylesheet" href="css/jquery.plupload.queue.css">
+    <link rel="stylesheet" href="css/jquery.gritter.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/themes/default/css/uniform.default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-tagsinput/1.3.3/jquery.tagsinput.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.1/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/css/datepicker3.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.0.1/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -36,9 +48,11 @@
 
     <!--For Development Only. Not required -->
 
-    <link rel="stylesheet" href="css/style-switcher.css"/>
-
+    <link rel="stylesheet" href="css/style-switcher.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.2.0/less.min.js"></script>
+
+    <!--Modernizr-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
 	<link rel="stylesheet" type="text/css" href="css/shCore.css">
 	<style type="text/css" class="init">
@@ -52,9 +66,6 @@ tr.shown td.details-control {
 }
 
 	</style>
-    <!--Modernizr-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
 
@@ -141,8 +152,8 @@ tr.shown td.details-control {
             </a> 
             <ul>
               <li>
-                <a href="bgcolor.html">
-                  <i class="fa fa-angle-right"></i>&nbsp; Bg Color </a> 
+                <a href="SubirResolucion.aspx">
+                  <i class="fa fa-angle-right"></i>Subir Resolución </a> 
               </li>
               
             </ul>
@@ -201,10 +212,20 @@ tr.shown td.details-control {
     </footer><!-- /#footer -->
 
 
-    <!--jQuery -->
+   <!--jQuery -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-tagsinput/1.3.3/jquery.tagsinput.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/autosize.js/1.18.17/jquery.autosize.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.1/js/bootstrap-switch.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.0.1/js/bootstrap-colorpicker.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
 
     <!--Bootstrap -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -214,16 +235,32 @@ tr.shown td.details-control {
 
     <!-- Screenfull -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/screenfull.js/2.0.0/screenfull.min.js"></script>
+    <script src="js/jquery.inputlimiter.js"></script>
+    <script src="js/jquery.validVal.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/plupload.full.min.js"></script>
+    <script src="js/jquery.plupload.queue.min.js"></script>
+    <script src="js/jquery.gritter.min.js"></script>
+    <script src="js/jquery.form.wizard.js"></script>
+
 
     <!-- Metis core scripts -->
     <script src="js/core.min.js"></script>
 
     <!-- Metis demo scripts -->
     <script src="js/app.js"></script>
+    <script>
+        $(function () {
+            Metis.formGeneral();
+            Metis.formWizard();
+        });
+    </script>
+
   
     <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
 	<script type="text/javascript" language="javascript" src="js/shCore.js"></script>
 	<script type="text/javascript" language="javascript" src="js/demo.js"></script>
+    <script type="text/javascript" language="javascript" src="js/es.js"></script>
 	<script type="text/javascript" language="javascript" class="init">
 
 	    function format(d) {
@@ -270,6 +307,19 @@ tr.shown td.details-control {
 	    }
 
 	    $(document).ready(function () {
+
+	        $("#submit").click(function (event) {
+	            $.ajax({
+	                type: "POST",
+	                url: "SubirResolucion.asmx/SayHello",
+	                data: "firstName=Aidy&lastName=F", // the data in form-encoded format, ie as it would appear on a querystring
+	                //contentType: "application/x-www-form-urlencoded; charset=UTF-8", // if you are using form encoding, this is default so you don't need to supply it
+	                dataType: "text", // the data type we want back, so text.  The data will come wrapped in xml
+	                success: function (data) {
+	                    alert(data); // show the string that was returned, this will be the data inside the xml wrapper
+	                }
+	            });
+	        });
 	        var table = $('#example').DataTable({
 	            "ajax":"/JSON/Carrera_historial.txt",
 	            "language": {
@@ -320,5 +370,7 @@ tr.shown td.details-control {
 
 
 	</script>
+
+
 </body>
 </html>
