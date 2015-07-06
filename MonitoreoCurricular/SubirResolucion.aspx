@@ -2,7 +2,31 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script type="text/javascript" language="javascript" class="init">
 
+        function holamundo() {
+            var Plan = $('#ContentPlaceHolder1_DDPlan').val();
+            var Carrera = $('#ContentPlaceHolder1_DDCarrera').val();
+            var Fecha = $('#ContentPlaceHolder1_FechaResolucion').val();
+            var Hito = $('#ContentPlaceHolder1_DDHito').val();
+            var Asignaturas = $('.chzn-select').chosen().val();
+            var Descripción = $('#Descripcion').val();
+            var Antes = $('#antes').val();
+            var Después = $('#despues').val();
+
+            console.log(Plan);
+            console.log(Carrera);
+            console.log(Fecha);
+            console.log(Hito);
+            console.log(Asignaturas);
+            console.log(Descripción);
+            console.log(Antes);
+            console.log(Después);
+
+
+        }
+
+        </script>
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <!--BEGIN INPUT TEXT FIELDS-->
             <div class="row">
@@ -35,7 +59,7 @@
                       <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione Plan</label>
                             <div class="col-lg-8">
-                                
+          
                                 <asp:DropDownList ID="DDPlan" class="form-control" runat="server" >
             
                                 </asp:DropDownList>
@@ -128,21 +152,29 @@
                           <textarea id="despues" class="form-control"></textarea>
                         </div>
                       </div><!-- /.form-group -->
-      
-                                                            <div class="row">
-              <div class="col-lg-12">
-                <div class="box">
-                  <header>
-                    <h5>Resoluciones</h5>
-                  </header>
-                  <div id="collapse2" class="block">
-              
-                      <div id="uploader"></div>
-              
-                  </div>
-                </div>
-              </div><!-- /.col-lg-12 -->
-            </div><!-- /.row -->
+                              <div class="form-group">
+                            <div id="container">
+                                <div class="col-lg-1"></div>
+                                <a id="pickfiles"  class="btn btn-primary btn-lg btn-round btn-line  col-lg-3" href="#">Seleccione archivos</a>
+
+                            </div>
+                       
+                            <div class="col-lg-8" id="fileList">
+                      
+                            </div>
+                                  <a id="uploadfiles" href="#">[Upload files]</a>
+                        </div><!-- /.form-group -->
+
+                        
+                        <div class="form-group">
+                 
+                            <div class="control-label col-lg-4"></div>
+                        <div class="col-lg-8">
+                          <a id="Btn_Guardar"    class="btn btn-primary btn-lg btn-round btn-line  col-lg-4" href="#">Guardar Cambios</a>
+                        </div>
+                      </div><!-- /.form-group -->
+
+
 
                     </div>
                   </div>
@@ -153,8 +185,9 @@
 
           
             </div><!-- /.row -->
-
-    <input type="button" name="name" value=" " id="submit" />
+    <asp:Button Text="text" runat="server" onclick="Unnamed_Click"/>
+    <input type="button" name="name" value=" " id="submit"/>
+   
     
     
 </asp:Content>

@@ -55,9 +55,9 @@ Public Class SubirResolucion1
     End Function
 
     <WebMethod()> _
-    Public Function SayHello(firstName As String, lastName As String) As String
-        Return "Hello " + firstName + " " + lastName
-    End Function
+    Public Sub hola()
+        MsgBox("hola")
+    End Sub
 
 
 

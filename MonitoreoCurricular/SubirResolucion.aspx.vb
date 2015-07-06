@@ -28,4 +28,12 @@ Public Class SubirResolucion
 
         Return Lista
     End Function
+
+    Protected Sub Unnamed_Click(sender As Object, e As EventArgs)
+        MsgBox(DDPlan.SelectedItem.Text)
+    End Sub
+
+    Protected Sub DDPlan_SelectedIndexChanged(sender As Object, e As EventArgs)
+           MsgBox(DDPlan.SelectedItem.Text)
+    End Sub
 End Class

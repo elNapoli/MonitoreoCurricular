@@ -1,0 +1,16 @@
+﻿
+#filelist {
+    border:dashed solid 1px;
+    margin-top:10px;
+
+}
+.file{
+
+    padding:0 10px;
+    border: 1px solid #dfdfdf;
+    height:40px;
+    line-height:40px;
+    margin-bottom:10px;
+    position:relative
+
+}
