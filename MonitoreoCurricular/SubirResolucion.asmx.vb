@@ -55,9 +55,9 @@ Public Class SubirResolucion1
     End Function
 
     <WebMethod()> _
-    Public Sub hola()
-        MsgBox("hola")
-    End Sub
+    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String, Descripcion As String, Antes As String, Despues As String) As String
+        Return Plan
+    End Function
 
 
 

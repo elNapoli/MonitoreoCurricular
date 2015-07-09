@@ -122,7 +122,9 @@
     <Content Include="js\countdown.js.map" />
     <Content Include="js\daterangepicker.js" />
     <Content Include="js\demo.js" />
+    <Content Include="js\DocumentReady.js" />
     <Content Include="js\es.js" />
+    <Content Include="js\functions.js" />
     <Content Include="js\jquery.dataTables.js" />
     <Content Include="js\jquery.form.wizard.js" />
     <Content Include="js\jquery.gritter.min.js" />

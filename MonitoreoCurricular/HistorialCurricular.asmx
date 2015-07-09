@@ -14,6 +14,7 @@ Imports System.Web.Script.Serialization
 Public Class HistorialCurricular
     Inherits System.Web.Services.WebService
     Private Conexion As New SrController.ControllerClient
+    Dim jsonTrue As Integer
     
     <WebMethod()> _
     Public Function CallFacultad(ByVal knownCategoryValues As String, ByVal category As String) As CascadingDropDownNameValue()
@@ -88,7 +89,7 @@ Public Class HistorialCurricular
         objWriter.WriteLine("}")
 
         objWriter.Close()
-     
+      
     End Sub
     
 
