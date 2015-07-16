@@ -55,9 +55,27 @@ Public Class SubirResolucion1
     End Function
 
     <WebMethod()> _
-    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String, Descripcion As String, Antes As String, Despues As String) As String
-        Return Plan
+    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As String
+        Dim array As String = ""
+
+        Try
+            Dim Historial As New Models.HistorialCurricular(Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
+
+            Conexion.GuardarHistorial(Historial)
+
+            For Each item As String In Asignaturas
+                array = array + "," + item
+                'Conexion.GuardarAsignaturaPorHistorial()
+            Next
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+        Return array
     End Function
+
 
 
 

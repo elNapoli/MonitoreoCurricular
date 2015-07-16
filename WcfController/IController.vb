@@ -31,4 +31,10 @@ Public Interface IController
 
     <OperationContract()>
     Function TraeAsignatura() As IEnumerable(Of Asignaturas)
+
+    <OperationContract()>
+    Sub GuardarHistorial(Historial As HistorialCurricular)
+
+    <OperationContract()>
+    Sub GuardarAsignaturaPorHistorial(idHistorial As String, idAsignatura As String)
 End Interface

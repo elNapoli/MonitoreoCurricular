@@ -73,6 +73,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComunacionError.vb" />
     <Compile Include="IController.vb" />
     <Compile Include="Controller.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

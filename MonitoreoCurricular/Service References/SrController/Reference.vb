@@ -71,6 +71,18 @@ Namespace SrController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeAsignatura", ReplyAction:="http://tempuri.org/IController/TraeAsignaturaResponse")>  _
         Function TraeAsignaturaAsync() As System.Threading.Tasks.Task(Of Models.Asignaturas())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarHistorial", ReplyAction:="http://tempuri.org/IController/GuardarHistorialResponse")>  _
+        Sub GuardarHistorial(ByVal Historial As Models.HistorialCurricular)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarHistorial", ReplyAction:="http://tempuri.org/IController/GuardarHistorialResponse")>  _
+        Function GuardarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarAsignaturaPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarAsignaturaPorHistorialResponse")>  _
+        Sub GuardarAsignaturaPorHistorial(ByVal idHistorial As String, ByVal idAsignatura As String)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarAsignaturaPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarAsignaturaPorHistorialResponse")>  _
+        Function GuardarAsignaturaPorHistorialAsync(ByVal idHistorial As String, ByVal idAsignatura As String) As System.Threading.Tasks.Task
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -174,6 +186,22 @@ Namespace SrController
         
         Public Function TraeAsignaturaAsync() As System.Threading.Tasks.Task(Of Models.Asignaturas()) Implements SrController.IController.TraeAsignaturaAsync
             Return MyBase.Channel.TraeAsignaturaAsync
+        End Function
+        
+        Public Sub GuardarHistorial(ByVal Historial As Models.HistorialCurricular) Implements SrController.IController.GuardarHistorial
+            MyBase.Channel.GuardarHistorial(Historial)
+        End Sub
+        
+        Public Function GuardarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task Implements SrController.IController.GuardarHistorialAsync
+            Return MyBase.Channel.GuardarHistorialAsync(Historial)
+        End Function
+        
+        Public Sub GuardarAsignaturaPorHistorial(ByVal idHistorial As String, ByVal idAsignatura As String) Implements SrController.IController.GuardarAsignaturaPorHistorial
+            MyBase.Channel.GuardarAsignaturaPorHistorial(idHistorial, idAsignatura)
+        End Sub
+        
+        Public Function GuardarAsignaturaPorHistorialAsync(ByVal idHistorial As String, ByVal idAsignatura As String) As System.Threading.Tasks.Task Implements SrController.IController.GuardarAsignaturaPorHistorialAsync
+            Return MyBase.Channel.GuardarAsignaturaPorHistorialAsync(idHistorial, idAsignatura)
         End Function
     End Class
 End Namespace

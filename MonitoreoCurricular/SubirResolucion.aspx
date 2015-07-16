@@ -3,31 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <script type="text/javascript" language="javascript" class="init">
-
-        function holamundo() {
-            var Plan = $('#ContentPlaceHolder1_DDPlan').val();
-            var Carrera = $('#ContentPlaceHolder1_DDCarrera').val();
-            var Fecha = $('#ContentPlaceHolder1_FechaResolucion').val();
-            var Hito = $('#ContentPlaceHolder1_DDHito').val();
-            var Asignaturas = $('.chzn-select').chosen().val();
-            var Descripción = $('#Descripcion').val();
-            var Antes = $('#antes').val();
-            var Después = $('#despues').val();
-
-            console.log(Plan);
-            console.log(Carrera);
-            console.log(Fecha);
-            console.log(Hito);
-            console.log(Asignaturas);
-            console.log(Descripción);
-            console.log(Antes);
-            console.log(Después);
-
-
-        }
-
-    </script>
+    
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <!--BEGIN INPUT TEXT FIELDS-->
     <div class="row">
@@ -119,10 +95,10 @@
                             <div class="col-lg-8">
 
                                 <asp:DropDownList runat="server" ID="DDHito" class="form-control">
-                                    <asp:ListItem Text="Seleccione Hito" Value="0" />
-                                    <asp:ListItem Text="Modificaicón menor" Value="1" />
-                                    <asp:ListItem Text="Modificación mayor" Value="2" />
-                                    <asp:ListItem Text="Innovación curricular" Value="3" />
+                                    <asp:ListItem Text="Seleccione Hito"/>
+                                    <asp:ListItem Text="Modificaicón menor"  />
+                                    <asp:ListItem Text="Modificación mayor" />
+                                    <asp:ListItem Text="Innovación curricular" />
                                 </asp:DropDownList>
                             </div>
                         </div>

@@ -61,6 +61,18 @@
   <wsdl:message name="IController_TraeAsignatura_OutputMessage">
     <wsdl:part name="parameters" element="tns:TraeAsignaturaResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_GuardarHistorial_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarHistorial" />
+  </wsdl:message>
+  <wsdl:message name="IController_GuardarHistorial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarHistorialResponse" />
+  </wsdl:message>
+  <wsdl:message name="IController_GuardarAsignaturaPorHistorial_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarAsignaturaPorHistorial" />
+  </wsdl:message>
+  <wsdl:message name="IController_GuardarAsignaturaPorHistorial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarAsignaturaPorHistorialResponse" />
+  </wsdl:message>
   <wsdl:portType name="IController">
     <wsdl:operation name="TraeFacultad">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeFacultad" message="tns:IController_TraeFacultad_InputMessage" />
@@ -97,6 +109,14 @@
     <wsdl:operation name="TraeAsignatura">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeAsignatura" message="tns:IController_TraeAsignatura_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeAsignaturaResponse" message="tns:IController_TraeAsignatura_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarHistorial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/GuardarHistorial" message="tns:IController_GuardarHistorial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/GuardarHistorialResponse" message="tns:IController_GuardarHistorial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarAsignaturaPorHistorial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/GuardarAsignaturaPorHistorial" message="tns:IController_GuardarAsignaturaPorHistorial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/GuardarAsignaturaPorHistorialResponse" message="tns:IController_GuardarAsignaturaPorHistorial_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IController" type="tns:IController">
@@ -175,6 +195,24 @@
     </wsdl:operation>
     <wsdl:operation name="TraeAsignatura">
       <soap:operation soapAction="http://tempuri.org/IController/TraeAsignatura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarHistorial">
+      <soap:operation soapAction="http://tempuri.org/IController/GuardarHistorial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarAsignaturaPorHistorial">
+      <soap:operation soapAction="http://tempuri.org/IController/GuardarAsignaturaPorHistorial" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

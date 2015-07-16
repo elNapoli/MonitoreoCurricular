@@ -26,7 +26,7 @@ Public Class Controller
             dr = cnn.Ejecuta("getFacultad") ' colocar nombre del procedimiento
 
         Catch ex As Exception
-            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+            MsgBox(ex.Message)
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
@@ -51,7 +51,7 @@ Public Class Controller
             dr = cnn.Ejecuta("getEscuelaByFacultad", Parametros) ' colocar nombre del procedimiento
 
         Catch ex As Exception
-            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+            MsgBox(ex.Message)
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
@@ -77,7 +77,7 @@ Public Class Controller
             dr = cnn.Ejecuta("getCarreraByEscuela", Parametros) ' colocar nombre del procedimiento
 
         Catch ex As Exception
-            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+            MsgBox(ex.Message)
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
@@ -104,7 +104,7 @@ Public Class Controller
             dr = cnn.Ejecuta("getHistorialByCarrera", Parametros) ' colocar nombre del procedimiento
 
         Catch ex As Exception
-            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+            MsgBox(ex.Message)
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
@@ -137,7 +137,7 @@ Public Class Controller
             dr = cnn.Ejecuta("getAsignaturasByHistorial", Parametros) ' colocar nombre del procedimiento
 
         Catch ex As Exception
-            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+            MsgBox(ex.Message)
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
@@ -164,7 +164,7 @@ Public Class Controller
             dr = cnn.Ejecuta("getResolucionByHistorial", Parametros) ' colocar nombre del procedimiento
 
         Catch ex As Exception
-            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+            MsgBox(ex.Message)
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
@@ -216,7 +216,7 @@ Public Class Controller
             dr = cnn.Ejecuta("getCarreraByPlan", Parametros) ' colocar nombre del procedimiento
 
         Catch ex As Exception
-            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+            MsgBox(ex.Message)
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
@@ -241,7 +241,7 @@ Public Class Controller
             dr = cnn.Ejecuta("getAsignatura") ' colocar nombre del procedimiento
 
         Catch ex As Exception
-            'Throw New FaultException(Of AppError)(New AppError With {.Detalle = ex.Message.ToString})
+            MsgBox(ex.Message)
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
@@ -259,4 +259,60 @@ Public Class Controller
         Next
         Return ret.AsEnumerable
     End Function
+
+
+    Public Sub GuardarHistorial(Historial As HistorialCurricular) Implements IController.GuardarHistorial
+        Dim Parametros As New List(Of Parameter)
+        Dim dr As Integer
+        Parametros.Add(New Parameter With {.Nombre = "@idPlan", .Valor = Historial.idPlan, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@idCarrera", .Valor = Historial.idCarrera, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@fechaResolucion", .Valor = Historial.fecha, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@hito", .Valor = Historial.hito, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@descripcion", .Valor = Historial.descripcion, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@antes", .Valor = Historial.antes, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@despues", .Valor = Historial.despues, .Tipo = Parameter.TypeDB.DbVarchar})
+        Dim retorno As Integer = 0
+
+       
+
+        Try
+            retorno = CInt(cnn.EjecutaScalar("setHistorial", Parametros))
+            MsgBox(retorno)
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+        
+
+
+    End Sub
+
+
+    Public Sub GuardarAsignaturaPorHistorial(idHistorial As String, idAsignatura As String) Implements IController.GuardarAsignaturaPorHistorial
+        Dim Parametros As New List(Of Parameter)
+        Dim retorno As Integer = 0
+        Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@idAsignatura", .Valor = idAsignatura, .Tipo = Parameter.TypeDB.DbInt})
+
+
+        Try
+            retorno = CInt(cnn.EjecutaScalar("setAsignaturaByHistorial", Parametros))
+            MsgBox(retorno)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+
+    End Sub
+
+
+
+
+
+
+
+
+
 End Class

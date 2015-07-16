@@ -121,4 +121,29 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GuardarHistorial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Historial" nillable="true" type="q10:HistorialCurricular" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarHistorialResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarAsignaturaPorHistorial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idHistorial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idAsignatura" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarAsignaturaPorHistorialResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
