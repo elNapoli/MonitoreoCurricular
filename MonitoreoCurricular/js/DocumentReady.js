@@ -6,7 +6,7 @@
         runtimes: 'html5,flash,silverlight,html4',
         container: "container", // ... or DOM Element itself
         browse_button: 'pickfiles', // you can pass in id..
-        url: "SubirResolucion.asmx/hdddola",
+        url: "SubirResolucion.asmx/hola",
 
         multipart: true,
         urlstream_upload: true,
@@ -44,8 +44,8 @@
 
 
     $("#Btn_Guardar").click(function () {
-   //     uploader.start();
-        GetEmployeeDetails();
+        uploader.start();
+       // GetEmployeeDetails();
     });
 
 

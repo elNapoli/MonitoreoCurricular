@@ -73,6 +73,12 @@
   <wsdl:message name="IController_GuardarAsignaturaPorHistorial_OutputMessage">
     <wsdl:part name="parameters" element="tns:GuardarAsignaturaPorHistorialResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_TraeResoluciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:TraeResoluciones" />
+  </wsdl:message>
+  <wsdl:message name="IController_TraeResoluciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TraeResolucionesResponse" />
+  </wsdl:message>
   <wsdl:portType name="IController">
     <wsdl:operation name="TraeFacultad">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeFacultad" message="tns:IController_TraeFacultad_InputMessage" />
@@ -117,6 +123,10 @@
     <wsdl:operation name="GuardarAsignaturaPorHistorial">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/GuardarAsignaturaPorHistorial" message="tns:IController_GuardarAsignaturaPorHistorial_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/GuardarAsignaturaPorHistorialResponse" message="tns:IController_GuardarAsignaturaPorHistorial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TraeResoluciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeResoluciones" message="tns:IController_TraeResoluciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeResolucionesResponse" message="tns:IController_TraeResoluciones_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IController" type="tns:IController">
@@ -213,6 +223,15 @@
     </wsdl:operation>
     <wsdl:operation name="GuardarAsignaturaPorHistorial">
       <soap:operation soapAction="http://tempuri.org/IController/GuardarAsignaturaPorHistorial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraeResoluciones">
+      <soap:operation soapAction="http://tempuri.org/IController/TraeResoluciones" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

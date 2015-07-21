@@ -12,8 +12,7 @@
             for (var i = 0; i < value.length; i++) {
                 if (key == "Resoluciones") { console.log("hola"); }
 
-                tabla = tabla +
-            '<tr> <td>Código:</td>' +
+                tabla = tabla +'<tr> <td>Código:</td>' +
             '<td>' + value[i].id + '</td></tr>' + '<tr>';
 
                 if (key == "Resoluciones") {

@@ -261,9 +261,8 @@ Public Class Controller
     End Function
 
 
-    Public Sub GuardarHistorial(Historial As HistorialCurricular) Implements IController.GuardarHistorial
+    Public Function GuardarHistorial(Historial As HistorialCurricular) As Integer Implements IController.GuardarHistorial
         Dim Parametros As New List(Of Parameter)
-        Dim dr As Integer
         Parametros.Add(New Parameter With {.Nombre = "@idPlan", .Valor = Historial.idPlan, .Tipo = Parameter.TypeDB.DbInt})
         Parametros.Add(New Parameter With {.Nombre = "@idCarrera", .Valor = Historial.idCarrera, .Tipo = Parameter.TypeDB.DbInt})
         Parametros.Add(New Parameter With {.Nombre = "@fechaResolucion", .Valor = Historial.fecha, .Tipo = Parameter.TypeDB.DbVarchar})
@@ -273,32 +272,33 @@ Public Class Controller
         Parametros.Add(New Parameter With {.Nombre = "@despues", .Valor = Historial.despues, .Tipo = Parameter.TypeDB.DbVarchar})
         Dim retorno As Integer = 0
 
-       
+
 
         Try
             retorno = CInt(cnn.EjecutaScalar("setHistorial", Parametros))
-            MsgBox(retorno)
+
 
 
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        
+
+        Return retorno
 
 
-    End Sub
+    End Function
 
 
-    Public Sub GuardarAsignaturaPorHistorial(idHistorial As String, idAsignatura As String) Implements IController.GuardarAsignaturaPorHistorial
+    Public Sub GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String) Implements IController.GuardarAsignaturaPorHistorial
         Dim Parametros As New List(Of Parameter)
         Dim retorno As Integer = 0
         Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
-        Parametros.Add(New Parameter With {.Nombre = "@idAsignatura", .Valor = idAsignatura, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@idAsignatura", .Valor = idAsignatura, .Tipo = Parameter.TypeDB.DbVarchar})
 
 
         Try
             retorno = CInt(cnn.EjecutaScalar("setAsignaturaByHistorial", Parametros))
-            MsgBox(retorno)
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -308,6 +308,32 @@ Public Class Controller
     End Sub
 
 
+    Public Function TraeResoluciones() As IEnumerable(Of Resoluciones) Implements IController.TraeResoluciones
+      Dim dr As IEnumerable(Of DataRow) = Nothing
+        Try
+            dr = cnn.Ejecuta("getDetalleResoluciones") ' colocar nombre del procedimiento
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        If dr Is Nothing Then Throw New Exception("La función a valor")
+        Dim ret As New List(Of Resoluciones)
+        'Tipos
+        For Each item As DataRow In dr
+
+
+            ret.Add(New Resoluciones With {
+                    .idPlan = item(0),
+                    .nombreCarrera = item(1),
+                    .hito = item(2),
+                    .nombre = item(3),
+                    .path = item(4)
+                }
+            )
+        Next
+        Return ret.AsEnumerable
+    End Function
 
 
 

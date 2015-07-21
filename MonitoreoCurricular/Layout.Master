@@ -156,6 +156,13 @@
                         <li>
                             <a href="SubirResolucion.aspx">
                                 <i class="fa fa-angle-right"></i>Subir Resolución </a>
+
+                        </li>
+
+                        <li>
+                            <a href="VerResolucion.aspx">
+                                <i class="fa fa-angle-right"></i>Ver  Resoluciones </a>
+
                         </li>
 
                     </ul>

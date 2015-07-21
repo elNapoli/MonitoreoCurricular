@@ -344,6 +344,7 @@
     <Content Include="Models.Resoluciones.datasource" />
     <Content Include="Models.Asignaturas.datasource" />
     <Content Include="Handler1.ashx" />
+    <Content Include="VerResolucion.aspx" />
     <Content Include="WebForm2.aspx" />
     <None Include="Service References\SrController\configuration91.svcinfo" />
     <None Include="Service References\SrController\configuration.svcinfo" />
@@ -1254,6 +1255,13 @@
     <Compile Include="VBCode.aspx.vb">
       <DependentUpon>VBCode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerResolucion.aspx.designer.vb">
+      <DependentUpon>VerResolucion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerResolucion.aspx.vb">
+      <DependentUpon>VerResolucion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="WebForm2.aspx.designer.vb">
       <DependentUpon>WebForm2.aspx</DependentUpon>
