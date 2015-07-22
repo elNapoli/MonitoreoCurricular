@@ -141,9 +141,9 @@
 
                             </div>
 
-                            <div class="col-lg-8" id="fileList">
+                            <div class="col-lg-8" id="PERRO1">
                             </div>
-                            <a id="uploadfiles" href="#">[Upload files]</a>
+                     
                         </div>
                         <!-- /.form-group -->
 

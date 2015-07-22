@@ -1252,6 +1252,9 @@
       <DependentUpon>SubirResolucion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="UploadHandler.ashx.vb">
+      <DependentUpon>UploadHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="VBCode.aspx.vb">
       <DependentUpon>VBCode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1296,6 +1299,7 @@
     <None Include="Service References\SrController\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="UploadHandler.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -2,50 +2,142 @@
 
    
 
-    var uploader = new plupload.Uploader({
+    var miUploader = $("#PERRO1").pluploadQueue({
+        // General settings
         runtimes: 'html5,flash,silverlight,html4',
-        container: "container", // ... or DOM Element itself
-        browse_button: 'pickfiles', // you can pass in id..
-        url: "SubirResolucion.asmx/hola",
-
-        multipart: true,
-        urlstream_upload: true,
-        multipart_params: { directory: "test" },
+        url: 'UploadHandler.ashx',
+        chunk_size: '1mb',
         unique_names: true,
 
-        filters: [
-            {
-                title: "Archivos pdf",
-                extensions: "pdf"
+        // Resize images on client-side if we can
+        resize: { width: 320, height: 240, quality: 90 },
+
+        filters: {
+   
+
+            // Specify what files to browse for
+            mime_types: [
+                { title: "Archivos PDF", extensions: "pdf" }
+            ]
+        },
+
+
+
+        // PreInit events, bound before any internal events
+        preinit: {
+            Init: function (up, info) {
+                console.log('[Init]', 'Info:', info, 'Features:', up.features);
+            },
+
+            UploadFile: function (up, file) {
+                console.log('[UploadFile]', file);
+
+                // You can override settings before the file is uploaded
+                // up.setOption('url', 'upload.php?id=' + file.id);
+                // up.setOption('multipart_params', {param1 : 'value1', param2 : 'value2'});
             }
-        ],
+        },
+
+        // Post init events, bound after the internal events
         init: {
-            Error: function (up, err) {
-                alert("\nError #" + err.code + ": " + err.message);
+            PostInit: function () {
+                // Called after initialization is finished and internal event handlers bound
+                console.log('[PostInit]');
+
+
+            },
+
+            Browse: function (up) {
+                // Called when file picker is clicked
+                console.log('[Browse]');
+            },
+
+            Refresh: function (up) {
+                // Called when the position or dimensions of the picker change
+                console.log('[Refresh]');
+            },
+
+            StateChanged: function (up) {
+                // Called when the state of the queue is changed
+                console.log('[StateChanged]', up.state == plupload.STARTED ? "STARTED" : "STOPPED");
+            },
+
+            QueueChanged: function (up) {
+                // Called when queue is changed by adding or removing files
+                console.log('[QueueChanged]');
+            },
+
+            OptionChanged: function (up, name, value, oldValue) {
+                // Called when one of the configuration options is changed
+                console.log('[OptionChanged]', 'Option Name: ', name, 'Value: ', value, 'Old Value: ', oldValue);
+            },
+
+            BeforeUpload: function (up, file) {
+                // Called right before the upload for a given file starts, can be used to cancel it if required
+                console.log('[BeforeUpload]', 'File: ', file);
+            },
+
+            UploadProgress: function (up, file) {
+                // Called while file is being uploaded
+                console.log('[UploadProgress]', 'File:', file, "Total:", up.total);
+            },
+
+            FileFiltered: function (up, file) {
+                // Called when file successfully files all the filters
+                console.log('[FileFiltered]', 'File:', file);
             },
 
             FilesAdded: function (up, files) {
-                var fileList = $('#fileList');
+                // Called when files are added to queue
+                console.log('[FilesAdded]');
 
-                console.log(files);
-                for (var i in files) {
-
-                    var file = files[i];
-                    fileList.prepend('<div id="' + file.id + '" class="file">' + file.name + '(' + plupload.formatSize(file.size) + ') <b></b></div>');
-
-                }
+                plupload.each(files, function (file) {
+                    console.log('  File:', file);
+                });
             },
-        }
 
+            FilesRemoved: function (up, files) {
+                // Called when files are removed from queue
+                console.log('[FilesRemoved]');
+
+                plupload.each(files, function (file) {
+                    console.log('  File:', file);
+                });
+            },
+
+            FileUploaded: function (up, file, info) {
+                // Called when file has finished uploading
+                console.log('[FileUploaded] File:', file, "Info:", info);
+            },
+
+            ChunkUploaded: function (up, file, info) {
+                // Called when file chunk has finished uploading
+                console.log('[ChunkUploaded] File:', file, "Info:", info);
+            },
+
+            UploadComplete: function (up, files) {
+                // Called when all files are either uploaded or failed
+                console.log('[UploadComplete]');
+            },
+
+            Destroy: function (up) {
+                // Called when uploader is destroyed
+                console.log('[Destroy] ');
+            },
+
+            Error: function (up, args) {
+                // Called when error occurs
+                console.log('[Error] ', args);
+            }
+        }
     });
 
-    uploader.init();
 
 
 
     $("#Btn_Guardar").click(function () {
 
-        GetEmployeeDetails(uploader);
+        GetEmployeeDetails(miUploader);
     });
 
 
