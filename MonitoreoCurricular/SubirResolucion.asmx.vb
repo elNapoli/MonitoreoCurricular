@@ -55,7 +55,7 @@ Public Class SubirResolucion1
     End Function
 
     <WebMethod()> _
-    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As String
+    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As Integer
         Dim array As String = ""
         Dim idHistorial As Integer
         Try
@@ -72,13 +72,12 @@ Public Class SubirResolucion1
         End Try
 
 
-        Return array
+        Return idHistorial
     End Function
 
     <WebMethod()> _
-    Public Sub hola(FileName As String, buffer As Byte(), Offset As Long)
+    Public Sub hola()
 
-        MsgBox("asd")
     End Sub
 
 

@@ -46,7 +46,7 @@ $(function () {
 });
 
 
-function GetEmployeeDetails() {
+function GetEmployeeDetails(uploader) {
     var Plan = $('#ContentPlaceHolder1_DDPlan').val();
     var Carrera = $('#ContentPlaceHolder1_DDCarrera').val();
     var Fecha = $('#ContentPlaceHolder1_FechaResolucion').val();
@@ -64,11 +64,9 @@ function GetEmployeeDetails() {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (response) {
-            var Employee = response.d;
-            $("#spnEmployeeId").html(Employee.Id);
-            $("#spnEmployeeName").html(Employee.Name);
-            $("#spnSalary").html(Employee.Salary);
-            $("#outputTable").show();
+         
+            uploader.settings.multipart_params = { idNuevoHistorial: response.d };
+            uploader.start();
         },
         failure: function (msg) {
             alert(msg);

@@ -44,8 +44,8 @@
 
 
     $("#Btn_Guardar").click(function () {
-        uploader.start();
-       // GetEmployeeDetails();
+
+        GetEmployeeDetails(uploader);
     });
 
 
