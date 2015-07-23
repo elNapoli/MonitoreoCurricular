@@ -337,7 +337,24 @@ Public Class Controller
 
 
 
+    Public Sub GuardarResolucionPorHistorial(idHistorial As Integer, nomResolucion As String, pathResolucion As String) Implements IController.GuardarResolucionPorHistorial
+        Dim Parametros As New List(Of Parameter)
+        Dim retorno As Integer = 0
+        Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@nomResolucion", .Valor = nomResolucion, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@pathResolucion", .Valor = pathResolucion, .Tipo = Parameter.TypeDB.DbVarchar})
 
+
+        Try
+            retorno = CInt(cnn.EjecutaScalar("setResolucionByHistorial", Parametros))
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+
+    End Sub
 
 
 

@@ -79,6 +79,12 @@
   <wsdl:message name="IController_TraeResoluciones_OutputMessage">
     <wsdl:part name="parameters" element="tns:TraeResolucionesResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_GuardarResolucionPorHistorial_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarResolucionPorHistorial" />
+  </wsdl:message>
+  <wsdl:message name="IController_GuardarResolucionPorHistorial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarResolucionPorHistorialResponse" />
+  </wsdl:message>
   <wsdl:portType name="IController">
     <wsdl:operation name="TraeFacultad">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeFacultad" message="tns:IController_TraeFacultad_InputMessage" />
@@ -127,6 +133,10 @@
     <wsdl:operation name="TraeResoluciones">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeResoluciones" message="tns:IController_TraeResoluciones_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeResolucionesResponse" message="tns:IController_TraeResoluciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarResolucionPorHistorial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/GuardarResolucionPorHistorial" message="tns:IController_GuardarResolucionPorHistorial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/GuardarResolucionPorHistorialResponse" message="tns:IController_GuardarResolucionPorHistorial_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IController" type="tns:IController">
@@ -232,6 +242,15 @@
     </wsdl:operation>
     <wsdl:operation name="TraeResoluciones">
       <soap:operation soapAction="http://tempuri.org/IController/TraeResoluciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarResolucionPorHistorial">
+      <soap:operation soapAction="http://tempuri.org/IController/GuardarResolucionPorHistorial" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

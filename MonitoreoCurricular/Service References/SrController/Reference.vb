@@ -89,6 +89,12 @@ Namespace SrController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeResoluciones", ReplyAction:="http://tempuri.org/IController/TraeResolucionesResponse")>  _
         Function TraeResolucionesAsync() As System.Threading.Tasks.Task(Of Models.Resoluciones())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarResolucionPorHistorialResponse")>  _
+        Sub GuardarResolucionPorHistorial(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarResolucionPorHistorialResponse")>  _
+        Function GuardarResolucionPorHistorialAsync(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As System.Threading.Tasks.Task
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -216,6 +222,14 @@ Namespace SrController
         
         Public Function TraeResolucionesAsync() As System.Threading.Tasks.Task(Of Models.Resoluciones()) Implements SrController.IController.TraeResolucionesAsync
             Return MyBase.Channel.TraeResolucionesAsync
+        End Function
+        
+        Public Sub GuardarResolucionPorHistorial(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) Implements SrController.IController.GuardarResolucionPorHistorial
+            MyBase.Channel.GuardarResolucionPorHistorial(idHistorial, nomResolucion, pathResolucion)
+        End Sub
+        
+        Public Function GuardarResolucionPorHistorialAsync(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As System.Threading.Tasks.Task Implements SrController.IController.GuardarResolucionPorHistorialAsync
+            Return MyBase.Channel.GuardarResolucionPorHistorialAsync(idHistorial, nomResolucion, pathResolucion)
         End Function
     End Class
 End Namespace

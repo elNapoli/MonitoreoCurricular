@@ -40,4 +40,7 @@ Public Interface IController
 
     <OperationContract()>
     Function TraeResoluciones() As IEnumerable(Of Resoluciones)
+
+    <OperationContract()>
+    Sub GuardarResolucionPorHistorial(idHistorial As Integer, nomResolucion As String, pathResolucion As String)
 End Interface

@@ -160,4 +160,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GuardarResolucionPorHistorial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idHistorial" type="xs:int" />
+        <xs:element minOccurs="0" name="nomResolucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pathResolucion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarResolucionPorHistorialResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

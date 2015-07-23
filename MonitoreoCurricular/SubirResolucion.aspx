@@ -133,26 +133,29 @@
                                 <textarea id="despues" class="form-control"></textarea>
                             </div>
                         </div>
-                        <!-- /.form-group -->
+
+
+
+
+                         <!-- /.form-group -->
                         <div class="form-group">
-                            <div id="container">
-                                <div class="col-lg-1"></div>
-                                <a id="pickfiles" class="btn btn-primary btn-lg btn-round btn-line  col-lg-3" href="#">Seleccione archivos</a>
-
+                            <div id="container"  class=" control-label col-lg-4">
+                                <a id="pickfiles" class="btn btn-success fileinput-button  " href="#"> <i class="glyphicon glyphicon-plus"></i><span> Seleccione archivos</span> </a>
                             </div>
 
-                            <div class="col-lg-8" id="PERRO1">
-                            </div>
+                        
+                             <div id="filelist" class="col-lg-8"> </div>
+
                      
                         </div>
                         <!-- /.form-group -->
-
 
                         <div class="form-group">
 
                             <div class="control-label col-lg-4"></div>
                             <div class="col-lg-8">
-                                <a id="Btn_Guardar" class="btn btn-primary btn-lg btn-round btn-line  col-lg-4" href="#">Guardar Cambios</a>
+
+                                <a id="Btn_Guardar"  class="btn btn-primary start" href="#"><i class="glyphicon glyphicon-upload"></i><span> Subir Archivos</span></a>
                             </div>
                         </div>
                         <!-- /.form-group -->
