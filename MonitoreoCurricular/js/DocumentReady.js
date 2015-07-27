@@ -50,21 +50,11 @@
     });
 
 
-    $("#submit").click(function (event) {
-        $.ajax({
-            type: "POST",
-            url: "SubirResolucion.asmx/SayHello",
-            data: "firstName=Aidy&lastName=F", // the data in form-encoded format, ie as it would appear on a querystring
-            //contentType: "application/x-www-form-urlencoded; charset=UTF-8", // if you are using form encoding, this is default so you don't need to supply it
-            dataType: "text", // the data type we want back, so text.  The data will come wrapped in xml
-            success: function (data) {
-                alert(data); // show the string that was returned, this will be the data inside the xml wrapper
-            }
-        });
-    });
-    var table = $('#example').DataTable({
+
+    var HistorialTable = $('#HistorialTable').DataTable({
         "ajax": "/JSON/Carrera_historial.txt",
-        "searching":false,
+        "searching": false,
+        "scrollX": true,
         "language": {
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
         },
@@ -75,7 +65,7 @@
                 "data": null,
                 "defaultContent": ''
             },
-       
+
             { "data": "idPlan" },
             { "data": "fecha" },
             { "data": "hito" },
@@ -86,16 +76,14 @@
 
     });
 
-   
-
     $("#ContentPlaceHolder1_DDCarrera").change(function () {
 
-        CargarJsonTable(table);
+        CargarJsonTable(HistorialTable);
     });
 
-    $('#example tbody').on('click', 'td.details-control', function () {
+    $('#HistorialTable tbody').on('click', 'td.details-control', function () {
         var tr = $(this).closest('tr');
-        var row = table.row(tr);
+        var row = HistorialTable.row(tr);
 
         if (row.child.isShown()) {
             // This row is already open - close it
@@ -108,4 +96,46 @@
             tr.addClass('shown');
         }
     });
+
+
+
+    $('#ResolucionTable').DataTable({
+        "ajax": "/JSON/Todas_resoluciones.txt",
+        "searching": false,
+        "scrollX": true,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columns": [
+             { "data": "idPlan" },
+             { "data": "nombreFacultad" },
+             { "data": "nombreEscuela" },
+             { "data": "nombreCarrera" },
+             { "data": "hito" },
+             { "data": "nombre" }
+        ],
+ 
+        initComplete: function () {
+            this.api().columns().every(function () {
+                var column = this;
+                var select = $('<select class="form-control"><option value=""></option></select>')
+                    .appendTo($(column.footer()).empty())
+                    .on('change', function () {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).val()
+                        );
+
+                        column
+                            .search(val ? '^' + val + '$' : '', true, false)
+                            .draw();
+                    });
+
+                column.data().unique().sort().each(function (d, j) {
+                    select.append('<option value="' + d + '">' + d + '</option>')
+                });
+            });
+        }
+    });
+
 });
+

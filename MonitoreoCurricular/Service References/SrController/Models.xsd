@@ -44,9 +44,12 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="hito" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idHistorial" type="xs:int" />
       <xs:element minOccurs="0" name="idPlan" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="nombreCarrera" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreEscuela" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreFacultad" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="path" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>

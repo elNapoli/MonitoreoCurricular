@@ -2,22 +2,24 @@
     var tabla = '<table cellpadding="5"cellspacing="0" border="3" style="padding-left:50px;">';
 
     $.each(d, function (key, value) {
-
+    
         if (value instanceof Object) {
-
+   
             tabla = tabla +
                 '<tr>' +
                     '<td   colspan="2" align="center" >' + key + '</td>' +
                 '</tr>';
             for (var i = 0; i < value.length; i++) {
-                if (key == "Resoluciones") { console.log("hola"); }
-
+        
+            
                 tabla = tabla +'<tr> <td>Código:</td>' +
             '<td>' + value[i].id + '</td></tr>' + '<tr>';
 
                 if (key == "Resoluciones") {
+                    var temp = value[i].path;
+               
                     tabla = tabla + '<td>Nombre:</td>' +
-                        '<td><a href=/Resoluciones/' + value[i].path + '>' + value[i].nombre + '</a></td>' +
+                        '<td><a href=/Resoluciones/' + temp + '>' + value[i].nombre + '</a></td>' +
                     '</tr>';
                 }
                 else {

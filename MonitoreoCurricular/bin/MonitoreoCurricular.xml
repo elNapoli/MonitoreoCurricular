@@ -31,65 +31,17 @@ MonitoreoCurricular
  Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
  </summary>
 	<remarks></remarks>
-</member><member name="F:MonitoreoCurricular.SubirResolucion.ScriptManager1">
+</member><member name="F:MonitoreoCurricular.Layout.form1">
 	<summary>
-Control ScriptManager1.
+Control form1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:MonitoreoCurricular.SubirResolucion.DDPlan">
+</member><member name="F:MonitoreoCurricular.Layout.ContentPlaceHolder1">
 	<summary>
-Control DDPlan.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.SubirResolucion.CDPlan">
-	<summary>
-Control CDPlan.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.SubirResolucion.DDCarrera">
-	<summary>
-Control DDCarrera.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.SubirResolucion.CDCarrera">
-	<summary>
-Control CDCarrera.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.SubirResolucion.FechaResolucion">
-	<summary>
-Control FechaResolucion.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.SubirResolucion.DDHito">
-	<summary>
-Control DDHito.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.SubirResolucion.DDAsignaturas">
-	<summary>
-Control DDAsignaturas.
+Control ContentPlaceHolder1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -151,17 +103,65 @@ Control CDCarrera.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:MonitoreoCurricular.Layout.form1">
+</member><member name="F:MonitoreoCurricular.SubirResolucion.ScriptManager1">
 	<summary>
-Control form1.
+Control ScriptManager1.
 </summary>
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:MonitoreoCurricular.Layout.ContentPlaceHolder1">
+</member><member name="F:MonitoreoCurricular.SubirResolucion.DDPlan">
 	<summary>
-Control ContentPlaceHolder1.
+Control DDPlan.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.SubirResolucion.CDPlan">
+	<summary>
+Control CDPlan.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.SubirResolucion.DDCarrera">
+	<summary>
+Control DDCarrera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.SubirResolucion.CDCarrera">
+	<summary>
+Control CDCarrera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.SubirResolucion.FechaResolucion">
+	<summary>
+Control FechaResolucion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.SubirResolucion.DDHito">
+	<summary>
+Control DDHito.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.SubirResolucion.DDAsignaturas">
+	<summary>
+Control DDAsignaturas.
 </summary>
 	<remarks>
 Campo generado automáticamente.

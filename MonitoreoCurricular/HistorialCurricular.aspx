@@ -104,7 +104,7 @@
                     <h5>Dynamic Table</h5>
                   </header>
                   <div id="collapse4" class="body">
-                   <table id="example" class="display" cellspacing="0" width="100%">
+                   <table id="HistorialTable" class="display" cellspacing="0" width="100%">
 				<thead>
 					<tr>
 						<th></th>

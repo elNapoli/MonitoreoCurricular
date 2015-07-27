@@ -14,7 +14,8 @@ Public Class UploadHandler
 
 
             Dim uploadPath As String = context.Server.MapPath("~/Resoluciones/")
-            Dim fileName As String = fileUpload.FileName
+            Dim fileName As String = Replace(fileUpload.FileName, " ", "_")
+
 
             Conexion.GuardarResolucionPorHistorial(idHistorial, fileName, fileName)
             Dim chunk As Integer = If(context.Request("chunk") IsNot Nothing, Integer.Parse(context.Request("chunk")), 0)

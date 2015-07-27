@@ -324,11 +324,14 @@ Public Class Controller
 
 
             ret.Add(New Resoluciones With {
-                    .idPlan = item(0),
-                    .nombreCarrera = item(1),
-                    .hito = item(2),
-                    .nombre = item(3),
-                    .path = item(4)
+                    .idHistorial = item(0),
+                    .idPlan = item(1),
+                    .nombreFacultad = item(2),
+                    .nombreEscuela = item(3),
+                    .nombreCarrera = item(4),
+                    .hito = item(5),
+                    .nombre = item(6),
+                    .path = item(7)
                 }
             )
         Next
