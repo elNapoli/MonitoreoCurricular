@@ -38,3 +38,16 @@ E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.GenerateResour
 E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
 E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
 E:\nuevo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\bin\MonitoreoCurricular.dll.config
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\bin\MonitoreoCurricular.dll
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\bin\MonitoreoCurricular.pdb
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\bin\MonitoreoCurricular.xml
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\bin\Models.dll
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\bin\Models.pdb
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\bin\Models.xml
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbprojResolveAssemblyReference.cache
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.Resources.resources
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.GenerateResource.Cache
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
+D:\MonitoreoCurricular_v2\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb

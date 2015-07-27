@@ -88,21 +88,7 @@
                                     LoadingText = "Cargando..."  />
 
 
-                                <a title="" data-original-title="" href="#"  id="CargarInformacion" class="btn btn-primary btn-lg">Cargar datos</a>
 
-                                 <asp:DropDownList ID="DropDownList1" class="form-control"  style="display: none"  runat="server">
-                                </asp:DropDownList>
-                                <cc1:CascadingDropDown 
-                                    ID="CascadingDropDown1" 
-                                    TargetControlID="DropDownList1" 
-                                    PromptText="Seleccione Carrera"
-                                    PromptValue="" 
-                                    ServicePath="HistorialCurricular.asmx" 
-                                    ServiceMethod="getIndexCarrera" 
-                                    runat="server"
-                                    Category="CarreraId" 
-                                    ParentControlID="DDCarrera" 
-                                    LoadingText = "Cargando..."  />
                             </div>
                         </div><!-- /.form-group -->
                     </div>
@@ -122,14 +108,13 @@
 				<thead>
 					<tr>
 						<th></th>
-						<th>id</th>
-						<th>idPlan</th>
-                        <th>idCarrera</th>
-                        <th>fecha</th>
-                        <th>hito</th>
-                        <th>descripcion</th>
-                        <th>antes</th>
-                        <th>despues</th>
+						
+						<th>Año</th>
+                        <th>Fecha</th>
+                        <th>Hito</th>
+                        <th>Descripción</th>
+                        <th>Antes</th>
+                        <th>Después</th>
 
 						
 					</tr>
@@ -138,14 +123,13 @@
 				<tfoot>
 					<tr>
 						<th></th>
-						<th>id</th>
-						<th>idPlan</th>
-                        <th>idCarrera</th>
-                        <th>fecha</th>
-                        <th>hito</th>
-                        <th>descripcion</th>
-                        <th>antes</th>
-                        <th>despues</th>
+					
+						<th>Año</th>
+                        <th>Fecha</th>
+                        <th>Hito</th>
+                        <th>Descripción</th>
+                        <th>Antes</th>
+                        <th>Después</th>
 				
 					</tr>
 				</tfoot>

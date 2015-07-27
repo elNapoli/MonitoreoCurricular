@@ -15,7 +15,7 @@ Public Class HistorialCurricular
     Inherits System.Web.Services.WebService
     Private Conexion As New SrController.ControllerClient
     Dim jsonTrue As Integer
-    
+
     <WebMethod()> _
     Public Function CallFacultad(ByVal knownCategoryValues As String, ByVal category As String) As CascadingDropDownNameValue()
         
@@ -62,16 +62,16 @@ Public Class HistorialCurricular
     
     
     <WebMethod()> _
-    Public Sub getIndexCarrera(ByVal knownCategoryValues As String, ByVal category As String)
-        
-        Dim CarreraId As Integer = CascadingDropDown.ParseKnownCategoryValuesString(knownCategoryValues)("CarreraId")
+    Public Sub CargarHistorialPorCarrera(carreraID As String)
+
+
         Dim FILE_NAME As String = Server.MapPath("~") & "\JSON\Carrera_historial.txt"
         Dim objWriter As New System.IO.StreamWriter(FILE_NAME)
         Dim Historial As IEnumerable(Of Models.HistorialCurricular) = Nothing
         Dim Resolucion As IEnumerable(Of Models.Resoluciones) = Nothing
         Dim serializer As New JavaScriptSerializer()
 
-        Historial = Conexion.TraeHistorialPorCarrera(CarreraId)
+        Historial = Conexion.TraeHistorialPorCarrera(carreraID)
 
 
         Const quote As String = """"
@@ -89,9 +89,8 @@ Public Class HistorialCurricular
         objWriter.WriteLine("}")
 
         objWriter.Close()
-      
     End Sub
-    
+ 
 
     
 End Class

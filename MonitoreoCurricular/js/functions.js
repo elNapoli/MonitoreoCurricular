@@ -73,3 +73,23 @@ function GetEmployeeDetails(uploader) {
         }
     });
 }
+
+
+
+function CargarJsonTable(table) {
+    var carreraID = $("#ContentPlaceHolder1_DDCarrera").val()
+    var Datos = { "carreraID": carreraID };
+  $.ajax({
+        type: "POST",
+        url: "HistorialCurricular.asmx/CargarHistorialPorCarrera",
+        data: JSON.stringify(Datos),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (response) {
+            table.ajax.reload();
+        },
+        failure: function (msg) {
+            alert(msg);
+        }
+    });
+}

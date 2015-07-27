@@ -22,3 +22,11 @@ E:\nuevo\Models\obj\Debug\Models.pdb
 E:\nuevo\Models\bin\Debug\Models.dll
 E:\nuevo\Models\bin\Debug\Models.pdb
 E:\nuevo\Models\bin\Debug\Models.xml
+D:\MonitoreoCurricular_v2\Models\bin\Debug\Models.dll
+D:\MonitoreoCurricular_v2\Models\bin\Debug\Models.pdb
+D:\MonitoreoCurricular_v2\Models\bin\Debug\Models.xml
+D:\MonitoreoCurricular_v2\Models\obj\Debug\Models.Resources.resources
+D:\MonitoreoCurricular_v2\Models\obj\Debug\Models.vbproj.GenerateResource.Cache
+D:\MonitoreoCurricular_v2\Models\obj\Debug\Models.dll
+D:\MonitoreoCurricular_v2\Models\obj\Debug\Models.xml
+D:\MonitoreoCurricular_v2\Models\obj\Debug\Models.pdb

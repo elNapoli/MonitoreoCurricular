@@ -64,6 +64,7 @@
     });
     var table = $('#example').DataTable({
         "ajax": "/JSON/Carrera_historial.txt",
+        "searching":false,
         "language": {
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
         },
@@ -74,9 +75,8 @@
                 "data": null,
                 "defaultContent": ''
             },
-            { "data": "id" },
+       
             { "data": "idPlan" },
-            { "data": "idCarrera" },
             { "data": "fecha" },
             { "data": "hito" },
             { "data": "descripcion" },
@@ -88,12 +88,10 @@
 
    
 
-    $("#CargarInformacion").click(function () {
-        table.ajax.reload();
+    $("#ContentPlaceHolder1_DDCarrera").change(function () {
 
-
+        CargarJsonTable(table);
     });
-
 
     $('#example tbody').on('click', 'td.details-control', function () {
         var tr = $(this).closest('tr');

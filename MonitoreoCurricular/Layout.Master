@@ -36,7 +36,9 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.1/css/datepicker3.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.0.1/css/bootstrap-colorpicker.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css">
-
+     
+     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/DocumentReady.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -230,7 +232,7 @@
 
 
     <!--jQuery -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   
     <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
@@ -272,9 +274,15 @@
     <script type="text/javascript" language="javascript" src="js/shCore.js"></script>
     <script type="text/javascript" language="javascript" src="js/demo.js"></script>
     <script type="text/javascript" language="javascript" src="js/es.js"></script>
-    <script type="text/javascript" language="javascript" src="js/DocumentReady.js"></script>
+   
      <script type="text/javascript" language="javascript" src="js/functions.js"></script>
+    <script>
+        function miFuncion() {
 
+            alert("hola mundo");
+        }
+
+    </script>
 
 
 </body>
