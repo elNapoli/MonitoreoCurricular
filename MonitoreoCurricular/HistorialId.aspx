@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Layout.Master" CodeBehind="HistorialId.aspx.vb" Inherits="MonitoreoCurricular.HistorialId" %>
+﻿<%@ Page Title="" Language="vb" enableEventValidation="false" AutoEventWireup="false" MasterPageFile="~/Layout.Master" CodeBehind="HistorialId.aspx.vb" Inherits="MonitoreoCurricular.HistorialId" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 
       
@@ -7,11 +7,12 @@
     <script type="text/javascript">
         function holamundo(data) {
             //some code here
-          
+            var dato = data.split(".");
             jQuery(function ($) {
-                
-                var ur = $('option[value="ENFA101   "]');
-                $(ur).attr("selected", true);
+                for (var i = 0; i < dato.length - 1; i++) {
+                    var ur = $('option[value="'+dato[i]+'"]');
+                    $(ur).attr("selected", true);
+                }
                 $(".chosen-select").trigger("chosen:updated");
                 $(".chosen-select").trigger("liszt:updated");
                 
@@ -50,6 +51,29 @@
                 </header>
                 <div id="div-1" class="body">
                     <div class="form-horizontal">
+
+                        <div class="form-group">
+
+                            <div class="col-lg-3">
+
+                               </div>
+                            <div class="col-lg-3">
+
+                                <a id="Btn_Guadrdgar"  class="btn btn-primary start" href="#"><i class="glyphicon glyphicon-edit"></i><span> Editar historial</span></a>
+                            </div>
+                            <div class="col-lg-3">
+                                <asp:LinkButton ID="BtnEliminar" 
+                                    runat="server" 
+                                    CssClass="btn btn-danger start"    
+                                    OnClick="EliminarHistorial">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-trash"></span> Eliminar historial
+                                    </asp:LinkButton>
+                                </div>
+                            <div class="col-lg-3">
+
+                          </div>
+                        </div>
+                        <!-- /.form-group -->
 
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione Plan</label>
@@ -167,15 +191,7 @@
                         </div>
                         <!-- /.form-group -->
 
-                        <div class="form-group">
 
-                            <div class="control-label col-lg-4"></div>
-                            <div class="col-lg-8">
-
-                                <a id="Btn_Guardar"  class="btn btn-primary start" href="#"><i class="glyphicon glyphicon-upload"></i><span> Subir Archivos</span></a>
-                            </div>
-                        </div>
-                        <!-- /.form-group -->
 
 
 

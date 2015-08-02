@@ -23,6 +23,15 @@ Partial Public Class HistorialId
     Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
 
     '''<summary>
+    '''Control Btn_Eliminar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Btn_Eliminar As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
     '''Control DDPlan.
     '''</summary>
     '''<remarks>

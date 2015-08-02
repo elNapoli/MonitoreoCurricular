@@ -95,6 +95,18 @@ Namespace SrController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarResolucionPorHistorialResponse")>  _
         Function GuardarResolucionPorHistorialAsync(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As System.Threading.Tasks.Task
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeHistorialPorId", ReplyAction:="http://tempuri.org/IController/TraeHistorialPorIdResponse")>  _
+        Function TraeHistorialPorId(ByVal idHistorial As Integer) As Models.HistorialCurricular()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeHistorialPorId", ReplyAction:="http://tempuri.org/IController/TraeHistorialPorIdResponse")>  _
+        Function TraeHistorialPorIdAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.HistorialCurricular())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarHistorial", ReplyAction:="http://tempuri.org/IController/EliminarHistorialResponse")>  _
+        Sub EliminarHistorial(ByVal idHistorial As Integer)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarHistorial", ReplyAction:="http://tempuri.org/IController/EliminarHistorialResponse")>  _
+        Function EliminarHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -230,6 +242,22 @@ Namespace SrController
         
         Public Function GuardarResolucionPorHistorialAsync(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As System.Threading.Tasks.Task Implements SrController.IController.GuardarResolucionPorHistorialAsync
             Return MyBase.Channel.GuardarResolucionPorHistorialAsync(idHistorial, nomResolucion, pathResolucion)
+        End Function
+        
+        Public Function TraeHistorialPorId(ByVal idHistorial As Integer) As Models.HistorialCurricular() Implements SrController.IController.TraeHistorialPorId
+            Return MyBase.Channel.TraeHistorialPorId(idHistorial)
+        End Function
+        
+        Public Function TraeHistorialPorIdAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.HistorialCurricular()) Implements SrController.IController.TraeHistorialPorIdAsync
+            Return MyBase.Channel.TraeHistorialPorIdAsync(idHistorial)
+        End Function
+        
+        Public Sub EliminarHistorial(ByVal idHistorial As Integer) Implements SrController.IController.EliminarHistorial
+            MyBase.Channel.EliminarHistorial(idHistorial)
+        End Sub
+        
+        Public Function EliminarHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task Implements SrController.IController.EliminarHistorialAsync
+            Return MyBase.Channel.EliminarHistorialAsync(idHistorial)
         End Function
     End Class
 End Namespace

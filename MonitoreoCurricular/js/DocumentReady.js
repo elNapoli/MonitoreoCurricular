@@ -104,7 +104,7 @@
         "aoColumns": [
              {
                  "data": "idHistorial", "render": function (data, type, row, meta) {
-                     return '<a href="HistorialId.aspx?ID=' + data + '">' + data + '</a>';
+                     return '<a href="HistorialId.aspx?IDHistorial=' + data + '">' + data + '</a>';
                  }
              },
              { "data": "idPlan" },

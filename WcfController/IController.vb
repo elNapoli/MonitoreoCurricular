@@ -43,4 +43,10 @@ Public Interface IController
 
     <OperationContract()>
     Sub GuardarResolucionPorHistorial(idHistorial As Integer, nomResolucion As String, pathResolucion As String)
+
+    <OperationContract()>
+    Function TraeHistorialPorId(idHistorial As Integer) As IEnumerable(Of HistorialCurricular)
+
+    <OperationContract()>
+    Sub EliminarHistorial(idHistorial As Integer)
 End Interface

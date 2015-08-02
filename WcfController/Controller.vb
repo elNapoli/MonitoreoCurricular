@@ -359,4 +359,58 @@ Public Class Controller
 
     End Sub
 
+
+    Public Function TraeHistorialPorId(idHistorial As Integer) As IEnumerable(Of HistorialCurricular) Implements IController.TraeHistorialPorId
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Dim Parametros As New List(Of Parameter)
+        Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
+        Try
+            dr = cnn.Ejecuta("getHistorialById", Parametros) ' colocar nombre del procedimiento
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        If dr Is Nothing Then Throw New Exception("La función a valor")
+        Dim ret As New List(Of HistorialCurricular)
+        'Tipos
+        For Each item As DataRow In dr
+
+
+            ret.Add(New HistorialCurricular With {
+                    .id = item(0),
+                    .idPlan = item(1),
+                    .idCarrera = item(2),
+                    .fecha = item(3),
+                    .hito = item(4),
+                    .descripcion = item(5),
+                    .antes = item(6),
+                    .despues = item(7)
+                }
+            )
+        Next
+        Return ret.AsEnumerable
+    End Function
+
+
+
+    Public Sub EliminarHistorial(idHistorial As Integer) Implements IController.EliminarHistorial
+        Dim Parametros As New List(Of Parameter)
+        Dim retorno As Integer = 0
+        Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
+
+
+        Try
+            retorno = CInt(cnn.EjecutaScalar("delHistorial", Parametros))
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+
+    End Sub
+
+
+
 End Class
