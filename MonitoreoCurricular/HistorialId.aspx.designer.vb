@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class SubirResolucion
+Partial Public Class HistorialId
 
     '''<summary>
     '''Control ScriptManager1.
@@ -59,15 +59,6 @@ Partial Public Class SubirResolucion
     Protected WithEvents CDCarrera As Global.AjaxControlToolkit.CascadingDropDown
 
     '''<summary>
-    '''Control dp3.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents dp3 As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
-    '''<summary>
     '''Control FechaResolucion.
     '''</summary>
     '''<remarks>
@@ -93,4 +84,31 @@ Partial Public Class SubirResolucion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DDAsignaturas As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control Descripcion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Descripcion As Global.System.Web.UI.HtmlControls.HtmlTextArea
+
+    '''<summary>
+    '''Control antes.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents antes As Global.System.Web.UI.HtmlControls.HtmlTextArea
+
+    '''<summary>
+    '''Control despues.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents despues As Global.System.Web.UI.HtmlControls.HtmlTextArea
 End Class

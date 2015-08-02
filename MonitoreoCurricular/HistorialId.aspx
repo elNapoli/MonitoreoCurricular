@@ -1,8 +1,25 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Layout.Master" CodeBehind="SubirResolucion.aspx.vb" Inherits="MonitoreoCurricular.SubirResolucion" %>
-
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Layout.Master" CodeBehind="HistorialId.aspx.vb" Inherits="MonitoreoCurricular.HistorialId" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+      
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script type="text/javascript">
+        function holamundo(data) {
+            //some code here
+          
+            jQuery(function ($) {
+                
+                var ur = $('option[value="ENFA101   "]');
+                $(ur).attr("selected", true);
+                $(".chosen-select").trigger("chosen:updated");
+                $(".chosen-select").trigger("liszt:updated");
+                
+            });
+        }
+    </script>
+
+  
     
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <!--BEGIN INPUT TEXT FIELDS-->
@@ -116,21 +133,21 @@
                         <div class="form-group">
                             <label for="text2" class="control-label col-lg-4">Descripción Cambio</label>
                             <div class="col-lg-8">
-                                <textarea id="Descripcion" class="form-control"></textarea>
+                                <textarea runat="server" id="Descripcion" class="form-control"></textarea>
                             </div>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label for="limiter" class="control-label col-lg-4">Antes</label>
                             <div class="col-lg-8">
-                                <textarea id="antes" class="form-control"></textarea>
+                                <textarea runat="server" id="antes" class="form-control"></textarea>
                             </div>
                         </div>
                         <!-- /.row -->
                         <div class="form-group">
                             <label for="text4" class="control-label col-lg-4">Después</label>
                             <div class="col-lg-8">
-                                <textarea id="despues" class="form-control"></textarea>
+                                <textarea runat="server" id="despues" class="form-control"></textarea>
                             </div>
                         </div>
 
@@ -172,7 +189,6 @@
 
     </div>
     <!-- /.row -->
-
 
 
 

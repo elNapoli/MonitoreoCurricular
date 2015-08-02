@@ -75,10 +75,7 @@ Public Class SubirResolucion1
         Return idHistorial
     End Function
 
-    <WebMethod()> _
-    Public Sub hola()
-
-    End Sub
+   
 
 
 

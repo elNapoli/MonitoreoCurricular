@@ -7,6 +7,8 @@ Public Class VerResolucion
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         CargarResolucionesJSON()
+
+
     End Sub
 
     Private Function CallResolucion() As IEnumerable(Of Resoluciones)

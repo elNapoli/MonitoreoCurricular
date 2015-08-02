@@ -3,7 +3,7 @@
     Property id As Integer
     Property idPlan As Integer
     Property idCarrera As Integer
-    Property fecha As Date
+    Property fecha As String
     Property hito As String
     Property descripcion As String
     Property antes As String

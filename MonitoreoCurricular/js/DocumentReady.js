@@ -1,5 +1,4 @@
 ﻿$(document).ready(function () {
-
     var miUploader = new plupload.Uploader({
         runtimes: 'html5,flash,silverlight,html4',
         browse_button: 'pickfiles', // you can pass an id...
@@ -19,10 +18,6 @@
             PostInit: function () {
                 document.getElementById('filelist').innerHTML = '';
 
-                document.getElementById('uploadfiles').onclick = function () {
-                    miUploader.start();
-                    return false;
-                };
             },
 
             FilesAdded: function (up, files) {
@@ -99,22 +94,28 @@
 
 
 
-    $('#ResolucionTable').DataTable({
+    var ResolucionTable = $('#ResolucionTable').DataTable({
         "ajax": "/JSON/Todas_resoluciones.txt",
-        "searching": false,
+     
         "scrollX": true,
         "language": {
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
         },
-        "columns": [
+        "aoColumns": [
+             {
+                 "data": "idHistorial", "render": function (data, type, row, meta) {
+                     return '<a href="HistorialId.aspx?ID=' + data + '">' + data + '</a>';
+                 }
+             },
              { "data": "idPlan" },
+             { "data": "nombre" },
              { "data": "nombreFacultad" },
              { "data": "nombreEscuela" },
              { "data": "nombreCarrera" },
              { "data": "hito" },
-             { "data": "nombre" }
+             { "data": null, "defaultContent": "<a href='#' id='rel'>Ver resolución</a>" }
         ],
- 
+     
         initComplete: function () {
             this.api().columns().every(function () {
                 var column = this;
@@ -136,6 +137,20 @@
             });
         }
     });
+
+    $('#ResolucionTable tbody').on('click', '#rel', function () {
+        var data = ResolucionTable.row($(this).parents('tr')).data();
+     
+        window.location = "Resoluciones/" + data.path;
+        console.log(data.idPlan);
+    });
+
+
+
+
+
+
+
 
 });
 

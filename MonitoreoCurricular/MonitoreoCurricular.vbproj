@@ -101,6 +101,7 @@
     <Content Include="css\shCore.css" />
     <Content Include="demoTable.aspx" />
     <Content Include="HistorialCurricular.aspx" />
+    <Content Include="HistorialId.aspx" />
     <Content Include="img\backgrounds.gif" />
     <Content Include="img\buttons-disabled.png" />
     <Content Include="img\buttons.png" />
@@ -1208,6 +1209,13 @@
     </Compile>
     <Compile Include="HistorialCurricular.aspx.vb">
       <DependentUpon>HistorialCurricular.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HistorialId.aspx.designer.vb">
+      <DependentUpon>HistorialId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialId.aspx.vb">
+      <DependentUpon>HistorialId.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Layout.Master.designer.vb">

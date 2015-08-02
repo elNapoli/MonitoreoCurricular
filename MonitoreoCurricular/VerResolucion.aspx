@@ -15,7 +15,9 @@
 <table id="ResolucionTable" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Plan</th>
+                <th>Nombre Resolución</th> 
                 <th>Facultad</th>
                 <th>Escuela</th>
                 <th>Carrera</th>
@@ -26,7 +28,9 @@
  
         <tfoot>
             <tr>
+                <th>ID</th>
                 <th>Plan</th>
+                <th>Nombre Resolución</th> 
                 <th>Facultad</th>
                 <th>Escuela</th>
                 <th>Carrera</th>
