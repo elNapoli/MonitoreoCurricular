@@ -4,19 +4,46 @@
       
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
     <script type="text/javascript">
-        function holamundo(data) {
+        function pageLoad() {
+            $('.chzn-select').chosen();
+            $('#dp3').datepicker();
+            console.log($('.chzn-select').chosen().val());
+
+        }
+       
+        window.onload = pageLoad;
+     
+</script>
+
+
+    <script type="text/javascript">
+        function holamundo(data, selected) {
             //some code here
             var dato = data.split(".");
+            
             jQuery(function ($) {
                 for (var i = 0; i < dato.length - 1; i++) {
                     var ur = $('option[value="'+dato[i]+'"]');
                     $(ur).attr("selected", true);
+                    if (selected == "Trude") {
+                        $(ur).attr("disabled", true);
+                       
+                    }
+                    else {
+                     
+                        $(ur).attr("disabled", false);
+                    }
+                    
+
                 }
                 $(".chosen-select").trigger("chosen:updated");
                 $(".chosen-select").trigger("liszt:updated");
-                
+         
             });
+
+          
         }
     </script>
 
@@ -24,6 +51,8 @@
     
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <!--BEGIN INPUT TEXT FIELDS-->
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
     <div class="row">
         <div class="col-lg-12">
             <div class="box dark">
@@ -51,16 +80,36 @@
                 </header>
                 <div id="div-1" class="body">
                     <div class="form-horizontal">
-
+                        
                         <div class="form-group">
-
+                            <asp:TextBox Style="visibility:hidden" runat="server" ID="IdHistorialURL"></asp:TextBox>
                             <div class="col-lg-3">
 
                                </div>
                             <div class="col-lg-3">
+                                   <asp:LinkButton ID="BtnEditar" 
+                                    runat="server" 
+                                    CssClass="btn btn-info start"  
+                                   
+                                   OnClick="HabilitarEdicion"> 
+                                    <span aria-hidden="true" class="glyphicon glyphicon-edit"></span> Editar historial
+                                    </asp:LinkButton>
 
-                                <a id="Btn_Guadrdgar"  class="btn btn-primary start" href="#"><i class="glyphicon glyphicon-edit"></i><span> Editar historial</span></a>
-                            </div>
+
+
+                                <asp:LinkButton ID="BtnActualizar" 
+                                    runat="server" 
+                                    CssClass="btn btn-primary start"  
+                                    visible="false"
+                                        OnClientClick="ActualizarHistorial()"
+                                    onClick="ActualizarHistorial"
+                                  > 
+                                    <span aria-hidden="true" class="glyphicon glyphicon-refresh"></span>  Actualizar historial
+                                    </asp:LinkButton>
+
+
+                                    </div>
+                         
                             <div class="col-lg-3">
                                 <asp:LinkButton ID="BtnEliminar" 
                                     runat="server" 
@@ -74,7 +123,6 @@
                           </div>
                         </div>
                         <!-- /.form-group -->
-
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione Plan</label>
                             <div class="col-lg-8">
@@ -123,7 +171,7 @@
                                 <div class="input-group input-append date"  id="dp3" data-date-format="dd-mm-yyyy">
 
                                     <asp:TextBox ID="FechaResolucion" runat="server" class="form-control" type="text" ReadOnly />
-
+                                     <asp:TextBox ID="FechaResolucionT" runat="server" style="display:none;"></asp:TextBox>
                                     <span class="input-group-addon add-on"><i class="fa fa-calendar"></i></span>
                                 </div>
                             </div>
@@ -150,7 +198,7 @@
                             <div class="col-lg-8">
 
 
-                                <asp:DropDownList runat="server" ID="DDAsignaturas" data-placeholder="Seleccione las Asignaturas involucradas en el proyecto" class="form-control chzn-select" multiple TabIndex="6">
+                                <asp:DropDownList runat="server" ID="DDAsignaturas" disabled="disabled" data-placeholder="Seleccione las Asignaturas involucradas en el proyecto" class="form-control chzn-select" multiple TabIndex="6">
                                 </asp:DropDownList>
                             </div>
                         </div>
@@ -180,12 +228,14 @@
 
                          <!-- /.form-group -->
                         <div class="form-group">
-                            <div id="container"  class=" control-label col-lg-4">
-                                <a id="pickfiles" class="btn btn-success fileinput-button  " href="#"> <i class="glyphicon glyphicon-plus"></i><span> Seleccione archivos</span> </a>
-                            </div>
+
+                            <label for="text2" class="control-label col-lg-4">Resoluciones</label>
+                  
 
                         
-                             <div id="filelist" class="col-lg-8"> </div>
+                             <div runat="server" id="divResoluciones" class="col-lg-8"> 
+                               
+                             </div> 
 
                      
                         </div>
@@ -205,7 +255,7 @@
 
     </div>
     <!-- /.row -->
-
-
+        </ContentTemplate>
+    </asp:UpdatePanel>
 
 </asp:Content>

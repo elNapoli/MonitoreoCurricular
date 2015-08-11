@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class SubirResolucion
+Partial Public Class HistorialEdit
 
     '''<summary>
     '''Control ScriptManager1.
@@ -21,6 +21,24 @@ Partial Public Class SubirResolucion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
+
+    '''<summary>
+    '''Control BtnEditar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnEditar As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control BtnEliminar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnEliminar As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
     '''Control DDPlan.
@@ -84,4 +102,40 @@ Partial Public Class SubirResolucion
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DDAsignaturas As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control Descripcion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Descripcion As Global.System.Web.UI.HtmlControls.HtmlTextArea
+
+    '''<summary>
+    '''Control antes.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents antes As Global.System.Web.UI.HtmlControls.HtmlTextArea
+
+    '''<summary>
+    '''Control despues.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents despues As Global.System.Web.UI.HtmlControls.HtmlTextArea
+
+    '''<summary>
+    '''Control divResoluciones.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents divResoluciones As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class

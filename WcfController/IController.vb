@@ -49,4 +49,10 @@ Public Interface IController
 
     <OperationContract()>
     Sub EliminarHistorial(idHistorial As Integer)
+
+    <OperationContract()>
+    Sub ActualizarHistorial(Historial As HistorialCurricular)
+
+    <OperationContract()>
+    Sub EliminarAsignaturasPorHistorial(idHistorial As Integer)
 End Interface

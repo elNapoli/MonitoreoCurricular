@@ -44,7 +44,15 @@
         GetEmployeeDetails(miUploader);
     });
 
+    $("#perro").click(function () {
+        ActualizarHistorial();
+ 
+    });
 
+    $("#btnEditar").click(function () {
+        alert("hola")
+
+    })
 
     var HistorialTable = $('#HistorialTable').DataTable({
         "ajax": "/JSON/Carrera_historial.txt",
@@ -75,6 +83,7 @@
 
         CargarJsonTable(HistorialTable);
     });
+
 
     $('#HistorialTable tbody').on('click', 'td.details-control', function () {
         var tr = $(this).closest('tr');

@@ -23,13 +23,49 @@ Partial Public Class HistorialId
     Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
 
     '''<summary>
-    '''Control Btn_Eliminar.
+    '''Control UpdatePanel1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Btn_Eliminar As Global.System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents UpdatePanel1 As Global.System.Web.UI.UpdatePanel
+
+    '''<summary>
+    '''Control IdHistorialURL.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents IdHistorialURL As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control BtnEditar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnEditar As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control BtnActualizar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnActualizar As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Control BtnEliminar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnEliminar As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
     '''Control DDPlan.
@@ -77,6 +113,15 @@ Partial Public Class HistorialId
     Protected WithEvents FechaResolucion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control FechaResolucionT.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents FechaResolucionT As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Control DDHito.
     '''</summary>
     '''<remarks>
@@ -120,4 +165,13 @@ Partial Public Class HistorialId
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents despues As Global.System.Web.UI.HtmlControls.HtmlTextArea
+
+    '''<summary>
+    '''Control divResoluciones.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents divResoluciones As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class

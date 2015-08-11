@@ -1,8 +1,24 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Layout.Master" CodeBehind="SubirResolucion.aspx.vb" Inherits="MonitoreoCurricular.SubirResolucion" %>
-
-<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Layout.Master" CodeBehind="EditarEdicion.aspx.vb" Inherits="MonitoreoCurricular.EditarEdicion" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+  <script type="text/javascript">
+      function holamundo(data) {
+          //some code here
+          var dato = data.split(".");
+          jQuery(function ($) {
+              for (var i = 0; i < dato.length - 1; i++) {
+                  var ur = $('option[value="' + dato[i] + '"]');
+                  $(ur).attr("selected", true);
+                  
+              }
+              $(".chosen-select").trigger("chosen:updated");
+              $(".chosen-select").trigger("liszt:updated");
+
+          });
+      }
+    </script>
+
+  
     
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <!--BEGIN INPUT TEXT FIELDS-->
@@ -33,6 +49,34 @@
                 </header>
                 <div id="div-1" class="body">
                     <div class="form-horizontal">
+
+                        <div class="form-group">
+
+                            <div class="col-lg-3">
+
+                               </div>
+                            <div class="col-lg-3">
+                                   <asp:LinkButton ID="BtnEditar" 
+                                    runat="server" 
+                                    CssClass="btn btn-info start"    
+                                    OnClick="EliminarHistorial">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-edit"></span> Editar historial
+                                    </asp:LinkButton>
+
+                                </div>
+                            <div class="col-lg-3">
+                                <asp:LinkButton ID="BtnEliminar" 
+                                    runat="server" 
+                                    CssClass="btn btn-danger start"    
+                                    OnClick="EliminarHistorial">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-trash"></span> Eliminar historial
+                                    </asp:LinkButton>
+                                </div>
+                            <div class="col-lg-3">
+
+                          </div>
+                        </div>
+                        <!-- /.form-group -->
 
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione Plan</label>
@@ -96,7 +140,7 @@
 
                                 <asp:DropDownList runat="server" ID="DDHito" class="form-control">
                                     <asp:ListItem Text="Seleccione Hito"/>
-                                    <asp:ListItem Text="Modificación menor"  />
+                                    <asp:ListItem Text="Modificaicón menor"  />
                                     <asp:ListItem Text="Modificación mayor" />
                                     <asp:ListItem Text="Innovación curricular" />
                                 </asp:DropDownList>
@@ -116,21 +160,21 @@
                         <div class="form-group">
                             <label for="text2" class="control-label col-lg-4">Descripción Cambio</label>
                             <div class="col-lg-8">
-                                <textarea id="Descripcion" class="form-control"></textarea>
+                                <textarea runat="server" id="Descripcion" class="form-control"></textarea>
                             </div>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label for="limiter" class="control-label col-lg-4">Antes</label>
                             <div class="col-lg-8">
-                                <textarea id="antes" class="form-control"></textarea>
+                                <textarea runat="server" id="antes" class="form-control"></textarea>
                             </div>
                         </div>
                         <!-- /.row -->
                         <div class="form-group">
                             <label for="text4" class="control-label col-lg-4">Después</label>
                             <div class="col-lg-8">
-                                <textarea id="despues" class="form-control"></textarea>
+                                <textarea runat="server" id="despues" class="form-control"></textarea>
                             </div>
                         </div>
 
@@ -150,15 +194,7 @@
                         </div>
                         <!-- /.form-group -->
 
-                        <div class="form-group">
 
-                            <div class="control-label col-lg-4"></div>
-                            <div class="col-lg-8">
-
-                                <a id="Btn_Guardar"  class="btn btn-primary start" href="#"><i class="glyphicon glyphicon-upload"></i><span> Subir Archivos</span></a>
-                            </div>
-                        </div>
-                        <!-- /.form-group -->
 
 
 
@@ -172,7 +208,6 @@
 
     </div>
     <!-- /.row -->
-
 
 
 

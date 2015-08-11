@@ -4,6 +4,7 @@ Imports System.ComponentModel
 Imports System.Web.Script.Services
 Imports AjaxControlToolkit
 Imports Models
+Imports System.Threading
 
 <ScriptService()> _
 Public Class SubirResolucion1
@@ -75,7 +76,36 @@ Public Class SubirResolucion1
         Return idHistorial
     End Function
 
-   
+
+
+
+    <WebMethod()> _
+    Public Sub ActualizarHistorial(idHistorial As Integer, Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String)
+        Dim Historial As New Models.HistorialCurricular(idHistorial, Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
+        ActualizarHistorial(Historial)
+        Conexion.EliminarAsignaturasPorHistorial(idHistorial)
+
+
+        For Each item As String In Asignaturas
+
+            Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
+        Next
+
+    End Sub
+
+
+    Private Sub ActualizarHistorial(historial As Models.HistorialCurricular)
+
+        Try
+            Conexion.ActualizarHistorial(historial)
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+        End Try
+
+
+    End Sub
 
 
 

@@ -276,13 +276,7 @@
     <script type="text/javascript" language="javascript" src="js/es.js"></script>
    
      <script type="text/javascript" language="javascript" src="js/functions.js"></script>
-    <script>
-        function miFuncion() {
 
-            alert("hola mundo");
-        }
-
-    </script>
 
 
 </body>

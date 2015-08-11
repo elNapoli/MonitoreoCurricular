@@ -95,12 +95,14 @@
     <Content Include="css\jquery.inputlimiter.css" />
     <Content Include="css\jquery.plupload.queue.css" />
     <Content Include="css\plUpload.css" />
+    <Content Include="EditarEdicion.aspx" />
     <Content Include="HistorialCurricular.asmx" />
     <Content Include="css\demo.css" />
     <Content Include="css\jquery.dataTables.css" />
     <Content Include="css\shCore.css" />
     <Content Include="demoTable.aspx" />
     <Content Include="HistorialCurricular.aspx" />
+    <Content Include="HistorialEdit.aspx" />
     <Content Include="HistorialId.aspx" />
     <Content Include="img\backgrounds.gif" />
     <Content Include="img\buttons-disabled.png" />
@@ -1201,6 +1203,13 @@
       <DependentUpon>demoTable.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="EditarEdicion.aspx.designer.vb">
+      <DependentUpon>EditarEdicion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarEdicion.aspx.vb">
+      <DependentUpon>EditarEdicion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Handler1.ashx.vb">
       <DependentUpon>Handler1.ashx</DependentUpon>
     </Compile>
@@ -1209,6 +1218,13 @@
     </Compile>
     <Compile Include="HistorialCurricular.aspx.vb">
       <DependentUpon>HistorialCurricular.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HistorialEdit.aspx.designer.vb">
+      <DependentUpon>HistorialEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialEdit.aspx.vb">
+      <DependentUpon>HistorialEdit.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="HistorialId.aspx.designer.vb">

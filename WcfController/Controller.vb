@@ -413,4 +413,50 @@ Public Class Controller
 
 
 
+    Public Sub ActualizarHistorial(Historial As HistorialCurricular) Implements IController.ActualizarHistorial
+        Dim Parametros As New List(Of Parameter)
+
+        Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = Historial.id, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@idPlan", .Valor = Historial.idPlan, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@idCarrera", .Valor = Historial.idCarrera, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@fechaRes", .Valor = Historial.fecha, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@hito", .Valor = Historial.hito, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@descripcion", .Valor = Historial.descripcion, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@antes", .Valor = Historial.antes, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@despues", .Valor = Historial.despues, .Tipo = Parameter.TypeDB.DbVarchar})
+        Dim retorno As Integer = 0
+
+
+
+        Try
+            retorno = CInt(cnn.EjecutaScalar("UpdateHisotiral", Parametros))
+
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+    End Sub
+
+
+
+    Public Sub EliminarAsignaturasPorHistorial(idHistorial As Integer) Implements IController.EliminarAsignaturasPorHistorial
+        Dim Parametros As New List(Of Parameter)
+        Dim retorno As Integer = 0
+        Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
+
+
+        Try
+            retorno = CInt(cnn.EjecutaScalar("delAsignaturasByHistorial", Parametros))
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+
+    End Sub
+
 End Class

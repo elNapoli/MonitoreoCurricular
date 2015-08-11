@@ -20,7 +20,16 @@
         Me.antes = antes
         Me.despues = despues
     End Sub
-
+    Public Sub New(id As Integer, idPlan As Integer, idCarrera As Integer, fecha As Date, hito As String, descripcion As String, antes As String, despues As String)
+        Me.id = id
+        Me.idPlan = idPlan
+        Me.idCarrera = idCarrera
+        Me.fecha = fecha
+        Me.hito = hito
+        Me.descripcion = descripcion
+        Me.antes = antes
+        Me.despues = despues
+    End Sub
     Public Sub New()
 
     End Sub

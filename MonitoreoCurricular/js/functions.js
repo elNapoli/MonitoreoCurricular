@@ -69,6 +69,8 @@ function GetEmployeeDetails(uploader) {
          
             uploader.settings.multipart_params = { idNuevoHistorial: response.d };
             uploader.start();
+            alert("Se ha guardado exitosamente el registro")
+            window.location = "HistorialId.aspx?IDHistorial=" + response.d;
         },
         failure: function (msg) {
             alert(msg);
@@ -76,6 +78,34 @@ function GetEmployeeDetails(uploader) {
     });
 }
 
+function ActualizarHistorial() {
+    var Plan = $('#ContentPlaceHolder1_DDPlan').val();
+    var Carrera = $('#ContentPlaceHolder1_DDCarrera').val();
+    var Fecha = $('#ContentPlaceHolder1_FechaResolucion').val();
+    var Hito = $('#ContentPlaceHolder1_DDHito').val();
+    var Asignaturas = $('.chzn-select').chosen().val();
+    var Descripcion = $('#ContentPlaceHolder1_Descripcion').val();
+    var Antes = $('#ContentPlaceHolder1_antes').val();
+    var Despues = $('#ContentPlaceHolder1_despues').val();
+    var idHistorial = $('#ContentPlaceHolder1_IdHistorialURL').val();
+    var Historial = {"idHistorial":idHistorial, "Plan": Plan, "Carrera": Carrera, "Fecha": Fecha, "Hito": Hito, "Asignaturas": Asignaturas, "Descripcion": Descripcion, "Antes": Antes, "Despues": Despues };
+    $.ajax({
+        type: "POST",
+        url: "SubirResolucion.asmx/ActualizarHistorial",
+        data: JSON.stringify(Historial),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (response) {
+
+           
+            alert("Se ha actualizado exitosamente el registro")
+           
+        },
+        failure: function (msg) {
+            alert(msg);
+        }
+    });
+}
 
 
 function CargarJsonTable(table) {

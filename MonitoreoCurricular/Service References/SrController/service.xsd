@@ -200,4 +200,28 @@
       <xs:sequence />
     </xs:complexType>
   </xs:element>
+  <xs:element name="ActualizarHistorial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Historial" nillable="true" type="q13:HistorialCurricular" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarHistorialResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarAsignaturasPorHistorial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idHistorial" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarAsignaturasPorHistorialResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
