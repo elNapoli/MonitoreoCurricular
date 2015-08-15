@@ -85,11 +85,14 @@ Public Class SubirResolucion1
         ActualizarHistorial(Historial)
         Conexion.EliminarAsignaturasPorHistorial(idHistorial)
 
+        If Not Asignaturas Is Nothing Then
 
-        For Each item As String In Asignaturas
+            For Each item As String In Asignaturas
 
-            Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
-        Next
+                Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
+            Next
+        End If
+ 
 
     End Sub
 
