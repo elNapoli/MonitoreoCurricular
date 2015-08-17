@@ -1,13 +1,9 @@
 ﻿Imports Models
-Public Class WebForm3
+Public Class Login
     Inherits System.Web.UI.Page
     Private Conexion As New SrController.ControllerClient
+
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-    
-
-
-
-
 
     End Sub
 
@@ -25,11 +21,10 @@ Public Class WebForm3
 
         Return Lista
     End Function
-
     Protected Sub validar_Click(sender As Object, e As EventArgs)
         Dim usuario As New Usuario
 
-        usuario = VerificarUsuario(nick.Text, TextBox1.Text)
+        usuario = VerificarUsuario(txt_Username.Text, txt_Password.Text)
         If usuario.Rol Is Nothing Then
             MsgBox("No tiene permisos")
         Else

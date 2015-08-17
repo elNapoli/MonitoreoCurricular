@@ -120,6 +120,7 @@
     <Content Include="img\sort_desc_disabled.png" />
     <Content Include="img\throbber.gif" />
     <Content Include="img\transp50.png" />
+    <Content Include="index.aspx" />
     <Content Include="js\app.js.map" />
     <Content Include="js\core.js.map" />
     <Content Include="js\countdown.js.map" />
@@ -342,6 +343,7 @@
     <Content Include="lib\wysihtml5x\README.markdown" />
     <Content Include="Layout.Master" />
     <Content Include="img\Sorting icons.psd" />
+    <Content Include="Login.aspx" />
     <Content Include="Models.HistorialCurricular.datasource" />
     <Content Include="Models.Parametros.datasource" />
     <Content Include="Models.Resoluciones.datasource" />
@@ -351,6 +353,7 @@
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
     <Content Include="Models.Usuario.datasource" />
+    <Content Include="WebForm4.aspx" />
     <None Include="Service References\SrController\configuration91.svcinfo" />
     <None Include="Service References\SrController\configuration.svcinfo" />
     <Content Include="css\countdown.css" />
@@ -1236,12 +1239,26 @@
       <DependentUpon>HistorialId.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Layout.Master.designer.vb">
       <DependentUpon>Layout.Master</DependentUpon>
     </Compile>
     <Compile Include="Layout.Master.vb">
       <DependentUpon>Layout.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -1304,6 +1321,13 @@
     </Compile>
     <Compile Include="WebForm3.aspx.vb">
       <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.vb">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.vb">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

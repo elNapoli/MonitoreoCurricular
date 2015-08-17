@@ -461,7 +461,7 @@ Public Class Controller
 
 
 
-    Public Function ValidarUsuario(nick As Integer, pass As String) As IEnumerable(Of Usuario) Implements IController.ValidarUsuario
+    Public Function ValidarUsuario(nick As Integer, pass As String) As Usuario Implements IController.ValidarUsuario
         Dim Parametros As New List(Of Parameter)
         Dim retorno As Integer = 0
         Parametros.Add(New Parameter With {.Nombre = "@nick", .Valor = nick, .Tipo = Parameter.TypeDB.DbInt})
@@ -476,19 +476,19 @@ Public Class Controller
         End Try
 
         If dr Is Nothing Then Throw New Exception("La función a valor")
-        Dim ret As New List(Of Usuario)
+        Dim ret As New Usuario
         'Tipos
         For Each item As DataRow In dr
 
 
-            ret.Add(New Usuario With {
+            ret = New Usuario With {
                     .Rut = item(0),
                     .Password = item(1),
                     .Rol = item(2)
                 }
-            )
+
         Next
-        Return ret.AsEnumerable
+        Return ret
 
 
 
