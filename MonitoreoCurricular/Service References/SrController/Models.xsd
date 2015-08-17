@@ -68,4 +68,18 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Asignaturas" nillable="true" type="tns:Asignaturas" />
+  <xs:complexType name="ArrayOfUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Usuario" nillable="true" type="tns:Usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuario" nillable="true" type="tns:ArrayOfUsuario" />
+  <xs:complexType name="Usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rut" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
 </xs:schema>

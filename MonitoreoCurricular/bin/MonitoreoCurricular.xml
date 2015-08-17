@@ -511,6 +511,30 @@ Control DDAsignaturas.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:MonitoreoCurricular.WebForm3.nick">
+	<summary>
+Control nick.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.WebForm3.TextBox1">
+	<summary>
+Control TextBox1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.WebForm3.validar">
+	<summary>
+Control validar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member>
 </members>
 </doc>

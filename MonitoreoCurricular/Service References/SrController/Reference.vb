@@ -119,6 +119,12 @@ Namespace SrController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarAsignaturasPorHistorial", ReplyAction:="http://tempuri.org/IController/EliminarAsignaturasPorHistorialResponse")>  _
         Function EliminarAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ValidarUsuario", ReplyAction:="http://tempuri.org/IController/ValidarUsuarioResponse")>  _
+        Function ValidarUsuario(ByVal nick As Integer, ByVal pass As String) As Models.Usuario()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ValidarUsuario", ReplyAction:="http://tempuri.org/IController/ValidarUsuarioResponse")>  _
+        Function ValidarUsuarioAsync(ByVal nick As Integer, ByVal pass As String) As System.Threading.Tasks.Task(Of Models.Usuario())
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -286,6 +292,14 @@ Namespace SrController
         
         Public Function EliminarAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task Implements SrController.IController.EliminarAsignaturasPorHistorialAsync
             Return MyBase.Channel.EliminarAsignaturasPorHistorialAsync(idHistorial)
+        End Function
+        
+        Public Function ValidarUsuario(ByVal nick As Integer, ByVal pass As String) As Models.Usuario() Implements SrController.IController.ValidarUsuario
+            Return MyBase.Channel.ValidarUsuario(nick, pass)
+        End Function
+        
+        Public Function ValidarUsuarioAsync(ByVal nick As Integer, ByVal pass As String) As System.Threading.Tasks.Task(Of Models.Usuario()) Implements SrController.IController.ValidarUsuarioAsync
+            Return MyBase.Channel.ValidarUsuarioAsync(nick, pass)
         End Function
     End Class
 End Namespace

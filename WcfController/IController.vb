@@ -55,4 +55,8 @@ Public Interface IController
 
     <OperationContract()>
     Sub EliminarAsignaturasPorHistorial(idHistorial As Integer)
+
+    <OperationContract()>
+    Function ValidarUsuario(nick As Integer, pass As String) As IEnumerable(Of Usuario)
+
 End Interface

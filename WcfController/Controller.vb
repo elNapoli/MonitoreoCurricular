@@ -459,4 +459,39 @@ Public Class Controller
 
     End Sub
 
+
+
+    Public Function ValidarUsuario(nick As Integer, pass As String) As IEnumerable(Of Usuario) Implements IController.ValidarUsuario
+        Dim Parametros As New List(Of Parameter)
+        Dim retorno As Integer = 0
+        Parametros.Add(New Parameter With {.Nombre = "@nick", .Valor = nick, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@pass", .Valor = pass, .Tipo = Parameter.TypeDB.DbVarchar})
+
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Try
+            dr = cnn.Ejecuta("validarUsuario", Parametros) ' colocar nombre del procedimiento
+
+        Catch ex As Exception
+            MsgBox(ex.Message + ":" + "ValidarUsuario")
+        End Try
+
+        If dr Is Nothing Then Throw New Exception("La función a valor")
+        Dim ret As New List(Of Usuario)
+        'Tipos
+        For Each item As DataRow In dr
+
+
+            ret.Add(New Usuario With {
+                    .Rut = item(0),
+                    .Password = item(1),
+                    .Rol = item(2)
+                }
+            )
+        Next
+        Return ret.AsEnumerable
+
+
+
+    End Function
+
 End Class
