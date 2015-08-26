@@ -121,9 +121,13 @@
 
                     </a>
                     <div class="media-body">
-                        <h5 class="media-heading">Baldomero Águila</h5>
+                        <h5 class="media-heading"><%        Dim authCookie As HttpCookie = Request.Cookies(FormsAuthentication.FormsCookieName)
+                                                      Dim ticket As FormsAuthenticationTicket = FormsAuthentication.Decrypt(authCookie.Value)
+                                                      Response.Write(ticket.Name)
+                                                      
+                                                      %></h5>
                         <ul class="list-unstyled user-info">
-                            <li><a href="">Administrator</a>  </li>
+                            <li><%  Response.Write(ticket.UserData)%> </li>
 
                         </ul>
                     </div>
@@ -147,7 +151,7 @@
                     </a>
                     <ul>
                         <li>
-                            <a href="HistorialCurricular.aspx">
+                            <a href="/HistorialCurricular.aspx">
                                 <i class="fa fa-angle-right"></i>&nbsp; Historial curricular </a>
                         </li>
 
@@ -161,13 +165,13 @@
                     </a>
                     <ul>
                         <li>
-                            <a href="SubirResolucion.aspx">
+                            <a href="/SubirResolucion.aspx">
                                 <i class="fa fa-angle-right"></i>Subir Resolución </a>
 
                         </li>
 
                         <li>
-                            <a href="VerResolucion.aspx">
+                            <a href="/VerResolucion.aspx">
                                 <i class="fa fa-angle-right"></i>Ver  Resoluciones </a>
 
                         </li>
@@ -177,13 +181,21 @@
                 <li class="">
                     <a href="javascript:;">
                         <i class="fa fa-pencil"></i>
-                        <span class="link-title">Escuelas</span>
+                        <span class="link-title">Usuarios</span>
                         <span class="fa arrow"></span>
                     </a>
                     <ul>
                         <li>
+                            <a href="/Admin/ListUsuario.aspx">
+                                <i class="fa fa-angle-right"></i>Lista de usuarios</a>
+                        </li>
+                        <li>
                             <a href="form-general.html">
-                                <i class="fa fa-angle-right"></i>&nbsp; Form General </a>
+                                <i class="fa fa-angle-right"></i>Crear Usuario</a>
+                        </li>
+                        <li>
+                            <a href="form-general.html">
+                                <i class="fa fa-angle-right"></i>Eliminar Usuario</a>
                         </li>
 
                     </ul>

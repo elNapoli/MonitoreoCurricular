@@ -3,13 +3,5 @@
 <%@  import Namespace="Models" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    Bienvenido <%
-                   
-                   
-                   Dim us As New Usuario
-                   us = Session.Item("USUARIO_ACTUAL")
-                   
-                   Response.Write(us.Rut.ToString + " " + us.Password + " " + us.Rol)
-                   
-                   %>
+
 </asp:Content>

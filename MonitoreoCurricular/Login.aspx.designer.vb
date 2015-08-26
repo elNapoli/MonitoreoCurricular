@@ -41,6 +41,24 @@ Partial Public Class Login
     Protected WithEvents txt_Password As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control rememberLogin.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents rememberLogin As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''Control statusLogin.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents statusLogin As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control BtnLogin.
     '''</summary>
     '''<remarks>

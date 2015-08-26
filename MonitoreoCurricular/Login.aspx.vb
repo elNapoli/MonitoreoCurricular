@@ -4,7 +4,12 @@ Public Class Login
     Private Conexion As New SrController.ControllerClient
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        If Not Me.IsPostBack Then
+            If Me.Page.User.Identity.IsAuthenticated Then
+                FormsAuthentication.SignOut()
+                Response.Redirect("~/Login.aspx")
+            End If
+        End If
     End Sub
 
     Private Function VerificarUsuario(rut As Integer, pass As String) As Usuario
@@ -22,14 +27,34 @@ Public Class Login
         Return Lista
     End Function
     Protected Sub validar_Click(sender As Object, e As EventArgs)
+        Dim userId As Integer = 0
+        Dim roles As String = String.Empty
         Dim usuario As New Usuario
-
         usuario = VerificarUsuario(txt_Username.Text, txt_Password.Text)
-        If usuario.Rol Is Nothing Then
-            MsgBox("No tiene permisos")
-        Else
-            Session.Add("USUARIO_ACTUAL", usuario)
-            Response.Redirect("~/index.aspx", True)
-        End If
+
+
+        userId = usuario.Rut
+        roles = usuario.Rol
+
+        Select Case userId
+            Case -1
+                statusLogin.Text = "R.U.N. y/o contraseña son  inválidas"
+                Exit Select
+            Case -2
+
+                Exit Select
+            Case Else
+                Dim ticket As New FormsAuthenticationTicket(1, usuario.Nombre, DateTime.Now, DateTime.Now.AddMinutes(2880), rememberLogin.Checked, roles, _
+                 FormsAuthentication.FormsCookiePath)
+                Dim hash As String = FormsAuthentication.Encrypt(ticket)
+                Dim cookie As New HttpCookie(FormsAuthentication.FormsCookieName, hash)
+
+                If ticket.IsPersistent Then
+                    cookie.Expires = ticket.Expiration
+                End If
+                Response.Cookies.Add(cookie)
+                Response.Redirect(FormsAuthentication.GetRedirectUrl(txt_Username.Text, rememberLogin.Checked))
+                Exit Select
+        End Select
     End Sub
 End Class

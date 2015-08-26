@@ -70,9 +70,12 @@
   <xs:element name="Asignaturas" nillable="true" type="tns:Asignaturas" />
   <xs:complexType name="Usuario">
     <xs:sequence>
-      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Rol" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Rut" type="xs:int" />
+      <xs:element minOccurs="0" name="apMaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="apPaterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Usuario" nillable="true" type="tns:Usuario" />

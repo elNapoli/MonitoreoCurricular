@@ -59,4 +59,7 @@ Public Interface IController
     <OperationContract()>
     Function ValidarUsuario(nick As Integer, pass As String) As Usuario
 
+    <OperationContract()>
+    Function TraeUsuarios() As Usuario
+
 End Interface

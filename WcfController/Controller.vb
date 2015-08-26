@@ -464,8 +464,8 @@ Public Class Controller
     Public Function ValidarUsuario(nick As Integer, pass As String) As Usuario Implements IController.ValidarUsuario
         Dim Parametros As New List(Of Parameter)
         Dim retorno As Integer = 0
-        Parametros.Add(New Parameter With {.Nombre = "@nick", .Valor = nick, .Tipo = Parameter.TypeDB.DbInt})
-        Parametros.Add(New Parameter With {.Nombre = "@pass", .Valor = pass, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@Username", .Valor = nick, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@Password", .Valor = pass, .Tipo = Parameter.TypeDB.DbVarchar})
 
         Dim dr As IEnumerable(Of DataRow) = Nothing
         Try
@@ -483,13 +483,45 @@ Public Class Controller
 
             ret = New Usuario With {
                     .Rut = item(0),
-                    .Password = item(1),
+                    .Nombre = item(1),
                     .Rol = item(2)
                 }
 
         Next
         Return ret
 
+
+
+    End Function
+
+
+
+    Public Function TraeUsuarios() As Usuario Implements IController.TraeUsuarios
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Try
+            dr = cnn.Ejecuta("getUsuarios") ' colocar nombre del procedimiento
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        If dr Is Nothing Then Throw New Exception("La función a valor")
+        Dim ret As New List(Of Usuario)
+        'Tipos
+        For Each item As DataRow In dr
+
+
+            ret.Add(New Usuario With {
+                    .Rut = item(0),
+                    .Nombre = item(1),
+                    .apPaterno = item(2),
+                    .apMaterno = item(3),
+                    .email = item(4),
+                    .Rol = item(5)
+                }
+            )
+        Next
+        Return ret.AsEnumerable
 
 
     End Function

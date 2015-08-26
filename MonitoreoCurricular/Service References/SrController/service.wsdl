@@ -115,6 +115,12 @@
   <wsdl:message name="IController_ValidarUsuario_OutputMessage">
     <wsdl:part name="parameters" element="tns:ValidarUsuarioResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_TraeUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:TraeUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IController_TraeUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TraeUsuariosResponse" />
+  </wsdl:message>
   <wsdl:portType name="IController">
     <wsdl:operation name="TraeFacultad">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeFacultad" message="tns:IController_TraeFacultad_InputMessage" />
@@ -187,6 +193,10 @@
     <wsdl:operation name="ValidarUsuario">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/ValidarUsuario" message="tns:IController_ValidarUsuario_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/ValidarUsuarioResponse" message="tns:IController_ValidarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TraeUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeUsuarios" message="tns:IController_TraeUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeUsuariosResponse" message="tns:IController_TraeUsuarios_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IController" type="tns:IController">
@@ -346,6 +356,15 @@
     </wsdl:operation>
     <wsdl:operation name="ValidarUsuario">
       <soap:operation soapAction="http://tempuri.org/IController/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraeUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IController/TraeUsuarios" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

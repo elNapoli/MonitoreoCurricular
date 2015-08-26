@@ -1,6 +1,9 @@
 ﻿Public Class Usuario
     Property Rut As Integer
-    Property Password As String
+    Property Nombre As String
     Property Rol As String
+    Property apPaterno As String
+    Property apMaterno As String
+    Property email As String
 
 End Class

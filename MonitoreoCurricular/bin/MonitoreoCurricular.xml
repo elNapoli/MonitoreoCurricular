@@ -6,119 +6,7 @@ MonitoreoCurricular
 </name>
 </assembly>
 <members>
-<member name="F:MonitoreoCurricular.HistorialEdit.ScriptManager1">
-	<summary>
-Control ScriptManager1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.BtnEditar">
-	<summary>
-Control BtnEditar.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.BtnEliminar">
-	<summary>
-Control BtnEliminar.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.DDPlan">
-	<summary>
-Control DDPlan.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.CDPlan">
-	<summary>
-Control CDPlan.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.DDCarrera">
-	<summary>
-Control DDCarrera.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.CDCarrera">
-	<summary>
-Control CDCarrera.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.FechaResolucion">
-	<summary>
-Control FechaResolucion.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.DDHito">
-	<summary>
-Control DDHito.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.DDAsignaturas">
-	<summary>
-Control DDAsignaturas.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.Descripcion">
-	<summary>
-Control Descripcion.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.antes">
-	<summary>
-Control antes.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.despues">
-	<summary>
-Control despues.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.HistorialEdit.divResoluciones">
-	<summary>
-Control divResoluciones.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="P:MonitoreoCurricular.My.MyWebExtension.Computer">
+<member name="P:MonitoreoCurricular.My.MyWebExtension.Computer">
 	<summary>
  Devuelve información sobre el equipo host.
  </summary>
@@ -399,6 +287,46 @@ Control ContentPlaceHolder1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:MonitoreoCurricular.Site1.Head1">
+	<summary>
+Control Head1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.Site1.head">
+	<summary>
+Control head.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.Site1.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.Site1.LoginView">
+	<summary>
+Control LoginView.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.Site1.ContentPlaceHolder1">
+	<summary>
+Control ContentPlaceHolder1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member><member name="F:MonitoreoCurricular.HistorialCurricular.ScriptManager1">
 	<summary>
 Control ScriptManager1.
@@ -543,41 +471,25 @@ Control txt_Password.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="F:MonitoreoCurricular.Login.rememberLogin">
+	<summary>
+Control rememberLogin.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:MonitoreoCurricular.Login.statusLogin">
+	<summary>
+Control statusLogin.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
 </member><member name="F:MonitoreoCurricular.Login.BtnLogin">
 	<summary>
 Control BtnLogin.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.WebForm4.form1">
-	<summary>
-control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.WebForm3.nick">
-	<summary>
-Control nick.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.WebForm3.TextBox1">
-	<summary>
-Control TextBox1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:MonitoreoCurricular.WebForm3.validar">
-	<summary>
-Control validar.
 </summary>
 	<remarks>
 Campo generado automáticamente.

@@ -38,7 +38,6 @@
     });
 
     miUploader.init();
-
     $("#Btn_Guardar").click(function () {
 
         GetEmployeeDetails(miUploader);
