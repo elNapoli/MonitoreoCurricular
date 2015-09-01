@@ -19,15 +19,15 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <!-- Metis core stylesheet -->
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/plUpload.css">
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="/css/plUpload.css">
 
     <!-- metisMenu stylesheet -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.css">
-    <link rel="stylesheet" href="css/jquery.inputlimiter.css">
-    <link rel="stylesheet" href="css/daterangepicker-bs3.css">
-    <link rel="stylesheet" href="css/jquery.plupload.queue.css">
-    <link rel="stylesheet" href="css/jquery.gritter.css">
+    <link rel="stylesheet" href="/css/jquery.inputlimiter.css">
+    <link rel="stylesheet" href="/css/daterangepicker-bs3.css">
+    <link rel="stylesheet" href="/css/jquery.plupload.queue.css">
+    <link rel="stylesheet" href="/css/jquery.gritter.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/themes/default/css/uniform.default.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-tagsinput/1.3.3/jquery.tagsinput.css">
@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css">
      
      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" language="javascript" src="js/DocumentReady.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/DocumentReady.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,21 +50,21 @@
 
     <!--For Development Only. Not required -->
 
-    <link rel="stylesheet" href="css/style-switcher.css">
+    <link rel="stylesheet" href="/css/style-switcher.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.2.0/less.min.js"></script>
 
     <!--Modernizr-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="css/shCore.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="/css/shCore.css">
     <style type="text/css" class="init">
         td.details-control {
-            background: url('img/details_open.png') no-repeat center center;
+            background: url('/img/details_open.png') no-repeat center center;
             cursor: pointer;
         }
 
         tr.shown td.details-control {
-            background: url('img/details_close.png') no-repeat center center;
+            background: url('/img/details_close.png') no-repeat center center;
         }
     </style>
 </head>
@@ -81,7 +81,7 @@
                     <header class="navbar-header">
 
                         <a href="index.html" class="navbar-brand">
-                            <img src="img/logo.png" alt="" />
+                            <img src="/img/logo.png" alt="" />
                         </a>
                     </header>
                     <div class="topnav">
@@ -117,7 +117,7 @@
                 </div>
                 <div class="user-wrapper bg-dark">
                     <a class="user-link" href="">
-                        <img class="media-object img-thumbnail user-img" alt="User Picture" src="img/user.gif" />
+                        <img class="media-object img-thumbnail user-img" alt="User Picture" src="/img/user.gif" />
 
                     </a>
                     <div class="media-body">
@@ -190,7 +190,7 @@
                                 <i class="fa fa-angle-right"></i>Lista de usuarios</a>
                         </li>
                         <li>
-                            <a href="form-general.html">
+                            <a href="/Admin/CrearUsuario.aspx">
                                 <i class="fa fa-angle-right"></i>Crear Usuario</a>
                         </li>
                         <li>
@@ -271,28 +271,29 @@
 
     <!-- Screenfull -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/screenfull.js/2.0.0/screenfull.min.js"></script>
-    <script src="js/jquery.inputlimiter.js"></script>
-    <script src="js/jquery.validVal.min.js"></script>
-    <script src="js/daterangepicker.js"></script>
-    <script src="js/plupload.full.min.js"></script>
-    <script src="js/jquery.plupload.queue.min.js"></script>
-    <script src="js/jquery.gritter.min.js"></script>
-    <script src="js/jquery.form.wizard.js"></script>
+    <script src="/js/jquery.inputlimiter.js"></script>
+    <script src="/js/jquery.validVal.min.js"></script>
+    <script src="/js/daterangepicker.js"></script>
+    <script src="/js/plupload.full.min.js"></script>
+    <script src="/js/jquery.plupload.queue.min.js"></script>
+    <script src="/js/jquery.gritter.min.js"></script>
+    <script src="/js/jquery.form.wizard.js"></script>
 
 
     <!-- Metis core scripts -->
-    <script src="js/core.min.js"></script>
+    <script src="/js/core.min.js"></script>
 
     <!-- Metis demo scripts -->
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
   
 
-    <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
-    <script type="text/javascript" language="javascript" src="js/shCore.js"></script>
-    <script type="text/javascript" language="javascript" src="js/demo.js"></script>
-    <script type="text/javascript" language="javascript" src="js/es.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/shCore.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/demo.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/es.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/jquery.Rut.js"></script>
    
-     <script type="text/javascript" language="javascript" src="js/functions.js"></script>
+     <script type="text/javascript" language="javascript" src="/js/functions.js"></script>
 
 
 

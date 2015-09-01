@@ -90,6 +90,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\CrearUsuario.aspx" />
     <Content Include="Admin\Reports.aspx" />
     <Content Include="css\daterangepicker-bs3.css" />
     <Content Include="css\jquery.gritter.css" />
@@ -97,6 +98,7 @@
     <Content Include="css\jquery.plupload.queue.css" />
     <Content Include="css\plUpload.css" />
     <Content Include="EditarEdicion.aspx" />
+    <Content Include="Error\401.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HistorialCurricular.asmx" />
     <Content Include="css\demo.css" />
@@ -136,6 +138,7 @@
     <Content Include="js\jquery.gritter.min.js" />
     <Content Include="js\jquery.inputlimiter.js" />
     <Content Include="js\jquery.plupload.queue.min.js" />
+    <Content Include="js\jquery.Rut.js" />
     <Content Include="js\jquery.validate.js" />
     <Content Include="js\jquery.validVal.min.js" />
     <Content Include="js\plupload.full.min.js" />
@@ -356,6 +359,8 @@
     <Content Include="Models.Usuario.datasource" />
     <Content Include="Admin\Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="Error\Web.config" />
     <None Include="Service References\SrController\configuration91.svcinfo" />
     <None Include="Service References\SrController\configuration.svcinfo" />
     <Content Include="css\countdown.css" />
@@ -1199,10 +1204,19 @@
     </None>
     <Content Include="SubirResolucion.asmx" />
     <Content Include="SubirResolucion.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\CrearUsuario.aspx.designer.vb">
+      <DependentUpon>CrearUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CrearUsuario.aspx.vb">
+      <DependentUpon>CrearUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="demoTable.aspx.designer.vb">
       <DependentUpon>demoTable.aspx</DependentUpon>
     </Compile>
@@ -1215,6 +1229,13 @@
     </Compile>
     <Compile Include="EditarEdicion.aspx.vb">
       <DependentUpon>EditarEdicion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Error\401.aspx.designer.vb">
+      <DependentUpon>401.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error\401.aspx.vb">
+      <DependentUpon>401.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
@@ -1326,6 +1347,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.vb">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

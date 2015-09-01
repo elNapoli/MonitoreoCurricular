@@ -60,6 +60,6 @@ Public Interface IController
     Function ValidarUsuario(nick As Integer, pass As String) As Usuario
 
     <OperationContract()>
-    Function TraeUsuarios() As Usuario
+    Function TraeUsuarios() As IEnumerable(Of Usuario)
 
 End Interface

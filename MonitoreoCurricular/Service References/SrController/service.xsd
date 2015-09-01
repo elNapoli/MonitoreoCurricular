@@ -247,7 +247,7 @@
   <xs:element name="TraeUsuariosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeUsuariosResult" nillable="true" type="q15:Usuario" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeUsuariosResult" nillable="true" type="q15:ArrayOfUsuario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

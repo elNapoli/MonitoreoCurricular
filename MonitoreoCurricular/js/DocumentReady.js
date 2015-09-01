@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+
     var miUploader = new plupload.Uploader({
         runtimes: 'html5,flash,silverlight,html4',
         browse_button: 'pickfiles', // you can pass an id...
@@ -157,6 +158,29 @@
 
 
 
+    var ResolucionTable = $('#UsuarioTable').DataTable({
+        "ajax": "/JSON/Todos_usuarios.txt",
+
+
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "aoColumns": [
+
+             {
+                 "data": "Rut", "render": function (data, type, row, meta) {
+                     return '<a href="VerUsuario.aspx?Rut=' + data + '">' + data + '</a>';
+                 }
+             },
+             { "data": "Nombre" },
+             { "data": "apPaterno" },
+             { "data": "apMaterno" },
+             { "data": "email" },
+             { "data": "Rol" }
+        ],
+
+
+    });
 
 
 

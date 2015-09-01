@@ -6,8 +6,9 @@ Public Class Login
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not Me.IsPostBack Then
             If Me.Page.User.Identity.IsAuthenticated Then
-                FormsAuthentication.SignOut()
-                Response.Redirect("~/Login.aspx")
+                '  FormsAuthentication.SignOut()
+                '  Response.Redirect("~/Login.aspx")
+
             End If
         End If
     End Sub
@@ -53,6 +54,7 @@ Public Class Login
                     cookie.Expires = ticket.Expiration
                 End If
                 Response.Cookies.Add(cookie)
+
                 Response.Redirect(FormsAuthentication.GetRedirectUrl(txt_Username.Text, rememberLogin.Checked))
                 Exit Select
         End Select

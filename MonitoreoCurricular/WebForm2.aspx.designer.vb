@@ -11,5 +11,5 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class ListUsuario
+Partial Public Class WebForm2
 End Class

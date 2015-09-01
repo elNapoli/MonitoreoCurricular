@@ -496,7 +496,7 @@ Public Class Controller
 
 
 
-    Public Function TraeUsuarios() As Usuario Implements IController.TraeUsuarios
+    Public Function TraeUsuarios() As IEnumerable(Of Usuario) Implements IController.TraeUsuarios
         Dim dr As IEnumerable(Of DataRow) = Nothing
         Try
             dr = cnn.Ejecuta("getUsuarios") ' colocar nombre del procedimiento

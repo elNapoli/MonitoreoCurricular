@@ -17,11 +17,7 @@
     <!-- Metis core stylesheet -->
     <link rel="stylesheet" href="css/main.min.css">
   </head>
-    <script>
-        $(document).ready(function () {
-            $("#form1").validate();
-        });
-	</script>
+
   <body class="login">
 
 
@@ -49,11 +45,7 @@
               <label>
                   <asp:CheckBox id="rememberLogin" runat="server" /> Recordárme
            
-                 <% 
-
-
-                     
-                     %>
+        
               </label>
             </div>
          

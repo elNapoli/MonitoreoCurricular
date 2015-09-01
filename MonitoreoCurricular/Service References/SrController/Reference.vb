@@ -127,10 +127,10 @@ Namespace SrController
         Function ValidarUsuarioAsync(ByVal nick As Integer, ByVal pass As String) As System.Threading.Tasks.Task(Of Models.Usuario)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeUsuarios", ReplyAction:="http://tempuri.org/IController/TraeUsuariosResponse")>  _
-        Function TraeUsuarios() As Models.Usuario
+        Function TraeUsuarios() As Models.Usuario()
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeUsuarios", ReplyAction:="http://tempuri.org/IController/TraeUsuariosResponse")>  _
-        Function TraeUsuariosAsync() As System.Threading.Tasks.Task(Of Models.Usuario)
+        Function TraeUsuariosAsync() As System.Threading.Tasks.Task(Of Models.Usuario())
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -308,11 +308,11 @@ Namespace SrController
             Return MyBase.Channel.ValidarUsuarioAsync(nick, pass)
         End Function
         
-        Public Function TraeUsuarios() As Models.Usuario Implements SrController.IController.TraeUsuarios
+        Public Function TraeUsuarios() As Models.Usuario() Implements SrController.IController.TraeUsuarios
             Return MyBase.Channel.TraeUsuarios
         End Function
         
-        Public Function TraeUsuariosAsync() As System.Threading.Tasks.Task(Of Models.Usuario) Implements SrController.IController.TraeUsuariosAsync
+        Public Function TraeUsuariosAsync() As System.Threading.Tasks.Task(Of Models.Usuario()) Implements SrController.IController.TraeUsuariosAsync
             Return MyBase.Channel.TraeUsuariosAsync
         End Function
     End Class
