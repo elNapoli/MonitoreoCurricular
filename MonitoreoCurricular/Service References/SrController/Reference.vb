@@ -131,6 +131,30 @@ Namespace SrController
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeUsuarios", ReplyAction:="http://tempuri.org/IController/TraeUsuariosResponse")>  _
         Function TraeUsuariosAsync() As System.Threading.Tasks.Task(Of Models.Usuario())
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarUsuario", ReplyAction:="http://tempuri.org/IController/GuardarUsuarioResponse")>  _
+        Function GuardarUsuario(ByVal Usuario As Models.Usuario) As Integer
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarUsuario", ReplyAction:="http://tempuri.org/IController/GuardarUsuarioResponse")>  _
+        Function GuardarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Integer)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeUsuarioPorRut", ReplyAction:="http://tempuri.org/IController/TraeUsuarioPorRutResponse")>  _
+        Function TraeUsuarioPorRut(ByVal rut As Integer) As Models.Usuario
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeUsuarioPorRut", ReplyAction:="http://tempuri.org/IController/TraeUsuarioPorRutResponse")>  _
+        Function TraeUsuarioPorRutAsync(ByVal rut As Integer) As System.Threading.Tasks.Task(Of Models.Usuario)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarUsuario", ReplyAction:="http://tempuri.org/IController/EliminarUsuarioResponse")>  _
+        Sub EliminarUsuario(ByVal Rut As Integer)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarUsuario", ReplyAction:="http://tempuri.org/IController/EliminarUsuarioResponse")>  _
+        Function EliminarUsuarioAsync(ByVal Rut As Integer) As System.Threading.Tasks.Task
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ActualizarUsuario", ReplyAction:="http://tempuri.org/IController/ActualizarUsuarioResponse")>  _
+        Sub ActualizarUsuario(ByVal Usuario As Models.Usuario)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ActualizarUsuario", ReplyAction:="http://tempuri.org/IController/ActualizarUsuarioResponse")>  _
+        Function ActualizarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -314,6 +338,38 @@ Namespace SrController
         
         Public Function TraeUsuariosAsync() As System.Threading.Tasks.Task(Of Models.Usuario()) Implements SrController.IController.TraeUsuariosAsync
             Return MyBase.Channel.TraeUsuariosAsync
+        End Function
+        
+        Public Function GuardarUsuario(ByVal Usuario As Models.Usuario) As Integer Implements SrController.IController.GuardarUsuario
+            Return MyBase.Channel.GuardarUsuario(Usuario)
+        End Function
+        
+        Public Function GuardarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Integer) Implements SrController.IController.GuardarUsuarioAsync
+            Return MyBase.Channel.GuardarUsuarioAsync(Usuario)
+        End Function
+        
+        Public Function TraeUsuarioPorRut(ByVal rut As Integer) As Models.Usuario Implements SrController.IController.TraeUsuarioPorRut
+            Return MyBase.Channel.TraeUsuarioPorRut(rut)
+        End Function
+        
+        Public Function TraeUsuarioPorRutAsync(ByVal rut As Integer) As System.Threading.Tasks.Task(Of Models.Usuario) Implements SrController.IController.TraeUsuarioPorRutAsync
+            Return MyBase.Channel.TraeUsuarioPorRutAsync(rut)
+        End Function
+        
+        Public Sub EliminarUsuario(ByVal Rut As Integer) Implements SrController.IController.EliminarUsuario
+            MyBase.Channel.EliminarUsuario(Rut)
+        End Sub
+        
+        Public Function EliminarUsuarioAsync(ByVal Rut As Integer) As System.Threading.Tasks.Task Implements SrController.IController.EliminarUsuarioAsync
+            Return MyBase.Channel.EliminarUsuarioAsync(Rut)
+        End Function
+        
+        Public Sub ActualizarUsuario(ByVal Usuario As Models.Usuario) Implements SrController.IController.ActualizarUsuario
+            MyBase.Channel.ActualizarUsuario(Usuario)
+        End Sub
+        
+        Public Function ActualizarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task Implements SrController.IController.ActualizarUsuarioAsync
+            Return MyBase.Channel.ActualizarUsuarioAsync(Usuario)
         End Function
     End Class
 End Namespace

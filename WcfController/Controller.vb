@@ -526,4 +526,111 @@ Public Class Controller
 
     End Function
 
+
+    Public Function GuardarUsuario(Usuario As Usuario) As Integer Implements IController.GuardarUsuario
+        Dim Parametros As New List(Of Parameter)
+        Parametros.Add(New Parameter With {.Nombre = "@Rut", .Valor = Usuario.Rut, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@Nombre", .Valor = Usuario.Nombre, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@apPaterno", .Valor = Usuario.apPaterno, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@apMaterno", .Valor = Usuario.apMaterno, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@pass", .Valor = Usuario.password, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@Email", .Valor = Usuario.email, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@Rol", .Valor = Usuario.Rol, .Tipo = Parameter.TypeDB.DbVarchar})
+        Dim retorno As Integer = 0
+
+
+
+        Try
+            retorno = CInt(cnn.EjecutaScalar("setUsuario", Parametros))
+
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+        Return retorno
+
+
+    End Function
+
+
+    Public Function TraeUsuarioPorRut(Rut As Integer) As Usuario Implements IController.TraeUsuarioPorRut
+        Dim Parametros As New List(Of Parameter)
+        Dim retorno As Integer = 0
+        Parametros.Add(New Parameter With {.Nombre = "@Rut", .Valor = Rut, .Tipo = Parameter.TypeDB.DbInt})
+
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Try
+            dr = cnn.Ejecuta("getUsuarioByRut", Parametros) ' colocar nombre del procedimiento
+
+        Catch ex As Exception
+            MsgBox(ex.Message + ":" + "[getUsuarioByRut]")
+        End Try
+
+        If dr Is Nothing Then Throw New Exception("La función a valor")
+        Dim ret As New Usuario
+        'Tipos
+        For Each item As DataRow In dr
+
+
+            ret = New Usuario With {
+                    .Rut = Rut,
+                    .Nombre = item(0),
+                    .apPaterno = item(1),
+                    .apMaterno = item(2),
+                    .email = item(3),
+                    .Rol = item(4)
+                }
+
+        Next
+        Return ret
+
+
+
+    End Function
+
+
+
+    Public Sub EliminarUsuario(Rut As Integer) Implements IController.EliminarUsuario
+        Dim Parametros As New List(Of Parameter)
+        Dim retorno As Integer = 0
+        Parametros.Add(New Parameter With {.Nombre = "@Rut", .Valor = Rut, .Tipo = Parameter.TypeDB.DbInt})
+
+
+        Try
+            retorno = CInt(cnn.EjecutaScalar("delUsuario", Parametros))
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+
+    End Sub
+
+    Public Sub ActualizarUsuario(Usuario As Usuario) Implements IController.ActualizarUsuario
+        Dim Parametros As New List(Of Parameter)
+
+        Parametros.Add(New Parameter With {.Nombre = "@rut", .Valor = Usuario.Rut, .Tipo = Parameter.TypeDB.DbInt})
+        Parametros.Add(New Parameter With {.Nombre = "@Nombre", .Valor = Usuario.Nombre, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@ApPaterno", .Valor = Usuario.apPaterno, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@ApMaterno", .Valor = Usuario.apMaterno, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@email", .Valor = Usuario.email, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@rol", .Valor = Usuario.Rol, .Tipo = Parameter.TypeDB.DbInt})
+        Dim retorno As Integer = 0
+
+
+
+        Try
+            retorno = CInt(cnn.EjecutaScalar("UpdateUsuario", Parametros))
+
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+
+    End Sub
 End Class

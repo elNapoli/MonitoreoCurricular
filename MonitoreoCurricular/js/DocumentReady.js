@@ -1,5 +1,6 @@
 ﻿$(document).ready(function () {
 
+
     var miUploader = new plupload.Uploader({
         runtimes: 'html5,flash,silverlight,html4',
         browse_button: 'pickfiles', // you can pass an id...
@@ -169,7 +170,7 @@
 
              {
                  "data": "Rut", "render": function (data, type, row, meta) {
-                     return '<a href="VerUsuario.aspx?Rut=' + data + '">' + data + '</a>';
+                     return '<a href="viewUser.aspx?Rut=' + data + '">' + data + '</a>';
                  }
              },
              { "data": "Nombre" },

@@ -92,7 +92,17 @@ Public Class SubirResolucion1
                 Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
             Next
         End If
- 
+
+
+    End Sub
+
+
+    <WebMethod()> _
+    Public Sub ActualizarUsuario(Rut As Integer, Nombre As String, ApPaterno As String, ApMaterno As String, Email As String, Rol As Integer)
+        Dim Usuario As New Usuario(Rut, Nombre, Rol, ApPaterno, ApMaterno, Email)
+
+        Conexion.ActualizarUsuario(Usuario)
+
 
     End Sub
 

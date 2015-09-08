@@ -64,11 +64,8 @@
       </div>
       <hr>
       <div class="text-center">
-        <ul class="list-inline">
-          <li> <a class="text-muted" href="#login" data-toggle="tab">Login</a>  </li>
-          <li> <a class="text-muted" href="#forgot" data-toggle="tab">Forgot Password</a>  </li>
-          <li> <a class="text-muted" href="#signup" data-toggle="tab">Signup</a>  </li>
-        </ul>
+    <p class="label label-info">Recuerda que la primera vez que ingreses tu <br />
+        contraseña serán los 6 primeros dígitos de tu RUT</p>
       </div>
     </div>
 

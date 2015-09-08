@@ -108,6 +108,33 @@ function ActualizarHistorial() {
 }
 
 
+
+function ActualizarUsuario() {
+    var Rut = $('#ContentPlaceHolder1_txt_run').val();
+    var Nombre = $('#ContentPlaceHolder1_txt_nombre').val();
+    var ApPaterno = $('#ContentPlaceHolder1_txt_apPaterno').val();
+    var ApMaterno = $('#ContentPlaceHolder1_txt_apMaterno').val();
+    var Email = $('#ContentPlaceHolder1_txt_email').val();
+    var Rol = $('#ContentPlaceHolder1_DDRol').val();
+  
+    var Usuario = { "Rut": Rut, "Nombre": Nombre, "ApPaterno": ApPaterno, "ApMaterno": ApMaterno, "Email": Email, "Rol": Rol};
+    $.ajax({
+        type: "POST",
+        url: "/SubirResolucion.asmx/ActualizarUsuario",
+        data: JSON.stringify(Usuario),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (response) {
+
+
+            alert("Se ha actualizado exitosamente el registro")
+
+        },
+        failure: function (msg) {
+            alert(msg);
+        }
+    });
+}
 function CargarJsonTable(table) {
     var carreraID = $("#ContentPlaceHolder1_DDCarrera").val()
     var Datos = { "carreraID": carreraID };

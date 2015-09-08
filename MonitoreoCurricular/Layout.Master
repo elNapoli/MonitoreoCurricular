@@ -193,10 +193,7 @@
                             <a href="/Admin/CrearUsuario.aspx">
                                 <i class="fa fa-angle-right"></i>Crear Usuario</a>
                         </li>
-                        <li>
-                            <a href="form-general.html">
-                                <i class="fa fa-angle-right"></i>Eliminar Usuario</a>
-                        </li>
+              
 
                     </ul>
                 </li>

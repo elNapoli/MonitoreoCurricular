@@ -62,4 +62,16 @@ Public Interface IController
     <OperationContract()>
     Function TraeUsuarios() As IEnumerable(Of Usuario)
 
+    <OperationContract()>
+    Function GuardarUsuario(Usuario As Usuario) As Integer
+
+    <OperationContract()>
+    Function TraeUsuarioPorRut(rut As Integer) As Usuario
+
+    <OperationContract()>
+    Sub EliminarUsuario(Rut As Integer)
+
+    <OperationContract()>
+    Sub ActualizarUsuario(Usuario As Usuario)
+
 End Interface

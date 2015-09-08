@@ -92,6 +92,7 @@
   <ItemGroup>
     <Content Include="Admin\CrearUsuario.aspx" />
     <Content Include="Admin\Reports.aspx" />
+    <Content Include="Admin\viewUser.aspx" />
     <Content Include="css\daterangepicker-bs3.css" />
     <Content Include="css\jquery.gritter.css" />
     <Content Include="css\jquery.inputlimiter.css" />
@@ -1215,6 +1216,13 @@
     </Compile>
     <Compile Include="Admin\CrearUsuario.aspx.vb">
       <DependentUpon>CrearUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\viewUser.aspx.designer.vb">
+      <DependentUpon>viewUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\viewUser.aspx.vb">
+      <DependentUpon>viewUser.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="demoTable.aspx.designer.vb">
