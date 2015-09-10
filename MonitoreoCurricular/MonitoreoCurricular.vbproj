@@ -98,6 +98,7 @@
     <Content Include="css\jquery.inputlimiter.css" />
     <Content Include="css\jquery.plupload.queue.css" />
     <Content Include="css\plUpload.css" />
+    <Content Include="css\sweetalert.css" />
     <Content Include="EditarEdicion.aspx" />
     <Content Include="Error\401.aspx" />
     <Content Include="Global.asax" />
@@ -145,6 +146,7 @@
     <Content Include="js\plupload.full.min.js" />
     <Content Include="js\shCore.js" />
     <Content Include="js\style-switcher.js.map" />
+    <Content Include="js\sweetalert-dev.js" />
     <Content Include="less\theme.less" />
     <Content Include="lib\bootstrap-daterangepicker\bower.json" />
     <Content Include="lib\bootstrap-daterangepicker\package.json" />

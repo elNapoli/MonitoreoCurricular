@@ -2,7 +2,7 @@
 
 Public Class HistorialId
     Inherits System.Web.UI.Page
-    Private Conexion As New SrController.ControllerClient
+    Public Conexion As New SrController.ControllerClient
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
 
@@ -155,14 +155,15 @@ Public Class HistorialId
 
     Protected Sub EliminarHistorial(sender As Object, e As EventArgs)
 
-        Dim style = MsgBoxStyle.YesNo Or MsgBoxStyle.DefaultButton2 Or _
-            MsgBoxStyle.Question
-        Dim response1 = MsgBox("Esta seguro que desea eliminar este registro " + Request.QueryString("IDHistorial") + "?", style, "Eliminar registro")
-        If response1 = MsgBoxResult.Yes Then
-            Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))
-            MsgBox("El registro se a eliminado exitosamente", , "Registro eliminado")
-            Response.Redirect("VerResolucion.aspx")
-        End If
+        '  Dim style = MsgBoxStyle.YesNo Or MsgBoxStyle.DefaultButton2 Or _
+        'MsgBoxStyle.Question()
+        '   Dim response1 = MsgBox("Esta seguro que desea eliminar este registro " + Request.QueryString("IDHistorial") + "?", style, "Eliminar registro")
+        '   If response1 = MsgBoxResult.Yes Then
+        'Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))
+        '    MsgBox("El registro se a eliminado exitosamente", , "Registro eliminado")
+        '    Response.Redirect("VerResolucion.aspx")
+        '   End If
+        ScriptManager.RegisterStartupScript(Me, Me.GetType(), "EliminarRegistro", "EliminarRegistro();", True)
 
     End Sub
     Protected Sub HabilitarEdicion(sender As Object, e As EventArgs)

@@ -66,11 +66,35 @@ function GetEmployeeDetails(uploader) {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (response) {
-         
-            uploader.settings.multipart_params = { idNuevoHistorial: response.d };
-            uploader.start();
-            alert("Se ha guardado exitosamente el registro")
-            window.location = "HistorialId.aspx?IDHistorial=" + response.d;
+            
+            if (response.d < 0) {
+                swal("Error!", "Ha ocurrido un error al intentar guardar los datos", "error");
+            }
+            else {
+                uploader.settings.multipart_params = { idNuevoHistorial: response.d };
+                uploader.start();
+        
+
+
+                swal({
+                    title: "Éxito!",
+                    text: "Se ha guardado exitosamente el registro.",
+                    type: "success",
+                    showCancelButton: false,
+                    closeOnConfirm: false,
+                    showLoaderOnConfirm: true,
+                },
+                function () {
+                    setTimeout(function () {
+                        window.location = "HistorialId.aspx?IDHistorial=" + response.d;
+                    }, 1000);
+                });
+
+                
+   
+              //
+            }
+
         },
         failure: function (msg) {
             alert(msg);
@@ -97,8 +121,13 @@ function ActualizarHistorial() {
         dataType: "json",
         success: function (response) {
 
-           
-            alert("Se ha actualizado exitosamente el registro")
+            if (response.d < 0) {
+                swal("Error!", "Ha ocurrido un error al intentar actualizar los datos", "error");
+            }
+            else {
+   
+                swal("Registro actualizado!", "Se ha actualizado exitosamente el registro", "success");
+            }
            
         },
         failure: function (msg) {

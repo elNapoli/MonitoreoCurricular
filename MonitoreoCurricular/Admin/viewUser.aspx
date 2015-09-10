@@ -4,7 +4,35 @@
         $(document).ready(function () {
             $("#ContentPlaceHolder1_txt_div").val($.Rut.getDigito($("#ContentPlaceHolder1_txt_run").val()));
         })
+        function EliminarUsuario() {
+            swal({
+                title: "¿Esta seguro de eliminar el usuario?",
+                text: "Una vez eliminado el usuario no se podrá recuperar.",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Si, deseo eliminar el usuario seleccionado.!",
+                closeOnConfirm: false
+            },
+            function () {
+                <%Conexion.EliminarUsuario(Request.QueryString("Rut"))%>
+         
+                swal({
+                    title: "Usuario eliminado!",
+                    text: "El usuario se ha eliminado exitosamente",
+                    type: "success",
+                    showCancelButton: false,
+                    closeOnConfirm: false,
+                    showLoaderOnConfirm: true,
+                },
+                           function () {
+                               setTimeout(function () {
+                                   window.location = "/Admin/ListUsuario.aspx";
+                               }, 1000);
+                           });
 
+            });
+        }
     </script>
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <!--BEGIN INPUT TEXT FIELDS-->

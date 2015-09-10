@@ -2,7 +2,7 @@
 
 Public Class viewUser
     Inherits System.Web.UI.Page
-    Private Conexion As New SrController.ControllerClient
+    Public Conexion As New SrController.ControllerClient
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         WebControl.DisabledCssClass = "form-control"
 
@@ -23,14 +23,15 @@ Public Class viewUser
     End Sub
 
     Protected Sub BtnEliminar_Click(sender As Object, e As EventArgs)
-        Dim style = MsgBoxStyle.YesNo Or MsgBoxStyle.DefaultButton2 Or _
-    MsgBoxStyle.Question
-        Dim response1 = MsgBox("Esta seguro que desea eliminar este usuario " + Request.QueryString("IDHistorial") + "?", style, "Eliminar registro")
-        If response1 = MsgBoxResult.Yes Then
-            Conexion.EliminarUsuario(Request.QueryString("Rut"))
-            MsgBox("El usuario se a eliminado exitosamente", , "Registro eliminado")
-            Response.Redirect("ListUsuario.aspx")
-        End If
+        ' Dim style = MsgBoxStyle.YesNo Or MsgBoxStyle.DefaultButton2 Or _
+        'MsgBoxStyle.Question()
+        ' Dim response1 = MsgBox("Esta seguro que desea eliminar este usuario " + Request.QueryString("IDHistorial") + "?", style, "Eliminar registro")
+        ' If response1 = MsgBoxResult.Yes Then
+        'Conexion.EliminarUsuario(Request.QueryString("Rut"))
+        '    MsgBox("El usuario se a eliminado exitosamente", , "Registro eliminado")
+        '   Response.Redirect("ListUsuario.aspx")
+        '   End If
+        ScriptManager.RegisterStartupScript(Me, Me.GetType(), "EliminarUsuario", "EliminarUsuario();", True)
     End Sub
 
     Protected Sub BtnEditar_Click(sender As Object, e As EventArgs)

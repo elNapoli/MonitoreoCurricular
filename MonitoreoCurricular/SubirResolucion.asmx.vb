@@ -67,34 +67,40 @@ Public Class SubirResolucion1
             For Each item As String In Asignaturas
                 Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
             Next
-
+            Return idHistorial
         Catch ex As Exception
-            MsgBox(ex.Message)
+            Return -1
         End Try
 
 
-        Return idHistorial
+
     End Function
 
 
 
 
     <WebMethod()> _
-    Public Sub ActualizarHistorial(idHistorial As Integer, Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String)
-        Dim Historial As New Models.HistorialCurricular(idHistorial, Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
-        ActualizarHistorial(Historial)
-        Conexion.EliminarAsignaturasPorHistorial(idHistorial)
+    Public Function ActualizarHistorial(idHistorial As Integer, Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As Integer
+        Try
+            Dim Historial As New Models.HistorialCurricular(idHistorial, Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
+            ActualizarHistorial(Historial)
+            Conexion.EliminarAsignaturasPorHistorial(idHistorial)
 
-        If Not Asignaturas Is Nothing Then
+            If Not Asignaturas Is Nothing Then
 
-            For Each item As String In Asignaturas
+                For Each item As String In Asignaturas
 
-                Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
-            Next
-        End If
+                    Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
+                Next
+            End If
+            Return 1
+        Catch ex As Exception
+            Return -1
+        End Try
 
 
-    End Sub
+
+    End Function
 
 
     <WebMethod()> _

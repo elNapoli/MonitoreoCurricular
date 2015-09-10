@@ -19,6 +19,35 @@
 
 
     <script type="text/javascript">
+        function EliminarRegistro() {
+            swal({
+                title: "¿Esta seguro de eliminar el registro?",
+                text: "Una vez eliminado el registro no se podrá recuperar.",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Si, deseo eliminar el registro!",
+                closeOnConfirm: false
+            },
+            function () {
+                <%Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))%>
+
+                swal({
+                    title: "Registro eliminado!",
+                    text: "El registro se ha eliminado exitosamente",
+                    type: "success",
+                    showCancelButton: false,
+                    closeOnConfirm: false,
+                    showLoaderOnConfirm: true,
+                    },
+                           function () {
+                               setTimeout(function () {
+                                   window.location = "/VerResolucion.aspx";
+                               }, 1000);
+                           });
+
+            });
+        }
         function holamundo(data, selected) {
             //some code here
             var dato = data.split(".");
