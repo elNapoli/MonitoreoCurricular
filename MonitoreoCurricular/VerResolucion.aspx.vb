@@ -6,6 +6,20 @@ Public Class VerResolucion
     Private Conexion As New SrController.ControllerClient
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If (Request.QueryString("IDHistorial") <> Nothing And Request.QueryString("Eliminar") <> Nothing) Then
+            If (Request.QueryString("Eliminar") = "True") Then
+
+                If (Conexion.EliminarHistorial(Request.QueryString("IDHistorial")) = "1") Then
+
+                    ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.success('El registro se ha eliminado correctamente');", True)
+                Else
+                    ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.error('Ha ocurrido un problema al intentar eliminar el registro!');", True)
+
+                End If
+ 
+            End If
+        End If
+
         CargarResolucionesJSON()
 
 

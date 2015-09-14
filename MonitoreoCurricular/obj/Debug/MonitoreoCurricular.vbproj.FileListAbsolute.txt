@@ -64,3 +64,16 @@ D:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.
 D:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
 D:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
 D:\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb
+D:\Nueva carpeta\algo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbprojResolveAssemblyReference.cache
+D:\Nueva carpeta\algo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.Resources.resources
+D:\Nueva carpeta\algo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.GenerateResource.Cache
+D:\Nueva carpeta\algo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
+D:\Nueva carpeta\algo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
+D:\Nueva carpeta\algo\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb
+D:\Nueva carpeta\algo\MonitoreoCurricular\bin\MonitoreoCurricular.dll.config
+D:\Nueva carpeta\algo\MonitoreoCurricular\bin\MonitoreoCurricular.dll
+D:\Nueva carpeta\algo\MonitoreoCurricular\bin\MonitoreoCurricular.pdb
+D:\Nueva carpeta\algo\MonitoreoCurricular\bin\MonitoreoCurricular.xml
+D:\Nueva carpeta\algo\MonitoreoCurricular\bin\Models.dll
+D:\Nueva carpeta\algo\MonitoreoCurricular\bin\Models.pdb
+D:\Nueva carpeta\algo\MonitoreoCurricular\bin\Models.xml

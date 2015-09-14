@@ -101,7 +101,7 @@
                     <div class="icons">
                       <i class="fa fa-table"></i>
                     </div>
-                    <h5>Detalle</h5>
+                    <h5>Dynamic Table</h5>
                   </header>
                   <div id="collapse4" class="body">
                    <table id="HistorialTable" class="display" cellspacing="0" width="100%">

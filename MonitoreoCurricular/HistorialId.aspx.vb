@@ -2,11 +2,16 @@
 
 Public Class HistorialId
     Inherits System.Web.UI.Page
-    Public Conexion As New SrController.ControllerClient
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+    Private Conexion As New SrController.ControllerClient
+    Private historialTemp As IEnumerable(Of Models.HistorialCurricular) = Nothing
+    Private resolucionesTemp As IEnumerable(Of Models.Resoluciones) = Nothing
+    Private asignaturasTemp As IEnumerable(Of Models.Parametros) = Nothing
 
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+     
 
         IdHistorialURL.Text = Request.QueryString("IDHistorial")
+
         If (Me.IsPostBack) Then
 
             Dim fechaTemp As String
@@ -16,29 +21,44 @@ Public Class HistorialId
                 fechaTemp = (FechaResolucionT.Text)
             End If
 
-            Dim Historial As New Models.HistorialCurricular(Request.QueryString("IDHistorial"), DDPlan.SelectedValue, DDCarrera.SelectedValue, fechaTemp, DDHito.Text, Descripcion.Value, antes.Value, despues.Value)
+            Dim Historial As New Models.HistorialCurricular(IdHistorialURL.Text, DDPlan.SelectedValue, DDCarrera.SelectedValue, fechaTemp, DDHito.Text, Descripcion.Value, antes.Value, despues.Value)
             ActualizarHistorial(Historial)
         End If
-        '  DDAsignaturas.Attributes.Add("disabled", "disabled")
-        WebControl.DisabledCssClass = "form-control"
-        Dim historialTemp As IEnumerable(Of Models.HistorialCurricular) = Nothing
-        Dim resolucionesTemp As IEnumerable(Of Models.Resoluciones) = Nothing
-        Dim asignaturasTemp As IEnumerable(Of Models.Parametros) = Nothing
 
-        historialTemp = CallHistorialById(Request.QueryString("IDHistorial"))
-        asignaturasTemp = CallAsignaturasPorHistorial(Request.QueryString("IDHistorial"))
-        resolucionesTemp = CallResolucionesPorHistorial(Request.QueryString("IDHistorial"))
+
+
+
+        WebControl.DisabledCssClass = "form-control"
+
+
+        cargarDatos(IdHistorialURL.Text)
 
 
 
         DDCarrera.Enabled = False
         DDPlan.Enabled = False
         DDHito.Enabled = False
-
+        BtnEditar.Visible = True
+        BtnActualizar.Visible = False
         despues.Attributes("readonly") = "readonly"
         antes.Attributes("readonly") = "readonly"
         Descripcion.Attributes("readonly") = "readonly"
 
+
+
+
+
+
+
+
+    End Sub
+
+
+    Private Sub cargarDatos(idHistorial As Integer)
+
+        historialTemp = CallHistorialById(idHistorial)
+        asignaturasTemp = CallAsignaturasPorHistorial(idHistorial)
+        resolucionesTemp = CallResolucionesPorHistorial(idHistorial)
 
         DDAsignaturas.DataTextField = "nomAsignatura"
         DDAsignaturas.DataValueField = "idAsignatura"
@@ -57,6 +77,7 @@ Public Class HistorialId
 
         Next
         divResoluciones.InnerHtml = divString
+
 
         Dim idTemp As String
         idTemp = ""
@@ -82,9 +103,7 @@ Public Class HistorialId
             antes.Value = item.antes.ToString
             despues.Value = item.despues.ToString
         Next
-
     End Sub
-
     Private Function CallAsignatura() As IEnumerable(Of Asignaturas)
         Dim Lista As IEnumerable(Of Asignaturas) = Nothing
         Try
@@ -155,15 +174,14 @@ Public Class HistorialId
 
     Protected Sub EliminarHistorial(sender As Object, e As EventArgs)
 
-        '  Dim style = MsgBoxStyle.YesNo Or MsgBoxStyle.DefaultButton2 Or _
-        'MsgBoxStyle.Question()
-        '   Dim response1 = MsgBox("Esta seguro que desea eliminar este registro " + Request.QueryString("IDHistorial") + "?", style, "Eliminar registro")
-        '   If response1 = MsgBoxResult.Yes Then
-        'Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))
-        '    MsgBox("El registro se a eliminado exitosamente", , "Registro eliminado")
-        '    Response.Redirect("VerResolucion.aspx")
-        '   End If
-        ScriptManager.RegisterStartupScript(Me, Me.GetType(), "EliminarRegistro", "EliminarRegistro();", True)
+        Dim style = MsgBoxStyle.YesNo Or MsgBoxStyle.DefaultButton2 Or _
+            MsgBoxStyle.Question
+        Dim response1 = MsgBox("Esta seguro que desea eliminar este registro " + Request.QueryString("IDHistorial") + "?", style, "Eliminar registro")
+        If response1 = MsgBoxResult.Yes Then
+            Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))
+            MsgBox("El registro se a eliminado exitosamente", , "Registro eliminado")
+            Response.Redirect("VerResolucion.aspx")
+        End If
 
     End Sub
     Protected Sub HabilitarEdicion(sender As Object, e As EventArgs)

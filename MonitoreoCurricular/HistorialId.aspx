@@ -5,7 +5,35 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+    <script>
+
+
+     function eliminarHistorialJS() {
+
+                alertify.confirm("Esta seguro que desea eliminar el registro seleccionado?", function (e) {
+                    if (e) {
+
+                        setTimeout(function () {
+                      
+                            window.location = "/VerResolucion.aspx?IdHistorial="+$("#<%=IdHistorialURL.ClientID()%>").val()+"&Eliminar=True";
+                          //  __doPostBack(this.name, '');
+                        }, 0);
+                    } else {
+                        alertify.error("Usted ha cancelado la operación!");
+
+                        return false;
+                    }
+
+                });
+
+            };
+
+
+   
+    </script>
     <script type="text/javascript">
+
         function pageLoad() {
             $('.chzn-select').chosen();
             $('#dp3').datepicker();
@@ -19,35 +47,6 @@
 
 
     <script type="text/javascript">
-        function EliminarRegistro() {
-            swal({
-                title: "¿Esta seguro de eliminar el registro?",
-                text: "Una vez eliminado el registro no se podrá recuperar.",
-                type: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: "Si, deseo eliminar el registro!",
-                closeOnConfirm: false
-            },
-            function () {
-                <%Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))%>
-
-                swal({
-                    title: "Registro eliminado!",
-                    text: "El registro se ha eliminado exitosamente",
-                    type: "success",
-                    showCancelButton: false,
-                    closeOnConfirm: false,
-                    showLoaderOnConfirm: true,
-                    },
-                           function () {
-                               setTimeout(function () {
-                                   window.location = "/VerResolucion.aspx";
-                               }, 1000);
-                           });
-
-            });
-        }
         function holamundo(data, selected) {
             //some code here
             var dato = data.split(".");
@@ -82,6 +81,7 @@
     <!--BEGIN INPUT TEXT FIELDS-->
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
+
     <div class="row">
         <div class="col-lg-12">
             <div class="box dark">
@@ -140,13 +140,16 @@
                                     </div>
                          
                             <div class="col-lg-3">
-                                <asp:LinkButton ID="BtnEliminar" 
+                                <asp:LinkButton ID="BtnEliminarHistorial" 
                                     runat="server" 
                                     CssClass="btn btn-danger start"    
-                                    OnClick="EliminarHistorial">
+                          
+                                    onClientClick="eliminarHistorialJS()"
+                                    UseSubmitBehavior="false" 
+                                    >
                                     <span aria-hidden="true" class="glyphicon glyphicon-trash"></span> Eliminar historial
                                     </asp:LinkButton>
-                                </div>
+                                    </div>
                             <div class="col-lg-3">
 
                           </div>

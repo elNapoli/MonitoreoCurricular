@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class HistorialId
+Partial Public Class WebForm3
 
     '''<summary>
     '''Control ScriptManager1.
@@ -59,13 +59,13 @@ Partial Public Class HistorialId
     Protected WithEvents BtnActualizar As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
-    '''Control BtnEliminarHistorial.
+    '''Control BtnEliminar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents BtnEliminarHistorial As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents BtnEliminar As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
     '''Control DDPlan.
@@ -77,15 +77,6 @@ Partial Public Class HistorialId
     Protected WithEvents DDPlan As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Control CDPlan.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents CDPlan As Global.AjaxControlToolkit.CascadingDropDown
-
-    '''<summary>
     '''Control DDCarrera.
     '''</summary>
     '''<remarks>
@@ -93,15 +84,6 @@ Partial Public Class HistorialId
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DDCarrera As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Control CDCarrera.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents CDCarrera As Global.AjaxControlToolkit.CascadingDropDown
 
     '''<summary>
     '''Control FechaResolucion.

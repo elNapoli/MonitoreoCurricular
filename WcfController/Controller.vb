@@ -289,7 +289,7 @@ Public Class Controller
     End Function
 
 
-    Public Sub GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String) Implements IController.GuardarAsignaturaPorHistorial
+    Public Function GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String) As Integer Implements IController.GuardarAsignaturaPorHistorial
         Dim Parametros As New List(Of Parameter)
         Dim retorno As Integer = 0
         Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
@@ -300,12 +300,13 @@ Public Class Controller
             retorno = CInt(cnn.EjecutaScalar("setAsignaturaByHistorial", Parametros))
 
         Catch ex As Exception
+            retorno = -2
             MsgBox(ex.Message)
         End Try
+        Return retorno
 
 
-
-    End Sub
+    End Function
 
 
     Public Function TraeResoluciones() As IEnumerable(Of Resoluciones) Implements IController.TraeResoluciones
@@ -394,7 +395,7 @@ Public Class Controller
 
 
 
-    Public Sub EliminarHistorial(idHistorial As Integer) Implements IController.EliminarHistorial
+    Public Function EliminarHistorial(idHistorial As Integer) As Integer Implements IController.EliminarHistorial
         Dim Parametros As New List(Of Parameter)
         Dim retorno As Integer = 0
         Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
@@ -405,15 +406,16 @@ Public Class Controller
 
         Catch ex As Exception
             MsgBox(ex.Message)
+
         End Try
 
+        Return retorno
+
+    End Function
 
 
-    End Sub
 
-
-
-    Public Sub ActualizarHistorial(Historial As HistorialCurricular) Implements IController.ActualizarHistorial
+    Public Function ActualizarHistorial(Historial As HistorialCurricular) As Integer Implements IController.ActualizarHistorial
         Dim Parametros As New List(Of Parameter)
 
         Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = Historial.id, .Tipo = Parameter.TypeDB.DbInt})
@@ -434,11 +436,13 @@ Public Class Controller
 
 
         Catch ex As Exception
+            retorno = -2
             MsgBox(ex.Message)
         End Try
 
+        Return retorno
 
-    End Sub
+    End Function
 
 
 

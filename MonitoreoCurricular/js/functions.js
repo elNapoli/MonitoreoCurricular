@@ -66,38 +66,25 @@ function GetEmployeeDetails(uploader) {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (response) {
-            
-            if (response.d < 0) {
-                swal("Error!", "Ha ocurrido un error al intentar guardar los datos", "error");
+         
+            uploader.settings.multipart_params = { idNuevoHistorial: response.d };
+            uploader.start();
+            if (response.d[0] == "0") {
+                alertify.error(response.d[1]);
+
             }
             else {
-                uploader.settings.multipart_params = { idNuevoHistorial: response.d };
-                uploader.start();
-        
-
-
-                swal({
-                    title: "Éxito!",
-                    text: "Se ha guardado exitosamente el registro.",
-                    type: "success",
-                    showCancelButton: false,
-                    closeOnConfirm: false,
-                    showLoaderOnConfirm: true,
-                },
-                function () {
-                    setTimeout(function () {
-                        window.location = "HistorialId.aspx?IDHistorial=" + response.d;
-                    }, 1000);
-                });
-
-                
-   
-              //
+                alertify.success(response.d[1]);
+                window.location = "HistorialId.aspx?IDHistorial=" + response.d[0];
             }
+            
+            
 
+          //  alertify.alert("hola")
+          // 
         },
         failure: function (msg) {
-            alert(msg);
+            alertify.error(msg);
         }
     });
 }
@@ -120,18 +107,18 @@ function ActualizarHistorial() {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (response) {
-
-            if (response.d < 0) {
-                swal("Error!", "Ha ocurrido un error al intentar actualizar los datos", "error");
+            if (response.d[0] == "1") {
+                alertify.success(response.d[1]);
             }
             else {
-   
-                swal("Registro actualizado!", "Se ha actualizado exitosamente el registro", "success");
+                alertify.error(response.d[1])
             }
+           
+
            
         },
         failure: function (msg) {
-            alert(msg);
+            alertify.error(msg, "", 0);
         }
     });
 }

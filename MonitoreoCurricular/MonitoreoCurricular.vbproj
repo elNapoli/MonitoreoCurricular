@@ -93,12 +93,13 @@
     <Content Include="Admin\CrearUsuario.aspx" />
     <Content Include="Admin\Reports.aspx" />
     <Content Include="Admin\viewUser.aspx" />
+    <Content Include="css\alertify.core.css" />
+    <Content Include="css\alertify.default.css" />
     <Content Include="css\daterangepicker-bs3.css" />
     <Content Include="css\jquery.gritter.css" />
     <Content Include="css\jquery.inputlimiter.css" />
     <Content Include="css\jquery.plupload.queue.css" />
     <Content Include="css\plUpload.css" />
-    <Content Include="css\sweetalert.css" />
     <Content Include="EditarEdicion.aspx" />
     <Content Include="Error\401.aspx" />
     <Content Include="Global.asax" />
@@ -127,6 +128,7 @@
     <Content Include="img\throbber.gif" />
     <Content Include="img\transp50.png" />
     <Content Include="index.aspx" />
+    <Content Include="js\alertify.js" />
     <Content Include="js\app.js.map" />
     <Content Include="js\core.js.map" />
     <Content Include="js\countdown.js.map" />
@@ -146,7 +148,6 @@
     <Content Include="js\plupload.full.min.js" />
     <Content Include="js\shCore.js" />
     <Content Include="js\style-switcher.js.map" />
-    <Content Include="js\sweetalert-dev.js" />
     <Content Include="less\theme.less" />
     <Content Include="lib\bootstrap-daterangepicker\bower.json" />
     <Content Include="lib\bootstrap-daterangepicker\package.json" />

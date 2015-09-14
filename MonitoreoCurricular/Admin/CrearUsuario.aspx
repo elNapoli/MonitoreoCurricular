@@ -1,11 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Layout.Master" CodeBehind="CrearUsuario.aspx.vb" Inherits="MonitoreoCurricular.CrearUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <script type="text/javascript">
-      function GuardarUsuario(tipo) {
-
-
-          swal("Here's a message!", "It's pretty, isn't it?")
-      }
       $(document).ready(function () {
           $('#ContentPlaceHolder1_txt_run').Rut({
               digito_verificador: '#ContentPlaceHolder1_txt_div',

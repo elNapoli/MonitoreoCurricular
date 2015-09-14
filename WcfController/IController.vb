@@ -36,7 +36,7 @@ Public Interface IController
     Function GuardarHistorial(Historial As HistorialCurricular) As Integer
 
     <OperationContract()>
-    Sub GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String)
+    Function GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String) As Integer
 
     <OperationContract()>
     Function TraeResoluciones() As IEnumerable(Of Resoluciones)
@@ -48,10 +48,10 @@ Public Interface IController
     Function TraeHistorialPorId(idHistorial As Integer) As IEnumerable(Of HistorialCurricular)
 
     <OperationContract()>
-    Sub EliminarHistorial(idHistorial As Integer)
+    Function EliminarHistorial(idHistorial As Integer) As Integer
 
     <OperationContract()>
-    Sub ActualizarHistorial(Historial As HistorialCurricular)
+    Function ActualizarHistorial(Historial As HistorialCurricular) As Integer
 
     <OperationContract()>
     Sub EliminarAsignaturasPorHistorial(idHistorial As Integer)

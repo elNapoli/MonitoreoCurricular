@@ -73,3 +73,18 @@ D:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbproj.GenerateReso
 D:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.dll
 D:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.xml
 D:\MonitoreoCurricular\WcfController\obj\Debug\WcfController.pdb
+D:\Nueva carpeta\algo\WcfController\bin\Debug\WcfController.dll.config
+D:\Nueva carpeta\algo\WcfController\bin\Debug\WcfController.dll
+D:\Nueva carpeta\algo\WcfController\bin\Debug\WcfController.pdb
+D:\Nueva carpeta\algo\WcfController\bin\Debug\WcfController.xml
+D:\Nueva carpeta\algo\WcfController\bin\Debug\Models.dll
+D:\Nueva carpeta\algo\WcfController\bin\Debug\Models.pdb
+D:\Nueva carpeta\algo\WcfController\bin\Debug\Models.xml
+D:\Nueva carpeta\algo\WcfController\bin\Debug\Conexion.pdb
+D:\Nueva carpeta\algo\WcfController\bin\Debug\Conexion.xml
+D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.vbprojResolveAssemblyReference.cache
+D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.Resources.resources
+D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.vbproj.GenerateResource.Cache
+D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.dll
+D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.xml
+D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.pdb

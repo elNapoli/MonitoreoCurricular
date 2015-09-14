@@ -56,20 +56,25 @@ Public Class SubirResolucion1
     End Function
 
     <WebMethod()> _
-    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As Integer
+    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As String()
         Dim array As String = ""
         Dim idHistorial As Integer
+        Dim resultado(1) As String
         Try
             Dim Historial As New Models.HistorialCurricular(Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
 
             idHistorial = Conexion.GuardarHistorial(Historial)
-
+            resultado(0) = idHistorial.ToString
+            resultado(1) = "Se ha guardado exitosamente el registro"
             For Each item As String In Asignaturas
                 Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
             Next
-            Return idHistorial
+            Return resultado
         Catch ex As Exception
-            Return -1
+
+            resultado(0) = "0"
+            resultado(1) = (ex.Message)
+            Return resultado
         End Try
 
 
@@ -80,25 +85,43 @@ Public Class SubirResolucion1
 
 
     <WebMethod()> _
-    Public Function ActualizarHistorial(idHistorial As Integer, Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As Integer
-        Try
-            Dim Historial As New Models.HistorialCurricular(idHistorial, Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
-            ActualizarHistorial(Historial)
-            Conexion.EliminarAsignaturasPorHistorial(idHistorial)
+    Public Function ActualizarHistorial(idHistorial As Integer, Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As String()
+        Dim Historial As New Models.HistorialCurricular(idHistorial, Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
+        Dim ValidadorHistorial As Integer
+        Dim retorno(1) As String
+        Dim seguir As String = "True"
 
+        ValidadorHistorial = ActualizarHistorial(Historial)
+        Conexion.EliminarAsignaturasPorHistorial(idHistorial)
+
+        If ValidadorHistorial = 1 Then
             If Not Asignaturas Is Nothing Then
 
                 For Each item As String In Asignaturas
 
-                    Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
+                    If (Conexion.GuardarAsignaturaPorHistorial(idHistorial, item) <> 1) Then
+                        seguir = "False"
+
+
+                        Exit For
+                    End If
+
                 Next
+
+                If (seguir = "True") Then
+                    retorno(0) = 1
+                    retorno(1) = "se ha guardado correctamente el registro."
+                Else
+                    retorno(0) = -1
+                    retorno(1) = "Hubo un error al actualizar las asignaturas"
+                End If
             End If
-            Return 1
-        Catch ex As Exception
-            Return -1
-        End Try
 
 
+        End If
+
+
+        Return (retorno)
 
     End Function
 
@@ -113,18 +136,19 @@ Public Class SubirResolucion1
     End Sub
 
 
-    Private Sub ActualizarHistorial(historial As Models.HistorialCurricular)
-
+    Private Function ActualizarHistorial(historial As Models.HistorialCurricular) As Integer
+        Dim resultado As Integer
         Try
-            Conexion.ActualizarHistorial(historial)
+            resultado = Conexion.ActualizarHistorial(historial).ToString
+
 
         Catch ex As Exception
             MsgBox(ex.Message)
-
+            resultado = -2
         End Try
 
-
-    End Sub
+        Return resultado
+    End Function
 
 
 
