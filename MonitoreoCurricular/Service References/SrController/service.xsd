@@ -271,6 +271,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="RegistrarLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="log" nillable="true" type="q17:ErrorNapoli" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarLogResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
   <xs:element name="TraeUsuarioPorRut">
     <xs:complexType>
       <xs:sequence>
@@ -281,7 +293,7 @@
   <xs:element name="TraeUsuarioPorRutResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeUsuarioPorRutResult" nillable="true" type="q17:Usuario" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeUsuarioPorRutResult" nillable="true" type="q18:Usuario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -300,7 +312,7 @@
   <xs:element name="ActualizarUsuario">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Usuario" nillable="true" type="q18:Usuario" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Usuario" nillable="true" type="q19:Usuario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

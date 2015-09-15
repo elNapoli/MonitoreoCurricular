@@ -138,6 +138,12 @@ Namespace SrController
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarUsuario", ReplyAction:="http://tempuri.org/IController/GuardarUsuarioResponse")>  _
         Function GuardarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Integer)
         
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/RegistrarLog", ReplyAction:="http://tempuri.org/IController/RegistrarLogResponse")>  _
+        Sub RegistrarLog(ByVal log As Models.ErrorNapoli)
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/RegistrarLog", ReplyAction:="http://tempuri.org/IController/RegistrarLogResponse")>  _
+        Function RegistrarLogAsync(ByVal log As Models.ErrorNapoli) As System.Threading.Tasks.Task
+        
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeUsuarioPorRut", ReplyAction:="http://tempuri.org/IController/TraeUsuarioPorRutResponse")>  _
         Function TraeUsuarioPorRut(ByVal rut As Integer) As Models.Usuario
         
@@ -346,6 +352,14 @@ Namespace SrController
         
         Public Function GuardarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Integer) Implements SrController.IController.GuardarUsuarioAsync
             Return MyBase.Channel.GuardarUsuarioAsync(Usuario)
+        End Function
+        
+        Public Sub RegistrarLog(ByVal log As Models.ErrorNapoli) Implements SrController.IController.RegistrarLog
+            MyBase.Channel.RegistrarLog(log)
+        End Sub
+        
+        Public Function RegistrarLogAsync(ByVal log As Models.ErrorNapoli) As System.Threading.Tasks.Task Implements SrController.IController.RegistrarLogAsync
+            Return MyBase.Channel.RegistrarLogAsync(log)
         End Function
         
         Public Function TraeUsuarioPorRut(ByVal rut As Integer) As Models.Usuario Implements SrController.IController.TraeUsuarioPorRut

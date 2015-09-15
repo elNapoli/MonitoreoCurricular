@@ -86,4 +86,14 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfUsuario" nillable="true" type="tns:ArrayOfUsuario" />
+  <xs:complexType name="ErrorNapoli">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rut" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="origenError" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ErrorNapoli" nillable="true" type="tns:ErrorNapoli" />
 </xs:schema>

@@ -127,6 +127,12 @@
   <wsdl:message name="IController_GuardarUsuario_OutputMessage">
     <wsdl:part name="parameters" element="tns:GuardarUsuarioResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_RegistrarLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarLog" />
+  </wsdl:message>
+  <wsdl:message name="IController_RegistrarLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarLogResponse" />
+  </wsdl:message>
   <wsdl:message name="IController_TraeUsuarioPorRut_InputMessage">
     <wsdl:part name="parameters" element="tns:TraeUsuarioPorRut" />
   </wsdl:message>
@@ -225,6 +231,10 @@
     <wsdl:operation name="GuardarUsuario">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/GuardarUsuario" message="tns:IController_GuardarUsuario_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/GuardarUsuarioResponse" message="tns:IController_GuardarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/RegistrarLog" message="tns:IController_RegistrarLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/RegistrarLogResponse" message="tns:IController_RegistrarLog_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="TraeUsuarioPorRut">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeUsuarioPorRut" message="tns:IController_TraeUsuarioPorRut_InputMessage" />
@@ -414,6 +424,15 @@
     </wsdl:operation>
     <wsdl:operation name="GuardarUsuario">
       <soap:operation soapAction="http://tempuri.org/IController/GuardarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarLog">
+      <soap:operation soapAction="http://tempuri.org/IController/RegistrarLog" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

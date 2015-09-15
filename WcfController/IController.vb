@@ -66,6 +66,9 @@ Public Interface IController
     Function GuardarUsuario(Usuario As Usuario) As Integer
 
     <OperationContract()>
+    Sub RegistrarLog(log As ErrorNapoli)
+
+    <OperationContract()>
     Function TraeUsuarioPorRut(rut As Integer) As Usuario
 
     <OperationContract()>
