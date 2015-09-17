@@ -11,7 +11,9 @@ Public Class HistorialId
      
 
         IdHistorialURL.Text = Request.QueryString("IDHistorial")
-
+        If (Request.QueryString("IDHistorial") <> Nothing) Then
+            ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.success('Se ha guardado exitosamente el registro!');", True)
+        End If
         If (Me.IsPostBack) Then
 
             Dim fechaTemp As String

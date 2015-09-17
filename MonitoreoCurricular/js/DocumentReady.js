@@ -32,17 +32,18 @@
             UploadProgress: function (up, file) {
                 document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
             },
-            
+
             Error: function (up, err) {
                 alert("\nError #" + err.code + ": " + err.message);
-            }
+            },
+
         }
     });
 
     miUploader.init();
     $("#Btn_Guardar").click(function () {
 
-        GetEmployeeDetails(miUploader);
+        GuardarResolucion(miUploader);
     });
 
     $("#perro").click(function () {

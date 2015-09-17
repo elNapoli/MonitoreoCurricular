@@ -48,7 +48,7 @@ $(function () {
 });
 
 
-function GetEmployeeDetails(uploader) {
+function GuardarResolucion(uploader) {
     var Plan = $('#ContentPlaceHolder1_DDPlan').val();
     var Carrera = $('#ContentPlaceHolder1_DDCarrera').val();
     var Fecha = $('#ContentPlaceHolder1_FechaResolucion').val();
@@ -66,16 +66,22 @@ function GetEmployeeDetails(uploader) {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (response) {
-         
-            uploader.settings.multipart_params = { idNuevoHistorial: response.d };
-            uploader.start();
+            
+
             if (response.d[0] == "0") {
                 alertify.error(response.d[1]);
 
             }
             else {
-                alertify.success(response.d[1]);
-                window.location = "HistorialId.aspx?IDHistorial=" + response.d[0];
+                uploader.settings.multipart_params = { idNuevoHistorial: response.d[0] };
+                uploader.start();
+                uploader.bind("UploadComplete", function (up, files) {
+                    window.location = "HistorialId.aspx?IDHistorial=" + response.d[0] + "&save='True'";
+
+                });
+              //  alertify.success(response.d[1]);
+                //  window.location = "HistorialId.aspx?IDHistorial=" + response.d[0]+"&save='True'";
+        
             }
             
             

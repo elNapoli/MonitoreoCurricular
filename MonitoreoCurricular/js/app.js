@@ -490,7 +490,7 @@
 
     /*----------- BEGIN daterangepicker CODE -------------------------*/
     $('#reservation').daterangepicker();
-
+   
     $('#reportrange').daterangepicker(
             {
                 ranges: {
@@ -663,21 +663,7 @@
     $('#fileUpload').uniform();
     /*----------- END uniform CODE -------------------------*/
 
-    /*----------- BEGIN plupload CODE -------------------------*/
-    $("#uploader").pluploadQueue({
-        runtimes: 'html5,html4',
-        url: 'SubirResolucion.asmx/hola',
-        max_file_size: '4mb',
-        unique_names: true,
 
-        filters: [
-            {
-                title: "Archivos pdf",
-                extensions: "pdf"
-            }
-        ]
-    });
-    /*----------- END plupload CODE -------------------------*/
 
     /*----------- BEGIN formwizard CODE -------------------------*/
     $("#wizardForm").formwizard({
