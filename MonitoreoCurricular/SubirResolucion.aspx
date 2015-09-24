@@ -3,6 +3,12 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+            <div class="contentLoading " id="element_to_pop_up"  style="display:none;">
+
+                <asp:Image ImageUrl="/img/loading_spinner.gif" runat="server" />
+                        <p class="alertify-message">Subiendo las resoluciones</p>      
+
+            </div>
     
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <!--BEGIN INPUT TEXT FIELDS-->

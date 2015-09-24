@@ -95,6 +95,7 @@
     <Content Include="Admin\viewUser.aspx" />
     <Content Include="css\alertify.core.css" />
     <Content Include="css\alertify.default.css" />
+    <Content Include="css\ContentLoading.css" />
     <Content Include="css\daterangepicker-bs3.css" />
     <Content Include="css\jquery.gritter.css" />
     <Content Include="css\jquery.inputlimiter.css" />
@@ -119,6 +120,7 @@
     <Content Include="img\details_open.png" />
     <Content Include="img\done.gif" />
     <Content Include="img\error.gif" />
+    <Content Include="img\loading_spinner.gif" />
     <Content Include="img\pattern\README.md" />
     <Content Include="img\sort_asc.png" />
     <Content Include="img\sort_asc_disabled.png" />
@@ -137,6 +139,7 @@
     <Content Include="js\DocumentReady.js" />
     <Content Include="js\es.js" />
     <Content Include="js\functions.js" />
+    <Content Include="js\jquery.bpopup.min.js" />
     <Content Include="js\jquery.dataTables.js" />
     <Content Include="js\jquery.form.wizard.js" />
     <Content Include="js\jquery.gritter.min.js" />
@@ -365,6 +368,7 @@
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="Error\Web.config" />
+    <Content Include="Models.LogNapoli.datasource" />
     <None Include="Service References\SrController\configuration91.svcinfo" />
     <None Include="Service References\SrController\configuration.svcinfo" />
     <Content Include="css\countdown.css" />

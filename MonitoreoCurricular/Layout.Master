@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="/css/main.min.css">
     <link rel="stylesheet" href="/css/plUpload.css">
 
+    <link rel="stylesheet" href="/css/ContentLoading.css">
+
     <link rel="stylesheet" href="/css/alertify.core.css">
     <link rel="stylesheet" href="/css/alertify.default.css">
 
@@ -74,7 +76,12 @@
     </style>
 </head>
 <body>
+ 
        <form id="form1" runat="server">
+
+    <asp:HiddenField    runat="server" ID="CookRut"></asp:HiddenField>
+
+
     <div class="bg-dark dk" id="wrap">
         <div id="top">
 
@@ -128,8 +135,9 @@
                     <div class="media-body">
                         <h5 class="media-heading"><%        Dim authCookie As HttpCookie = Request.Cookies(FormsAuthentication.FormsCookieName)
                                                       Dim ticket As FormsAuthenticationTicket = FormsAuthentication.Decrypt(authCookie.Value)
-                                                      Response.Write(ticket.Name)
-                                                      
+                                                      Response.Write(ticket.Name.ToString.Split("|")(0))
+                                       
+                                                 
                                                       %></h5>
                         <ul class="list-unstyled user-info">
                             <li><%  Response.Write(ticket.UserData)%> </li>
@@ -298,6 +306,7 @@
     <script type="text/javascript" language="javascript" src="/js/jquery.Rut.js"></script>
    
      <script type="text/javascript" language="javascript" src="/js/functions.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/jquery.bpopup.min.js"></script>
 
 
 

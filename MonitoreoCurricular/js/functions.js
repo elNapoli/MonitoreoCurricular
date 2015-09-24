@@ -57,8 +57,9 @@ function GuardarResolucion(uploader) {
     var Descripcion = $('#Descripcion').val();
     var Antes = $('#antes').val();
     var Despues = $('#despues').val();
+    var Rut = $('#CookRut').val();
 
-    var Historial = { "Plan": Plan, "Carrera": Carrera,"Fecha":Fecha,"Hito":Hito,"Asignaturas":Asignaturas,"Descripcion":Descripcion,"Antes":Antes,"Despues":Despues };
+    var Historial = { "Plan": Plan, "Carrera": Carrera, "Fecha": Fecha, "Hito": Hito, "Asignaturas": Asignaturas, "Descripcion": Descripcion, "Antes": Antes, "Despues": Despues, "Rut": Rut };
     $.ajax({
         type: "POST",
         url: "SubirResolucion.asmx/GuardarHistorial",
@@ -73,6 +74,11 @@ function GuardarResolucion(uploader) {
 
             }
             else {
+                // Triggering bPopup when click event is fired
+                $('#element_to_pop_up').bPopup({
+                    opacity: 0.6,
+                    positionStyle: 'fixed' //'fixed' or 'absolute'
+                });
                 uploader.settings.multipart_params = { idNuevoHistorial: response.d[0] };
                 uploader.start();
                 uploader.bind("UploadComplete", function (up, files) {

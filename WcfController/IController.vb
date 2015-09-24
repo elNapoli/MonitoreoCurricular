@@ -33,7 +33,7 @@ Public Interface IController
     Function TraeAsignatura() As IEnumerable(Of Asignaturas)
 
     <OperationContract()>
-    Function GuardarHistorial(Historial As HistorialCurricular) As Integer
+    Function GuardarHistorial(Historial As HistorialCurricular) As LogNapoli
 
     <OperationContract()>
     Function GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String) As Integer
@@ -66,7 +66,7 @@ Public Interface IController
     Function GuardarUsuario(Usuario As Usuario) As Integer
 
     <OperationContract()>
-    Sub RegistrarLog(log As ErrorNapoli)
+    Sub RegistrarLog(log As LogNapoli)
 
     <OperationContract()>
     Function TraeUsuarioPorRut(rut As Integer) As Usuario

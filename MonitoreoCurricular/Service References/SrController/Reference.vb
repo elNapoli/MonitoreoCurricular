@@ -73,10 +73,10 @@ Namespace SrController
         Function TraeAsignaturaAsync() As System.Threading.Tasks.Task(Of Models.Asignaturas())
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarHistorial", ReplyAction:="http://tempuri.org/IController/GuardarHistorialResponse")>  _
-        Function GuardarHistorial(ByVal Historial As Models.HistorialCurricular) As Integer
+        Function GuardarHistorial(ByVal Historial As Models.HistorialCurricular) As Models.LogNapoli
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarHistorial", ReplyAction:="http://tempuri.org/IController/GuardarHistorialResponse")>  _
-        Function GuardarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task(Of Integer)
+        Function GuardarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task(Of Models.LogNapoli)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarAsignaturaPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarAsignaturaPorHistorialResponse")>  _
         Function GuardarAsignaturaPorHistorial(ByVal idHistorial As Integer, ByVal idAsignatura As String) As Integer
@@ -139,10 +139,10 @@ Namespace SrController
         Function GuardarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Integer)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/RegistrarLog", ReplyAction:="http://tempuri.org/IController/RegistrarLogResponse")>  _
-        Sub RegistrarLog(ByVal log As Models.ErrorNapoli)
+        Sub RegistrarLog(ByVal log As Models.LogNapoli)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/RegistrarLog", ReplyAction:="http://tempuri.org/IController/RegistrarLogResponse")>  _
-        Function RegistrarLogAsync(ByVal log As Models.ErrorNapoli) As System.Threading.Tasks.Task
+        Function RegistrarLogAsync(ByVal log As Models.LogNapoli) As System.Threading.Tasks.Task
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeUsuarioPorRut", ReplyAction:="http://tempuri.org/IController/TraeUsuarioPorRutResponse")>  _
         Function TraeUsuarioPorRut(ByVal rut As Integer) As Models.Usuario
@@ -266,11 +266,11 @@ Namespace SrController
             Return MyBase.Channel.TraeAsignaturaAsync
         End Function
         
-        Public Function GuardarHistorial(ByVal Historial As Models.HistorialCurricular) As Integer Implements SrController.IController.GuardarHistorial
+        Public Function GuardarHistorial(ByVal Historial As Models.HistorialCurricular) As Models.LogNapoli Implements SrController.IController.GuardarHistorial
             Return MyBase.Channel.GuardarHistorial(Historial)
         End Function
         
-        Public Function GuardarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task(Of Integer) Implements SrController.IController.GuardarHistorialAsync
+        Public Function GuardarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task(Of Models.LogNapoli) Implements SrController.IController.GuardarHistorialAsync
             Return MyBase.Channel.GuardarHistorialAsync(Historial)
         End Function
         
@@ -354,11 +354,11 @@ Namespace SrController
             Return MyBase.Channel.GuardarUsuarioAsync(Usuario)
         End Function
         
-        Public Sub RegistrarLog(ByVal log As Models.ErrorNapoli) Implements SrController.IController.RegistrarLog
+        Public Sub RegistrarLog(ByVal log As Models.LogNapoli) Implements SrController.IController.RegistrarLog
             MyBase.Channel.RegistrarLog(log)
         End Sub
         
-        Public Function RegistrarLogAsync(ByVal log As Models.ErrorNapoli) As System.Threading.Tasks.Task Implements SrController.IController.RegistrarLogAsync
+        Public Function RegistrarLogAsync(ByVal log As Models.LogNapoli) As System.Threading.Tasks.Task Implements SrController.IController.RegistrarLogAsync
             Return MyBase.Channel.RegistrarLogAsync(log)
         End Function
         

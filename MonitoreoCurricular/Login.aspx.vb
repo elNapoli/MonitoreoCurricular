@@ -45,7 +45,7 @@ Public Class Login
 
                 Exit Select
             Case Else
-                Dim ticket As New FormsAuthenticationTicket(1, usuario.Nombre, DateTime.Now, DateTime.Now.AddMinutes(2880), rememberLogin.Checked, roles, _
+                Dim ticket As New FormsAuthenticationTicket(1, usuario.Nombre + "|" + userId.ToString, DateTime.Now, DateTime.Now.AddMinutes(2880), rememberLogin.Checked, roles, _
                  FormsAuthentication.FormsCookiePath)
                 Dim hash As String = FormsAuthentication.Encrypt(ticket)
                 Dim cookie As New HttpCookie(FormsAuthentication.FormsCookieName, hash)

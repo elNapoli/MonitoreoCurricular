@@ -56,14 +56,21 @@ Public Class SubirResolucion1
     End Function
 
     <WebMethod()> _
-    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As String()
+    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String, Rut As String) As String()
         Dim array As String = ""
         Dim idHistorial As Integer
         Dim resultado(1) As String
+        Dim logTemp As LogNapoli
+
+
+
         Try
             Dim Historial As New Models.HistorialCurricular(Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
+            logTemp = Conexion.GuardarHistorial(Historial)
+            logTemp.Rut = Rut
+            Conexion.RegistrarLog(logTemp)
 
-            idHistorial = Conexion.GuardarHistorial(Historial)
+            idHistorial = logTemp.idObjetos
             resultado(0) = idHistorial.ToString
             resultado(1) = "Se ha guardado exitosamente el registro"
             For Each item As String In Asignaturas

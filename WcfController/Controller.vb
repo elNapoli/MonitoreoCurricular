@@ -41,7 +41,7 @@ Public Class Controller
             Next
 
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -50,7 +50,7 @@ Public Class Controller
             logError.Rut = "0"
             RegistrarLog(logError)
             MsgBox(logError.mensajeError)
-           End Try
+        End Try
         Return ret.AsEnumerable
     End Function
     Public Function TraeEscuelaPorFacultad(idFacultad As Integer) As IEnumerable(Of Parametros) Implements IController.TraeEscuelaPorFacultad
@@ -75,7 +75,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -109,7 +109,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -152,7 +152,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -188,7 +188,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -224,7 +224,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -258,7 +258,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -293,7 +293,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -304,7 +304,7 @@ Public Class Controller
             MsgBox(logError.mensajeError)
         End Try
 
-    
+
         Return ret.AsEnumerable
     End Function
 
@@ -329,7 +329,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -344,8 +344,10 @@ Public Class Controller
     End Function
 
 
-    Public Function GuardarHistorial(Historial As HistorialCurricular) As Integer Implements IController.GuardarHistorial
+    Public Function GuardarHistorial(Historial As HistorialCurricular) As LogNapoli Implements IController.GuardarHistorial
         Dim Parametros As New List(Of Parameter)
+        Dim ret As New LogNapoli
+        Dim dr As IEnumerable(Of DataRow) = Nothing
         Parametros.Add(New Parameter With {.Nombre = "@idPlan", .Valor = Historial.idPlan, .Tipo = Parameter.TypeDB.DbInt})
         Parametros.Add(New Parameter With {.Nombre = "@idCarrera", .Valor = Historial.idCarrera, .Tipo = Parameter.TypeDB.DbInt})
         Parametros.Add(New Parameter With {.Nombre = "@fechaResolucion", .Valor = Historial.fecha, .Tipo = Parameter.TypeDB.DbVarchar})
@@ -353,29 +355,38 @@ Public Class Controller
         Parametros.Add(New Parameter With {.Nombre = "@descripcion", .Valor = Historial.descripcion, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@antes", .Valor = Historial.antes, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@despues", .Valor = Historial.despues, .Tipo = Parameter.TypeDB.DbVarchar})
-        Dim retorno As Integer = 0
 
 
 
         Try
-            retorno = CInt(cnn.EjecutaScalar("setHistorial", Parametros))
+            dr = cnn.Ejecuta("setHistorial", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
 
 
+                ret = New LogNapoli With {
+                        .CodigoError = "1",
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/GuardarHistorial",
+                        .idObjetos = item(0)
+                    }
 
+            Next
+
+            Return ret
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
 
-            logError.CodigoError = "-2"
-            logError.mensajeError = ex.Message.ToString
-            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-            logError.origenError = "Controller/GuardarHistorial"
-            logError.Rut = "0"
-            RegistrarLog(logError)
-            MsgBox(logError.mensajeError)
-            retorno = logError.CodigoError
+            ret.CodigoError = "-2"
+            ret.mensajeError = ex.Message.ToString
+            ret.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            ret.origenError = "Controller/GuardarHistorial"
+            ret.Rut = "0"
+            MsgBox(ret.mensajeError)
+            Return ret
         End Try
 
-        Return retorno
+
 
 
     End Function
@@ -392,7 +403,7 @@ Public Class Controller
             retorno = CInt(cnn.EjecutaScalar("setAsignaturaByHistorial", Parametros))
 
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -434,7 +445,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -462,7 +473,7 @@ Public Class Controller
             retorno = CInt(cnn.EjecutaScalar("setResolucionByHistorial", Parametros))
 
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -506,7 +517,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -532,7 +543,7 @@ Public Class Controller
             retorno = CInt(cnn.EjecutaScalar("delHistorial", Parametros))
 
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -572,7 +583,7 @@ Public Class Controller
 
 
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -600,7 +611,7 @@ Public Class Controller
             retorno = CInt(cnn.EjecutaScalar("delAsignaturasByHistorial", Parametros))
 
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -642,7 +653,7 @@ Public Class Controller
 
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -685,7 +696,7 @@ Public Class Controller
                 )
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -722,7 +733,7 @@ Public Class Controller
 
 
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -767,7 +778,7 @@ Public Class Controller
 
             Next
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -796,7 +807,7 @@ Public Class Controller
             retorno = CInt(cnn.EjecutaScalar("delUsuario", Parametros))
 
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -831,7 +842,7 @@ Public Class Controller
 
 
         Catch ex As Exception
-            Dim logError As New ErrorNapoli
+            Dim logError As New LogNapoli
 
             logError.CodigoError = "-2"
             logError.mensajeError = ex.Message.ToString
@@ -847,7 +858,7 @@ Public Class Controller
     End Sub
 
 
-    Public Sub RegistrarLog(log As ErrorNapoli) Implements IController.RegistrarLog
+    Public Sub RegistrarLog(log As LogNapoli) Implements IController.RegistrarLog
         Dim Parametros As New List(Of Parameter)
         Dim retorno As Integer = 0
         Parametros.Add(New Parameter With {.Nombre = "@codigo", .Valor = log.CodigoError, .Tipo = Parameter.TypeDB.DbVarchar})
@@ -855,6 +866,7 @@ Public Class Controller
         Parametros.Add(New Parameter With {.Nombre = "@Fecha", .Valor = log.fecha, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@rut", .Valor = log.Rut, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@origen", .Valor = log.origenError, .Tipo = Parameter.TypeDB.DbVarchar})
+        Parametros.Add(New Parameter With {.Nombre = "@idObjetos", .Valor = log.idObjetos, .Tipo = Parameter.TypeDB.DbInt})
 
 
 
