@@ -79,6 +79,12 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="LogNapoli" nillable="true" type="tns:LogNapoli" />
+  <xs:complexType name="ArrayOfLogNapoli">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LogNapoli" nillable="true" type="tns:LogNapoli" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLogNapoli" nillable="true" type="tns:ArrayOfLogNapoli" />
   <xs:complexType name="Usuario">
     <xs:sequence>
       <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />

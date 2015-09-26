@@ -392,29 +392,41 @@ Public Class Controller
     End Function
 
 
-    Public Function GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String) As Integer Implements IController.GuardarAsignaturaPorHistorial
+    Public Function GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String) As LogNapoli Implements IController.GuardarAsignaturaPorHistorial
         Dim Parametros As New List(Of Parameter)
-        Dim retorno As Integer = 0
+        Dim ret As New LogNapoli
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+
         Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
         Parametros.Add(New Parameter With {.Nombre = "@idAsignatura", .Valor = idAsignatura, .Tipo = Parameter.TypeDB.DbVarchar})
 
 
         Try
-            retorno = CInt(cnn.EjecutaScalar("setAsignaturaByHistorial", Parametros))
+            dr = cnn.Ejecuta("setAsignaturaByHistorial", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
 
+
+                ret = New LogNapoli With {
+                        .CodigoError = item(0),
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/GuardarAsignaturaPorHistorial"
+                    }
+
+            Next
+
+            Return ret
         Catch ex As Exception
-            Dim logError As New LogNapoli
-
-            logError.CodigoError = "-2"
-            logError.mensajeError = ex.Message.ToString
-            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-            logError.origenError = "Controller/GuardarAsignaturaPorHistorial"
-            logError.Rut = "0"
-            RegistrarLog(logError)
-            retorno = logError.CodigoError
-            MsgBox(logError.mensajeError)
+            ret.CodigoError = "-2"
+            ret.mensajeError = ex.Message.ToString
+            ret.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            ret.origenError = "Controller/GuardarAsignaturaPorHistorial"
+            ret.Rut = "0"
+            MsgBox(ret.mensajeError)
+            Return ret
         End Try
-        Return retorno
+
 
 
     End Function
@@ -533,37 +545,52 @@ Public Class Controller
 
 
 
-    Public Function EliminarHistorial(idHistorial As Integer) As Integer Implements IController.EliminarHistorial
+    Public Function EliminarHistorial(idHistorial As Integer) As LogNapoli Implements IController.EliminarHistorial
         Dim Parametros As New List(Of Parameter)
-        Dim retorno As Integer = 0
+        Dim ret As New LogNapoli
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+
         Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
 
-
         Try
-            retorno = CInt(cnn.EjecutaScalar("delHistorial", Parametros))
 
+            dr = cnn.Ejecuta("delHistorial", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
+
+
+                ret = New LogNapoli With {
+                        .CodigoError = item(0),
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/EliminarHistorial"
+                    }
+
+            Next
+
+            Return ret
         Catch ex As Exception
-            Dim logError As New LogNapoli
-
-            logError.CodigoError = "-2"
-            logError.mensajeError = ex.Message.ToString
-            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-            logError.origenError = "Controller/EliminarHistorial"
-            logError.Rut = "0"
-            RegistrarLog(logError)
-            retorno = logError.CodigoError
-            MsgBox(logError.mensajeError)
+            ret.CodigoError = "-2"
+            ret.mensajeError = ex.Message.ToString
+            ret.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            ret.origenError = "Controller/GuardarHistorial"
+            ret.Rut = "0"
+            MsgBox(ret.mensajeError)
+            Return ret
 
         End Try
 
-        Return retorno
+
 
     End Function
 
 
 
-    Public Function ActualizarHistorial(Historial As HistorialCurricular) As Integer Implements IController.ActualizarHistorial
+    Public Function ActualizarHistorial(Historial As HistorialCurricular) As LogNapoli Implements IController.ActualizarHistorial
         Dim Parametros As New List(Of Parameter)
+        Dim ret As New LogNapoli
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+
 
         Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = Historial.id, .Tipo = Parameter.TypeDB.DbInt})
         Parametros.Add(New Parameter With {.Nombre = "@idPlan", .Valor = Historial.idPlan, .Tipo = Parameter.TypeDB.DbInt})
@@ -573,59 +600,84 @@ Public Class Controller
         Parametros.Add(New Parameter With {.Nombre = "@descripcion", .Valor = Historial.descripcion, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@antes", .Valor = Historial.antes, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@despues", .Valor = Historial.despues, .Tipo = Parameter.TypeDB.DbVarchar})
-        Dim retorno As Integer = 0
+
 
 
 
         Try
-            retorno = CInt(cnn.EjecutaScalar("UpdateHisotiral", Parametros))
+            dr = cnn.Ejecuta("UpdateHisotiral", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
 
+
+                ret = New LogNapoli With {
+                        .CodigoError = item(0),
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/ActualizarHistorial"
+                    }
+
+            Next
+
+            Return ret
 
 
         Catch ex As Exception
-            Dim logError As New LogNapoli
-
-            logError.CodigoError = "-2"
-            logError.mensajeError = ex.Message.ToString
-            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-            logError.origenError = "Controller/ActualizarHistorial"
-            logError.Rut = "0"
-            RegistrarLog(logError)
-            retorno = logError.CodigoError
-            MsgBox(logError.mensajeError)
+            ret.CodigoError = "-2"
+            ret.mensajeError = ex.Message.ToString
+            ret.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            ret.origenError = "Controller/ActualizarHistorial"
+            ret.Rut = "0"
+            MsgBox(ret.mensajeError)
+            Return ret
         End Try
 
-        Return retorno
+
 
     End Function
 
 
 
-    Public Sub EliminarAsignaturasPorHistorial(idHistorial As Integer) Implements IController.EliminarAsignaturasPorHistorial
+    Public Function EliminarAsignaturasPorHistorial(idHistorial As Integer) As IEnumerable(Of LogNapoli) Implements IController.EliminarAsignaturasPorHistorial
         Dim Parametros As New List(Of Parameter)
-        Dim retorno As Integer = 0
+        Dim ret As New List(Of LogNapoli)
+        Dim dr As IEnumerable(Of DataRow) = Nothing
         Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
 
 
         Try
-            retorno = CInt(cnn.EjecutaScalar("delAsignaturasByHistorial", Parametros))
+
+            dr = cnn.Ejecuta("delAsignaturasByHistorial", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
+
+
+                ret.Add(New LogNapoli With {
+                        .CodigoError = item(0),
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/EliminarAsignaturasPorHistorial"
+                    })
+
+            Next
+
+            Return ret
 
         Catch ex As Exception
-            Dim logError As New LogNapoli
-
-            logError.CodigoError = "-2"
-            logError.mensajeError = ex.Message.ToString
-            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-            logError.origenError = "Controller/EliminarAsignaturasPorHistorial"
-            logError.Rut = "0"
-            RegistrarLog(logError)
-            retorno = logError.CodigoError
-            MsgBox(logError.mensajeError)
+            ret.Add(New LogNapoli With {
+                        .CodigoError = "-2",
+            .mensajeError = ex.Message.ToString,
+            .fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+            .origenError = "Controller/EliminarAsignaturasPorHistorial",
+            .Rut = "0"
+        })
+            MsgBox(ret(0).mensajeError)
+            Return ret
         End Try
 
 
 
-    End Sub
+    End Function
 
 
 

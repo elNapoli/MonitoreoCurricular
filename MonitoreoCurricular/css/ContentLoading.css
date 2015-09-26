@@ -1,0 +1,38 @@
+.contentLoading {
+	font-family: sans-serif;
+	background: #FFF;
+	border: 10px solid #333; /* browsers that don't support rgba */
+	border: 10px solid rgba(0,0,0,.7);
+	border-radius: 8px;
+	padding: 25px;
+	text-align: center;
+		
+	box-shadow: 0 3px 3px rgba(0,0,0,.3);
+	-webkit-background-clip: padding;     /* Safari 4? Chrome 6? */
+	   -moz-background-clip: padding;     /* Firefox 3.6 */
+	        background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+	-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	    -ms-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+
+	position: fixed; z-index: 99999;
+	top: 50px; left: 50%;
+	width: 550px;
+	margin-left: -275px;
+	opacity: 1;
+}
+@media only screen and (max-width: 680px) {
+	.contentLoading {
+		width: 90%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+
+		left: 5%;
+		margin: 0;
+	}
+}
+	

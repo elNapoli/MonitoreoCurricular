@@ -92,21 +92,31 @@ Public Class SubirResolucion1
 
 
     <WebMethod()> _
-    Public Function ActualizarHistorial(idHistorial As Integer, Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String) As String()
+    Public Function ActualizarHistorial(idHistorial As Integer, Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String, Rut As String) As String()
         Dim Historial As New Models.HistorialCurricular(idHistorial, Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
-        Dim ValidadorHistorial As Integer
+        Dim logTemp As LogNapoli
         Dim retorno(1) As String
         Dim seguir As String = "True"
 
-        ValidadorHistorial = ActualizarHistorial(Historial)
+
+        logTemp = Conexion.ActualizarHistorial(Historial)
+        logTemp.Rut = Rut
+        Conexion.RegistrarLog(logTemp)
+
+
         Conexion.EliminarAsignaturasPorHistorial(idHistorial)
 
-        If ValidadorHistorial = 1 Then
+        If Convert.ToInt32(logTemp.CodigoError) = 1 Then
             If Not Asignaturas Is Nothing Then
 
                 For Each item As String In Asignaturas
 
-                    If (Conexion.GuardarAsignaturaPorHistorial(idHistorial, item) <> 1) Then
+                    logTemp = Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
+                    logTemp.Rut = Rut
+                    logTemp.mensajeError = "Se ha Actualizado la asignatura correctamente"
+                    '    MsgBox(logTemp.imprimirLog())
+                    Conexion.RegistrarLog(logTemp)
+                    If (Convert.ToInt32(logTemp.CodigoError) <> 1) Then
                         seguir = "False"
 
 
@@ -116,15 +126,17 @@ Public Class SubirResolucion1
                 Next
 
                 If (seguir = "True") Then
-                    retorno(0) = 1
-                    retorno(1) = "se ha guardado correctamente el registro."
+                    retorno(0) = logTemp.CodigoError
+                    retorno(1) = logTemp.mensajeError
                 Else
-                    retorno(0) = -1
-                    retorno(1) = "Hubo un error al actualizar las asignaturas"
+                    retorno(0) = logTemp.CodigoError
+                    retorno(1) = logTemp.mensajeError
                 End If
             End If
 
-
+        Else
+            retorno(0) = logTemp.CodigoError
+            retorno(1) = logTemp.mensajeError
         End If
 
 
@@ -143,19 +155,7 @@ Public Class SubirResolucion1
     End Sub
 
 
-    Private Function ActualizarHistorial(historial As Models.HistorialCurricular) As Integer
-        Dim resultado As Integer
-        Try
-            resultado = Conexion.ActualizarHistorial(historial).ToString
 
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            resultado = -2
-        End Try
-
-        Return resultado
-    End Function
 
 
 

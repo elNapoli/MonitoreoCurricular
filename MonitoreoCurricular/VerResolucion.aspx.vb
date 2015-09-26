@@ -6,17 +6,32 @@ Public Class VerResolucion
     Private Conexion As New SrController.ControllerClient
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Dim logTemp As LogNapoli
+        Dim logListTemp As IEnumerable(Of LogNapoli)
+
         If (Request.QueryString("IDHistorial") <> Nothing And Request.QueryString("Eliminar") <> Nothing) Then
             If (Request.QueryString("Eliminar") = "True") Then
+                logListTemp = Conexion.EliminarAsignaturasPorHistorial(Request.QueryString("IDHistorial"))
 
-                If (Conexion.EliminarHistorial(Request.QueryString("IDHistorial")) = "1") Then
 
-                    ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.success('El registro se ha eliminado correctamente');", True)
+                For Each item As LogNapoli In logListTemp
+                    item.Rut = Master.Rut_temp()
+                    Conexion.RegistrarLog(item)
+                Next
+                logTemp = Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))
+                logTemp.Rut = Master.Rut_temp()
+
+
+                Conexion.RegistrarLog(logTemp)
+
+                If (Convert.ToInt32(logTemp.CodigoError) = 1) Then
+
+                    ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.success('" + logTemp.mensajeError.Replace("'", " ").Replace("""", " ") + "');", True)
                 Else
-                    ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.error('Ha ocurrido un problema al intentar eliminar el registro!');", True)
+                    ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.set({ delay: 10000 });alertify.error('" + logTemp.mensajeError.Replace("'", " ").Replace("""", " ") + "')", True)
 
                 End If
- 
+
             End If
         End If
 
@@ -24,6 +39,8 @@ Public Class VerResolucion
 
 
     End Sub
+
+
 
     Private Function CallResolucion() As IEnumerable(Of Resoluciones)
         Dim Lista As IEnumerable(Of Resoluciones) = Nothing

@@ -79,10 +79,10 @@ Namespace SrController
         Function GuardarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task(Of Models.LogNapoli)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarAsignaturaPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarAsignaturaPorHistorialResponse")>  _
-        Function GuardarAsignaturaPorHistorial(ByVal idHistorial As Integer, ByVal idAsignatura As String) As Integer
+        Function GuardarAsignaturaPorHistorial(ByVal idHistorial As Integer, ByVal idAsignatura As String) As Models.LogNapoli
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarAsignaturaPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarAsignaturaPorHistorialResponse")>  _
-        Function GuardarAsignaturaPorHistorialAsync(ByVal idHistorial As Integer, ByVal idAsignatura As String) As System.Threading.Tasks.Task(Of Integer)
+        Function GuardarAsignaturaPorHistorialAsync(ByVal idHistorial As Integer, ByVal idAsignatura As String) As System.Threading.Tasks.Task(Of Models.LogNapoli)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeResoluciones", ReplyAction:="http://tempuri.org/IController/TraeResolucionesResponse")>  _
         Function TraeResoluciones() As Models.Resoluciones()
@@ -103,22 +103,22 @@ Namespace SrController
         Function TraeHistorialPorIdAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.HistorialCurricular())
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarHistorial", ReplyAction:="http://tempuri.org/IController/EliminarHistorialResponse")>  _
-        Function EliminarHistorial(ByVal idHistorial As Integer) As Integer
+        Function EliminarHistorial(ByVal idHistorial As Integer) As Models.LogNapoli
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarHistorial", ReplyAction:="http://tempuri.org/IController/EliminarHistorialResponse")>  _
-        Function EliminarHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Integer)
+        Function EliminarHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.LogNapoli)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ActualizarHistorial", ReplyAction:="http://tempuri.org/IController/ActualizarHistorialResponse")>  _
-        Function ActualizarHistorial(ByVal Historial As Models.HistorialCurricular) As Integer
+        Function ActualizarHistorial(ByVal Historial As Models.HistorialCurricular) As Models.LogNapoli
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ActualizarHistorial", ReplyAction:="http://tempuri.org/IController/ActualizarHistorialResponse")>  _
-        Function ActualizarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task(Of Integer)
+        Function ActualizarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task(Of Models.LogNapoli)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarAsignaturasPorHistorial", ReplyAction:="http://tempuri.org/IController/EliminarAsignaturasPorHistorialResponse")>  _
-        Sub EliminarAsignaturasPorHistorial(ByVal idHistorial As Integer)
+        Function EliminarAsignaturasPorHistorial(ByVal idHistorial As Integer) As Models.LogNapoli()
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarAsignaturasPorHistorial", ReplyAction:="http://tempuri.org/IController/EliminarAsignaturasPorHistorialResponse")>  _
-        Function EliminarAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task
+        Function EliminarAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.LogNapoli())
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ValidarUsuario", ReplyAction:="http://tempuri.org/IController/ValidarUsuarioResponse")>  _
         Function ValidarUsuario(ByVal nick As Integer, ByVal pass As String) As Models.Usuario
@@ -274,11 +274,11 @@ Namespace SrController
             Return MyBase.Channel.GuardarHistorialAsync(Historial)
         End Function
         
-        Public Function GuardarAsignaturaPorHistorial(ByVal idHistorial As Integer, ByVal idAsignatura As String) As Integer Implements SrController.IController.GuardarAsignaturaPorHistorial
+        Public Function GuardarAsignaturaPorHistorial(ByVal idHistorial As Integer, ByVal idAsignatura As String) As Models.LogNapoli Implements SrController.IController.GuardarAsignaturaPorHistorial
             Return MyBase.Channel.GuardarAsignaturaPorHistorial(idHistorial, idAsignatura)
         End Function
         
-        Public Function GuardarAsignaturaPorHistorialAsync(ByVal idHistorial As Integer, ByVal idAsignatura As String) As System.Threading.Tasks.Task(Of Integer) Implements SrController.IController.GuardarAsignaturaPorHistorialAsync
+        Public Function GuardarAsignaturaPorHistorialAsync(ByVal idHistorial As Integer, ByVal idAsignatura As String) As System.Threading.Tasks.Task(Of Models.LogNapoli) Implements SrController.IController.GuardarAsignaturaPorHistorialAsync
             Return MyBase.Channel.GuardarAsignaturaPorHistorialAsync(idHistorial, idAsignatura)
         End Function
         
@@ -306,27 +306,27 @@ Namespace SrController
             Return MyBase.Channel.TraeHistorialPorIdAsync(idHistorial)
         End Function
         
-        Public Function EliminarHistorial(ByVal idHistorial As Integer) As Integer Implements SrController.IController.EliminarHistorial
+        Public Function EliminarHistorial(ByVal idHistorial As Integer) As Models.LogNapoli Implements SrController.IController.EliminarHistorial
             Return MyBase.Channel.EliminarHistorial(idHistorial)
         End Function
         
-        Public Function EliminarHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Integer) Implements SrController.IController.EliminarHistorialAsync
+        Public Function EliminarHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.LogNapoli) Implements SrController.IController.EliminarHistorialAsync
             Return MyBase.Channel.EliminarHistorialAsync(idHistorial)
         End Function
         
-        Public Function ActualizarHistorial(ByVal Historial As Models.HistorialCurricular) As Integer Implements SrController.IController.ActualizarHistorial
+        Public Function ActualizarHistorial(ByVal Historial As Models.HistorialCurricular) As Models.LogNapoli Implements SrController.IController.ActualizarHistorial
             Return MyBase.Channel.ActualizarHistorial(Historial)
         End Function
         
-        Public Function ActualizarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task(Of Integer) Implements SrController.IController.ActualizarHistorialAsync
+        Public Function ActualizarHistorialAsync(ByVal Historial As Models.HistorialCurricular) As System.Threading.Tasks.Task(Of Models.LogNapoli) Implements SrController.IController.ActualizarHistorialAsync
             Return MyBase.Channel.ActualizarHistorialAsync(Historial)
         End Function
         
-        Public Sub EliminarAsignaturasPorHistorial(ByVal idHistorial As Integer) Implements SrController.IController.EliminarAsignaturasPorHistorial
-            MyBase.Channel.EliminarAsignaturasPorHistorial(idHistorial)
-        End Sub
+        Public Function EliminarAsignaturasPorHistorial(ByVal idHistorial As Integer) As Models.LogNapoli() Implements SrController.IController.EliminarAsignaturasPorHistorial
+            Return MyBase.Channel.EliminarAsignaturasPorHistorial(idHistorial)
+        End Function
         
-        Public Function EliminarAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task Implements SrController.IController.EliminarAsignaturasPorHistorialAsync
+        Public Function EliminarAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.LogNapoli()) Implements SrController.IController.EliminarAsignaturasPorHistorialAsync
             Return MyBase.Channel.EliminarAsignaturasPorHistorialAsync(idHistorial)
         End Function
         

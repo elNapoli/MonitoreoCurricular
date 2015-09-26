@@ -127,6 +127,13 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
  Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
  </summary>
 	<remarks></remarks>
+</member><member name="P:MonitoreoCurricular.VerResolucion.Master">
+	<summary>
+Propiedad Master.
+</summary>
+	<remarks>
+Propiedad generada automáticamente.
+</remarks>
 </member><member name="F:MonitoreoCurricular.HistorialId.ScriptManager1">
 	<summary>
 Control ScriptManager1.

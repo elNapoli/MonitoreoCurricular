@@ -111,7 +111,8 @@ function ActualizarHistorial() {
     var Antes = $('#ContentPlaceHolder1_antes').val();
     var Despues = $('#ContentPlaceHolder1_despues').val();
     var idHistorial = $('#ContentPlaceHolder1_IdHistorialURL').val();
-    var Historial = {"idHistorial":idHistorial, "Plan": Plan, "Carrera": Carrera, "Fecha": Fecha, "Hito": Hito, "Asignaturas": Asignaturas, "Descripcion": Descripcion, "Antes": Antes, "Despues": Despues };
+    var Rut = $('#CookRut').val();
+    var Historial = { "idHistorial": idHistorial, "Plan": Plan, "Carrera": Carrera, "Fecha": Fecha, "Hito": Hito, "Asignaturas": Asignaturas, "Descripcion": Descripcion, "Antes": Antes, "Despues": Despues, "Rut": Rut };
     $.ajax({
         type: "POST",
         url: "SubirResolucion.asmx/ActualizarHistorial",

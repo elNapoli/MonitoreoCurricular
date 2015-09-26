@@ -36,7 +36,7 @@ Public Interface IController
     Function GuardarHistorial(Historial As HistorialCurricular) As LogNapoli
 
     <OperationContract()>
-    Function GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String) As Integer
+    Function GuardarAsignaturaPorHistorial(idHistorial As Integer, idAsignatura As String) As LogNapoli
 
     <OperationContract()>
     Function TraeResoluciones() As IEnumerable(Of Resoluciones)
@@ -48,13 +48,13 @@ Public Interface IController
     Function TraeHistorialPorId(idHistorial As Integer) As IEnumerable(Of HistorialCurricular)
 
     <OperationContract()>
-    Function EliminarHistorial(idHistorial As Integer) As Integer
+    Function EliminarHistorial(idHistorial As Integer) As LogNapoli
 
     <OperationContract()>
-    Function ActualizarHistorial(Historial As HistorialCurricular) As Integer
+    Function ActualizarHistorial(Historial As HistorialCurricular) As LogNapoli
 
     <OperationContract()>
-    Sub EliminarAsignaturasPorHistorial(idHistorial As Integer)
+    Function EliminarAsignaturasPorHistorial(idHistorial As Integer) As IEnumerable(Of LogNapoli)
 
     <OperationContract()>
     Function ValidarUsuario(nick As Integer, pass As String) As Usuario

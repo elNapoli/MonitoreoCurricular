@@ -19,4 +19,18 @@
         Session.Abandon()
         Response.Redirect("/Login.aspx", True)
     End Sub
+
+    Public Property Rut_temp() As String
+        Get
+            Dim authCookie As HttpCookie = Request.Cookies(FormsAuthentication.FormsCookieName)
+            Dim ticket As FormsAuthenticationTicket = FormsAuthentication.Decrypt(authCookie.Value)
+            CookRut.Value = ticket.Name.ToString.Split("|")(1)
+            Return CookRut.Value
+
+        End Get
+        Set(value As String)
+            CookRut.Value = value
+        End Set
+    End Property
+
 End Class
