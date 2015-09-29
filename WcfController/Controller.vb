@@ -473,33 +473,45 @@ Public Class Controller
 
 
 
-    Public Sub GuardarResolucionPorHistorial(idHistorial As Integer, nomResolucion As String, pathResolucion As String) Implements IController.GuardarResolucionPorHistorial
+    Public Function GuardarResolucionPorHistorial(idHistorial As Integer, nomResolucion As String, pathResolucion As String) As LogNapoli Implements IController.GuardarResolucionPorHistorial
         Dim Parametros As New List(Of Parameter)
-        Dim retorno As Integer = 0
+        Dim ret As New LogNapoli
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+
         Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
         Parametros.Add(New Parameter With {.Nombre = "@nomResolucion", .Valor = nomResolucion, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@pathResolucion", .Valor = pathResolucion, .Tipo = Parameter.TypeDB.DbVarchar})
 
 
         Try
-            retorno = CInt(cnn.EjecutaScalar("setResolucionByHistorial", Parametros))
+            dr = cnn.Ejecuta("setResolucionByHistorial", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
 
+
+                ret = New LogNapoli With {
+                        .CodigoError = item(0),
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/GuardarResolucionPorHistorial"
+                    }
+
+            Next
+
+            Return ret
         Catch ex As Exception
-            Dim logError As New LogNapoli
-
-            logError.CodigoError = "-2"
-            logError.mensajeError = ex.Message.ToString
-            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-            logError.origenError = "Controller/GuardarResolucionPorHistorial"
-            logError.Rut = "0"
-            RegistrarLog(logError)
-            retorno = logError.CodigoError
-            MsgBox(logError.mensajeError)
+            ret.CodigoError = "-2"
+            ret.mensajeError = ex.Message.ToString
+            ret.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            ret.origenError = "Controller/GuardarResolucionPorHistorial"
+            ret.Rut = "0"
+            MsgBox(ret.mensajeError)
+            Return ret
         End Try
 
 
 
-    End Sub
+    End Function
 
 
     Public Function TraeHistorialPorId(idHistorial As Integer) As IEnumerable(Of HistorialCurricular) Implements IController.TraeHistorialPorId

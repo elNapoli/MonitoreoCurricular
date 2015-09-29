@@ -42,7 +42,7 @@ Public Interface IController
     Function TraeResoluciones() As IEnumerable(Of Resoluciones)
 
     <OperationContract()>
-    Sub GuardarResolucionPorHistorial(idHistorial As Integer, nomResolucion As String, pathResolucion As String)
+    Function GuardarResolucionPorHistorial(idHistorial As Integer, nomResolucion As String, pathResolucion As String) As LogNapoli
 
     <OperationContract()>
     Function TraeHistorialPorId(idHistorial As Integer) As IEnumerable(Of HistorialCurricular)

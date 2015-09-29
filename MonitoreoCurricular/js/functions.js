@@ -79,7 +79,8 @@ function GuardarResolucion(uploader) {
                     opacity: 0.6,
                     positionStyle: 'fixed' //'fixed' or 'absolute'
                 });
-                uploader.settings.multipart_params = { idNuevoHistorial: response.d[0] };
+             
+                uploader.settings.multipart_params = { idNuevoHistorial: response.d[0], RutUsuario:$('#CookRut').val()};
                 uploader.start();
                 uploader.bind("UploadComplete", function (up, files) {
                     window.location = "HistorialId.aspx?IDHistorial=" + response.d[0] + "&save='True'";

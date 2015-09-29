@@ -91,10 +91,10 @@ Namespace SrController
         Function TraeResolucionesAsync() As System.Threading.Tasks.Task(Of Models.Resoluciones())
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarResolucionPorHistorialResponse")>  _
-        Sub GuardarResolucionPorHistorial(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String)
+        Function GuardarResolucionPorHistorial(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As Models.LogNapoli
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/GuardarResolucionPorHistorialResponse")>  _
-        Function GuardarResolucionPorHistorialAsync(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As System.Threading.Tasks.Task
+        Function GuardarResolucionPorHistorialAsync(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As System.Threading.Tasks.Task(Of Models.LogNapoli)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeHistorialPorId", ReplyAction:="http://tempuri.org/IController/TraeHistorialPorIdResponse")>  _
         Function TraeHistorialPorId(ByVal idHistorial As Integer) As Models.HistorialCurricular()
@@ -296,11 +296,11 @@ Namespace SrController
             Return MyBase.Channel.TraeResolucionesAsync
         End Function
         
-        Public Sub GuardarResolucionPorHistorial(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) Implements SrController.IController.GuardarResolucionPorHistorial
-            MyBase.Channel.GuardarResolucionPorHistorial(idHistorial, nomResolucion, pathResolucion)
-        End Sub
+        Public Function GuardarResolucionPorHistorial(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As Models.LogNapoli Implements SrController.IController.GuardarResolucionPorHistorial
+            Return MyBase.Channel.GuardarResolucionPorHistorial(idHistorial, nomResolucion, pathResolucion)
+        End Function
         
-        Public Function GuardarResolucionPorHistorialAsync(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As System.Threading.Tasks.Task Implements SrController.IController.GuardarResolucionPorHistorialAsync
+        Public Function GuardarResolucionPorHistorialAsync(ByVal idHistorial As Integer, ByVal nomResolucion As String, ByVal pathResolucion As String) As System.Threading.Tasks.Task(Of Models.LogNapoli) Implements SrController.IController.GuardarResolucionPorHistorialAsync
             Return MyBase.Channel.GuardarResolucionPorHistorialAsync(idHistorial, nomResolucion, pathResolucion)
         End Function
         

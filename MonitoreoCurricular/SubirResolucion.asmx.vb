@@ -61,7 +61,7 @@ Public Class SubirResolucion1
         Dim idHistorial As Integer
         Dim resultado(1) As String
         Dim logTemp As LogNapoli
-
+        Dim logAsig As LogNapoli
 
 
         Try
@@ -72,9 +72,11 @@ Public Class SubirResolucion1
 
             idHistorial = logTemp.idObjetos
             resultado(0) = idHistorial.ToString
-            resultado(1) = "Se ha guardado exitosamente el registro"
+            resultado(1) = logTemp.mensajeError
             For Each item As String In Asignaturas
-                Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
+                logAsig = Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
+                logAsig.Rut = Rut
+                Conexion.RegistrarLog(logAsig)
             Next
             Return resultado
         Catch ex As Exception

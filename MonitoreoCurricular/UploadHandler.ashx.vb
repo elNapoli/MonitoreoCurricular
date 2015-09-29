@@ -1,6 +1,7 @@
 ﻿Imports System.Web
 Imports System.Web.Services
 Imports System.IO
+Imports Models
 
 Public Class UploadHandler
     Implements System.Web.IHttpHandler
@@ -11,13 +12,19 @@ Public Class UploadHandler
         If context.Request.Files.Count > 0 Then
             Dim fileUpload As HttpPostedFile = context.Request.Files(0)
             Dim idHistorial As String = context.Request.Params("idNuevoHistorial")
-
+            Dim logTemp As LogNapoli
 
             Dim uploadPath As String = context.Server.MapPath("~/Resoluciones/")
             Dim fileName As String = Replace(fileUpload.FileName, " ", "_")
 
+            Dim Rut As String = context.Request.Params("RutUsuario")
 
-            Conexion.GuardarResolucionPorHistorial(idHistorial, fileName, fileName)
+
+            logTemp = Conexion.GuardarResolucionPorHistorial(idHistorial, fileName, fileName)
+            logTemp.Rut = Rut
+
+            Conexion.RegistrarLog(logTemp)
+
             Dim chunk As Integer = If(context.Request("chunk") IsNot Nothing, Integer.Parse(context.Request("chunk")), 0)
 
             Using fs = New FileStream(Path.Combine(uploadPath, fileName), If(chunk = 0, FileMode.Create, FileMode.Append))
