@@ -57,13 +57,16 @@ Public Interface IController
     Function EliminarAsignaturasPorHistorial(idHistorial As Integer) As IEnumerable(Of LogNapoli)
 
     <OperationContract()>
+    Function EliminarResolucionPorHistorial(idHistorial As Integer) As IEnumerable(Of LogNapoli)
+
+    <OperationContract()>
     Function ValidarUsuario(nick As Integer, pass As String) As Usuario
 
     <OperationContract()>
     Function TraeUsuarios() As IEnumerable(Of Usuario)
 
     <OperationContract()>
-    Function GuardarUsuario(Usuario As Usuario) As Integer
+    Function GuardarUsuario(Usuario As Usuario) As LogNapoli
 
     <OperationContract()>
     Sub RegistrarLog(log As LogNapoli)
@@ -72,9 +75,9 @@ Public Interface IController
     Function TraeUsuarioPorRut(rut As Integer) As Usuario
 
     <OperationContract()>
-    Sub EliminarUsuario(Rut As Integer)
+    Function EliminarUsuario(Rut As Integer) As LogNapoli
 
     <OperationContract()>
-    Sub ActualizarUsuario(Usuario As Usuario)
+    Function ActualizarUsuario(Usuario As Usuario) As LogNapoli
 
 End Interface

@@ -120,6 +120,12 @@ Namespace SrController
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarAsignaturasPorHistorial", ReplyAction:="http://tempuri.org/IController/EliminarAsignaturasPorHistorialResponse")>  _
         Function EliminarAsignaturasPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.LogNapoli())
         
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/EliminarResolucionPorHistorialResponse")>  _
+        Function EliminarResolucionPorHistorial(ByVal idHistorial As Integer) As Models.LogNapoli()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarResolucionPorHistorial", ReplyAction:="http://tempuri.org/IController/EliminarResolucionPorHistorialResponse")>  _
+        Function EliminarResolucionPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.LogNapoli())
+        
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ValidarUsuario", ReplyAction:="http://tempuri.org/IController/ValidarUsuarioResponse")>  _
         Function ValidarUsuario(ByVal nick As Integer, ByVal pass As String) As Models.Usuario
         
@@ -133,10 +139,10 @@ Namespace SrController
         Function TraeUsuariosAsync() As System.Threading.Tasks.Task(Of Models.Usuario())
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarUsuario", ReplyAction:="http://tempuri.org/IController/GuardarUsuarioResponse")>  _
-        Function GuardarUsuario(ByVal Usuario As Models.Usuario) As Integer
+        Function GuardarUsuario(ByVal Usuario As Models.Usuario) As Models.LogNapoli
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/GuardarUsuario", ReplyAction:="http://tempuri.org/IController/GuardarUsuarioResponse")>  _
-        Function GuardarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Integer)
+        Function GuardarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Models.LogNapoli)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/RegistrarLog", ReplyAction:="http://tempuri.org/IController/RegistrarLogResponse")>  _
         Sub RegistrarLog(ByVal log As Models.LogNapoli)
@@ -151,16 +157,16 @@ Namespace SrController
         Function TraeUsuarioPorRutAsync(ByVal rut As Integer) As System.Threading.Tasks.Task(Of Models.Usuario)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarUsuario", ReplyAction:="http://tempuri.org/IController/EliminarUsuarioResponse")>  _
-        Sub EliminarUsuario(ByVal Rut As Integer)
+        Function EliminarUsuario(ByVal Rut As Integer) As Models.LogNapoli
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/EliminarUsuario", ReplyAction:="http://tempuri.org/IController/EliminarUsuarioResponse")>  _
-        Function EliminarUsuarioAsync(ByVal Rut As Integer) As System.Threading.Tasks.Task
+        Function EliminarUsuarioAsync(ByVal Rut As Integer) As System.Threading.Tasks.Task(Of Models.LogNapoli)
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ActualizarUsuario", ReplyAction:="http://tempuri.org/IController/ActualizarUsuarioResponse")>  _
-        Sub ActualizarUsuario(ByVal Usuario As Models.Usuario)
+        Function ActualizarUsuario(ByVal Usuario As Models.Usuario) As Models.LogNapoli
         
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/ActualizarUsuario", ReplyAction:="http://tempuri.org/IController/ActualizarUsuarioResponse")>  _
-        Function ActualizarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task
+        Function ActualizarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Models.LogNapoli)
     End Interface
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")>  _
@@ -330,6 +336,14 @@ Namespace SrController
             Return MyBase.Channel.EliminarAsignaturasPorHistorialAsync(idHistorial)
         End Function
         
+        Public Function EliminarResolucionPorHistorial(ByVal idHistorial As Integer) As Models.LogNapoli() Implements SrController.IController.EliminarResolucionPorHistorial
+            Return MyBase.Channel.EliminarResolucionPorHistorial(idHistorial)
+        End Function
+        
+        Public Function EliminarResolucionPorHistorialAsync(ByVal idHistorial As Integer) As System.Threading.Tasks.Task(Of Models.LogNapoli()) Implements SrController.IController.EliminarResolucionPorHistorialAsync
+            Return MyBase.Channel.EliminarResolucionPorHistorialAsync(idHistorial)
+        End Function
+        
         Public Function ValidarUsuario(ByVal nick As Integer, ByVal pass As String) As Models.Usuario Implements SrController.IController.ValidarUsuario
             Return MyBase.Channel.ValidarUsuario(nick, pass)
         End Function
@@ -346,11 +360,11 @@ Namespace SrController
             Return MyBase.Channel.TraeUsuariosAsync
         End Function
         
-        Public Function GuardarUsuario(ByVal Usuario As Models.Usuario) As Integer Implements SrController.IController.GuardarUsuario
+        Public Function GuardarUsuario(ByVal Usuario As Models.Usuario) As Models.LogNapoli Implements SrController.IController.GuardarUsuario
             Return MyBase.Channel.GuardarUsuario(Usuario)
         End Function
         
-        Public Function GuardarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Integer) Implements SrController.IController.GuardarUsuarioAsync
+        Public Function GuardarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Models.LogNapoli) Implements SrController.IController.GuardarUsuarioAsync
             Return MyBase.Channel.GuardarUsuarioAsync(Usuario)
         End Function
         
@@ -370,19 +384,19 @@ Namespace SrController
             Return MyBase.Channel.TraeUsuarioPorRutAsync(rut)
         End Function
         
-        Public Sub EliminarUsuario(ByVal Rut As Integer) Implements SrController.IController.EliminarUsuario
-            MyBase.Channel.EliminarUsuario(Rut)
-        End Sub
+        Public Function EliminarUsuario(ByVal Rut As Integer) As Models.LogNapoli Implements SrController.IController.EliminarUsuario
+            Return MyBase.Channel.EliminarUsuario(Rut)
+        End Function
         
-        Public Function EliminarUsuarioAsync(ByVal Rut As Integer) As System.Threading.Tasks.Task Implements SrController.IController.EliminarUsuarioAsync
+        Public Function EliminarUsuarioAsync(ByVal Rut As Integer) As System.Threading.Tasks.Task(Of Models.LogNapoli) Implements SrController.IController.EliminarUsuarioAsync
             Return MyBase.Channel.EliminarUsuarioAsync(Rut)
         End Function
         
-        Public Sub ActualizarUsuario(ByVal Usuario As Models.Usuario) Implements SrController.IController.ActualizarUsuario
-            MyBase.Channel.ActualizarUsuario(Usuario)
-        End Sub
+        Public Function ActualizarUsuario(ByVal Usuario As Models.Usuario) As Models.LogNapoli Implements SrController.IController.ActualizarUsuario
+            Return MyBase.Channel.ActualizarUsuario(Usuario)
+        End Function
         
-        Public Function ActualizarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task Implements SrController.IController.ActualizarUsuarioAsync
+        Public Function ActualizarUsuarioAsync(ByVal Usuario As Models.Usuario) As System.Threading.Tasks.Task(Of Models.LogNapoli) Implements SrController.IController.ActualizarUsuarioAsync
             Return MyBase.Channel.ActualizarUsuarioAsync(Usuario)
         End Function
     End Class

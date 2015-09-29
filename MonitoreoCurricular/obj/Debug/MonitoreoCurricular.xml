@@ -102,6 +102,13 @@ Control btnGuardarUsuario.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
+</member><member name="P:MonitoreoCurricular.CrearUsuario.Master">
+	<summary>
+Propiedad Master.
+</summary>
+	<remarks>
+Propiedad generada automáticamente.
+</remarks>
 </member><member name="P:MonitoreoCurricular.My.MyWebExtension.Computer">
 	<summary>
  Devuelve información sobre el equipo host.
@@ -565,6 +572,13 @@ Control DDAsignaturas.
 	<remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:MonitoreoCurricular.ListUsuario.Master">
+	<summary>
+Propiedad Master.
+</summary>
+	<remarks>
+Propiedad generada automáticamente.
 </remarks>
 </member><member name="F:MonitoreoCurricular.Login.form1">
 	<summary>

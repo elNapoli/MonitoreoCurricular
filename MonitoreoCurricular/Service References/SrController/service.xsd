@@ -232,6 +232,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="EliminarResolucionPorHistorial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idHistorial" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarResolucionPorHistorialResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="EliminarResolucionPorHistorialResult" nillable="true" type="q19:ArrayOfLogNapoli" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="ValidarUsuario">
     <xs:complexType>
       <xs:sequence>
@@ -243,7 +257,7 @@
   <xs:element name="ValidarUsuarioResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="ValidarUsuarioResult" nillable="true" type="q19:Usuario" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="ValidarUsuarioResult" nillable="true" type="q20:Usuario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -255,28 +269,28 @@
   <xs:element name="TraeUsuariosResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeUsuariosResult" nillable="true" type="q20:ArrayOfUsuario" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeUsuariosResult" nillable="true" type="q21:ArrayOfUsuario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GuardarUsuario">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Usuario" nillable="true" type="q21:Usuario" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Usuario" nillable="true" type="q22:Usuario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GuardarUsuarioResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="GuardarUsuarioResult" type="xs:int" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="GuardarUsuarioResult" nillable="true" type="q23:LogNapoli" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="RegistrarLog">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="log" nillable="true" type="q22:LogNapoli" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="log" nillable="true" type="q24:LogNapoli" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -295,7 +309,7 @@
   <xs:element name="TraeUsuarioPorRutResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeUsuarioPorRutResult" nillable="true" type="q23:Usuario" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TraeUsuarioPorRutResult" nillable="true" type="q25:Usuario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -308,19 +322,23 @@
   </xs:element>
   <xs:element name="EliminarUsuarioResponse">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="EliminarUsuarioResult" nillable="true" type="q26:LogNapoli" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ActualizarUsuario">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Usuario" nillable="true" type="q24:Usuario" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Usuario" nillable="true" type="q27:Usuario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ActualizarUsuarioResponse">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="ActualizarUsuarioResult" nillable="true" type="q28:LogNapoli" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

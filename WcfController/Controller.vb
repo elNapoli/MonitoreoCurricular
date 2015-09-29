@@ -679,6 +679,45 @@ Public Class Controller
 
     End Function
 
+    Public Function EliminarResolucionPorHistorial(idHistorial As Integer) As IEnumerable(Of LogNapoli) Implements IController.EliminarResolucionPorHistorial
+        Dim Parametros As New List(Of Parameter)
+        Dim ret As New List(Of LogNapoli)
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Parametros.Add(New Parameter With {.Nombre = "@idHistorial", .Valor = idHistorial, .Tipo = Parameter.TypeDB.DbInt})
+
+
+        Try
+
+            dr = cnn.Ejecuta("delResolucionByHistorial", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
+                ret.Add(New LogNapoli With {
+                        .CodigoError = item(0),
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/EliminarResolucionPorHistorial"
+                    })
+
+            Next
+
+            Return ret
+
+        Catch ex As Exception
+            ret.Add(New LogNapoli With {
+                        .CodigoError = "-2",
+            .mensajeError = ex.Message.ToString,
+            .fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+            .origenError = "Controller/EliminarResolucionPorHistorial",
+            .Rut = "0"
+        })
+            MsgBox(ret(0).mensajeError)
+            Return ret
+        End Try
+
+
+
+    End Function
+
 
 
     Public Function ValidarUsuario(nick As Integer, pass As String) As Usuario Implements IController.ValidarUsuario
@@ -766,8 +805,11 @@ Public Class Controller
     End Function
 
 
-    Public Function GuardarUsuario(Usuario As Usuario) As Integer Implements IController.GuardarUsuario
+    Public Function GuardarUsuario(Usuario As Usuario) As LogNapoli Implements IController.GuardarUsuario
         Dim Parametros As New List(Of Parameter)
+        Dim ret As New LogNapoli
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+
         Parametros.Add(New Parameter With {.Nombre = "@Rut", .Valor = Usuario.Rut, .Tipo = Parameter.TypeDB.DbInt})
         Parametros.Add(New Parameter With {.Nombre = "@Nombre", .Valor = Usuario.Nombre, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@apPaterno", .Valor = Usuario.apPaterno, .Tipo = Parameter.TypeDB.DbVarchar})
@@ -780,24 +822,34 @@ Public Class Controller
 
 
         Try
-            retorno = CInt(cnn.EjecutaScalar("setUsuario", Parametros))
+            dr = cnn.Ejecuta("setUsuario", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
 
+
+                ret = New LogNapoli With {
+                        .CodigoError = item(0),
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/GuardarUsuario"
+                    }
+
+            Next
+
+            Return ret
 
 
         Catch ex As Exception
-            Dim logError As New LogNapoli
-
-            logError.CodigoError = "-2"
-            logError.mensajeError = ex.Message.ToString
-            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-            logError.origenError = "Controller/GuardarUsuario"
-            logError.Rut = "0"
-            RegistrarLog(logError)
-            retorno = logError.CodigoError
-            MsgBox(logError.mensajeError)
+            ret.CodigoError = "-2"
+            ret.mensajeError = ex.Message.ToString
+            ret.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            ret.origenError = "Controller/GuardarUsuario"
+            ret.Rut = "0"
+            MsgBox(ret.mensajeError)
+            Return ret
         End Try
 
-        Return retorno
+
 
 
     End Function
@@ -849,34 +901,48 @@ Public Class Controller
 
 
 
-    Public Sub EliminarUsuario(Rut As Integer) Implements IController.EliminarUsuario
+    Public Function EliminarUsuario(Rut As Integer) As LogNapoli Implements IController.EliminarUsuario
         Dim Parametros As New List(Of Parameter)
-        Dim retorno As Integer = 0
+        Dim ret As New LogNapoli
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+
         Parametros.Add(New Parameter With {.Nombre = "@Rut", .Valor = Rut, .Tipo = Parameter.TypeDB.DbInt})
 
 
         Try
-            retorno = CInt(cnn.EjecutaScalar("delUsuario", Parametros))
+            dr = cnn.Ejecuta("delUsuario", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
 
+
+                ret = New LogNapoli With {
+                        .CodigoError = item(0),
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/EliminarUsuario"
+                    }
+
+            Next
+
+            Return ret
         Catch ex As Exception
-            Dim logError As New LogNapoli
-
-            logError.CodigoError = "-2"
-            logError.mensajeError = ex.Message.ToString
-            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-            logError.origenError = "Controller/EliminarUsuario"
-            logError.Rut = "0"
-            RegistrarLog(logError)
-            retorno = logError.CodigoError
-            MsgBox(logError.mensajeError)
+            ret.CodigoError = "-2"
+            ret.mensajeError = ex.Message.ToString
+            ret.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            ret.origenError = "Controller/EliminarUsuario"
+            ret.Rut = "0"
+            MsgBox(ret.mensajeError)
+            Return ret
         End Try
 
 
 
-    End Sub
+    End Function
 
-    Public Sub ActualizarUsuario(Usuario As Usuario) Implements IController.ActualizarUsuario
+    Public Function ActualizarUsuario(Usuario As Usuario) As LogNapoli Implements IController.ActualizarUsuario
         Dim Parametros As New List(Of Parameter)
+        Dim ret As New LogNapoli
+        Dim dr As IEnumerable(Of DataRow) = Nothing
 
         Parametros.Add(New Parameter With {.Nombre = "@rut", .Valor = Usuario.Rut, .Tipo = Parameter.TypeDB.DbInt})
         Parametros.Add(New Parameter With {.Nombre = "@Nombre", .Valor = Usuario.Nombre, .Tipo = Parameter.TypeDB.DbVarchar})
@@ -884,30 +950,43 @@ Public Class Controller
         Parametros.Add(New Parameter With {.Nombre = "@ApMaterno", .Valor = Usuario.apMaterno, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@email", .Valor = Usuario.email, .Tipo = Parameter.TypeDB.DbVarchar})
         Parametros.Add(New Parameter With {.Nombre = "@rol", .Valor = Usuario.Rol, .Tipo = Parameter.TypeDB.DbInt})
-        Dim retorno As Integer = 0
+
 
 
 
         Try
-            retorno = CInt(cnn.EjecutaScalar("UpdateUsuario", Parametros))
 
+            dr = cnn.Ejecuta("UpdateUsuario", Parametros) ' colocar nombre del procedimiento
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+            For Each item As DataRow In dr
+
+
+                ret = New LogNapoli With {
+                        .CodigoError = "1",
+                        .mensajeError = item(1),
+                        .fecha = item(2),
+                        .origenError = "Controller/ActualizarUsuario",
+                        .idObjetos = item(0)
+                    }
+
+            Next
+
+            Return ret
 
 
         Catch ex As Exception
-            Dim logError As New LogNapoli
 
-            logError.CodigoError = "-2"
-            logError.mensajeError = ex.Message.ToString
-            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
-            logError.origenError = "Controller/ActualizarUsuario"
-            logError.Rut = "0"
-            RegistrarLog(logError)
-            retorno = logError.CodigoError
-            MsgBox(logError.mensajeError)
+            ret.CodigoError = "-2"
+            ret.mensajeError = ex.Message.ToString
+            ret.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            ret.origenError = "Controller/ActualizarUsuario"
+            ret.Rut = "0"
+            MsgBox(ret.mensajeError)
+            Return ret
         End Try
 
 
-    End Sub
+    End Function
 
 
     Public Sub RegistrarLog(log As LogNapoli) Implements IController.RegistrarLog

@@ -6,6 +6,33 @@
         })
 
     </script>
+
+     <script>
+
+
+         function eliminarHistorialJS() {
+
+             alertify.confirm("Esta seguro que desea eliminar el usuario seleccionado?", function (e) {
+                 if (e) {
+
+                     setTimeout(function () {
+
+                         window.location = "ListUsuario.aspx?rut=" + $("#<%=txt_run.ClientID()%>").val() + "&Eliminar=True";
+                            //  __doPostBack(this.name, '');
+                        }, 0);
+                    } else {
+                        alertify.error("Usted ha cancelado la operación!");
+
+                        return false;
+                    }
+
+                });
+
+            };
+
+
+
+    </script>
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <!--BEGIN INPUT TEXT FIELDS-->
 
@@ -136,14 +163,16 @@
                                     </div>
                          
                             <div class="col-lg-3">
-                                <asp:LinkButton ID="BtnEliminar" 
+                                                                <asp:LinkButton ID="BtnEliminar" 
                                     runat="server" 
-                                    CssClass="btn btn-danger start"  
-                                    OnClick="BtnEliminar_Click"
-                                   >
+                                    CssClass="btn btn-danger start"    
+                          
+                                    onClientClick="eliminarHistorialJS()"
+                                    UseSubmitBehavior="false" 
+                                    >
                                     <span aria-hidden="true" class="glyphicon glyphicon-trash"></span> Eliminar historial
                                     </asp:LinkButton>
-                                </div>
+
                             <div class="col-lg-3">
 
                           </div>

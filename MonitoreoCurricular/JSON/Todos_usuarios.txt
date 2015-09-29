@@ -1,3 +1,3 @@
 {"data":
-[{"Rut":1111111,"Nombre":"Usuario","Rol":"User","apPaterno":"Normal","apMaterno":"Probando","email":"u.normal@uach.cl","password":null},{"Rut":17536925,"Nombre":"BALDOMERO","Rol":"Administrador","apPaterno":"AGUILA","apMaterno":"NAPOLI","email":"BAL@HOTMAIL.COM","password":null}]
+[{"Rut":17536925,"Nombre":"baldomero","Rol":"Administrador","apPaterno":"aguila","apMaterno":"napoli","email":"baldomero.napoli@gmail.com","password":null},{"Rut":123456789,"Nombre":"hola","Rol":"User","apPaterno":"hola","apMaterno":"hola","email":"hola","password":null}]
 }

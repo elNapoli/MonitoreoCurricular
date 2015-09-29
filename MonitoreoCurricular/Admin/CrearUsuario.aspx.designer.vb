@@ -120,4 +120,16 @@ Partial Public Class CrearUsuario
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnGuardarUsuario As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
+    '''Propiedad Master.
+    '''</summary>
+    '''<remarks>
+    '''Propiedad generada automáticamente.
+    '''</remarks>
+    Public Shadows ReadOnly Property Master() As MonitoreoCurricular.Layout
+        Get
+            Return CType(MyBase.Master, MonitoreoCurricular.Layout)
+        End Get
+    End Property
 End Class

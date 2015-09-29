@@ -109,6 +109,12 @@
   <wsdl:message name="IController_EliminarAsignaturasPorHistorial_OutputMessage">
     <wsdl:part name="parameters" element="tns:EliminarAsignaturasPorHistorialResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_EliminarResolucionPorHistorial_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarResolucionPorHistorial" />
+  </wsdl:message>
+  <wsdl:message name="IController_EliminarResolucionPorHistorial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarResolucionPorHistorialResponse" />
+  </wsdl:message>
   <wsdl:message name="IController_ValidarUsuario_InputMessage">
     <wsdl:part name="parameters" element="tns:ValidarUsuario" />
   </wsdl:message>
@@ -219,6 +225,10 @@
     <wsdl:operation name="EliminarAsignaturasPorHistorial">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/EliminarAsignaturasPorHistorial" message="tns:IController_EliminarAsignaturasPorHistorial_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/EliminarAsignaturasPorHistorialResponse" message="tns:IController_EliminarAsignaturasPorHistorial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarResolucionPorHistorial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/EliminarResolucionPorHistorial" message="tns:IController_EliminarResolucionPorHistorial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/EliminarResolucionPorHistorialResponse" message="tns:IController_EliminarResolucionPorHistorial_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ValidarUsuario">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/ValidarUsuario" message="tns:IController_ValidarUsuario_InputMessage" />
@@ -397,6 +407,15 @@
     </wsdl:operation>
     <wsdl:operation name="EliminarAsignaturasPorHistorial">
       <soap:operation soapAction="http://tempuri.org/IController/EliminarAsignaturasPorHistorial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarResolucionPorHistorial">
+      <soap:operation soapAction="http://tempuri.org/IController/EliminarResolucionPorHistorial" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

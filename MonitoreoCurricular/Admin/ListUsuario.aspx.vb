@@ -5,6 +5,26 @@ Public Class ListUsuario
     Inherits System.Web.UI.Page
     Private Conexion As New SrController.ControllerClient
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Dim logTemp As LogNapoli
+
+        If (Request.QueryString("rut") <> Nothing And Request.QueryString("Eliminar") <> Nothing) Then
+            If (Request.QueryString("Eliminar") = "True") Then
+
+
+                logTemp = Conexion.EliminarUsuario(Request.QueryString("rut"))
+                logTemp.Rut = Master.Rut_temp()
+                Conexion.RegistrarLog(logTemp)
+
+                If (Convert.ToInt32(logTemp.CodigoError) = 1) Then
+
+                    ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.success('" + logTemp.mensajeError.Replace("'", " ").Replace("""", " ") + "');", True)
+                Else
+                    ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.set({ delay: 10000 });alertify.error('" + logTemp.mensajeError.Replace("'", " ").Replace("""", " ") + "')", True)
+
+                End If
+
+            End If
+        End If
         CargarUsuariosJSON()
     End Sub
 
