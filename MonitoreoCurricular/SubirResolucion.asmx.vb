@@ -148,13 +148,19 @@ Public Class SubirResolucion1
 
 
     <WebMethod()> _
-    Public Sub ActualizarUsuario(Rut As Integer, Nombre As String, ApPaterno As String, ApMaterno As String, Email As String, Rol As Integer)
+    Public Function ActualizarUsuario(Rut As Integer, Nombre As String, ApPaterno As String, ApMaterno As String, Email As String, Rol As Integer, rutLogin As String) As String()
         Dim Usuario As New Usuario(Rut, Nombre, Rol, ApPaterno, ApMaterno, Email)
+        Dim logTemp As New LogNapoli
+        Dim retorno(1) As String
+        logTemp = Conexion.ActualizarUsuario(Usuario)
+        logTemp.Rut = rutLogin
+        Conexion.RegistrarLog(logTemp)
 
-        Conexion.ActualizarUsuario(Usuario)
+        retorno(0) = logTemp.CodigoError
+        retorno(1) = logTemp.mensajeError
 
-
-    End Sub
+        Return retorno
+    End Function
 
 
 

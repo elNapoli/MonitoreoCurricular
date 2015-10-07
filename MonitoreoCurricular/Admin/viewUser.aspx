@@ -163,6 +163,8 @@
                                     </div>
                          
                             <div class="col-lg-3">
+
+
                                                                 <asp:LinkButton ID="BtnEliminar" 
                                     runat="server" 
                                     CssClass="btn btn-danger start"    
@@ -172,6 +174,9 @@
                                     >
                                     <span aria-hidden="true" class="glyphicon glyphicon-trash"></span> Eliminar historial
                                     </asp:LinkButton>
+
+
+         
 
                             <div class="col-lg-3">
 

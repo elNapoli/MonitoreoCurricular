@@ -146,8 +146,8 @@ function ActualizarUsuario() {
     var ApMaterno = $('#ContentPlaceHolder1_txt_apMaterno').val();
     var Email = $('#ContentPlaceHolder1_txt_email').val();
     var Rol = $('#ContentPlaceHolder1_DDRol').val();
-  
-    var Usuario = { "Rut": Rut, "Nombre": Nombre, "ApPaterno": ApPaterno, "ApMaterno": ApMaterno, "Email": Email, "Rol": Rol};
+    var Rut = $('#CookRut').val();
+    var Usuario = { "Rut": Rut, "Nombre": Nombre, "ApPaterno": ApPaterno, "ApMaterno": ApMaterno, "Email": Email, "Rol": Rol, "rutLogin": Rut };
     $.ajax({
         type: "POST",
         url: "/SubirResolucion.asmx/ActualizarUsuario",
@@ -157,7 +157,12 @@ function ActualizarUsuario() {
         success: function (response) {
 
 
-            alert("Se ha actualizado exitosamente el registro")
+            if (response.d[0] == "1") {
+                alertify.success(response.d[1]);
+            }
+            else {
+                alertify.error(response.d[1])
+            }
 
         },
         failure: function (msg) {

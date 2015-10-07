@@ -24,7 +24,7 @@ Public Class VerResolucion
 
                 For Each item As LogNapoli In logListTempRES
                     item.Rut = Master.Rut_temp()
-                    MsgBox(item.imprimirLog)
+
                     Conexion.RegistrarLog(item)
                 Next
                 logTemp = Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))

@@ -4,6 +4,11 @@ Public Class viewUser
     Inherits System.Web.UI.Page
     Private Conexion As New SrController.ControllerClient
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+        If (Request.QueryString("save") <> Nothing) Then
+            ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.success('Se ha guardado correctamente el rut =" + Request.QueryString("rut") + " exitosamente');", True)
+
+        End If
         WebControl.DisabledCssClass = "form-control"
 
         txt_run.Text = Request.QueryString("Rut")

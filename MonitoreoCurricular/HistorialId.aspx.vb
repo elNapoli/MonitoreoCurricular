@@ -11,7 +11,7 @@ Public Class HistorialId
      
 
         IdHistorialURL.Text = Request.QueryString("IDHistorial")
-        If (Request.QueryString("IDHistorial") <> Nothing) Then
+        If (Request.QueryString("save") <> Nothing) Then
             ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.success('Se ha guardado exitosamente el registro!');", True)
         End If
         If (Me.IsPostBack) Then

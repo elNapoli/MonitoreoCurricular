@@ -13,9 +13,10 @@ Public Class CrearUsuario
             logTemp = Conexion.GuardarUsuario(usuarioTemp)
             logTemp.Rut = Master.Rut_temp()
             Conexion.RegistrarLog(logTemp)
-
+            Response.Redirect("/Admin/viewUser.aspx?Rut=" + txt_run.Text + "&save=true")
         Catch ex As Exception
-            MsgBox(ex.Message.ToString)
+
+            ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.error('" + ex.Message.ToString + "');", True)
         End Try
 
 
