@@ -11,8 +11,13 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
-       <link href="/css/parsley.css" rel="stylesheet">
-       <style>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       <script type="text/javascript" language="javascript" src="js/jquery.validate.js"></script>
+    <!-- Metis core stylesheet -->
+    <link rel="stylesheet" href="css/main.min.css">
+          <link href="/css/parsley.css" rel="stylesheet">
+        <style>
 
       .row {
         margin-top: 10px;
@@ -61,17 +66,39 @@
         border: 1px solid #EED3D7;
       }
     </style>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-       <script type="text/javascript" language="javascript" src="js/jquery.validate.js"></script>
-    <!-- Metis core stylesheet -->
-    <link rel="stylesheet" href="css/main.min.css">
+       <script type="text/javascript">
+
+           $(document).ready(function () {
+               window.Parsley.setLocale('es');
+               $.listen('parsley:field:validate', function () {
+                   validateFront();
+               });
+
+
+               var validateFront = function () {
+                   if (true === $('#form_login').parsley().isValid()) {
+                       $('.bs-callout-info').removeClass('hidden');
+                       $('.bs-callout-warning').addClass('hidden');
+                   } else {
+                       $('.bs-callout-info').addClass('hidden');
+                       $('.bs-callout-warning').removeClass('hidden');
+                   }
+               };
+
+
+           });
+
+
+
+
+    </script>
   </head>
 
   <body class="login">
 
 
-       <form id="form1" runat="server"  data-parsley-validate>
+       <form id="form_login"   runat="server">
+           <div data-parsley-type="number">
                  <asp:ScriptManager runat="server" />  
                  <asp:UpdatePanel runat="server">
           <ContentTemplate>
@@ -88,8 +115,8 @@
               Ingrese su R.U.N. y contraseña
             </p>
  
-            <asp:TextBox runat="server" ID="txt_Username"  placeholder="R.U.N." name="digits" class="form-control top" data-parsley-type="number"   required />
-            <asp:TextBox runat="server" ID="txt_Password"  TextMode="Password"  placeholder="Contraseña" class="form-control top"/>
+            <asp:TextBox runat="server" ID="txt_Username"  placeholder="R.U.N." name="digits" class="form-control top"  data-parsley-type="number"   required/>
+            <asp:TextBox runat="server" ID="txt_Password"  TextMode="Password"  placeholder="Contraseña" class="form-control top"   required/>
          
             <div class="checkbox">
               <label>
@@ -108,7 +135,8 @@
        
             
               <asp:Button runat="server" OnClick="validar_Click" class="btn btn-lg btn-primary btn-block" Text="Iniciar Sesión" id="BtnLogin"/>
-          <span id="mibotton"class="btn btn-default">validate</span>
+
+
         </div>
 
       </div>
@@ -119,44 +147,20 @@
       </div>
     </div>
 
-    <!--jQuery -->
+        
+          </ContentTemplate>
+      </asp:UpdatePanel>
+                           <span id="mibotton"class="btn btn-default">validate</span>
+               </div>
+           </form>
+       <!--jQuery -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <!--Bootstrap -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-                     <script src="/js/es_parley.js"></script>
-     <script type="text/javascript" src="/js/parsley.js"></script>           
-          </ContentTemplate>
-      </asp:UpdatePanel>
-           </form>
-
-      <script type="text/javascript">
-
-          $(document).ready(function () {
-              window.Parsley.setLocale('es');
-              $.listen('parsley:field:validate', function () {
-                  validateFront();
-              });
-
-              $(' #mibotton').click(function () {
-                  $('#form1').parsley().validate();
-                  validateFront();
-              });
-
-              var validateFront = function () {
-                  if (true === $('#form1').parsley().isValid()) {
-                      $('.bs-callout-info').removeClass('hidden');
-                      $('.bs-callout-warning').addClass('hidden');
-                  } else {
-                      $('.bs-callout-info').addClass('hidden');
-                      $('.bs-callout-warning').removeClass('hidden');
-                  }
-              };
-          });
-
-
-
-
-    </script>
+                       
+    <script src="/js/es_parley.js"></script>
+     <script type="text/javascript" src="/js/parsley.js"></script>
+     
   </body>
 </html>
