@@ -11,11 +11,8 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-       <script type="text/javascript" language="javascript" src="js/jquery.validate.js"></script>
        <link href="/css/parsley.css" rel="stylesheet">
-      <style>
+       <style>
 
       .row {
         margin-top: 10px;
@@ -64,6 +61,9 @@
         border: 1px solid #EED3D7;
       }
     </style>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       <script type="text/javascript" language="javascript" src="js/jquery.validate.js"></script>
     <!-- Metis core stylesheet -->
     <link rel="stylesheet" href="css/main.min.css">
   </head>
@@ -71,7 +71,7 @@
   <body class="login">
 
 
-       <form id="form1" runat="server" data-parsley-validate>
+       <form id="form1" runat="server"  data-parsley-validate>
                  <asp:ScriptManager runat="server" />  
                  <asp:UpdatePanel runat="server">
           <ContentTemplate>
@@ -108,7 +108,7 @@
        
             
               <asp:Button runat="server" OnClick="validar_Click" class="btn btn-lg btn-primary btn-block" Text="Iniciar Sesión" id="BtnLogin"/>
-         <span id="d"class="btn btn-default" onclick="ValidarClient()">validate</span>
+          <span id="mibotton"class="btn btn-default">validate</span>
         </div>
 
       </div>
@@ -124,46 +124,35 @@
 
     <!--Bootstrap -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-                 <script src="/js/es_parley.js"></script>
+                     <script src="/js/es_parley.js"></script>
      <script type="text/javascript" src="/js/parsley.js"></script>           
           </ContentTemplate>
       </asp:UpdatePanel>
            </form>
+
       <script type="text/javascript">
-          function checkValidation() {
-              return confirm('Everything ok?');
-          }
-</script>
-       <script type="text/javascript">
 
+          $(document).ready(function () {
+              window.Parsley.setLocale('es');
+              $.listen('parsley:field:validate', function () {
+                  validateFront();
+              });
 
+              $(' #mibotton').click(function () {
+                  $('#form1').parsley().validate();
+                  validateFront();
+              });
 
-           function ValidarClient() {
-               $('#form1').parsley().validate();
-               validateFront();
-               return false;
-
-           }
-           $(document).ready(function () {
-               window.Parsley.setLocale('es');
-               $.listen('parsley:field:validate', function () {
-                   validateFront();
-               });
-
-               $(' #mibotton').click(function () {
-              
-               });
-
-               var validateFront = function () {
-                   if (true === $('#form1').parsley().isValid()) {
-                       $('.bs-callout-info').removeClass('hidden');
-                       $('.bs-callout-warning').addClass('hidden');
-                   } else {
-                       $('.bs-callout-info').addClass('hidden');
-                       $('.bs-callout-warning').removeClass('hidden');
-                   }
-               };
-           });
+              var validateFront = function () {
+                  if (true === $('#form1').parsley().isValid()) {
+                      $('.bs-callout-info').removeClass('hidden');
+                      $('.bs-callout-warning').addClass('hidden');
+                  } else {
+                      $('.bs-callout-info').addClass('hidden');
+                      $('.bs-callout-warning').removeClass('hidden');
+                  }
+              };
+          });
 
 
 
