@@ -100,6 +100,7 @@
     <Content Include="css\jquery.gritter.css" />
     <Content Include="css\jquery.inputlimiter.css" />
     <Content Include="css\jquery.plupload.queue.css" />
+    <Content Include="css\parsley.css" />
     <Content Include="css\plUpload.css" />
     <Content Include="EditarEdicion.aspx" />
     <Content Include="Error\401.aspx" />
@@ -138,6 +139,7 @@
     <Content Include="js\demo.js" />
     <Content Include="js\DocumentReady.js" />
     <Content Include="js\es.js" />
+    <Content Include="js\es_parley.js" />
     <Content Include="js\functions.js" />
     <Content Include="js\jquery.bpopup.min.js" />
     <Content Include="js\jquery.dataTables.js" />
@@ -148,6 +150,7 @@
     <Content Include="js\jquery.Rut.js" />
     <Content Include="js\jquery.validate.js" />
     <Content Include="js\jquery.validVal.min.js" />
+    <Content Include="js\parsley.js" />
     <Content Include="js\plupload.full.min.js" />
     <Content Include="js\shCore.js" />
     <Content Include="js\style-switcher.js.map" />
@@ -369,6 +372,7 @@
     <Content Include="WebForm2.aspx" />
     <Content Include="Error\Web.config" />
     <Content Include="Models.LogNapoli.datasource" />
+    <Content Include="WebForm5.aspx" />
     <None Include="Service References\SrController\configuration91.svcinfo" />
     <None Include="Service References\SrController\configuration.svcinfo" />
     <Content Include="css\countdown.css" />
@@ -1369,6 +1373,13 @@
     </Compile>
     <Compile Include="WebForm2.aspx.vb">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.vb">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm5.aspx.vb">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

@@ -14,6 +14,56 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        <script type="text/javascript" language="javascript" src="js/jquery.validate.js"></script>
+       <link href="/css/parsley.css" rel="stylesheet">
+      <style>
+
+      .row {
+        margin-top: 10px;
+      }
+      .code-block {
+        margin-top: 20px;
+      }
+      .hidden {
+        display: none;
+      }
+      .row h2 {
+        color: #FF851B;
+      }
+      .row p {
+        text-align: justify;
+      }
+      .first {
+        padding-left: 15px;
+        border-left: 2px solid #FF851B;
+      }
+      .second {
+        padding-left: 15px;
+        border-left: 2px solid #5bc0de;
+      }
+      .validate {
+        margin-top: 10px;
+      }
+      h4 {
+        margin-bottom: 10px;
+      }
+      .invalid-form-error-message {
+        margin-top: 10px;
+        padding: 5px;
+      }
+      .invalid-form-error-message.filled {
+        border-left: 2px solid red;
+      }
+      p.parsley-success {
+        color: #468847;
+        background-color: #DFF0D8;
+        border: 1px solid #D6E9C6;
+      }
+      p.parsley-error {
+        color: #B94A48;
+        background-color: #F2DEDE;
+        border: 1px solid #EED3D7;
+      }
+    </style>
     <!-- Metis core stylesheet -->
     <link rel="stylesheet" href="css/main.min.css">
   </head>
@@ -21,7 +71,7 @@
   <body class="login">
 
 
-       <form id="form1" runat="server">
+       <form id="form1" runat="server" data-parsley-validate>
                  <asp:ScriptManager runat="server" />  
                  <asp:UpdatePanel runat="server">
           <ContentTemplate>
@@ -38,7 +88,7 @@
               Ingrese su R.U.N. y contraseña
             </p>
  
-            <asp:TextBox runat="server" ID="txt_Username"  placeholder="R.U.N." name="digits" class="form-control top"/>
+            <asp:TextBox runat="server" ID="txt_Username"  placeholder="R.U.N." name="digits" class="form-control top" data-parsley-type="number"   required />
             <asp:TextBox runat="server" ID="txt_Password"  TextMode="Password"  placeholder="Contraseña" class="form-control top"/>
          
             <div class="checkbox">
@@ -58,7 +108,7 @@
        
             
               <asp:Button runat="server" OnClick="validar_Click" class="btn btn-lg btn-primary btn-block" Text="Iniciar Sesión" id="BtnLogin"/>
-        
+         <span id="d"class="btn btn-default" onclick="ValidarClient()">validate</span>
         </div>
 
       </div>
@@ -74,11 +124,50 @@
 
     <!--Bootstrap -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-                            
+                 <script src="/js/es_parley.js"></script>
+     <script type="text/javascript" src="/js/parsley.js"></script>           
           </ContentTemplate>
       </asp:UpdatePanel>
            </form>
+      <script type="text/javascript">
+          function checkValidation() {
+              return confirm('Everything ok?');
+          }
+</script>
+       <script type="text/javascript">
 
 
+
+           function ValidarClient() {
+               $('#form1').parsley().validate();
+               validateFront();
+               return false;
+
+           }
+           $(document).ready(function () {
+               window.Parsley.setLocale('es');
+               $.listen('parsley:field:validate', function () {
+                   validateFront();
+               });
+
+               $(' #mibotton').click(function () {
+              
+               });
+
+               var validateFront = function () {
+                   if (true === $('#form1').parsley().isValid()) {
+                       $('.bs-callout-info').removeClass('hidden');
+                       $('.bs-callout-warning').addClass('hidden');
+                   } else {
+                       $('.bs-callout-info').addClass('hidden');
+                       $('.bs-callout-warning').removeClass('hidden');
+                   }
+               };
+           });
+
+
+
+
+    </script>
   </body>
 </html>
