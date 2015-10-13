@@ -65,7 +65,7 @@ Public Class Login
 
 
         Catch ex As Exception
-            statusLogin.Text = "Error, ha el rut debe ser solo números "
+            statusLogin.Text = "Error, el rut debe ser solo dígitos "
         End Try
 
             

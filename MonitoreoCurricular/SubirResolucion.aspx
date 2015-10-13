@@ -3,6 +3,9 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+    <input type="hidden" id="ExisteResol"/>
+
             <div class="contentLoading " id="element_to_pop_up"  style="display:none;">
 
                 <asp:Image ImageUrl="/img/loading_spinner.gif" runat="server" />
@@ -12,8 +15,10 @@
     
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <!--BEGIN INPUT TEXT FIELDS-->
-    <div class="row">
-        <div class="col-lg-12">
+
+
+   
+        <div class="col-lg-12" id="demo-form" data-parsley-validate>
             <div class="box dark">
                 <header>
                     <div class="icons">
@@ -41,10 +46,14 @@
                     <div class="form-horizontal">
 
                         <div class="form-group">
+                             <div class="row">
+
+
+     
                             <label for="text1" class="control-label col-lg-4">Seleccione Plan</label>
                             <div class="col-lg-8">
 
-                                <asp:DropDownList ID="DDPlan" class="form-control" runat="server">
+                                <asp:DropDownList ID="DDPlan" class="form-control" runat="server" required>
                                 </asp:DropDownList>
                                 <cc1:CascadingDropDown
                                     ID="CDPlan"
@@ -58,12 +67,12 @@
                         </div>
                         <!-- /.form-group -->
 
-
+                            <br />
 
                         <div class="form-group">
                             <label for="text1" class="control-label col-lg-4">Seleccione Carrera</label>
                             <div class="col-lg-8">
-                                <asp:DropDownList ID="DDCarrera" class="form-control" runat="server">
+                                <asp:DropDownList ID="DDCarrera" class="form-control" runat="server" required>
                                 </asp:DropDownList>
                                 <cc1:CascadingDropDown
                                     ID="CDCarrera"
@@ -100,8 +109,8 @@
                             <label class="control-label col-lg-4">Hito</label>
                             <div class="col-lg-8">
 
-                                <asp:DropDownList runat="server" ID="DDHito" class="form-control">
-                                    <asp:ListItem Text="Seleccione Hito"/>
+                                <asp:DropDownList runat="server" ID="DDHito" class="form-control" required  >
+                                    <asp:ListItem Text="Seleccione Hito" Value=""/>
                                     <asp:ListItem Text="Modificación menor"  />
                                     <asp:ListItem Text="Modificación mayor" />
                                     <asp:ListItem Text="Innovación curricular" />
@@ -120,23 +129,23 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="text2" class="control-label col-lg-4">Descripción Cambio</label>
+                            <label for="text2" class="control-label col-lg-4" >Descripción Cambio</label>
                             <div class="col-lg-8">
-                                <textarea id="Descripcion" class="form-control"></textarea>
+                                <textarea id="Descripcion" class="form-control" required></textarea>
                             </div>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
-                            <label for="limiter" class="control-label col-lg-4">Antes</label>
+                            <label for="limiter" class="control-label col-lg-4" >Antes</label>
                             <div class="col-lg-8">
-                                <textarea id="antes" class="form-control"></textarea>
+                                <textarea id="antes" class="form-control" required></textarea>
                             </div>
                         </div>
                         <!-- /.row -->
                         <div class="form-group">
                             <label for="text4" class="control-label col-lg-4">Después</label>
                             <div class="col-lg-8">
-                                <textarea id="despues" class="form-control"></textarea>
+                                <textarea id="despues" class="form-control" required></textarea>
                             </div>
                         </div>
 
@@ -150,9 +159,12 @@
                             </div>
 
                         
-                             <div id="filelist" class="col-lg-8"> </div>
+                             <div id="filelist" class="col-lg-8">
 
-                     
+                                    
+                             </div>
+                           
+                  
                         </div>
                         <!-- /.form-group -->
 
@@ -175,11 +187,11 @@
 
         <!--END TEXT INPUT FIELD-->
 
-
     </div>
+ 
     <!-- /.row -->
 
-
+ 
 
 
 </asp:Content>

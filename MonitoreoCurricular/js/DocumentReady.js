@@ -25,13 +25,15 @@
             FilesAdded: function (up, files) {
              
                 plupload.each(files, function (file) {
-                    document.getElementById('filelist').innerHTML += '<div id="' + file.id + '" class="file"><a href="/Resoluciones/'+file.name+'">' + file.name + ' (' + plupload.formatSize(file.size) + ') </a><b></b></div>';
+                    document.getElementById('filelist').innerHTML += '<div id="' + file.id + '" class="file parsley-success"><a href="/Resoluciones/' + file.name + '">' + file.name + ' (' + plupload.formatSize(file.size) + ') </a><b></b></div>';
+                    $("#ExisteResol").val("True");
+              
                 });
             },
 
-            UploadProgress: function (up, file) {
-                document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
-            },
+        //    UploadProgress: function (up, file) {
+         //       document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
+          //  },
 
             Error: function (up, err) {
                 alert("\nError #" + err.code + ": " + err.message);
@@ -184,7 +186,27 @@
 
     });
 
+    //Validación de campos: no nulos, solo numeros, largos minimos y maxmimos, etc 
 
+    window.Parsley.setLocale('es');
+    $.listen('parsley:field:validate', function () {
+        validateFront();
+    });
+
+    $('#demo-form .btn').click(function () {
+        $('#demo-form').parsley().validate();
+        validateFront();
+    });
+
+    var validateFront = function () {
+        if (true === $('#demo-form').parsley().isValid()) {
+            $('.bs-callout-info').removeClass('hidden');
+            $('.bs-callout-warning').addClass('hidden');
+        } else {
+            $('.bs-callout-info').addClass('hidden');
+            $('.bs-callout-warning').removeClass('hidden');
+        }
+    };
 
 });
 

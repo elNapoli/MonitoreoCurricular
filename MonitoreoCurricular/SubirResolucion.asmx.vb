@@ -56,7 +56,7 @@ Public Class SubirResolucion1
     End Function
 
     <WebMethod()> _
-    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String, Rut As String) As String()
+    Public Function GuardarHistorial(Plan As String, Carrera As String, Fecha As String, Hito As String, Asignaturas As String(), Descripcion As String, Antes As String, Despues As String, Rut As String, resolucion As String) As String()
         Dim array As String = ""
         Dim idHistorial As Integer
         Dim resultado(1) As String
@@ -65,19 +65,28 @@ Public Class SubirResolucion1
 
 
         Try
-            Dim Historial As New Models.HistorialCurricular(Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
-            logTemp = Conexion.GuardarHistorial(Historial)
-            logTemp.Rut = Rut
-            Conexion.RegistrarLog(logTemp)
 
-            idHistorial = logTemp.idObjetos
-            resultado(0) = idHistorial.ToString
-            resultado(1) = logTemp.mensajeError
-            For Each item As String In Asignaturas
-                logAsig = Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
-                logAsig.Rut = Rut
-                Conexion.RegistrarLog(logAsig)
-            Next
+            If (Plan = "" Or Carrera = "" Or Fecha = "" Or Hito = "" Or Descripcion = "" Or Antes = "" Or Despues = "" Or resolucion = "") Then
+                resultado(0) = "0"
+                resultado(1) = "Algunos datos del formulario no se han introducido, por favor verifique e intente nuevamente."
+
+            Else
+                Dim Historial As New Models.HistorialCurricular(Plan, Carrera, Fecha, Hito, Descripcion, Antes, Despues)
+                logTemp = Conexion.GuardarHistorial(Historial)
+                logTemp.Rut = Rut
+                Conexion.RegistrarLog(logTemp)
+
+                idHistorial = logTemp.idObjetos
+                resultado(0) = idHistorial.ToString
+                resultado(1) = logTemp.mensajeError
+                For Each item As String In Asignaturas
+                    logAsig = Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
+                    logAsig.Rut = Rut
+                    Conexion.RegistrarLog(logAsig)
+                Next
+
+            End If
+
             Return resultado
         Catch ex As Exception
 
