@@ -71,10 +71,13 @@ Public Class HistorialId
         divString = ""
         For Each item As Models.Resoluciones In resolucionesTemp
 
-            divString += "<div class='file'> " +
-                             "<a href='/Resoluciones/" + item.path + "'>" + item.nombre +
-                             "</a>" +
-                             "</div>"
+            divString += "<div class='input-group'>" +
+  "<input type='text' class='form-control' value='" + item.nombre + "' placeholder='Nombre de la resolución' aria-describedby='basic-addon2'>" +
+  "<span class='input-group-addon' id='basic-addon2'><a href='/Resoluciones/" + item.path + "'>" + item.path + "</a></span>" +
+"</div><br/>"
+
+
+
 
 
         Next
@@ -106,116 +109,116 @@ Public Class HistorialId
             despues.Value = item.despues.ToString
         Next
     End Sub
-    Private Function CallAsignatura() As IEnumerable(Of Asignaturas)
-        Dim Lista As IEnumerable(Of Asignaturas) = Nothing
-        Try
-            Lista = Conexion.TraeAsignatura()
+        Private Function CallAsignatura() As IEnumerable(Of Asignaturas)
+            Dim Lista As IEnumerable(Of Asignaturas) = Nothing
+            Try
+                Lista = Conexion.TraeAsignatura()
 
-        Catch
-            ' Throw New Exception(ex.Detail.Detalle)
+            Catch
+                ' Throw New Exception(ex.Detail.Detalle)
 
-        End Try
+            End Try
 
-        Return Lista
-    End Function
-
-
-    Private Sub ActualizarHistorial(historial As Models.HistorialCurricular)
-
-        Try
-            Conexion.ActualizarHistorial(historial)
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-
-        End Try
+            Return Lista
+        End Function
 
 
-    End Sub
+        Private Sub ActualizarHistorial(historial As Models.HistorialCurricular)
 
-    Private Function CallHistorialById(idHistorial As Integer) As IEnumerable(Of Models.HistorialCurricular)
-        Dim Lista As IEnumerable(Of Models.HistorialCurricular) = Nothing
-        Try
-            Lista = Conexion.TraeHistorialPorId(idHistorial)
+            Try
+                Conexion.ActualizarHistorial(historial)
 
-        Catch ex As Exception
-            MsgBox(ex.Message)
+            Catch ex As Exception
+                MsgBox(ex.Message)
 
-        End Try
-
-        Return Lista
-    End Function
+            End Try
 
 
-    Private Function CallResolucionesPorHistorial(idHistorial As Integer) As IEnumerable(Of Models.Resoluciones)
-        Dim Lista As IEnumerable(Of Models.Resoluciones) = Nothing
-        Try
-            Lista = Conexion.TraeResolucionPorHistorial(idHistorial)
+        End Sub
 
-        Catch ex As Exception
-            MsgBox(ex.Message)
+        Private Function CallHistorialById(idHistorial As Integer) As IEnumerable(Of Models.HistorialCurricular)
+            Dim Lista As IEnumerable(Of Models.HistorialCurricular) = Nothing
+            Try
+                Lista = Conexion.TraeHistorialPorId(idHistorial)
 
-        End Try
+            Catch ex As Exception
+                MsgBox(ex.Message)
 
-        Return Lista
-    End Function
+            End Try
 
-    Private Function CallAsignaturasPorHistorial(idHistorial As Integer) As IEnumerable(Of Models.Parametros)
-        Dim Lista As IEnumerable(Of Models.Parametros) = Nothing
-        Try
-            Lista = Conexion.TraeAsignaturasPorHistorial(idHistorial)
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-
-        End Try
-
-        Return Lista
-    End Function
+            Return Lista
+        End Function
 
 
-    Protected Sub EliminarHistorial(sender As Object, e As EventArgs)
+        Private Function CallResolucionesPorHistorial(idHistorial As Integer) As IEnumerable(Of Models.Resoluciones)
+            Dim Lista As IEnumerable(Of Models.Resoluciones) = Nothing
+            Try
+                Lista = Conexion.TraeResolucionPorHistorial(idHistorial)
 
-        Dim style = MsgBoxStyle.YesNo Or MsgBoxStyle.DefaultButton2 Or _
-            MsgBoxStyle.Question
-        Dim response1 = MsgBox("Esta seguro que desea eliminar este registro " + Request.QueryString("IDHistorial") + "?", style, "Eliminar registro")
-        If response1 = MsgBoxResult.Yes Then
-            Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))
-            MsgBox("El registro se a eliminado exitosamente", , "Registro eliminado")
-            Response.Redirect("VerResolucion.aspx")
-        End If
+            Catch ex As Exception
+                MsgBox(ex.Message)
 
-    End Sub
-    Protected Sub HabilitarEdicion(sender As Object, e As EventArgs)
+            End Try
 
-        DDAsignaturas.Attributes.Remove("disabled")
-        DDPlan.Enabled = True
-        DDCarrera.Enabled = True
-        DDHito.Enabled = True
-        despues.Attributes.Remove("readonly")
-        antes.Attributes.Remove("readonly")
-        Descripcion.Attributes.Remove("readonly")
-        BtnActualizar.Visible = True
+            Return Lista
+        End Function
 
-        BtnEditar.Visible = False
+        Private Function CallAsignaturasPorHistorial(idHistorial As Integer) As IEnumerable(Of Models.Parametros)
+            Dim Lista As IEnumerable(Of Models.Parametros) = Nothing
+            Try
+                Lista = Conexion.TraeAsignaturasPorHistorial(idHistorial)
 
-        Dim asignaturasTemp As IEnumerable(Of Models.Parametros) = Nothing
+            Catch ex As Exception
+                MsgBox(ex.Message)
 
-        asignaturasTemp = CallAsignaturasPorHistorial(Request.QueryString("IDHistorial"))
-        Dim idTemp As String
-        idTemp = ""
+            End Try
 
-        For Each item As Models.Parametros In asignaturasTemp
-            idTemp += item.id + "."
+            Return Lista
+        End Function
 
 
-        Next
+        Protected Sub EliminarHistorial(sender As Object, e As EventArgs)
 
-    End Sub
-    Protected Sub ActualizarHistorial(sender As Object, e As EventArgs)
-        BtnActualizar.Visible = False
+            Dim style = MsgBoxStyle.YesNo Or MsgBoxStyle.DefaultButton2 Or _
+                MsgBoxStyle.Question
+            Dim response1 = MsgBox("Esta seguro que desea eliminar este registro " + Request.QueryString("IDHistorial") + "?", style, "Eliminar registro")
+            If response1 = MsgBoxResult.Yes Then
+                Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))
+                MsgBox("El registro se a eliminado exitosamente", , "Registro eliminado")
+                Response.Redirect("VerResolucion.aspx")
+            End If
 
-        BtnEditar.Visible = True
-    End Sub
+        End Sub
+        Protected Sub HabilitarEdicion(sender As Object, e As EventArgs)
 
-End Class
+            DDAsignaturas.Attributes.Remove("disabled")
+            DDPlan.Enabled = True
+            DDCarrera.Enabled = True
+            DDHito.Enabled = True
+            despues.Attributes.Remove("readonly")
+            antes.Attributes.Remove("readonly")
+            Descripcion.Attributes.Remove("readonly")
+            BtnActualizar.Visible = True
+
+            BtnEditar.Visible = False
+
+            Dim asignaturasTemp As IEnumerable(Of Models.Parametros) = Nothing
+
+            asignaturasTemp = CallAsignaturasPorHistorial(Request.QueryString("IDHistorial"))
+            Dim idTemp As String
+            idTemp = ""
+
+            For Each item As Models.Parametros In asignaturasTemp
+                idTemp += item.id + "."
+
+
+            Next
+
+        End Sub
+        Protected Sub ActualizarHistorial(sender As Object, e As EventArgs)
+            BtnActualizar.Visible = False
+
+            BtnEditar.Visible = True
+        End Sub
+
+    End Class

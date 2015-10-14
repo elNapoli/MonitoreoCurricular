@@ -12,6 +12,8 @@ Public Class UploadHandler
         If context.Request.Files.Count > 0 Then
             Dim fileUpload As HttpPostedFile = context.Request.Files(0)
             Dim idHistorial As String = context.Request.Params("idNuevoHistorial")
+            Dim NombreResolucion As String = context.Request.Params("NombreRel")
+
             Dim logTemp As LogNapoli
 
             Dim uploadPath As String = context.Server.MapPath("~/Resoluciones/")
@@ -20,7 +22,7 @@ Public Class UploadHandler
             Dim Rut As String = context.Request.Params("RutUsuario")
 
 
-            logTemp = Conexion.GuardarResolucionPorHistorial(idHistorial, fileName, fileName)
+            logTemp = Conexion.GuardarResolucionPorHistorial(idHistorial, NombreResolucion, fileName)
             logTemp.Rut = Rut
 
             Conexion.RegistrarLog(logTemp)

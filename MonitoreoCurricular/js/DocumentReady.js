@@ -23,12 +23,19 @@
             },
 
             FilesAdded: function (up, files) {
-             
+
                 plupload.each(files, function (file) {
-                    document.getElementById('filelist').innerHTML += '<div id="' + file.id + '" class="file parsley-success"><a href="/Resoluciones/' + file.name + '">' + file.name + ' (' + plupload.formatSize(file.size) + ') </a><b></b></div>';
+
+                    document.getElementById('filelist').innerHTML += '<div  class="input-group"><input id="' + file.id + '"  type="text" class="form-control" placeholder="Nombre de la Resolución" aria-describedby="basic-addon2"><span class="input-group-addon" id="basic-addon2"><a href="/Resoluciones/' + file.name + '">' + file.name + ' (' + plupload.formatSize(file.size) + ') </a></span></div><br/>';
                     $("#ExisteResol").val("True");
-              
+
                 });
+            },
+
+            BeforeUpload: function (up, files) {
+                var id = "#"+files.id
+               
+                up.settings.multipart_params.NombreRel = $(id).val();
             },
 
         //    UploadProgress: function (up, file) {
@@ -126,7 +133,11 @@
              { "data": "nombreEscuela" },
              { "data": "nombreCarrera" },
              { "data": "hito" },
-             { "data": null, "defaultContent": "<a href='#' id='rel'>Ver resolución</a>" }
+             {
+                 "data": "path", "render": function (data, type, row, meta) {
+                     return '<a href="/Resoluciones/' + data + '">Ver resolución</a>';
+                 }
+             }
         ],
      
         initComplete: function () {

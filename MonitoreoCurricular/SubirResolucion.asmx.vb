@@ -79,11 +79,14 @@ Public Class SubirResolucion1
                 idHistorial = logTemp.idObjetos
                 resultado(0) = idHistorial.ToString
                 resultado(1) = logTemp.mensajeError
-                For Each item As String In Asignaturas
-                    logAsig = Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
-                    logAsig.Rut = Rut
-                    Conexion.RegistrarLog(logAsig)
-                Next
+                If (Asignaturas IsNot Nothing) Then
+                    For Each item As String In Asignaturas
+                        logAsig = Conexion.GuardarAsignaturaPorHistorial(idHistorial, item)
+                        logAsig.Rut = Rut
+                        Conexion.RegistrarLog(logAsig)
+                    Next
+                End If
+         
 
             End If
 
