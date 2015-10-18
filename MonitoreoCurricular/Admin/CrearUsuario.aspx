@@ -3,6 +3,22 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <script type="text/javascript">
       $(document).ready(function () {
+
+          $.listen('parsley:field:validate', function () {
+              validateFront('#demo-CrearUsuario');
+
+          });
+          window.Parsley.setLocale('es');
+
+
+
+          $('#demo-CrearUsuario').click(function () {
+              $('#demo-CrearUsuario').parsley().validate();
+              validateFront('#demo-CrearUsuario');
+
+          });
+
+
           $('#ContentPlaceHolder1_txt_run').Rut({
               digito_verificador: '#ContentPlaceHolder1_txt_div',
               format: false,
@@ -29,7 +45,7 @@
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <!--BEGIN INPUT TEXT FIELDS-->
 
-    <div class="row">
+    <div class="row" id="demo-CrearUsuario" data-parsley-validate>
         <div class="col-lg-12">
             <div class="box dark">
                 <header>
@@ -61,8 +77,8 @@
                             <label for="text1" class="control-label col-lg-4">R.U.N.</label>
                             <div class="col-lg-8">
                                 <div class="col-lg-4"> 
-                                      <asp:TextBox runat="server"  ID="txt_run"  class="form-control"/>
-
+                                      <asp:TextBox runat="server"  ID="txt_run"  class="form-control" required/>
+                                      <span class="btn btn-default">validate</span>
                                 </div>
                                 <div class="col-lg-2"> 
 

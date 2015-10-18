@@ -52,7 +52,7 @@
      
                             <label for="text1" class="control-label col-lg-4">Seleccione Plan</label>
                             <div class="col-lg-8">
-
+                               
                                 <asp:DropDownList ID="DDPlan" class="form-control" runat="server" required>
                                 </asp:DropDownList>
                                 <cc1:CascadingDropDown
@@ -192,6 +192,24 @@
     <!-- /.row -->
 
  
+        <script>
 
+            $(document).ready(function () {
+                $.listen('parsley:field:validate', function () {
+                    validateFront('#demo-form');
+
+                });
+                window.Parsley.setLocale('es');
+       
+
+
+                $('#demo-form').click(function () {
+                    $('#demo-form').parsley().validate();
+                    validateFront('#demo-form');
+
+                });
+
+            });
+    </script>
 
 </asp:Content>

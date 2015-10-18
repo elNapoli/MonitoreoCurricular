@@ -46,7 +46,16 @@ $(function () {
     Metis.formGeneral();
     Metis.formWizard();
 });
+function validateFront(parametro) {
 
+    if (true === $(parametro).parsley().isValid()) {
+        $('.bs-callout-info').removeClass('hidden');
+        $('.bs-callout-warning').addClass('hidden');
+    } else {
+        $('.bs-callout-info').addClass('hidden');
+        $('.bs-callout-warning').removeClass('hidden');
+    }
+};
 
 function GuardarResolucion(uploader) {
     var Plan = $('#ContentPlaceHolder1_DDPlan').val();
