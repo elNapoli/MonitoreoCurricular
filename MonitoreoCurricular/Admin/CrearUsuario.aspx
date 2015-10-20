@@ -1,7 +1,14 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Layout.Master" CodeBehind="CrearUsuario.aspx.vb" Inherits="MonitoreoCurricular.CrearUsuario" %>
 <%@ MasterType VirtualPath="~/Layout.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
   <script type="text/javascript">
+      function validacionCrearUsuario() {
+          $('#demo-CrearUsuario').parsley().validate();
+        
+         return  validateFront('#demo-CrearUsuario');
+
+      }
       $(document).ready(function () {
 
           $.listen('parsley:field:validate', function () {
@@ -12,11 +19,6 @@
 
 
 
-          $('#demo-CrearUsuario').click(function () {
-              $('#demo-CrearUsuario').parsley().validate();
-              validateFront('#demo-CrearUsuario');
-
-          });
 
 
           $('#ContentPlaceHolder1_txt_run').Rut({
@@ -77,8 +79,8 @@
                             <label for="text1" class="control-label col-lg-4">R.U.N.</label>
                             <div class="col-lg-8">
                                 <div class="col-lg-4"> 
-                                      <asp:TextBox runat="server"  ID="txt_run"  class="form-control" required/>
-                                      <span class="btn btn-default">validate</span>
+                                      <asp:TextBox runat="server"  ID="txt_run"  class="form-control" minlength="7" data-parsley-minlength="6" data-parsley-type="number" required/>
+                                     
                                 </div>
                                 <div class="col-lg-2"> 
 
@@ -107,7 +109,7 @@
                         <div class="form-group">
                         <label for="pass1" class="control-label col-lg-4">Nombre</label>
                         <div class="col-lg-8">
-                            <asp:TextBox runat="server" class="form-control" ID="txt_nombre"/>
+                            <asp:TextBox runat="server" class="form-control" ID="txt_nombre" required/>
   
                         </div>
                       </div>
@@ -115,7 +117,7 @@
                        <div class="form-group">
                         <label for="pass1" class="control-label col-lg-4">Apellido paterno</label>
                         <div class="col-lg-8">
-                          <asp:TextBox runat="server" class="form-control" ID="txt_apPaterno"/>
+                          <asp:TextBox runat="server" class="form-control" ID="txt_apPaterno" required/>
                         </div>
                       </div>
 
@@ -123,7 +125,7 @@
                         <div class="form-group">
                         <label for="pass1" class="control-label col-lg-4">Apellido materno</label>
                         <div class="col-lg-8">
-                          <asp:TextBox runat="server" class="form-control" ID="txt_apMaterno"/>
+                          <asp:TextBox runat="server" class="form-control" ID="txt_apMaterno" required/>
                         </div>
                       </div>
 
@@ -133,7 +135,7 @@
                         <div class="form-group">
                         <label for="pass1" class="control-label col-lg-4">Email</label>
                         <div class="col-lg-8">
-                          <asp:TextBox runat="server" class="form-control" ID="txt_email"/>
+                          <asp:TextBox runat="server" class="form-control" ID="txt_email" required data-parsley-type="email"/>
                         </div>
                       </div>
 
@@ -141,7 +143,7 @@
                         <div class="form-group">
                         <label for="pass1" class="control-label col-lg-4">Rol</label>
                         <div class="col-lg-8">
-                            <asp:DropDownList runat="server" ID="DDRol" class="form-control" >
+                            <asp:DropDownList runat="server" ID="DDRol" class="form-control"  required>
                                 <asp:ListItem value="" Text="Seleccione rol" />
                                 <asp:ListItem value="1" Text="Administrador" />
                                 <asp:ListItem Value="2" Text="Usuario" />
@@ -157,6 +159,7 @@
                                     runat="server" 
                                     CssClass="btn btn-success start"  
                                    OnClick="btnGuardarUsuario_Click"
+                                    onClientClick ="return validacionCrearUsuario()"
                                   > 
                                     <span aria-hidden="true" class="glyphicon glyphicon-user"></span> Guardar usuario
                                     </asp:LinkButton>

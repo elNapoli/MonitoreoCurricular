@@ -150,7 +150,7 @@
         
           </ContentTemplate>
       </asp:UpdatePanel>
-                           <span id="mibotton"class="btn btn-default">validate</span>
+                          
                </div>
            </form>
        <!--jQuery -->

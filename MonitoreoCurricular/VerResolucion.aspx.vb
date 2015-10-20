@@ -9,7 +9,8 @@ Public Class VerResolucion
         Dim logTemp As LogNapoli
         Dim logListTemp As IEnumerable(Of LogNapoli)
         Dim logListTempRES As IEnumerable(Of LogNapoli)
-
+        Dim rootPath As String = Server.MapPath("~") + "Resoluciones\"
+        Dim stringTemp As String()
         If (Request.QueryString("IDHistorial") <> Nothing And Request.QueryString("Eliminar") <> Nothing) Then
             If (Request.QueryString("Eliminar") = "True") Then
                 logListTemp = Conexion.EliminarAsignaturasPorHistorial(Request.QueryString("IDHistorial"))
@@ -22,10 +23,20 @@ Public Class VerResolucion
 
                 logListTempRES = Conexion.EliminarResolucionPorHistorial(Request.QueryString("IDHistorial"))
 
-                For Each item As LogNapoli In logListTempRES
-                    item.Rut = Master.Rut_temp()
 
+
+
+
+
+                For Each item As LogNapoli In logListTempRES
+                    If item.CodigoError = "1" Then
+                        stringTemp = Split(item.mensajeError, ":")
+
+                        My.Computer.FileSystem.DeleteFile(rootPath + stringTemp(1))
+                    End If
+                    item.Rut = Master.Rut_temp()
                     Conexion.RegistrarLog(item)
+
                 Next
                 logTemp = Conexion.EliminarHistorial(Request.QueryString("IDHistorial"))
                 logTemp.Rut = Master.Rut_temp()

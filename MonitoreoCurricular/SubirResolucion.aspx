@@ -131,21 +131,21 @@
                         <div class="form-group">
                             <label for="text2" class="control-label col-lg-4" >Descripción Cambio</label>
                             <div class="col-lg-8">
-                                <textarea id="Descripcion" class="form-control" required></textarea>
+                                <textarea id="Descripcion" class="form-control" required maxlength="255" data-parsley-maxlength="255"></textarea>
                             </div>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label for="limiter" class="control-label col-lg-4" >Antes</label>
                             <div class="col-lg-8">
-                                <textarea id="antes" class="form-control" required></textarea>
+                                <textarea id="antes" class="form-control" required maxlength="255" data-parsley-maxlength="255"></textarea>
                             </div>
                         </div>
                         <!-- /.row -->
                         <div class="form-group">
                             <label for="text4" class="control-label col-lg-4">Después</label>
                             <div class="col-lg-8">
-                                <textarea id="despues" class="form-control" required></textarea>
+                                <textarea id="despues" class="form-control" required maxlength="255" data-parsley-maxlength="255" ></textarea>
                             </div>
                         </div>
 

@@ -47,14 +47,17 @@ $(function () {
     Metis.formWizard();
 });
 function validateFront(parametro) {
-
+    var retorno = false;
     if (true === $(parametro).parsley().isValid()) {
         $('.bs-callout-info').removeClass('hidden');
         $('.bs-callout-warning').addClass('hidden');
+        retorno = true;
+    
     } else {
         $('.bs-callout-info').addClass('hidden');
         $('.bs-callout-warning').removeClass('hidden');
     }
+    return retorno;
 };
 
 function GuardarResolucion(uploader) {
