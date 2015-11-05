@@ -17,29 +17,32 @@
 \BOOKMARK [4][-]{paragraph.1.2.3.2}{Creaci\363n de nuevas Carreras}{subsubsection.1.2.3}% 17
 \BOOKMARK [4][-]{paragraph.1.2.3.3}{Modificaciones Curriculares Mayores y/o Menores}{subsubsection.1.2.3}% 18
 \BOOKMARK [1][-]{section.2}{MARCO TE\323RICO}{}% 19
-\BOOKMARK [2][-]{subsection.2.1}{Arquitectura MVC?}{section.2}% 20
-\BOOKMARK [2][-]{subsection.2.2}{Tecnolog\355as para el desarrollo de la plataforma}{section.2}% 21
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Front-end}{subsection.2.2}% 22
-\BOOKMARK [4][-]{paragraph.2.2.1.1}{JQuery}{subsubsection.2.2.1}% 23
-\BOOKMARK [4][-]{paragraph.2.2.1.2}{Alertify}{subsubsection.2.2.1}% 24
-\BOOKMARK [4][-]{paragraph.2.2.1.3}{Boostrap}{subsubsection.2.2.1}% 25
-\BOOKMARK [4][-]{paragraph.2.2.1.4}{Template Metis}{subsubsection.2.2.1}% 26
-\BOOKMARK [4][-]{paragraph.2.2.1.5}{parsley}{subsubsection.2.2.1}% 27
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Back-end}{subsection.2.2}% 28
-\BOOKMARK [3][-]{subsubsection.2.2.3}{capa de datos}{subsection.2.2}% 29
-\BOOKMARK [1][-]{section.3}{DESARROLLO DEL SISTEMA}{}% 30
-\BOOKMARK [2][-]{subsection.3.1}{Planificaci\363n}{section.3}% 31
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Metodolog\355a}{subsection.3.1}% 32
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Plan de trabajo}{subsection.3.1}% 33
-\BOOKMARK [3][-]{subsubsection.3.1.3}{Validaci\363n}{subsection.3.1}% 34
-\BOOKMARK [2][-]{subsection.3.2}{An\341lisis}{section.3}% 35
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Requerimientos}{subsection.3.2}% 36
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Modelo conceptual}{subsection.3.2}% 37
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Casos de uso}{subsection.3.2}% 38
-\BOOKMARK [2][-]{subsection.3.3}{Dise\361o e implementaci\363n}{section.3}% 39
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Diagramas de componentes}{subsection.3.3}% 40
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Modelo de datos}{subsection.3.3}% 41
-\BOOKMARK [3][-]{subsubsection.3.3.3}{M\363dulo historial curricular}{subsection.3.3}% 42
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Metodolog\355a}{subsection.3.3}% 43
-\BOOKMARK [2][-]{subsection.3.4}{Validaci\363n del software}{section.3}% 44
-\BOOKMARK [1][-]{section*.12}{BIBLIOGRAF\315A}{}% 45
+\BOOKMARK [2][-]{subsection.2.1}{Arquitectura}{section.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Cliente-servidor}{subsection.2.1}% 21
+\BOOKMARK [3][-]{subsubsection.2.1.2}{MVC?}{subsection.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.2}{Tecnolog\355as para el desarrollo de la plataforma}{section.2}% 23
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Front-end}{subsection.2.2}% 24
+\BOOKMARK [4][-]{paragraph.2.2.1.1}{JQuery}{subsubsection.2.2.1}% 25
+\BOOKMARK [4][-]{paragraph.2.2.1.2}{Alertify}{subsubsection.2.2.1}% 26
+\BOOKMARK [4][-]{paragraph.2.2.1.3}{Boostrap}{subsubsection.2.2.1}% 27
+\BOOKMARK [4][-]{paragraph.2.2.1.4}{Template Metis}{subsubsection.2.2.1}% 28
+\BOOKMARK [4][-]{paragraph.2.2.1.5}{Parsley}{subsubsection.2.2.1}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Back-end}{subsection.2.2}% 30
+\BOOKMARK [4][-]{paragraph.2.2.2.1}{Microsoft SQL Server 2008}{subsubsection.2.2.2}% 31
+\BOOKMARK [4][-]{paragraph.2.2.2.2}{ASP.NET}{subsubsection.2.2.2}% 32
+\BOOKMARK [1][-]{section.3}{DESARROLLO DEL SISTEMA}{}% 33
+\BOOKMARK [2][-]{subsection.3.1}{Planificaci\363n}{section.3}% 34
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Metodolog\355a}{subsection.3.1}% 35
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Plan de trabajo}{subsection.3.1}% 36
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Validaci\363n}{subsection.3.1}% 37
+\BOOKMARK [2][-]{subsection.3.2}{An\341lisis}{section.3}% 38
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Requerimientos}{subsection.3.2}% 39
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Modelo conceptual}{subsection.3.2}% 40
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Casos de uso}{subsection.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.3}{Dise\361o e implementaci\363n}{section.3}% 42
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Diagramas de componentes}{subsection.3.3}% 43
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Modelo de datos}{subsection.3.3}% 44
+\BOOKMARK [3][-]{subsubsection.3.3.3}{M\363dulo historial curricular}{subsection.3.3}% 45
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Metodolog\355a}{subsection.3.3}% 46
+\BOOKMARK [2][-]{subsection.3.4}{Validaci\363n del software}{section.3}% 47
+\BOOKMARK [1][-]{section*.12}{BIBLIOGRAF\315A}{}% 48
