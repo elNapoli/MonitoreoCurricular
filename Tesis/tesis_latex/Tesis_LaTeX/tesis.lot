@@ -1,0 +1,20 @@
+\select@language {spanish}
+\contentsline {table}{\numberline {1}{\ignorespaces Versiones de Android soportadas por Google en la actualidad \cite {And15}.\relax }}{8}{table.caption.9}
+\contentsline {table}{\numberline {2}{\ignorespaces Componentes de GCM\relax }}{9}{table.caption.11}
+\contentsline {table}{\numberline {3}{\ignorespaces Requisitos Funcionales.\relax }}{32}{table.caption.23}
+\contentsline {table}{\numberline {4}{\ignorespaces Requisitos No Funcionales.\relax }}{32}{table.caption.24}
+\contentsline {table}{\numberline {5}{\ignorespaces Caso de uso extendido ``Agregar Servicios''.\relax }}{33}{table.caption.25}
+\contentsline {table}{\numberline {6}{\ignorespaces Caso de uso extendido ``Agregar M\IeC {\'o}dulo Atenci\IeC {\'o}n''.\relax }}{34}{table.caption.26}
+\contentsline {table}{\numberline {7}{\ignorespaces Caso de uso extendido ``Seleccionar Servicio''.\relax }}{35}{table.caption.27}
+\contentsline {table}{\numberline {8}{\ignorespaces Caso de uso Real ``Agregar Servicios''.\relax }}{36}{table.caption.28}
+\contentsline {table}{\numberline {9}{\ignorespaces Caso de uso Real ``Agregar M\IeC {\'o}dulo Atenci\IeC {\'o}n''.\relax }}{38}{table.caption.30}
+\contentsline {table}{\numberline {10}{\ignorespaces Caso de uso Real ``Seleccionar Servicio''.\relax }}{40}{table.caption.32}
+\contentsline {table}{\numberline {11}{\ignorespaces Diccionario de datos tabla ``dispositivos''.\relax }}{47}{table.caption.40}
+\contentsline {table}{\numberline {12}{\ignorespaces Diccionario de datos tabla ``mensajes''.\relax }}{47}{table.caption.41}
+\contentsline {table}{\numberline {13}{\ignorespaces Diccionario de datos tabla ``modulo''.\relax }}{48}{table.caption.42}
+\contentsline {table}{\numberline {14}{\ignorespaces Diccionario de datos tabla ``servicios''.\relax }}{48}{table.caption.43}
+\contentsline {table}{\numberline {15}{\ignorespaces Diccionario de datos tabla ``usuarios''.\relax }}{48}{table.caption.44}
+\contentsline {table}{\numberline {16}{\ignorespaces Diccionario de datos tabla ``modulo\_mensajes''.\relax }}{48}{table.caption.45}
+\contentsline {table}{\numberline {17}{\ignorespaces Diccionario de datos tabla ``modulo\_servicios''.\relax }}{49}{table.caption.46}
+\contentsline {table}{\numberline {18}{\ignorespaces Herramientas, estado y versi\IeC {\'o}n en m\IeC {\'a}quina de trabajo.\relax }}{50}{table.caption.47}
+\contentsfinish 

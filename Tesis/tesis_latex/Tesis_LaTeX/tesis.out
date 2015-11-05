@@ -1,0 +1,96 @@
+\BOOKMARK [1][-]{section*.1}{\315NDICE}{}% 1
+\BOOKMARK [1][-]{section*.3}{\315NDICE DE TABLAS}{}% 2
+\BOOKMARK [1][-]{section*.5}{\315NDICE DE FIGURAS}{}% 3
+\BOOKMARK [1][-]{section*.7}{RESUMEN}{}% 4
+\BOOKMARK [1][-]{section*.8}{ABSTRACT}{}% 5
+\BOOKMARK [1][-]{section.1}{INTRODUCCI\323N}{}% 6
+\BOOKMARK [2][-]{subsection.1.1}{Antecedentes}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.2}{Motivaci\363n}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.3}{Impactos}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.4}{Definici\363n del Proyecto}{section.1}% 10
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Objetivo general}{subsection.1.4}% 11
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Objetivos espec\355ficos}{subsection.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.5}{Organizaci\363n del documento}{section.1}% 13
+\BOOKMARK [1][-]{section.2}{MARCO TE\323RICO}{}% 14
+\BOOKMARK [2][-]{subsection.2.1}{Tecnolog\355as Asociadas}{section.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Android}{subsection.2.1}% 16
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Google Cloud Messaging para Android}{subsection.2.1}% 17
+\BOOKMARK [4][-]{paragraph.2.1.2.1}{Arquitectura}{subsubsection.2.1.2}% 18
+\BOOKMARK [4][-]{paragraph.2.1.2.2}{Enviar Mensajes}{subsubsection.2.1.2}% 19
+\BOOKMARK [4][-]{paragraph.2.1.2.3}{Recibir Mensajes}{subsubsection.2.1.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Notificaciones Push}{subsection.2.1}% 21
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Web Service}{subsection.2.1}% 22
+\BOOKMARK [3][-]{subsubsection.2.1.5}{MySQL}{subsection.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.2}{Teor\355a de Colas}{section.2}% 24
+\BOOKMARK [2][-]{subsection.2.3}{Internet de las cosas}{section.2}% 25
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Big Data}{subsection.2.3}% 26
+\BOOKMARK [2][-]{subsection.2.4}{Estado del Arte}{section.2}% 27
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Banco de Venezuela, Cola Virtual}{subsection.2.4}% 28
+\BOOKMARK [3][-]{subsubsection.2.4.2}{WAVETEC, Sistema de Administraci\363n de Filas}{subsection.2.4}% 29
+\BOOKMARK [4][-]{paragraph.2.4.2.1}{Reportes en tiempo real}{subsubsection.2.4.2}% 30
+\BOOKMARK [4][-]{paragraph.2.4.2.2}{Reportes de sucursales}{subsubsection.2.4.2}% 31
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Q-sige, Sistema Inteligente de Gesti\363n de Esperas}{subsection.2.4}% 32
+\BOOKMARK [1][-]{section.3}{SOLUCI\323N PROPUESTA}{}% 33
+\BOOKMARK [2][-]{subsection.3.1}{Problem\341tica}{section.3}% 34
+\BOOKMARK [2][-]{subsection.3.2}{Presentaci\363n de la soluci\363n}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.3}{Descripci\363n de la metodolog\355a}{section.3}% 36
+\BOOKMARK [2][-]{subsection.3.4}{Descripci\363n de Tecnolog\355as a utilizar}{section.3}% 37
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Entorno de desarrollo}{subsection.3.4}% 38
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Intercambio de datos}{subsection.3.4}% 39
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Base de datos}{subsection.3.4}% 40
+\BOOKMARK [3][-]{subsubsection.3.4.4}{Librer\355as utilizadas}{subsection.3.4}% 41
+\BOOKMARK [3][-]{subsubsection.3.4.5}{Patr\363n MVC}{subsection.3.4}% 42
+\BOOKMARK [2][-]{subsection.3.5}{Arquitectura del sistema}{section.3}% 43
+\BOOKMARK [1][-]{section.4}{AN\301LISIS Y DISE\321O DEL PROTOTIPO DEL SISTEMA}{}% 44
+\BOOKMARK [2][-]{subsection.4.1}{Metodolog\355a}{section.4}% 45
+\BOOKMARK [2][-]{subsection.4.2}{Plan de trabajo}{section.4}% 46
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Estrategia de implementaci\363n}{subsection.4.2}% 47
+\BOOKMARK [2][-]{subsection.4.3}{An\341lisis}{section.4}% 48
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Descripci\363n de los actores del sistema}{subsection.4.3}% 49
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Casos de Uso}{subsection.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.4}{Especificaci\363n de requerimientos}{section.4}% 51
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Requisitos Funcionales}{subsection.4.4}% 52
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Requisitos No Funcionales}{subsection.4.4}% 53
+\BOOKMARK [4][-]{paragraph.4.4.2.1}{Casos de Uso Extendido del sistema}{subsubsection.4.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.5}{Dise\361o}{section.4}% 55
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Casos de Uso Real}{subsection.4.5}% 56
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Diagramas de Secuencia}{subsection.4.5}% 57
+\BOOKMARK [3][-]{subsubsection.4.5.3}{Diagrama de Clases}{subsection.4.5}% 58
+\BOOKMARK [3][-]{subsubsection.4.5.4}{Diagrama de Procesos}{subsection.4.5}% 59
+\BOOKMARK [3][-]{subsubsection.4.5.5}{Modelo de Datos}{subsection.4.5}% 60
+\BOOKMARK [4][-]{paragraph.4.5.5.1}{Diccionario de datos}{subsubsection.4.5.5}% 61
+\BOOKMARK [1][-]{section.5}{IMPLEMENTACI\323N DEL PROTOTIPO}{}% 62
+\BOOKMARK [2][-]{subsection.5.1}{Configuraci\363n ambiente de desarrollo y problemas enfrentados}{section.5}% 63
+\BOOKMARK [2][-]{subsection.5.2}{Presentaci\363n de prototipos}{section.5}% 64
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Prototipo 1: Aplicaci\363n b\341sica en android Studio}{subsection.5.2}% 65
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Prototipo 2: Cliente y Servidor GCM}{subsection.5.2}% 66
+\BOOKMARK [4][-]{paragraph.5.2.2.1}{Cliente}{subsubsection.5.2.2}% 67
+\BOOKMARK [4][-]{paragraph.5.2.2.2}{Servidor}{subsubsection.5.2.2}% 68
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Prototipo 3: Comunicar Android y MySQL}{subsection.5.2}% 69
+\BOOKMARK [2][-]{subsection.5.3}{Soluci\363n final}{section.5}% 70
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Servidor central}{subsection.5.3}% 71
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Monitor}{subsection.5.3}% 72
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Aplicaci\363n Web}{subsection.5.3}% 73
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Aplicaci\363n M\363vil}{subsection.5.3}% 74
+\BOOKMARK [1][-]{section.6}{PRUEBAS}{}% 75
+\BOOKMARK [2][-]{subsection.6.1}{Prueba de Aplicaci\363n web.}{section.6}% 76
+\BOOKMARK [3][-]{subsubsection.6.1.1}{RFQ - 001 Iniciar sesi\363n en aplicaci\363n web.}{subsection.6.1}% 77
+\BOOKMARK [3][-]{subsubsection.6.1.2}{RFQ - 002 Cargar y mostrar servicios.}{subsection.6.1}% 78
+\BOOKMARK [3][-]{subsubsection.6.1.3}{RFQ - 003 Cargar y mostrar m\363dulos de atenci\363n.}{subsection.6.1}% 79
+\BOOKMARK [3][-]{subsubsection.6.1.4}{RFQ - 004 Enviar notificaciones desde aplicaci\363n web a smartphone.}{subsection.6.1}% 80
+\BOOKMARK [3][-]{subsubsection.6.1.5}{RFQ - 005 Generar reportes.}{subsection.6.1}% 81
+\BOOKMARK [3][-]{subsubsection.6.1.6}{RFQ - 006 Mostrar \372ltimos turnos en atenci\363n.}{subsection.6.1}% 82
+\BOOKMARK [3][-]{subsubsection.6.1.7}{RFQ - 007 Monitor de atenciones.}{subsection.6.1}% 83
+\BOOKMARK [2][-]{subsection.6.2}{Prueba de Aplicaci\363n m\363vil.}{section.6}% 84
+\BOOKMARK [3][-]{subsubsection.6.2.1}{RFQ - 008 Mostrar servicios.}{subsection.6.2}% 85
+\BOOKMARK [3][-]{subsubsection.6.2.2}{RFQ - 009 Seleccionar un servicio.}{subsection.6.2}% 86
+\BOOKMARK [3][-]{subsubsection.6.2.3}{RFQ - 010 Ver turno de atenci\363n.}{subsection.6.2}% 87
+\BOOKMARK [3][-]{subsubsection.6.2.4}{RFQ - 011 Ver notificaciones.}{subsection.6.2}% 88
+\BOOKMARK [3][-]{subsubsection.6.2.5}{RFQ - 012 Mostrar notificaciones nuevas autom\341ticamente.}{subsection.6.2}% 89
+\BOOKMARK [3][-]{subsubsection.6.2.6}{RFQ - 013 Mostrar informaci\363n de la aplicaci\363n.}{subsection.6.2}% 90
+\BOOKMARK [1][-]{section.7}{CONCLUSIONES}{}% 91
+\BOOKMARK [2][-]{subsection.7.1}{Conslusiones}{section.7}% 92
+\BOOKMARK [2][-]{subsection.7.2}{Trabajo futuro}{section.7}% 93
+\BOOKMARK [1][-]{section*.102}{BIBLIOGRAF\315A}{}% 94
+\BOOKMARK [1][-]{section*.104}{ANEXOS}{}% 95
+\BOOKMARK [2][-]{section*.105}{Anexo A: Traducci\363n a espa\361ol extracto Ley de consumo Brasile\361a \(Ley n\272 8.078/90\).}{section*.104}% 96

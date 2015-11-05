@@ -1,0 +1,30 @@
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\WcfController.dll.config
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\WcfController.dll
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\WcfController.pdb
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\WcfController.xml
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\obj\Debug\WcfController.Resources.resources
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbproj.GenerateResource.Cache
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\obj\Debug\WcfController.dll
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\obj\Debug\WcfController.xml
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\obj\Debug\WcfController.pdb
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbprojResolveAssemblyReference.cache
+C:\Users\Napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\Conexion.dll
+C:\Users\Napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\Models.dll
+C:\Users\Napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\Models.pdb
+C:\Users\Napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\Models.xml
+C:\Users\Napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\Conexion.pdb
+C:\Users\Napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\WcfController\bin\Debug\Conexion.xml
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\bin\Debug\WcfController.dll.config
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\bin\Debug\WcfController.dll
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\bin\Debug\WcfController.pdb
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\bin\Debug\WcfController.xml
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\bin\Debug\Conexion.dll
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\bin\Debug\Models.dll
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\bin\Debug\Models.pdb
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\bin\Debug\Models.xml
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbprojResolveAssemblyReference.cache
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\obj\Debug\WcfController.Resources.resources
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbproj.GenerateResource.Cache
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\obj\Debug\WcfController.dll
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\obj\Debug\WcfController.xml
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\WcfController\obj\Debug\WcfController.pdb

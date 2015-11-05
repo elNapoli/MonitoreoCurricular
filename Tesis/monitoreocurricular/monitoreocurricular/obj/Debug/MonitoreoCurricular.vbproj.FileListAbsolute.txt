@@ -1,0 +1,19 @@
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.dll.config
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.dll
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.pdb
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.xml
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.Resources.resources
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.GenerateResource.Cache
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.dll.config
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.dll
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.pdb
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\bin\MonitoreoCurricular.xml
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.Resources.resources
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbproj.GenerateResource.Cache
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.dll
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.xml
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.pdb
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\MonitoreoCurricular\obj\Debug\MonitoreoCurricular.vbprojResolveAssemblyReference.cache

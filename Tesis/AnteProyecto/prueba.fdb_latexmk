@@ -1,0 +1,18 @@
+# Fdb version 3
+["bibtex prueba"] 1429548529 "prueba.aux" "prueba.bbl" "prueba" 1429548529
+  "/usr/share/texmf-dist/bibtex/bst/base/abbrv.bst" 1428273613 20329 b5fed53e10044d0f8112183785c759b1 ""
+  "main.bib" 0 -1 0 ""
+  "prueba.aux" 1429548529 496 cbf63a40a9ca61ea82d12e1ea341d948 ""
+  "prueba.bcf" 0 -1 0 ""
+  (generated)
+  "prueba.bbl"
+["pdflatex"] 1429548529 "prueba.tex" "prueba.pdf" "prueba" 1429548529
+  "/usr/share/texmf-dist/tex/latex/base/article.cls" 1428273609 20496 25b54d5a19c40eb011a68431975d83fe ""
+  "/usr/share/texmf-dist/tex/latex/base/size12.clo" 1428273609 8978 8de1b16ee67c14a25159112b378b51b6 ""
+  "prueba.aux" 1429548529 496 cbf63a40a9ca61ea82d12e1ea341d948 ""
+  "prueba.bbl" 0 -1 0 "bibtex prueba"
+  "prueba.tex" 1429548522 1271 68b6c671b2c814bc8e898fb9e872e84c ""
+  (generated)
+  "prueba.aux"
+  "prueba.pdf"
+  "prueba.log"

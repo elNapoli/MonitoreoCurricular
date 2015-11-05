@@ -1,0 +1,94 @@
+%----------------------------------------------------------
+%----------------------------------------------------------
+% INTRODUCCIÓN
+
+En los últimos años hemos sido espectadores del avance veloz con que se han desarrollado las tecnologías de la información y telecomunicaciones. En este ámbito, las tecnologías móviles e internet han sido los servicios de mayor crecimiento en nuestro país\cite{Pew14}. Los dispositivos móviles se han acercado y se han hecho parte de la vida diaria de las personas, buscando marcar una diferencia en los quehaceres cotidianos y claramente influir en una mejor calidad de vida para los usuarios.\\
+
+En el presente, las prestaciones que ofrecen estos dispositivos de bolsillo superan ampliamente a los computadores de escritorio de inicios del siglo XXI. Además, se encuentran comunicados a Internet mediante diversas tecnologías inalámbricas. Esta comunicación no sólo permite a las personas mantener el contacto con su vida, trabajo, amistades; sino también permite que estos dispositivos se conecten con otros de forma independiente, realizando tareas en segundo plano para brindar más información de interés a las personas o empresas. \\
+
+Actualmente, existe una alta interconexión digital de objetos cotidianos con Internet como: televisores, refrigeradores, automóviles incluso un termostato inteligente que regula la temperatura de una casa de forma remota\cite{Gre13}. Lo anterior, abre paso a un nuevo paradigma donde un dispositivo de cualquier naturaleza es capaz de conectarse a Internet, siendo éste llamado el ``Internet de las cosas'' (loT, \textit{the Internet of Things}). Este nuevo concepto nos brinda no sólo el beneficio de tener todo el control desde nuestro smartphone; va más allá. Se trata de que al estar todo conectado podemos obtener una serie de información con la que antes no contabamos y, con la que podemos tomar mejores decisiones en diversos ámbitos. Por ejemplo, aplicaciones móviles que permitan distribuir mejor nuestro tiempo cuando realizamos varios trámites.\\
+
+Es un hecho que en las principales provincias de Chile es muy elevada la concurrencia de personas que se encuentran en un centro de atención. En la actualidad, gracias a los avances en las tecnologías de información y telecomunicaciones, no es necesario realizar trámites personalmente en: pago de cuentas, transferencias bancarias, compra de productos, etc., ya que éstas se pueden realizar a través de aplicaciones Web. En cambio, hay otros que inevitablemente deben contar con la presencia del cliente.\\
+
+Considerando este último caso, el manejo de flujos masivos de personas ha sido un inconveniente para distintas instituciones, debido a que los tiempos de espera pueden llegar a ser muy largos en algunos casos, causando disconformidad en los usuarios. Es por ello que las instituciones elaboran estrategias para brindarles una mejor calidad de servicio al optimizar los tiempos de espera.\\
+
+De acuerdo a lo anterior, este proyecto de titulación tiene por objetivo responder a la necesidad planteada elaborando un sistema que sea capaz de reservar tickets de atención a través de una aplicación móvil y luego hacer el seguimiento vía Notificaciones Push del estado en cualquier instante de la fila de espera, informando el número de personas que restan por atender para así acudir a la oficina sólo en el momento preciso en que será llamado el cliente. En este sentido, el cliente cuenta con la oportunidad de aprovechar mejor su tiempo realizando otros trámites mientras espera su turno de atención. Todos estos dispositivos almacenarán y consumirán información de un servidor central. A su vez, la información entregada por los dispositivos será utilizada para realizar reportes que servirán para análisis posteriores por parte del centro de atención. En consecuencia, este proyecto crea una ventaja competitiva en el ámbito de la calidad de servicio, donde lo más probable es que exista un tiempo de espera considerable donde uno deba realizar un trámite.\\
+
+
+
+\subsection{Antecedentes}
+
+Actualmente, los sistemas más recientes en cuanto a la atención de flujos de personas en el mundo, están compuestos habitualmente por:
+\begin{itemize}
+\item Pantallas indicadoras basadas en monitores o televisores LCD donde el cliente, en espera de su turno, las observa hasta que sea llamado su número.
+\item Dispensadores de tickets con monitores TouchScreen e impresoras térmicas de auto corte, donde el cliente realiza la petición del servicio.
+\item Servicio de cola virtual en el Banco de Venezuela.
+\end{itemize}
+El proceso comienza con la llegada del cliente al local. Inmediatamente accede a un dispensador para solicitar su ticket de atención para luego esperar hasta que observe y/o escuche que ha llegado su turno.\\
+
+Sistemas más antiguos se diferencian de los actuales en el aspecto tecnológico, ya que la idea central del proceso es la misma.\\ 
+
+A pesar que esta solución permite organizar de una mejor manera el proceso de atención y con ello optimizar los tiempos de espera ya que el cliente al sacar su ticket debe permanecer en el local hasta ser atendido, pudiendo ocupar ese tiempo en realizar otras diligencias de igual o mayor importancia para así poder administrar de mejor manera su tiempo disponible.\\
+
+En el servicio del Banco de Venezuela, “los clientes solicitan tickets de atención a través de mensajería de texto. Los SMS enviados al 2662 deben contener la combinación de caracteres TCK, acompañado de las letras V, E o P seguido del número de documento de identidad correspondiente (cédula o pasaporte), para a partir de allí recibir un número de referencia a ser indicado en las máquinas de entrada a las agencias bajo la opción Cola Virtual.”\cite{Ins12}\\
+
+En Brasil la Ley de Consumo proteje a los clientes contra las extensas filas de espera en entidades bancarias. Ley nº 8.078/90, en el Artículo 14, Enunciado N. º 2.7 expresa claramente que la ley municipal impone un límite temporal de espera en la fila de una sucursal bancaria. Éste al no cumplirse, provoca daño moral al cliente que a su vez, en tal caso, tiene la posibilidad de una indemnización por un valor de R\$1.000 ( mil reales) a título de daños no patrimoniales\cite{Pre90}. En el Anexo A se encuentra la traducción a español de un extracto de la Ley nº 8.078/90.\\
+
+Dado lo anterior, se concluye que está presente la voluntad por cuidar al cliente. Se dispone de lugares confortables para que éste espere mientras es llamado para ser atendido o, como es el caso de Brasil, se protege al cliente imponiendo un límite de espera máximo que en caso de no cumplirse tiene como consecuencia una indemnización por parte del banco. Si bien lo anterior representa un avance, se pueden continuar mejorando estos sistemas que mejoran la calidad de vida del consumidor haciendo uso de las nuevas posibilidades que nos proporciona la tecnología hoy en día.\\
+
+\subsection{Motivación}
+
+La motivación principal para este proyecto es que tenemos la oportunidad de mejorar los procesos de atención a clientes, específicamente en filas de espera en centros de atención cuyo proceso de atención sea similar, de tal modo que tengan la posibilidad de abandonar las dependencias  y realizar otros trámites.\\
+
+El desarrollo de este sistema  permitirá el  registro a través de una aplicación móvil y seguimiento vía Notificaciones enviadas al Smartphone de tickets de atención. Además, con la información almacenada en el servidor, se realizarán reportes que mostrarán estadísticas relacionadas con tiempos de atención de los diferentes servicios que presta el centro de atención involucrado.\\
+
+No existen soluciones en nuestro país que resuelvan este problema. Existe una oportunidad real para diferenciar la calidad de atención que ofrece el centro al cual acude una persona para realizar un trámite. El trabajo contempla un gran énfasis en la computación móvil, pudiendo recibir notificaciones en un Smartphone en cualquier zona donde tenga servicio.\\
+
+%\hbox{}
+
+\subsection{Impactos}
+
+El desarrollo de tecnologías que apuntan al paradigma del Internet de las cosas es un área poco explorada y con un potencial enorme de utilidad para toda la población. Por ejemplo, controlar la iluminación de nuestro hogar, a través de un Smartphone, junto con encender y apagar aparatos eléctricos conectados a un enchufe inteligente \cite{Kit}. \\
+
+Con el sistema a implementar, los clientes tienen la oportunidad de organizar mejor su tiempo y realizar otros trámites mientras esperan a ser llamados. Esto repercute directamente en un mejoramiento de la calidad de vida de los involucrados. Las personas podrán hacer un mejor uso de su tiempo, tema no menos importante en el contexto de una sociedad interconectada en  la que vivimos.\\
+
+
+\subsection{Definición del Proyecto}
+
+\subsubsection{Objetivo general}
+
+Desarrollar un sistema capaz de solicitar un número de atención a través de una aplicación para Smartphones con Sistema Operativo Android y hacer el seguimiento vía Notificaciones Push de los tickets de espera para personas que estén en alguna oficina de atención, con objeto de disminuir tiempos de espera.\\
+\vspace{-0.4cm}
+
+\subsubsection{Objetivos específicos}
+
+\begin{enumerate}
+\item Analizar las principales tecnologías Web y sistemas de notificacion a dispositivos móviles, que permitan registrar y realizar el seguimiento de tickets de espera.
+\item Obtener, analizar y especificar los requisitos del sistema, además de analizar y diseñar casos de uso correspondientes con los objetos de diseño necesarios, y generar mockups de la interfaz para el posterior desarrollo del registro vía: Plataforma Web y aplicación Android, junto con el seguimiento a través de Notificaciones Push de los tickets de espera para los usuarios del centro de atención donde se encuentren.
+\item Implementar el prototipo funcional de acuerdo a lo modelado en los objetivos específicos anteriores.
+\item Generar un Sistema Web de reportes, que permita gestionar los datos obtenidos en este proceso.
+\end{enumerate}
+
+\subsection{Organización del documento}
+
+El contenido del documento se encuentra dividido en 7 capítulos organizados de la siguiente manera:
+
+\begin{itemize}
+\item El primer capítulo aborda la introducción del proyecto de título.
+
+\item El segundo capítulo, llamado ``Marco teórico'', profundiza en los contenidos relevantes que son tratados a lo largo del documento, referentes a \textit{Google Cloud Messaging} para Android, Notificacion Push, Android, MySQL, \textit{Web Service}, el Internet de las cosas, dispositivos móviles, proporcionando definiciones y llevando estas al contexto del proyecto. Finalmente, se realiza una revisión del estado del arte pertinente a estos sistemas y contexto \textbf{de acuerdo al primer objetivo especifico del proyecto}.
+
+\item El tercer capítulo, llamado ``Solución propuesta'', define la problemática que plantea la gestión de tickets de atención, tomando en cuenta la información recabada en el objetivo uno y se propone una solución a la situación expuesta. Además, se realiza la selección de las herramientas de \textit{software} a utilizar para la implementación de un prototipo funcional que abarque la problemática definida.
+
+\item El cuarto capítulo, llamado ``Análisis y diseño'', aborda las tareas necesarias para modelar la solución propuesta dada la problemática definida, y especifica el uso de las tecnologías seleccionadas en el capitulo anterior,todo esto \textbf{de acuerdo al segundo objetivo específico del proyecto}.
+
+\item El quinto capítulo, llamado ``Implementación'', expone la construcción del prototipo de software \textbf{de acuerdo con el cuarto objetivo específico}, según el proceso de análisis y diseño llevado a cabo en el tercer y cuarto capitulo.
+
+\item El sexto capítulo, llamado ``Pruebas y ajustes'', define un método para realizar pruebas y ajustes necesarios del sistema desarrollado, y se presentan los resultados de la prueba previamente definida.
+
+\item Finalmente, el séptimo capítulo aborda las ``Conclusiones'' obtenidas del trabajo realizado, ademas de proyectar posibles mejoras para llevar a cabo en una posible continuación de este proyecto.
+
+\end{itemize}
+
+
+

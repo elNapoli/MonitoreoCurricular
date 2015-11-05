@@ -1,0 +1,353 @@
+	\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{anysize} 
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{longtable} % para tablas largas
+%palabras y su separación 
+
+\hyphenation{res-pecto}
+\hyphenation{re-ferente} 
+\hyphenation{desa-rrollo}
+\hyphenation{mode-lo}
+\hyphenation{requeri-mientos}
+
+
+
+\usepackage[x11names,table]{xcolor}
+\usepackage{color, colortbl}
+%\marginsize{2cm}{0cm}{3cm}{1cm} % Controla los márgenes {izquierda}{derecha}{arriba}{abajo}. 
+\renewcommand{\figurename}{Figura}
+\renewcommand{\refname}{Referencias}
+\renewcommand{\contentsname}{Índice}
+\renewcommand\tablename{Tabla}
+\hypersetup{pdftitle={Archivos PDF},colorlinks=true,%
+pdfstartview=Fit,pdfview=Fit,linkcolor=blue}
+
+\begin{document} 
+  \newcolumntype{g}{>{\columncolor{gray}}p}
+    \begin{tabular}{ |g{3cm}|p{13cm}|} \hline
+	\rowcolors{1}{}{gray!20}
+	& \includegraphics[width=3in]{logo_uach_informatica.png} \\
+	&  \\
+	& \\
+	&  \begin{center}  {\Large {\bf Primer Semestre 2015}} \end{center}	\\
+	& \\
+	& \\ 
+	&  \begin{center}  {\LARGE {\bf Sistema de apoyo al monitoreo curricular de pregrado UACh}} \end{center}	\\
+	& \\
+	& \\ 
+	&  \begin{center}  {\Large {\bf Baldomero Águila Napoli}} \end{center}	\\
+	& \\
+	& \\ 
+	&  \begin{center}  {\Large {\bf \parbox[c]{7cm}{\centering Mauricio Ruiz-Tagle\\	 Patrocinante} }} \end{center}	\\
+	& \\
+	& \\ 
+	& \\
+
+	& \\
+
+	& \begin{center}  {\small {\bf Valdivia, Abril de 2015 }} \end{center} \\ \hline
+	\end{tabular}
+	\thispagestyle{empty}
+	\newpage
+	\thispagestyle{empty}
+	\tableofcontents
+	\newpage
+  \setcounter{page}{1}
+	
+	
+	\section{PRESENTACIÓN GENERAL}
+		\subsection{Nombre del Proyecto}
+			\begin{tabular}{ |c|} \hline
+			\\
+			 {\large Sistema de apoyo al monitoreo curricular de pregrado UACh}\\
+			\\
+			 \hline
+			
+			\end{tabular}
+		 
+		\subsection{Dominio}
+			\begin{tabular}{ |c|} \hline
+			\\
+			 {\large Informática, Tecnología}\\
+			\\
+			 \hline
+			 \end{tabular}
+		\subsection{Área de Aplicación}
+			\begin{tabular}{ |c|} \hline
+			\\
+			 {\large Administración Académica}\\
+			\\
+			 \hline
+			 \end{tabular}
+		\subsection{Duración del proyecto}
+		
+			\begin{tabular}{ |c|c|c|} \hline
+			& & \\
+			 0 & 8 & {\large Meses }\\
+			
+			& & \\
+			 \hline
+			
+			\end{tabular}
+			\newpage
+	\section{RESPONSABLES DEL PROYECTO}
+		\subsection{Institución principal del proyecto}
+		\begin{large}
+			\begin{tabular}{|l|l|}
+				\hline
+				
+					\multicolumn{2}{|p{15cm}|}{ \parbox[t]{15cm}{ {\bf Nombre de la Institución} \\	 Departamento de Aseguramiento de la Calidad e Innovación Curricular (DACIC)}}\\ 
+				\hline
+				{ \parbox[t]{8cm}{ {\bf Dirección} \\Edificio Vicerrectoría Académica · Campus Isla · Teja · Av. Carlos Ibáñez del Campo}} & { \parbox[t]{8cm}{ {\bf Ciudad} \\	Valdivia}}
+		\\ 
+		
+				\hline
+				{ \parbox[t]{8cm}{ {\bf Teléfono} \\	+56 63 2221085}} & { \parbox[t]{8cm}{ {\bf E-mail} \\  dacic@uach.cl}}
+		\\ 
+		
+				\hline
+
+			\end{tabular}
+		\end{large}
+
+
+
+
+		\subsection{Patrocinante del proyecto}
+		\begin{large}
+			\begin{tabular}{|l|l|}
+				\hline
+				
+			{ \parbox[t]{7cm}{ {\bf Nombre Completo} \\	Dr. Jorge Mauricio Ruiz-Tagle Molina}}& { \parbox[t]{7cm}{ {\bf R.U.T.} \\	8.214.713-6}}\\ 
+				\hline
+				{ \parbox[t]{8cm}{ {\bf Dirección} \\	Campus Isla Teja, Valdivia}} & { \parbox[t]{8cm}{ {\bf Ciudad} \\	Valdivia}}
+		\\ 
+		\hline
+							\multicolumn{2}{|p{15cm}|}{ \parbox[t]{15cm}{ {\bf Cargo Actual} \\ Director de estudios de Pregrado }}\\ 
+							
+				\hline
+				{ \parbox[t]{8cm}{ {\bf Teléfono} \\ (56-63) 2221259	}} & { \parbox[t]{8cm}{ {\bf E-mail} \\ mruiztag@uach.cl}}
+		\\ 
+		
+				\hline
+
+			\end{tabular}
+		\end{large}
+	
+
+		\subsection{Datos del estudiante}
+		\begin{large}
+			\begin{tabular}{|l|l|}
+				\hline
+				
+			{ \parbox[t]{7cm}{ {\bf Nombre Completo} \\Baldomero Águila Napoli}}& { \parbox[t]{7cm}{ {\bf R.U.T. y Firma} \\	17.536.925-2}}\\ 
+				\hline
+				{ \parbox[t]{8cm}{ {\bf Dirección} \\	General Lagos 1946}} & { \parbox[t]{8cm}{ {\bf Ciudad} \\	Valdivia}}\\ 
+
+							
+				\hline
+				
+				{ \parbox[t]{8cm}{ {\bf Teléfono} \\ +569-61729928}} & { \parbox[t]{8cm}{ {\bf E-mail} \\ baldomero.napoli@gmail.com}}
+		\\ 
+		
+				\hline
+
+			\end{tabular}
+		\end{large}
+		\newpage
+	\section{RESUMEN DEL PROYECTO}
+		
+			"La Universidad Austral de Chile es una institución acreditada que forma profesionales y graduados de pre y postgrado, con un sello caracterizado por la excelencia académica, el compromiso con la libertad y con el medio sociocultural, el respeto por la diversidad, la responsabilidad social, entre otros"\cite{MOD07}. Es por esto mismo que es de gran importancia el conocer el historial curricular de cada carrera.
+			\\
+			
+			El objetivo principal del presente proyecto de tesis consiste en diseñar y desarrollar un prototipo de plataforma web que permita gestionar el historial curricular de cada carrera de la Universidad Austral de Chile, el cual permitirá a distintas Unidades de la universidad tener una mejor información curricular de las carreras y así facilitar el trabajo que día a día realizan.
+			\\
+
+			
+			El sistema web se desarrollará para las dependencias de la Universidad Austral de Chile, es por eso mismo que el alumno tesista debe adaptarse a las tecnologías que la universidad utiliza, por esta razón la solución se desarrollará en las siguiente tecnologías: Microsoft Visual Studio 2013, Microsoft SQL Server 2008 (solo en ambiente de desarrollo, una vez finalizado el proyecto se migrará a SyBase, el cual es el motor de base de datos que utiliza la universidad), Visual Basic como lenguaje del servidor, JavaScript, css3, HTML5 y Tortoise .
+			\\
+
+			
+			El sistema web beneficiará a los departamentos del área de pregrado de la Universidad en cual están constantemente manipulando información curricular de las carreras, estos departamento son los siguientes: Departamento de Aseguramiento de la Calidad e Innovación Curricular (DACIC), Departamento de Registro Académico Estudiantil y  Departamento de Admisión y Matricula . Las ventajas de contar con una plataforma web que almacene datos históricos de las carreras, es disminuir el trabajo que poseen estos departamentos al momento de requerir alguna información curricular.
+
+			
+			
+
+
+\newpage
+\section{OBJETIVOS GENERALES Y ESPECÍFICOS}
+		\subsection{Objetivo General}
+			{\large  Diseñar y construir  un prototipo de una plataforma web que apoye al monitoreo curricular de pregrado UACh.}
+		\subsection{Objetivos Específicos}
+		\begin{large}
+			
+			\begin{itemize}
+				\item Conocer cómo los distintos departamentos que integran el departamento de estudios de pregrado (DEP) se enfrentan a los distintos cambios que se producen en los planes de estudio, con el fin de poder entender el contexto en el cual se desarrollará la Base de datos.
+				\item  Definir requerimientos del sistema, describiendo sus funcionalidades y separar en módulos la aplicación.
+				\item Diseñar e implementar el módulo necesario que permita desplegar el historial curricular de una carrera en particular.
+				\item Diseñar e implementar el módulo necesario que permita desplegar el historial de la escuela de una carrera en particular.
+				\item Realizar pruebas de validación de los requisitos y estabilidad del prototipo de
+plataforma web.
+			\end{itemize}
+		\end{large}
+		\newpage
+		
+	\section{DESCRIPCIÓN DEL PROYECTO}
+	
+		\subsection{Introducción}
+	  El un plan de estudio es un documento académico el cual sirve para  gestionar una carrera profesional en una universidad.
+	  
+	  que debe asegurar la formacion profesional 
+de calidad de sus estudiantes en una determinada especialidad.
+     	 \newpage
+     	 
+     	 
+    
+
+		\subsection{Nivel actual}
+	
+\newpage
+		\subsection{Motivación}
+		\begin{itemize}
+		 \item Aportar a la Universidad Austral de Chile con un software el cual resuelva la problemática de la poca 
+		 documentación en los cambios Curriculares que se efectuan anualmente.
+		 \item 
+
+		\end{itemize}
+
+ 
+		\subsection{Impactos}
+
+\section{RESULTADOS VERIFICABLES RELACIONADOS CON LOS  OBJETIVOS ESPECÍFICOS DEL \\ PROYECTO}
+
+			\begin{tabular}{ |p{15cm}|} \hline
+				 \parbox[c]{15cm}{ {\bf Objetivo específico:}\\ \\Conocer cómo los distintos departamentos que integran el departamento 
+				 de estudios de pregrado (DEP) se enfrentan a los distintos cambios que se producen en los planes de estudio, con 
+				 el fin de poder entender el contexto en el cual se desarrollará la Base de datos.\\} 
+			\\
+			 \hline
+				 \parbox[c]{15cm}{ {\bf Descripción del resultado:}\\ 
+				 
+				 Documento que contenga: \\
+				 \begin{itemize}
+				  \item Departamentos que tienen relación directa con el sistema a desarrollar.
+				  \item Descripción de las funciones de cada departamento.
+				  \item Modelo entidad Relación
+				 \end{itemize}
+				  Software: \\
+				  \begin{itemize}
+				   \item Base de datos creada en sql.
+						\item Base de datos parcialmente \textit{poblada}.
+				  \end{itemize}
+
+			 
+				  } 
+			 \\ \hline			 
+			 \end{tabular}	
+			 \\ \\  \\ 
+			\begin{tabular}{ |p{15cm}|} \hline
+				 \parbox[c]{15cm}{ {\bf Objetivo específico:}\\ \\ Definir requerimientos del sistema, describiendo 
+				 sus funcionalidades y separar en módulos la aplicación.\\} 
+			\\
+			 \hline
+				 \parbox[c]{15cm}{ {\bf Descripción del resultado:}\\ 
+				 
+			Documento que contenga: \\
+				 \begin{itemize}
+				  \item Especificación  de requisitos funcionales y no funcionales.
+				  \item Identificación los módulos del software.
+				
+				 \end{itemize}
+			
+				 
+				 
+				 } 
+			 \\ \hline			 
+			 \end{tabular}	
+			 \\ \\  \\ 
+			 \begin{tabular}{ |p{15cm}|} \hline
+				 \parbox[c]{15cm}{ {\bf Objetivo específico:}\\ \\Diseñar e implementar el módulo necesario que permita desplegar el historial curricular de una carrera en particular.\\} 
+			\\
+			 \hline
+				 \parbox[c]{15cm}{ {\bf Descripción del resultado:}\\ 
+				 
+			Documento que contenga: \\
+				 \begin{itemize}
+				  \item Artefactos UML del módulo: Diagrama de casos de uso, casos de uso, diagrama de complemento, diagramas de secuencia.
+				  \item Mockups de la plataforma.
+				
+				 \end{itemize}
+			Software con las siguientes funcionalidades:\\
+			      \begin{itemize}
+							\item Estructura principal del proyecto.
+							\item Conexión con la base de datos.
+			       \item \textit{Layout} principal del sistema.
+						\item Programado los procedimientos almacenados que tengan relación con el módulo.
+			     
+			      \end{itemize}
+
+				 
+				 
+				 } 
+			 \\ \hline			 
+			 \end{tabular}	
+			 \\ \\  \\ 
+			\begin{tabular}{ |p{15cm}|} \hline
+				 \parbox[c]{15cm}{ {\bf Objetivo específico:}\\ \\ Diseñar e implementar el módulo necesario que permita desplegar el historial de la escuela de una carrera en particular.\\} 
+			\\
+			 \hline
+				 \parbox[c]{15cm}{ {\bf Descripción del resultado:}\\ 
+				 Documento que contenga: \\
+				 \begin{itemize}
+				  \item 
+				 \end{itemize}
+
+				 
+					} 
+			 \\ \hline			 
+			 \end{tabular}	
+			 \\ \\  \\ 
+			\begin{tabular}{ |p{15cm}|} \hline
+				 \parbox[c]{15cm}{ {\bf Objetivo específico:}\\ \\ Diseñar una base de datos adaptada a la información manejada en contextos técnico-tácticos de equipos deportivos.\\} 
+			\\
+			 \hline
+				 \parbox[c]{15cm}{ {\bf Descripción del resultado:}\\ 
+				 
+Generar un documento formal que contenga lo siguiente:			 \\ 
+\begin{itemize}
+	\item identificación del motor l base de datos a utilizar.
+	\item Estructura de los datos.
+	\item Modelo Entidad Relación.
+	\item Restricciones.
+\end{itemize}	
+				  } 
+			 \\ \hline			 
+			 \end{tabular}	
+			 \\ \\  \\ 
+			\begin{tabular}{ |p{15cm}|} \hline
+				 \parbox[c]{15cm}{ {\bf Objetivo específico:}\\ \\Diseñar una interfaz gráfica para el ingreso de datos y visualización de resultados, tanto de forma gráfica como tabular. \\} 
+			\\
+			 \hline
+				 \parbox[c]{15cm}{ {\bf Descripción del resultado:}\\
+				 
+				  Prototipos de la aplicación con sus funcionalidades completas.} 
+			 \\ \hline			 
+			 \end{tabular}	
+			 \\ \\  \\ 
+			\begin{tabular}{ |p{15cm}|} \hline
+				 \parbox[c]{15cm}{ {\bf Objetivo específico:}\\ \\Validar la solución, tanto desde aspectos técnicos como de usabilidad. \\} 
+			\\
+			 \hline
+				 \parbox[c]{15cm}{ {\bf Descripción del resultado:}\\ \\
+					Prototipo finalizado y encuesta de validación.				 
+				  \\} 
+			 \\ \hline			 
+			 \end{tabular}	
+	\newpage
+
+			\bibliography{Anteproyecto}
+			\bibliographystyle{alpha}
+\end{document}

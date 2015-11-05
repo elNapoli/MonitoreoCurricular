@@ -1,0 +1,37 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}PRESENTACI\IeC {\'O}N GENERAL}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Nombre del Proyecto}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Dominio}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}\IeC {\'A}rea de Aplicaci\IeC {\'o}n}{1}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Duraci\IeC {\'o}n del proyecto}{1}{subsection.1.4}
+\contentsline {section}{\numberline {2}RESPONSABLES DEL PROYECTO}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Instituci\IeC {\'o}n principal del proyecto}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Patrocinante del proyecto}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Datos del estudiante}{2}{subsection.2.3}
+\contentsline {section}{\numberline {3}RESUMEN DEL PROYECTO}{3}{section.3}
+\contentsline {section}{\numberline {4}OBJETIVOS GENERALES Y ESPEC\IeC {\'I}FICOS}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}Objetivo General}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Objetivos Espec\IeC {\'\i }ficos}{4}{subsection.4.2}
+\contentsline {section}{\numberline {5}DESCRIPCI\IeC {\'O}N DEL PROYECTO}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}Introducci\IeC {\'o}n}{5}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Nivel actual}{6}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Departamento de Aseguramiento de la Calidad e Innovaci\IeC {\'o}n Curricular (DACIC)}{7}{subsubsection.5.2.1}
+\contentsline {paragraph}{Apoyo al Desarrollo y la Innovaci\IeC {\'o}n Curricular en Pregrado}{7}{section*.2}
+\contentsline {subsubsection}{\numberline {5.2.2}Departamento de Admisi\IeC {\'o}n y Matr\IeC {\'\i }cula}{7}{subsubsection.5.2.2}
+\contentsline {paragraph}{Servicios estudiantiles}{7}{section*.3}
+\contentsline {subsubsection}{\numberline {5.2.3}Departamento de Registro Acad\IeC {\'e}mico Estudiantil}{8}{subsubsection.5.2.3}
+\contentsline {paragraph}{Procesos:}{8}{section*.4}
+\contentsline {paragraph}{Creaci\IeC {\'o}n de nuevas Carreras}{8}{section*.5}
+\contentsline {paragraph}{Modificaciones Curriculares Mayores y/o Menores}{11}{section*.6}
+\contentsline {subsection}{\numberline {5.3}Motivaci\IeC {\'o}n}{13}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Impactos}{13}{subsection.5.4}
+\contentsline {section}{REFERENCIAS}{13}{section*.7}
+\contentsline {section}{\numberline {6}RESULTADOS VERIFICABLES RELACIONADOS CON LOS OBJETIVOS ESPEC\IeC {\'I}FICOS DEL \\ PROYECTO}{14}{section.6}
+\contentsline {section}{\numberline {7}DESCRIPCI\IeC {\'O}N DE LA METODOLOG\IeC {\'I}A}{17}{section.7}
+\contentsline {section}{\numberline {8}EXISTENCIA DE AVANCES RELACIONADAS CON EL PROYECTO}{18}{section.8}
+\contentsline {section}{\numberline {9}PRODUCTOS E IDENTIFICADORES DE LOGROS}{18}{section.9}
+\contentsline {section}{\numberline {10}DESCRIPCI\IeC {\'O}N DEL ROL DE LOS INTEGRANTES DE EQUIPO DE TRABAJO}{20}{section.10}
+\contentsline {section}{\numberline {11}PLAN DE TRABAJO }{21}{section.11}
+\contentsline {section}{\numberline {12}PRESUPUESTO DE PROYECTO }{21}{section.12}
+\contentsline {subsection}{\numberline {12.1}Justificaci\IeC {\'o}n}{22}{subsection.12.1}
+\contentsline {section}{\numberline {13}PLAN DE DIFUSI\IeC {\'O}N DEL PROYECTO }{22}{section.13}

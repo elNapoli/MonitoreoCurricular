@@ -1,0 +1,16 @@
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\Models\bin\Debug\Models.dll
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\Models\bin\Debug\Models.pdb
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\Models\bin\Debug\Models.xml
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\Models\obj\Debug\Models.Resources.resources
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\Models\obj\Debug\Models.vbproj.GenerateResource.Cache
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\Models\obj\Debug\Models.dll
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\Models\obj\Debug\Models.xml
+c:\users\napoli\documents\visual studio 2013\Projects\MonitoreoCurricular\Models\obj\Debug\Models.pdb
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\Models\bin\Debug\Models.dll
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\Models\bin\Debug\Models.pdb
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\Models\bin\Debug\Models.xml
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\Models\obj\Debug\Models.Resources.resources
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\Models\obj\Debug\Models.vbproj.GenerateResource.Cache
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\Models\obj\Debug\Models.dll
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\Models\obj\Debug\Models.xml
+C:\Users\Napoli\Dropbox\Tesis\MonitoreoCurricular\Models\obj\Debug\Models.pdb

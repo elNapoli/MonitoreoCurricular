@@ -1,0 +1,140 @@
+\subsection*{Anexo C: Sketch nodo de sensores.}
+\addcontentsline{toc}{subsection}{Anexo C: Sketch nodo de sensores.}
+\label{anexo-c}
+
+\hbox{}
+
+\begin{verbatim}
+
+#include <SoftwareSerial.h>
+#include <TinyGPS.h>
+#include <Wire.h>
+#include <XBee.h>
+
+
+#define RXPIN 3
+#define TXPIN 5
+#define GPSBAUD 4800
+
+TinyGPS gps;
+SoftwareSerial uart_gps(RXPIN, TXPIN);
+
+void getgps(TinyGPS &gps);
+
+int HMC6352SlaveAddress = 0x42; 
+int HMC6352ReadAddress = 0x41; //"A" in hex, A command is: 
+float direccion, latitud, longitud = 0;
+
+uint8_t text[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+uint8_t tramaBoton[2] = { 1, 1 };
+XBee xbee = XBee();
+Tx16Request tx = Tx16Request(0x1000, text, sizeof(text));
+Tx16Request txBoton = Tx16Request(0x1000, tramaBoton, sizeof(tramaBoton));
+
+const int buttonPin = 2;
+int botonValue = 0;
+
+int banderaSend = 0;
+
+
+void setup(){
+  pinMode(buttonPin,INPUT);
+
+  HMC6352SlaveAddress = HMC6352SlaveAddress >> 1;
+
+  Serial.begin(9600);
+  uart_gps.begin(GPSBAUD);
+  Wire.begin();
+  
+  Serial.println("waiting for signal");
+}
+
+void loop(){
+  botonValue = digitalRead(buttonPin);  // read input value
+  if (botonValue == HIGH) {         
+    xbee.send(txBoton); 
+    banderaSend = 1;
+    delay(20000);
+  }
+
+  //Read the serial port to see if GPS data is available
+  while(uart_gps.available() && banderaSend !=0){
+      byte c = uart_gps.read();
+      //If incoming data is GPS data, process it
+      if(gps.encode(c)){
+        gps.f_get_position(&latitud, &longitud);
+        float direccion = compass();
+        if (latitud != 0 && longitud != 0){
+          sending(latitud,longitud,direccion);
+          delay(30000);
+        }
+      }
+  }
+}
+
+void sending(float lat, float lon, double grados){
+  double enteraLon, fraccLon, enteraLat, fraccLat;
+  int banderaSign;
+
+  //linda idea para ahorrar un espacio del array
+  //flag que indica signos de coordenadas y si se pasa de 255º la brujula
+  //saludos a las limitaciones de los xbee
+  // (o mas bien a los creadores del protocolo)
+  //uint8_t = 0 a +255
+
+  if (lat < 0 && lon < 0){ // ambos negativos
+    banderaSign = 0;
+  } else if (lat > 0 && lon < 0){ // lat pos, lon neg
+    banderaSign = 1;
+  } else if (lat < 0 && lon > 0){ // lat neg, lon pos
+    banderaSign = 2;
+  } else {                        //ambos positivos
+    banderaSign = 3;
+  }
+  int direcc = int(grados);
+  if (direcc > 255){
+    banderaSign = banderaSign + 10;
+    direcc = direcc - 255;
+  }
+
+  fraccLon = modf(lon, &enteraLon);
+  fraccLat = modf(lat, &enteraLat);
+
+  String dLon = String(int(abs(fraccLon*10000)));
+  String dLat = String(int(abs(fraccLat*10000)));
+
+  text[0] = banderaSign;
+  text[1] = int(abs(enteraLon));
+  text[2] = dLon.substring(0,2).toInt();
+  text[3] = dLon.substring(2,4).toInt();
+  text[4] = int(abs(enteraLat));
+  text[5] = dLat.substring(0,2).toInt();
+  text[6] = dLat.substring(2,4).toInt();
+  text[7] = direcc;
+  xbee.send(tx);
+}
+
+float compass(){
+  //"Get Data. Compensate and Calculate New Heading"
+  Wire.beginTransmission(HMC6352SlaveAddress);
+  Wire.write(HMC6352ReadAddress);              // The "Get Data" command
+  Wire.endTransmission();
+
+  //time delays required by HMC6352 upon receipt of the command
+  //Get Data. Compensate and Calculate New Heading : 6ms
+  delay(6);
+
+  Wire.requestFrom(HMC6352SlaveAddress, 2); 
+
+  //"The heading output data will be the value in tenths of degrees
+  //from zero to 3599 and provided in binary format over the two bytes."
+  byte MSB = Wire.read();
+  byte LSB = Wire.read();
+
+  float headingSum = (MSB << 8) + LSB; //(MSB / LSB sum)
+  float headingInt = headingSum / 10; 
+
+  return headingInt;
+}
+
+\end{verbatim}
