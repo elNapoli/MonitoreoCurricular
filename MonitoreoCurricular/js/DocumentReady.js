@@ -26,7 +26,13 @@
 
                 plupload.each(files, function (file) {
 
-                    document.getElementById('filelist').innerHTML += '<div  class="input-group"><input id="' + file.id + '"  type="text" class="form-control" placeholder="Nombre de la Resolución" aria-describedby="basic-addon2"><span class="input-group-addon" id="basic-addon2"><a href="/Resoluciones/' + file.name + '">' + file.name + ' (' + plupload.formatSize(file.size) + ') </a></span></div><br/>';
+                    document.getElementById('filelist').innerHTML += '<div  class="input-group"><select id="tipo_' + file.id + '" class="form-control" required="">' +
+	'<option value="">Seleccione Tipo de documento</option>'+
+	'<option value="Resolucion">Resolución</option>' +
+    '<option value="ComunicacionI">Comunicación interna</option>' +
+    '<option value="RequerimientosDTI">Petición de requerimientos</option>' +
+
+'</select><input id="' + file.id + '"  type="text" class="form-control" placeholder="Número" aria-describedby="basic-addon2"><span class="input-group-addon" id="basic-addon2"><a href="/Resoluciones/' + file.name + '">' + file.name + ' (' + plupload.formatSize(file.size) + ') </a></span></div><br/>';
                     $("#ExisteResol").val("True");
 
                 });
@@ -34,8 +40,9 @@
 
             BeforeUpload: function (up, files) {
                 var id = "#"+files.id
-               
+                var tipoDoc = "tipo_" + files.id
                 up.settings.multipart_params.NombreRel = $(id).val();
+                up.settings.multipart_params.tipoDoc = $('#' + tipoDoc + ' option:selected').text();
             },
 
         //    UploadProgress: function (up, file) {

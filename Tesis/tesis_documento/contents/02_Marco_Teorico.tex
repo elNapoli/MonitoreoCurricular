@@ -1,8 +1,39 @@
 \subsection{Arquitectura}
+ 
+ En este capítulo se presenta la arquitectura y las tecnologías involucradas en el desarrollo de la plataforma. Debido a que en los requisitos del proyecto se contempla que la plataforma quede operativa en la  DTI\footnote{Dirección de tecnologías e información} de la Universidad, el proyecto se tuvo que adaptar a la arquitectura con la que trabaja este departamento.
 
-\subsubsection{Cliente-servidor}
+\subsubsection{Pseudo MVC }
 
-\subsubsection{MVC?}
+El patrón de arquitectura MVC\footnote{Modelo-vista-Controlador} es una filosofía de diseño de aplicaciones que define la organización independiente del Modelo, la Vista  y el Controlador \cite{eje15}. De esta forma, el sistema se divide en tres capas donde el \textbf{modelo}  contiene una representación de los datos que maneja el sistema, es decir, el modelo de datos, la \textbf{ vista}  o interfaz de usuario contiene la información que se envía al cliente y los mecanismos de interacción con éste, y por ultimo, el \textbf{controlador} es el intermediario entre el modelo y la vista, gestionando el flujo de información entre ellos.
+\\
+
+Ya se explicó el patrón de arquitectura MVC, en base a esto se procederá a explicar la arquitectura que utiliza la Dirección de Tecnologías de la Universidad Austral de Chile.
+\\
+
+La arquitectura de los proyectos de la Universidad no es específicamente  MVC, es más bien una adaptación puesto que no se separa totalmente lo que es vista del controlador,pero si se manejan de forma separada la capa de datos de la capa lógica y la interfaz de usuario. La arquitectura descrita anteriormente se detallará a continuación.
+\\
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{images/Capitulo_2/pseudoMVC.png}
+		\caption[Arquitectura pseudo MVC Universidad Austral de Chile]{Arquitectura pseudo MVC Universidad Austral de Chile \footnote{}}
+		\label{FiguraMVC}
+	\end{figure}
+	\footnotetext{Elaboración propia.}
+	
+En la Figura \ref{FiguraMVC} se puede apreciar las 3 capas de esta arquitectua. Esta arquitectura esta compuesta por:
+\begin{enumerate}
+	\item \textbf{Biblioteca de servicios WCF:} Esta capa responde a eventos, usualmente acciones del usuario, e invoca los procedimientos almacenados del modelo de datos, el cual obtiene la información en la interfaz genérica de Visual Basic: IEnumerable.
+	
+	\item \textbf{Biblioteca de clases:} Esta capa es la encargada de darle formato a la información obtenida por la biblioteca de servicios WFC, es decir, es la representación específica de la información con la cual el sistema opera.
+	
+	\item \textbf{Aplicación Web:} Esta capa es la encargada de interactuar con el usuario, en ella se muestra toda la información ordenada y entendible por el usuario, sin embargo no solo pose código front-end (html, css, JavaScript, etc), si no también métodos que se comunican con los servicios WCF. Es por ello que la vista  no esta del todo separada de las reglas de negocio.
+\end{enumerate}
+
+
+
+	
+
 
 \subsection{Tecnologías para el desarrollo de la plataforma}
 
@@ -32,7 +63,7 @@ Alertify es un script escrito con Jquery, el cual nos permite utilizar los sigui
 Alertify ha sido construido para personalizar nuestras alertas y notificaciones, de esta manera el front-end de la plataforma es mas amigable al usuario y esto permite un mejor entendimiento de los eventos que se realizan en tiempo de ejecución. Además es un plugin multi-idioma y posee responsive-design \footnote{ \textbf{ Responsive Design} es un nuevo paradigma del desarrollo web. Permite adaptar cada sitio a los diferentes formatos de dispositivos de acceso; smartphones, tabletas, portátiles, etc.}
 \\
 
-A pesar de que la mayoría de los plugins de notificaciones presentan inconvenientes al momento de implementar con vb.net, se decidió usar un sistema de alertas principalemente para facilitar la visualización de todos los eventos que ocurren en el sistema.
+A pesar de que la mayoría de los plugins de notificaciones presentan inconvenientes al momento de implementar con vb.net, se decidió usar un sistema de alertas principalmente para facilitar la visualización de todos los eventos que ocurren en el sistema.
 
 
 \myparagraph{Boostrap}
@@ -64,6 +95,15 @@ El back-end es el área que se dedica a la parte lógica de un sitio web, es el 
 \myparagraph{Microsoft SQL Server 2008}
 
 Microsoft SQL Server 2008 Express es un sistema de administración de datos eficaz y confiable que ofrece un variado conjunto de características, protección de datos y rendimiento para clientes de aplicaciones incrustadas, aplicaciones web ligeras y almacenes de datos locales \cite{mic15}.
+\\
+
+
+Para un manejo adecuado de la base de datos se utilizará SQL Server Management Studio(SSMS), que es `` un entorno integrado para obtener acceso, configurar, administrar y desarrollar todos los componentes de SQL Server.SSMS combina un amplio grupo de herramientas gráficas con una serie de editores de script enriquecidos que permiten a desarrolladores y administradores de todos los niveles obtener acceso SQL Server" \cite{mic15}.
+
+
+
+
+
 
 
 \myparagraph{ASP.NET}

@@ -13,7 +13,7 @@ Public Class UploadHandler
             Dim fileUpload As HttpPostedFile = context.Request.Files(0)
             Dim idHistorial As String = context.Request.Params("idNuevoHistorial")
             Dim NombreResolucion As String = context.Request.Params("NombreRel")
-
+            Dim TipoResolucion As String = context.Request.Params("tipoDoc")
             Dim logTemp As LogNapoli
 
             Dim uploadPath As String = context.Server.MapPath("~/Resoluciones/")
@@ -22,7 +22,7 @@ Public Class UploadHandler
             Dim Rut As String = context.Request.Params("RutUsuario")
 
 
-            logTemp = Conexion.GuardarResolucionPorHistorial(idHistorial, NombreResolucion, fileName)
+            logTemp = Conexion.GuardarResolucionPorHistorial(idHistorial, TipoResolucion + " " + NombreResolucion, fileName)
             logTemp.Rut = Rut
 
             Conexion.RegistrarLog(logTemp)
