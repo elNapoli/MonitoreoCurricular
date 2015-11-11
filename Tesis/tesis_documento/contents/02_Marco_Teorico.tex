@@ -7,10 +7,7 @@
 El patrón de arquitectura MVC\footnote{Modelo-vista-Controlador} es una filosofía de diseño de aplicaciones que define la organización independiente del Modelo, la Vista  y el Controlador \cite{eje15}. De esta forma, el sistema se divide en tres capas donde el \textbf{modelo}  contiene una representación de los datos que maneja el sistema, es decir, el modelo de datos, la \textbf{ vista}  o interfaz de usuario contiene la información que se envía al cliente y los mecanismos de interacción con éste, y por ultimo, el \textbf{controlador} es el intermediario entre el modelo y la vista, gestionando el flujo de información entre ellos.
 \\
 
-Ya se explicó el patrón de arquitectura MVC, en base a esto se procederá a explicar la arquitectura que utiliza la Dirección de Tecnologías de la Universidad Austral de Chile.
-\\
-
-La arquitectura de los proyectos de la Universidad no es específicamente  MVC, es más bien una adaptación puesto que no se separa totalmente lo que es vista del controlador,pero si se manejan de forma separada la capa de datos de la capa lógica y la interfaz de usuario. La arquitectura descrita anteriormente se detallará a continuación.
+Como se ha dicho la arquitectura MVC utiliza la división tradicional en 3 capas (presentación, lógica de negocio y datos) sin embargo la arquitectura de los proyectos de la Universidad no es específicamente  MVC, es más bien una adaptación puesto que no se separa totalmente lo que es vista del controlador, pero si se manejan de forma separada la capa de datos de la capa lógica y la interfaz de usuario, de manera semejante es como trabaja ASP.NET (se explicará en la sección \ref{ASP.NET}) . La arquitectura descrita anteriormente se detallará a continuación.
 \\
 
 	\begin{figure}[H]
@@ -27,13 +24,11 @@ En la Figura \ref{FiguraMVC} se puede apreciar las 3 capas de esta arquitectua. 
 	
 	\item \textbf{Biblioteca de clases:} Esta capa es la encargada de darle formato a la información obtenida por la biblioteca de servicios WFC, es decir, es la representación específica de la información con la cual el sistema opera.
 	
-	\item \textbf{Aplicación Web:} Esta capa es la encargada de interactuar con el usuario, en ella se muestra toda la información ordenada y entendible por el usuario, sin embargo no solo pose código front-end (html, css, JavaScript, etc), si no también métodos que se comunican con los servicios WCF. Es por ello que la vista  no esta del todo separada de las reglas de negocio.
+	\item \textbf{Aplicación Web:} Esta capa es la encargada de interactuar con el usuario, en ella se muestra toda la información ordenada y entendible por el usuario, sin embargo no solo posee código front-end (html, css, JavaScript, etc), si no también métodos que se comunican con los servicios WCF. Es por ello que la vista  no esta del todo separada de las reglas de negocio.
 \end{enumerate}
 
 
-
-	
-
+Podemos condensar lo dicho hasta aquí, que el framework que utiliza la Universidad Austral de Chile es una forma distinta de crear aplicaciones web, si bien, se identifican claramente  la división tradicional en 3 capas (presentación, lógica de negocio y datos) no es la misma que propone el patrón MVC. En particular, en esta arquitectura  la capa \textbf{Controller} no tendría una clara correspondencia en la estructura clásica, si no que es  una mezcla de la interfaz gráfica y la lógica del negocio.
 
 \subsection{Tecnologías para el desarrollo de la plataforma}
 
@@ -98,6 +93,11 @@ Microsoft SQL Server 2008 Express es un sistema de administración de datos efic
 \\
 
 
+
+Microsoft Sql Server  esta catalogado como  una herramienta fácil de instalar, usar y administrar, por lo que muchas organizaciones hacen uso de sus servicios, tales como  Itaú, Samsung, Marcopolo, entre otras grandes compañías.
+\\
+
+
 Para un manejo adecuado de la base de datos se utilizará SQL Server Management Studio(SSMS), que es `` un entorno integrado para obtener acceso, configurar, administrar y desarrollar todos los componentes de SQL Server.SSMS combina un amplio grupo de herramientas gráficas con una serie de editores de script enriquecidos que permiten a desarrolladores y administradores de todos los niveles obtener acceso SQL Server" \cite{mic15}.
 
 
@@ -106,4 +106,17 @@ Para un manejo adecuado de la base de datos se utilizará SQL Server Management 
 
 
 
-\myparagraph{ASP.NET}
+\myparagraph{ASP.NET} \label{ASP.NET}
+
+ASP.NET es una plataforma web que proporciona todos los servicios necesarios para compilar aplicaciones web empresariales basadas en servidor. ASP.NET está compilado en .NET Framework, por lo que todas las características de .NET Framework están disponibles en las aplicaciones ASP.NET. Las aplicaciones se pueden escribir en cualquier lenguaje que sea compatible con Common Language Runtime (CLR), incluido Visual Basic y C\# \cite{inf15}. 
+\\
+
+ASP.NET  introduce el concepto del code-behind en el desarollo web, el cual separa el código de la interfaz de usuario, es decir,  todo lo relacionado con la Interfaz de usuario se maneja en el archivo .aspx y el control de los eventos en un archivo separado .vb (Visual Basic).Con ello se facilita la programación de aplicaciones en múltiples capas, lo que en definitiva se traduce en la total separación entre lo que el usuario ve y lo que la base de datos tiene almacenado.La ventaja del modelo  code-behind  es que no se lee secuencialmente sino que se compila, lo que incrementa de velocidad de respuesta del servidor. Además, al compilarse, el incremento en seguridad y fortaleza es muy grande. 
+\\
+
+Otro aspecto a tener en cuenta de ASP.NET es que sirve tanto para Webs sencillas como para grandes aplicaciones, ya que la orientación a objetos y la naturaleza compilada permite que la programación de sitios web sea sencilla.
+
+
+
+
+
