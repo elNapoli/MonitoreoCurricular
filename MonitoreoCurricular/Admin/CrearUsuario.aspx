@@ -144,9 +144,7 @@
                         <label for="pass1" class="control-label col-lg-4">Rol</label>
                         <div class="col-lg-8">
                             <asp:DropDownList runat="server" ID="DDRol" class="form-control"  required>
-                                <asp:ListItem value="" Text="Seleccione rol" />
-                                <asp:ListItem value="1" Text="Administrador" />
-                                <asp:ListItem Value="2" Text="Usuario" />
+
                             </asp:DropDownList>
                         </div>
                       </div>

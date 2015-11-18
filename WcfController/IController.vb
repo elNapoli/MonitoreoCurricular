@@ -30,6 +30,9 @@ Public Interface IController
     Function TraeCarreraPorPlan(idPlan As Integer) As IEnumerable(Of Parametros)
 
     <OperationContract()>
+    Function TraeRol() As IEnumerable(Of Parametros)
+
+    <OperationContract()>
     Function TraeAsignatura() As IEnumerable(Of Asignaturas)
 
     <OperationContract()>

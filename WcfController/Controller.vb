@@ -53,6 +53,40 @@ Public Class Controller
         End Try
         Return ret.AsEnumerable
     End Function
+
+    Public Function TraeRol() As IEnumerable(Of Parametros) Implements IController.TraeRol
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Dim ret As New List(Of Parametros)
+        Try
+            dr = cnn.Ejecuta("getRol") ' colocar nombre del procedimiento
+
+
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+
+            'Tipos
+            For Each item As DataRow In dr
+
+
+                ret.Add(New Parametros With {
+                        .id = item(0),
+                        .nombre = item(1)
+                    }
+                )
+            Next
+
+        Catch ex As Exception
+            Dim logError As New LogNapoli
+
+            logError.CodigoError = "-2"
+            logError.mensajeError = ex.Message.ToString
+            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            logError.origenError = "Controller/getRol"
+            logError.Rut = "0"
+            RegistrarLog(logError)
+            MsgBox(logError.mensajeError)
+        End Try
+        Return ret.AsEnumerable
+    End Function
     Public Function TraeEscuelaPorFacultad(idFacultad As Integer) As IEnumerable(Of Parametros) Implements IController.TraeEscuelaPorFacultad
         Dim dr As IEnumerable(Of DataRow) = Nothing
         Dim Parametros As New List(Of Parameter)

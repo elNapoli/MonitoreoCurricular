@@ -55,6 +55,12 @@
   <wsdl:message name="IController_TraeCarreraPorPlan_OutputMessage">
     <wsdl:part name="parameters" element="tns:TraeCarreraPorPlanResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_TraeRol_InputMessage">
+    <wsdl:part name="parameters" element="tns:TraeRol" />
+  </wsdl:message>
+  <wsdl:message name="IController_TraeRol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TraeRolResponse" />
+  </wsdl:message>
   <wsdl:message name="IController_TraeAsignatura_InputMessage">
     <wsdl:part name="parameters" element="tns:TraeAsignatura" />
   </wsdl:message>
@@ -189,6 +195,10 @@
     <wsdl:operation name="TraeCarreraPorPlan">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeCarreraPorPlan" message="tns:IController_TraeCarreraPorPlan_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeCarreraPorPlanResponse" message="tns:IController_TraeCarreraPorPlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TraeRol">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeRol" message="tns:IController_TraeRol_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeRolResponse" message="tns:IController_TraeRol_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="TraeAsignatura">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeAsignatura" message="tns:IController_TraeAsignatura_InputMessage" />
@@ -326,6 +336,15 @@
     </wsdl:operation>
     <wsdl:operation name="TraeCarreraPorPlan">
       <soap:operation soapAction="http://tempuri.org/IController/TraeCarreraPorPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraeRol">
+      <soap:operation soapAction="http://tempuri.org/IController/TraeRol" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -15,6 +15,8 @@
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{longtable}
+\usepackage[x11names,table]{xcolor}
 
 \usepackage[pdftex,
 			colorlinks=true,
@@ -27,7 +29,7 @@
             pdftitle={Sistema de apoyo al monitoreo curricular de Estudios de pregrado UACh},
             pdfsubject={Tesis},
             pdfkeywords={6LoWPAN, BMS, IPv6, IoT, WSN},
-            pdfproducer={Latex with hyperref},
+	            pdfproducer={Latex with hyperref},
             pdfcreator={pdflatex}]{hyperref}
 \usepackage{hyperref}
 \usepackage[bottom]{footmisc}
@@ -295,21 +297,21 @@ FIGURA \hspace{11.45cm} PÁGINA\\
 %----------------------------------------------------------
 %----------------------------------------------------------
 \section{DESARROLLO DEL SISTEMA}
-\input{contents/Desarrollo_Sistema.tex}
+\input{contents/03_Desarrollo_Sistema.tex}
 
 
 \newpage
 %##########################################################
 % BIBLIOGRAFIA
 
-\renewcommand{\refname}{BIBLIOGRAFÍA}
+\renewcommand{\refname}{REFERENCIAS}
 \phantomsection
-\addcontentsline{toc}{section}{BIBLIOGRAFÍA}
+\addcontentsline{toc}{section}{REFERENCIAS}
 \input{contents/Bibliografia.tex}
 
 \newpage
 %##########################################################
-% ANEXOS
+% Modelo conceptual del proyecto
 
 
 \phantomsection

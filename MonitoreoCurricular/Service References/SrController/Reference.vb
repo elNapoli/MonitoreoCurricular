@@ -66,6 +66,12 @@ Namespace SrController
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeCarreraPorPlan", ReplyAction:="http://tempuri.org/IController/TraeCarreraPorPlanResponse")>  _
         Function TraeCarreraPorPlanAsync(ByVal idPlan As Integer) As System.Threading.Tasks.Task(Of Models.Parametros())
         
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeRol", ReplyAction:="http://tempuri.org/IController/TraeRolResponse")>  _
+        Function TraeRol() As Models.Parametros()
+        
+        <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeRol", ReplyAction:="http://tempuri.org/IController/TraeRolResponse")>  _
+        Function TraeRolAsync() As System.Threading.Tasks.Task(Of Models.Parametros())
+        
         <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/IController/TraeAsignatura", ReplyAction:="http://tempuri.org/IController/TraeAsignaturaResponse")>  _
         Function TraeAsignatura() As Models.Asignaturas()
         
@@ -262,6 +268,14 @@ Namespace SrController
         
         Public Function TraeCarreraPorPlanAsync(ByVal idPlan As Integer) As System.Threading.Tasks.Task(Of Models.Parametros()) Implements SrController.IController.TraeCarreraPorPlanAsync
             Return MyBase.Channel.TraeCarreraPorPlanAsync(idPlan)
+        End Function
+        
+        Public Function TraeRol() As Models.Parametros() Implements SrController.IController.TraeRol
+            Return MyBase.Channel.TraeRol
+        End Function
+        
+        Public Function TraeRolAsync() As System.Threading.Tasks.Task(Of Models.Parametros()) Implements SrController.IController.TraeRolAsync
+            Return MyBase.Channel.TraeRolAsync
         End Function
         
         Public Function TraeAsignatura() As Models.Asignaturas() Implements SrController.IController.TraeAsignatura

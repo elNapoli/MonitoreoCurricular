@@ -4,7 +4,13 @@ Public Class viewUser
     Inherits System.Web.UI.Page
     Private Conexion As New SrController.ControllerClient
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        If Not IsPostBack Then
+            DDRol.DataTextField = "nombre"
+            DDRol.DataValueField = "id"
+            DDRol.DataSource = Conexion.TraeRol()
+            DDRol.DataBind()
+            DDRol.Items.Insert(0, New ListItem("-- Seleccione Rol --", ""))
+        End If
         If (Request.QueryString("save") <> Nothing) Then
             ClientScript.RegisterClientScriptBlock(Me.GetType(), "alert", "alertify.success('Se ha guardado correctamente el rut =" + Request.QueryString("rut") + " exitosamente');", True)
 
