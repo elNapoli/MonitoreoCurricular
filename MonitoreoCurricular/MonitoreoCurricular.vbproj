@@ -130,7 +130,7 @@
     <Content Include="img\sort_desc_disabled.png" />
     <Content Include="img\throbber.gif" />
     <Content Include="img\transp50.png" />
-    <Content Include="Editor\index.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="js\alertify.js" />
     <Content Include="js\app.js.map" />
     <Content Include="js\core.js.map" />
@@ -1281,10 +1281,10 @@
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Editor\index.aspx.designer.vb">
+    <Compile Include="index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Editor\index.aspx.vb">
+    <Compile Include="index.aspx.vb">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>

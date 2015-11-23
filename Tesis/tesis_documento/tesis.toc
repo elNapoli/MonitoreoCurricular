@@ -2,10 +2,10 @@
 \ttl@change@i {\@ne }{section}{2.3em}{\rmfamily }{ \contentslabel {1.3em}}{\hspace *{-1.0em}}{\titlerule *[0.7pc]{.}\contentspage }\relax 
 \ttl@change@v {section}{}{}{}\relax 
 \contentsline {section}{\IeC {\'I}NDICE}{\es@scroman {i}}{section*.1}
-\contentsline {section}{\IeC {\'I}NDICE DE TABLAS}{\es@scroman {ii}}{section*.3}
-\contentsline {section}{\IeC {\'I}NDICE DE FIGURAS}{\es@scroman {iii}}{section*.5}
-\contentsline {section}{RESUMEN}{\es@scroman {iv}}{section*.7}
-\contentsline {section}{ABSTRACT}{\es@scroman {vi}}{section*.8}
+\contentsline {section}{\IeC {\'I}NDICE DE TABLAS}{\es@scroman {iii}}{section*.3}
+\contentsline {section}{\IeC {\'I}NDICE DE FIGURAS}{\es@scroman {iv}}{section*.5}
+\contentsline {section}{RESUMEN}{\es@scroman {v}}{section*.7}
+\contentsline {section}{ABSTRACT}{\es@scroman {vii}}{section*.8}
 \contentsline {section}{\numberline {1}INTRODUCCI\IeC {\'O}N}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}Definici\IeC {\'o}n del Proyecto}{1}{subsection.1.1}
 \contentsline {subsubsection}{\numberline {1.1.1}Objetivo general}{1}{subsubsection.1.1.1}
@@ -56,7 +56,9 @@
 \contentsline {subsubsection}{\numberline {3.3.2}Modelo de datos}{28}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}M\IeC {\'o}dulo historial curricular}{29}{subsubsection.3.3.3}
 \contentsline {paragraph}{\numberline {3.3.3.1}Dise\IeC {\~n}o}{29}{paragraph.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.4}Metodolog\IeC {\'\i }a}{30}{subsubsection.3.3.4}
-\contentsline {subsection}{\numberline {3.4}Validaci\IeC {\'o}n del software}{30}{subsection.3.4}
-\contentsline {section}{REFERENCIAS}{31}{section*.20}
+\contentsline {subsubsection}{\numberline {3.3.4}Metodolog\IeC {\'\i }a}{33}{subsubsection.3.3.4}
+\contentsline {subsection}{\numberline {3.4}Validaci\IeC {\'o}n del software}{33}{subsection.3.4}
+\contentsline {section}{REFERENCIAS}{34}{section*.21}
+\contentsline {section}{\numberline {4}ANEXOS}{36}{section.4}
+\contentsline {subsection}{Anexo A: Formato inicial de los archivos JSON.}{36}{section*.23}
 \contentsfinish 

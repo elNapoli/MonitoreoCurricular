@@ -40,7 +40,7 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 		\label{figura_cartaGantt}
 	\end{figure}
 	\footnotetext{Elaboración propia.}
-
+\ref{Anexo A} caca caca  \ref{hola}
 	Durante el proceso de desarrollo del producto software es importante tener en cuenta lo siguiente:
 	\begin{itemize}
 		\item Es importante reunirse con el profesor patrocinante al comienzo, durante y al
@@ -235,10 +235,10 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 		
 	\mysubparagraph{ Caso de uso real más significativo} 
 	
-	El caso de uso “Ver historial curricular” ocurre cuando un usuario  desea  ver los cambios que curriculares que se le han aplicado a una carrera en particular. El caso de uso real “Ver historial curricular” se presenta en la Tabla \ref{Tabla_Caso_Uso_ver_historial}.
+	El caso de uso “Ver historial curricular” ocurre cuando un usuario  desea  ver los cambios  curriculares que se le han aplicado a una carrera en particular. El caso de uso real “Ver historial curricular” se presenta en la Tabla \ref{Tabla_Caso_Uso_ver_historial}.
 	
 	
-		\begin{longtable}{l| p{11cm}}
+		\begin{longtable}{p{7cm}| p{7cm}}
 			
 			\caption{Caso de uso Ver historial curricular}
 			\label{Tabla_Caso_Uso_ver_historial}\\
@@ -247,31 +247,72 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 			\hline
 			\endfirsthead
 			\multicolumn{2}{c}%
-			{\tablename\ \thetable\ -- \textit{Continuación de la pagina anterior}} \\
+			{\tablename\ \thetable\ -- \textit{Continuación de la página anterior}} \\
 			\hline
 			
 			\hline
 			\endhead
 			\hline \multicolumn{2}{r}{\textit{Continúa en la página siguiente}} \\
 			\endfoot
-			\hline
+			\hline \hline
 			\endlastfoot
-			\rowcolor{LightBlue2}  \multicolumn{2}{c}{Caso de Uso Ver Historial Curricular} \\ 
+			\rowcolor{LightBlue2}  \multicolumn{2}{c}{Caso de Uso Ver Historial Curricular} \\  \hline
 			
 			
 			\textbf{Actores} & Administrador, Editor, Suscriptor.\\ \hline
 			
 			\textbf{Propósito} & Visualizar los cambios curriculares que se han realizado en una determinada carrera.\\ \hline
 			
-			\textbf{tipo} & Primario y esencial\\ \hline
+			\textbf{Tipo} & Primario y esencial\\ \hline
 			
-			\multicolumn{2}{l}{\textbf{Resumen:}sfgsdfg} \\  \hline
+			\multicolumn{2}{p{15cm}}{\textbf{Resumen:} Un usuario autentificado puede ver el historial curricular de una carrera en particular, el cual lo hace primero seleccionado la facultad a la que pertenece, luego la escuela y por último selecciona la carrera en cuestión.} \\  \hline \hline
 			 
 			\rowcolor{LightBlue2}  \multicolumn{2}{c}{Interfaz: Formulario Ver Historial Curricular} \\  \hline \hline
 			
-			\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/Modelo_E_R.png}} \\ 
+			\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/F_historialCurricular1.png}} \\ 
+			
+			\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/F_historialCurricular2.png}} \\ 
+			
+			\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/F_historialCurricular3.png}} \\ 
+			
+			\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/F_historialCurricular4.png}} \\ \hline
+			
+			\rowcolor{LightBlue2}  \multicolumn{2}{c}{Curso normal de eventos} \\ 
+			
+			\textbf{Acción actor} &	\textbf{Respuesta sistema} \\ \hline
+			
+			1.- Este caso de uso comienza cuando un usuario autentificado desea ver el historial curricular de una carrera, para ello debe hacer click en \textbf{1}.
+			 &	2.- El sistema despliega la pantalla \textbf{A}, el cual permite al usuario seleccionar facultad, escuela y carrera. \\ \hline
 		
+		
+			3.- El usuario selecciona la facultad, escuela y carrera, haciendo click en \textbf{2},\textbf{3} y \textbf{4}.
+			&	4.- El sistema crear un texto plano en formato JSON, el cual contiene el detalle solicitado por el usuario.\\ \hline
+			
+			
+			& 5.- El sistema lee el archivo JSON y lo despliega en la tabla \textbf{B}.\\ \hline
+			
+			6.- Para ver información mas detallada del hito, el usuario puede hacer click en \textbf{6}.
+			&	7.- El sistema despliega la información solicitada en \textbf{C}.\\ \hline
+		
+		
+			8.- Si el usuario lo desea, puede ver la resolución haciendo click en \textbf{7}.
+			&	9.- El sistema redirecciona al usuario al documento solicitado.\\ \hline
 		\end{longtable}
+		
+		
+		En la Figura \ref{diagrama_secuencial_ver_historial} se presenta el diagrama de secuencia para este mismo caso de uso, y así mostrar la interacción entre los distintos componentes del software que llevan a cabo esta tarea.
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=1\textwidth]{images/Capitulo_3/diagrama_secuencial_Historial_Curricular.png}
+				\caption[Diagrama de secuencia para el caso de uso \textit{Ver Historial Curricular}]{Diagrama de secuencia para el caso de uso \textit{Ver Historial Curricular} \footnote{}}
+				\label{diagrama_secuencial_ver_historial}
+			\end{figure}
+			\footnotetext{Elaboración propia.}
+			
+		Cuando un usuario autentificado quiere ver el expediente curricular de una carrera,  se dirige a la sección correspondiente, esta sección, denominada \textit{HistorialCurricular.aspx}
+		
+		antes de cargar el formulario, HistorialCurricular.aspx se encarga  eliminar
 	\subsubsection{Metodología}
 	
 \subsection{Validación del software}
