@@ -1,3 +1,4 @@
+En esta sección se exploran los elementos que intervienen en el desarrollo del software. Se hace un recorrido desde las tecnologías que se utilizarán en el desarrollo, hasta la descripción de los documentos que utilizarán los usuarios del proyecto.
 \subsection{Arquitectura}
  
  En este capítulo se presenta la arquitectura y las tecnologías involucradas en el desarrollo de la plataforma. Debido a que en los requisitos del proyecto se contempla que la plataforma quede operativa en la  DTI\footnote{Dirección de tecnologías e información} de la Universidad, el proyecto se tuvo que adaptar a la arquitectura con la que trabaja este departamento.
@@ -116,6 +117,38 @@ ASP.NET  introduce el concepto del code-behind en el desarollo web, el cual sepa
 
 Otro aspecto a tener en cuenta de ASP.NET es que sirve tanto para Webs sencillas como para grandes aplicaciones, ya que la orientación a objetos y la naturaleza compilada permite que la programación de sitios web sea sencilla.
 
+\subsubsection{Herramientas Anexas}
+
+	Esta sección contiene información detallada acerca de todas las herramientas  que  facilitaron la creación e implementación del proyecto. No se clasifican ni en Front-End ni en Back-End dado que son herramientas de gestión y de corrección de errores, por lo que el software final no las contendrá.
+	\myparagraph{GitHub}
+	
+	 El control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante \cite{git15}, dicho de otra manera, un control de versiones permite guardar “fotografías” del estado de un proyecto en ese instante del tiempo, dando la capacidad de restaurar ese estado en cualquier momento. Esto ayuda a trabajar en un proyecto y si sale algo mal se puede volver atrás, a algún punto en donde todo funcionaba correctamente.
+	 \\
+	 
+	 A pesar de que existen diversos sistemas de control de versiones y diversos métodos  de control de versiones control de versiones locales, control de versiones centralizados y control de versiones distribuidos), se escogió GitHub por las siguientes razones.
+	 
+	 \begin{enumerate}
+	 	\item Sistema distribuido: en el que todos los nodos manejan la información en su totalidad y por lo tanto pueden actuar de cliente o servidor en cualquier momento, es decir, se elimina el concepto de “centralizado”.
+	 	
+	 	\item Trabajo en local: Al tener una copia del proyecto se pueden hacer commits de forma local, una vez que se tenga conexión a internet se realiza el commits al servidor.
+	 	
+	 	\item Fotografías, no diferencias: Cuando un archivo no cambia, en lugar de guardar la misma “fotografía” varias veces, guarda una referencia a esa “fotografía”. De esta forma se optimizan los recursos del sistema. 
+	 	
+	 \end{enumerate}
+	 
+	 Es necesario recalcar que en  el proyecto de titulación solo existe un programador, por lo que  no es necesario que el gestor de versiones sea centralizado, de manera que  GitHub cumple con lo que se necesita para el desarrollo del software, el cual es guardar las versiones en caso de cometer algún error en el futuro.
+	 
+	\myparagraph{Firebug}
+	
+	Muchas veces es difícil saber qué errores se cometen en el desarrollo y cómo solucionarlos, pero con ayuda de algunos programas, se puede reducir el tiempo que se pierde en la búsqueda de los problemas o errores cometidos. 
+	\\
+
+	Si bien uno de los requisitos no funcionales es que la aplicación funcione en los 3 navegadores mas usado a nivel mundial, el desarrollo y las pruebas se  hicieron bajo el navegador Firefox, por lo que se tenia que tener alguna herramienta compatible con este navegador para poder encontrar los errores de manera fácil.
+	\\
+	
+	Firebug es un plugin de Firefox que nos brinda un paquete de utilidades para el desarrollo de páginas y aplicaciones Web. Nos permite debugear, monitorizar y modificar el CSS, HTML y JavaScript en tiempo de ejecución \cite{moz15}. Dicho de otra manera, Firebug no solo debuguea los errores, si no que también el usuario puede monitoriar todas las  peticiones de red que se realizan, entre las mas utilizadas: Petición GET, Petición POST.
+	
+	
 
 \subsection{Tipos de documentos}
 

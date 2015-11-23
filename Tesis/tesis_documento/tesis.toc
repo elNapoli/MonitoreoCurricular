@@ -27,32 +27,36 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Front-end}{13}{subsubsection.2.2.1}
 \contentsline {paragraph}{\numberline {2.2.1.1}JQuery}{13}{paragraph.2.2.1.1}
 \contentsline {paragraph}{\numberline {2.2.1.2}Alertify}{13}{paragraph.2.2.1.2}
-\contentsline {paragraph}{\numberline {2.2.1.3}Boostrap}{14}{paragraph.2.2.1.3}
+\contentsline {paragraph}{\numberline {2.2.1.3}Bootstrap}{14}{paragraph.2.2.1.3}
 \contentsline {paragraph}{\numberline {2.2.1.4}Template Metis}{14}{paragraph.2.2.1.4}
 \contentsline {paragraph}{\numberline {2.2.1.5}Parsley}{15}{paragraph.2.2.1.5}
 \contentsline {subsubsection}{\numberline {2.2.2}Back-end}{15}{subsubsection.2.2.2}
 \contentsline {paragraph}{\numberline {2.2.2.1}Microsoft SQL Server 2008}{15}{paragraph.2.2.2.1}
 \contentsline {paragraph}{\numberline {2.2.2.2}ASP.NET}{16}{paragraph.2.2.2.2}
-\contentsline {subsection}{\numberline {2.3}Tipos de documentos}{16}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Resoluci\IeC {\'o}n}{16}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Comunicaci\IeC {\'o}n interna}{16}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Especificaci\IeC {\'o}n de requerimientos}{16}{subsubsection.2.3.3}
-\contentsline {section}{\numberline {3}DESARROLLO DEL SISTEMA}{17}{section.3}
-\contentsline {subsection}{\numberline {3.1}Planificaci\IeC {\'o}n}{17}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Metodolog\IeC {\'\i }a}{17}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Plan de trabajo}{18}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}An\IeC {\'a}lisis}{18}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Requerimientos}{19}{subsubsection.3.2.1}
-\contentsline {paragraph}{\numberline {3.2.1.1}Requisitos funcionales}{19}{paragraph.3.2.1.1}
-\contentsline {paragraph}{\numberline {3.2.1.2}Requisitos no funcionales}{20}{paragraph.3.2.1.2}
-\contentsline {subsubsection}{\numberline {3.2.2}Modelo conceptual}{21}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Casos de uso}{22}{subsubsection.3.2.3}
-\contentsline {paragraph}{\numberline {3.2.3.1}Descripci\IeC {\'o}n de los actores del sistema}{25}{paragraph.3.2.3.1}
-\contentsline {subsection}{\numberline {3.3}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{26}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Diagramas de componentes}{26}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Modelo de datos}{26}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}M\IeC {\'o}dulo historial curricular}{27}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Metodolog\IeC {\'\i }a}{27}{subsubsection.3.3.4}
-\contentsline {subsection}{\numberline {3.4}Validaci\IeC {\'o}n del software}{27}{subsection.3.4}
-\contentsline {section}{REFERENCIAS}{28}{section*.19}
+\contentsline {subsubsection}{\numberline {2.2.3}Herramientas Anexas}{16}{subsubsection.2.2.3}
+\contentsline {paragraph}{\numberline {2.2.3.1}GitHub}{17}{paragraph.2.2.3.1}
+\contentsline {paragraph}{\numberline {2.2.3.2}Firebug}{17}{paragraph.2.2.3.2}
+\contentsline {subsection}{\numberline {2.3}Tipos de documentos}{18}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Resoluci\IeC {\'o}n}{18}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Comunicaci\IeC {\'o}n interna}{18}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Especificaci\IeC {\'o}n de requerimientos}{18}{subsubsection.2.3.3}
+\contentsline {section}{\numberline {3}DESARROLLO DEL SISTEMA}{19}{section.3}
+\contentsline {subsection}{\numberline {3.1}Planificaci\IeC {\'o}n}{19}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Metodolog\IeC {\'\i }a}{19}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Plan de trabajo}{20}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}An\IeC {\'a}lisis}{21}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Requerimientos}{21}{subsubsection.3.2.1}
+\contentsline {paragraph}{\numberline {3.2.1.1}Requisitos funcionales}{21}{paragraph.3.2.1.1}
+\contentsline {paragraph}{\numberline {3.2.1.2}Requisitos no funcionales}{23}{paragraph.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.2}Modelo conceptual}{23}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Casos de uso}{24}{subsubsection.3.2.3}
+\contentsline {paragraph}{\numberline {3.2.3.1}Descripci\IeC {\'o}n de los actores del sistema}{27}{paragraph.3.2.3.1}
+\contentsline {subsection}{\numberline {3.3}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{28}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Diagramas de componentes}{28}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Modelo de datos}{28}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}M\IeC {\'o}dulo historial curricular}{29}{subsubsection.3.3.3}
+\contentsline {paragraph}{\numberline {3.3.3.1}Dise\IeC {\~n}o}{29}{paragraph.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.4}Metodolog\IeC {\'\i }a}{30}{subsubsection.3.3.4}
+\contentsline {subsection}{\numberline {3.4}Validaci\IeC {\'o}n del software}{30}{subsection.3.4}
+\contentsline {section}{REFERENCIAS}{31}{section*.20}
 \contentsfinish 
