@@ -40,7 +40,7 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 		\label{figura_cartaGantt}
 	\end{figure}
 	\footnotetext{Elaboración propia.}
-\ref{Anexo A} caca caca  \ref{hola}
+
 	Durante el proceso de desarrollo del producto software es importante tener en cuenta lo siguiente:
 	\begin{itemize}
 		\item Es importante reunirse con el profesor patrocinante al comienzo, durante y al
@@ -309,10 +309,25 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 				\label{diagrama_secuencial_ver_historial}
 			\end{figure}
 			\footnotetext{Elaboración propia.}
-			
-		Cuando un usuario autentificado quiere ver el expediente curricular de una carrera,  se dirige a la sección correspondiente, esta sección, denominada \textit{HistorialCurricular.aspx}
+
 		
-		antes de cargar el formulario, HistorialCurricular.aspx se encarga  eliminar
+		 En primer lugar el \textit{HistorialCurricular.aspx}  debe asegurarse que el archivo JSON de donde se leen los datos este vacío y con el formato adecuado para su correcta lectura(el formato del arhivo JSON utilizado se puede ver en el Anexo A). Una vez realizada esta acción, la vista se comunica con el servicio web (HistorialCurricular.asmx) para que la primera lista desplegable, correspondiente a las facultades  de la universidad,  no este vacía.\\
+		 
+		  El proceso que se describirá a continuación es la secuencia de pasos que realiza el sistema para  ``poblar'' una lista desplegable, por lo que este proceso se repite tres veces, la única diferencia es quién activa el proceso. Para la lista desplegable que se llena con las facultades la activa el sistema antes de mostrar el formulario al usuario, mientras que para las listas desplegables que abarcan a las escuelas y a las carreras las activa el usuario al momento de producir un cambio en las listas desplegables de niveles superiores, es decir, 
+		  para que  el sistema poble la lista desplegable que contiene a las escuelas, el usuario debe producir un cambio en el DropDownList que contiene a  las facultades, y para poblar el DropDownList que contiene a las carreras, el usuario debe producir un cambio en la lista desplegable que abarca a las escuelas.\\
+
+		
+		
+	
+		El proceso que se encarga de poblar una lista desplegable comienza cuando el HistorialCurricular.asmx  envía un mensaje a  la biblioteca Controller.vb indicando qué datos se necesitan de la base de datos (Facultad, Escuela o Carrera), una vez que el Controller.vb recibe la petición, ejecuta  la consulta correspondiente y  retorna los datos solicitados en formato IEnumerable al servicio web, con el fin de que éste último actor asigne la información retornada en la lista desplegable correspondiente.
+		\\
+		
+	
+		Una vez que  el sistema haya verificado el estado del archivo JSON y que haya poblado la lista desplegable de las facultades, la plataforma esta en condiciones de mostrar el formulario al usuario para su posterior manipulación.		Por otra parte el DocumentReady.js esta a la espera de que el usuario seleccione la carrera, a fin de enviar un mensaje al Function.js con el ID de la carrera.
+		\\
+		
+		Una vez que el actor Function.js reciba el ID de la carrera,  lo envía al servicio web para que éste cree el archivo JSON, tan pronto como se cree el archivo el HistorialCurricular.asmx  envía la variable JSON=true al actor Function.js para que se visualicen los datos del archivo JSON en la interfaz web.
+		
 	\subsubsection{Metodología}
 	
 \subsection{Validación del software}

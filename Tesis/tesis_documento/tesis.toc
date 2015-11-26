@@ -56,9 +56,11 @@
 \contentsline {subsubsection}{\numberline {3.3.2}Modelo de datos}{28}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}M\IeC {\'o}dulo historial curricular}{29}{subsubsection.3.3.3}
 \contentsline {paragraph}{\numberline {3.3.3.1}Dise\IeC {\~n}o}{29}{paragraph.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.4}Metodolog\IeC {\'\i }a}{33}{subsubsection.3.3.4}
-\contentsline {subsection}{\numberline {3.4}Validaci\IeC {\'o}n del software}{33}{subsection.3.4}
-\contentsline {section}{REFERENCIAS}{34}{section*.21}
-\contentsline {section}{\numberline {4}ANEXOS}{36}{section.4}
-\contentsline {subsection}{Anexo A: Formato inicial de los archivos JSON.}{36}{section*.23}
+\contentsline {subsubsection}{\numberline {3.3.4}Metodolog\IeC {\'\i }a}{34}{subsubsection.3.3.4}
+\contentsline {subsection}{\numberline {3.4}Validaci\IeC {\'o}n del software}{34}{subsection.3.4}
+\contentsline {section}{\numberline {4}IMPLEMENTACI\IeC {\'O}N DEL PROTOTIPO}{35}{section.4}
+\contentsline {section}{REFERENCIAS}{36}{section*.21}
+\contentsline {section}{\numberline {5}ANEXOS}{38}{section.5}
+\contentsline {subsection}{Anexo A: Formato inicial de los archivos JSON.}{38}{section*.23}
+\contentsline {subsection}{Anexo B: CascadingDropDown}{38}{section*.25}
 \contentsfinish 
