@@ -328,7 +328,110 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 		
 		Una vez que el actor Function.js reciba el ID de la carrera,  lo envía al servicio web para que éste cree el archivo JSON, tan pronto como se cree el archivo el HistorialCurricular.asmx  envía la variable JSON=true al actor Function.js para que se visualicen los datos del archivo JSON en la interfaz web.
 		
-	\subsubsection{Metodología}
+		\subsubsection{Módulo Gestor de Documentos}
+	
+	
+	escribir descripción del modulo
+		\myparagraph{Diseño}
+		
+		A continuación se describe el diseño los casos de usos para el módulo de gestión de documentos de la plataforma, que corresponden a: subir documentos, ver documentos y eliminar documentos. Se presentará en detalle la composición de estos casos de uso y su participación en el sistema.
+		
+		\mysubparagraph{ Casos de usos reales del módulo gestor de documentos} 
+		
+
+
+
+
+		El caso de uso ``Subir documento'' ocurre cuando un administrador o un editor desea crear algún hito curricular en un plan de estudios El caso de uso real ``Subir documento'' se presenta en la Tabla \ref{Tabla_Caso_Uso_Subir_Documento}.
+		
+		
+		
+		
+			\begin{longtable}{p{7cm}| p{7cm}}
+				
+				\caption{Caso de uso  Subir Documento}
+				\label{Tabla_Caso_Uso_Subir_Documento}\\
+				
+				
+				\hline
+				\endfirsthead
+				\multicolumn{2}{c}%
+				{\tablename\ \thetable\ -- \textit{Continuación de la página anterior}} \\
+				\hline
+				
+				\hline
+				\endhead
+				\hline \multicolumn{2}{r}{\textit{Continúa en la página siguiente}} \\
+				\endfoot
+				\hline \hline
+				\endlastfoot
+				\rowcolor{LightBlue2}  \multicolumn{2}{c}{Caso de uso  Subir Documento} \\  \hline
+				
+				
+				\textbf{Actores} & Administrador y Editor.\\ \hline
+				
+				\textbf{Propósito} & Crear un hito curricular a un plan de estudios.\\ \hline
+				
+				\textbf{Tipo} & Primario y esencial\\ \hline
+				
+				\multicolumn{2}{p{15cm}}{\textbf{Resumen:} El objetivo de este módulo es hacer posible la creación de hitos curriculares y la carga de documentos relacionados con el hito en cuestión al servidor.} \\  \hline \hline
+				
+				\rowcolor{LightBlue2}  \multicolumn{2}{c}{Interfaz: Formulario Ver Historial Curricular} \\  \hline \hline
+				
+				\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/subir_documento1.png}} \\ 
+				
+				\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/subir_documento2.png}} \\ 
+				
+				\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/subir_documento3.png}} \\ 
+				
+				\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/subir_documento5.png}} \\ 
+				
+				
+				\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/subir_documento6.png}} \\ \hline
+				
+				\rowcolor{LightBlue2}  \multicolumn{2}{c}{Curso normal de eventos} \\ 
+				
+				\textbf{Acción actor} &	\textbf{Respuesta sistema} \\ \hline
+				
+				1.- Este caso de uso comienza cuando un usuario de tipo administrador y/o editor  desea crear un hito curricular, para ello debe hacer click en \textbf{1}.
+				&	2.- El sistema despliega la pantalla \textbf{A}, el cual permite al usuario  introducir información referente al encabezado del hito curricular.\\ \hline
+			
+			
+				3.- El usuario ingresa toda la información relacionada con el encabezado del hito curricular en \textbf{2}.
+				& 4.- A medida que el usuario va completando los campos, el sistema va validando si están en el formato correcto, es decir, si la información debe ser del tipo: número, sólo letras, longitud máxima, longitud mínima, etc.\\ \hline
+				
+				5.- Una vez que el usuario haya introducido todos los campos requeridos por el sistema, procede a subir el o los documentos relacionados al hito, haciendo click en \textit{3}.
+				& 6.- El sistema abre la ventana que se muestra en \textit{B}.\\ \hline
+				
+				7.- El usuario selecciona todos los archivos en formato pdf que desee subir, luego hace click en ``Abrir''.
+				& 8.- El sistema  por cada documento  agrega a la interfaz gráfica los siguientes elementos; un DropDownList, el cual corresponde al tipo de documento que es; un input, donde el usuario ingresa el número del documento y por último un Label que indica el nombre del documento.\\ \hline
+				
+				9.- El usuario completa los dos campos nuevos que se agregaron a la interfaz gráfica, para luego hacer clik en ``Subir Archivos''.
+				& 10.- El sistema valida que los archivos estén en formato correcto.\\ \hline
+				
+			
+				& 11.- El sistema recibe los datos del formulario y los almacena en la base de datos.\\ \hline
+				
+				& 12.- El sistema almacena la operación que se realizó (En este caso creación de un hito) en la bitácora de cambios del sistema. \\ \hline
+				
+				& 13.- El sistema redirecciona al usuario a la pantalla \textbf{C}. \\ \hline
+				
+				\rowcolor{LightBlue2}  \multicolumn{2}{c}{Curso alternativo de los eventos} \\ 
+				
+			
+				& 10.- los archivos que el usuario intenta subir no están en formato pdf, o pesan más de 5 mb, por lo que el sistema muestra un mensaje de alerta y el usuario tiene que volver a la etapa Número 5.\\ \hline
+				
+			\end{longtable}
+			
+				En la Figura \ref{diagrama_secuencial_Subir_documento} se presenta el diagrama de secuencia para este mismo caso de uso, y así mostrar la interacción entre los distintos componentes del software que llevan a cabo esta tarea.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=1\textwidth]{images/Capitulo_3/Subir_Documentos.png}
+				\caption[Diagrama de secuencia para el caso de uso \textit{Subir Documentos}]{Diagrama de secuencia para el caso de uso \textit{Subir Documentos} \footnote{}}
+				\label{diagrama_secuencial_Subir_documento}
+			\end{figure}
+			\footnotetext{Elaboración propia.}
 	
 \subsection{Validación del software}
 

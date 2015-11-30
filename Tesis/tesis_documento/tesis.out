@@ -34,29 +34,28 @@
 \BOOKMARK [4][-]{paragraph.2.2.3.1}{GitHub}{subsubsection.2.2.3}% 34
 \BOOKMARK [4][-]{paragraph.2.2.3.2}{Firebug}{subsubsection.2.2.3}% 35
 \BOOKMARK [2][-]{subsection.2.3}{Tipos de documentos}{section.2}% 36
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Resoluci\363n}{subsection.2.3}% 37
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Comunicaci\363n interna}{subsection.2.3}% 38
-\BOOKMARK [3][-]{subsubsection.2.3.3}{Especificaci\363n de requerimientos}{subsection.2.3}% 39
-\BOOKMARK [1][-]{section.3}{DESARROLLO DEL SISTEMA}{}% 40
-\BOOKMARK [2][-]{subsection.3.1}{Planificaci\363n}{section.3}% 41
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Metodolog\355a}{subsection.3.1}% 42
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Plan de trabajo}{subsection.3.1}% 43
-\BOOKMARK [2][-]{subsection.3.2}{An\341lisis}{section.3}% 44
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Requerimientos}{subsection.3.2}% 45
-\BOOKMARK [4][-]{paragraph.3.2.1.1}{Requisitos funcionales}{subsubsection.3.2.1}% 46
-\BOOKMARK [4][-]{paragraph.3.2.1.2}{Requisitos no funcionales}{subsubsection.3.2.1}% 47
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Modelo conceptual}{subsection.3.2}% 48
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Casos de uso}{subsection.3.2}% 49
-\BOOKMARK [4][-]{paragraph.3.2.3.1}{Descripci\363n de los actores del sistema}{subsubsection.3.2.3}% 50
-\BOOKMARK [2][-]{subsection.3.3}{Dise\361o e implementaci\363n}{section.3}% 51
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Diagramas de componentes}{subsection.3.3}% 52
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Modelo de datos}{subsection.3.3}% 53
-\BOOKMARK [3][-]{subsubsection.3.3.3}{M\363dulo historial curricular}{subsection.3.3}% 54
-\BOOKMARK [4][-]{paragraph.3.3.3.1}{Dise\361o}{subsubsection.3.3.3}% 55
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Metodolog\355a}{subsection.3.3}% 56
-\BOOKMARK [2][-]{subsection.3.4}{Validaci\363n del software}{section.3}% 57
-\BOOKMARK [1][-]{section.4}{IMPLEMENTACI\323N DEL PROTOTIPO}{}% 58
-\BOOKMARK [1][-]{section*.21}{REFERENCIAS}{}% 59
-\BOOKMARK [1][-]{section.5}{ANEXOS}{}% 60
-\BOOKMARK [2][-]{section*.23}{Anexo A: Formato inicial de los archivos JSON.}{section.5}% 61
-\BOOKMARK [2][-]{section*.25}{Anexo B: CascadingDropDown}{section.5}% 62
+\BOOKMARK [1][-]{section.3}{DESARROLLO DEL SISTEMA}{}% 37
+\BOOKMARK [2][-]{subsection.3.1}{Planificaci\363n}{section.3}% 38
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Metodolog\355a}{subsection.3.1}% 39
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Plan de trabajo}{subsection.3.1}% 40
+\BOOKMARK [2][-]{subsection.3.2}{An\341lisis}{section.3}% 41
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Requerimientos}{subsection.3.2}% 42
+\BOOKMARK [4][-]{paragraph.3.2.1.1}{Requisitos funcionales}{subsubsection.3.2.1}% 43
+\BOOKMARK [4][-]{paragraph.3.2.1.2}{Requisitos no funcionales}{subsubsection.3.2.1}% 44
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Modelo conceptual}{subsection.3.2}% 45
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Casos de uso}{subsection.3.2}% 46
+\BOOKMARK [4][-]{paragraph.3.2.3.1}{Descripci\363n de los actores del sistema}{subsubsection.3.2.3}% 47
+\BOOKMARK [2][-]{subsection.3.3}{Dise\361o e implementaci\363n}{section.3}% 48
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Diagramas de componentes}{subsection.3.3}% 49
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Modelo de datos}{subsection.3.3}% 50
+\BOOKMARK [3][-]{subsubsection.3.3.3}{M\363dulo historial curricular}{subsection.3.3}% 51
+\BOOKMARK [4][-]{paragraph.3.3.3.1}{Dise\361o}{subsubsection.3.3.3}% 52
+\BOOKMARK [3][-]{subsubsection.3.3.4}{M\363dulo Gestor de Documentos}{subsection.3.3}% 53
+\BOOKMARK [4][-]{paragraph.3.3.4.1}{Dise\361o}{subsubsection.3.3.4}% 54
+\BOOKMARK [2][-]{subsection.3.4}{Validaci\363n del software}{section.3}% 55
+\BOOKMARK [1][-]{section.4}{IMPLEMENTACI\323N DEL PROTOTIPO}{}% 56
+\BOOKMARK [1][-]{section.5}{CONCLUSIONES}{}% 57
+\BOOKMARK [1][-]{section.6}{REFERENCIAS}{}% 58
+\BOOKMARK [1][-]{section.7}{ANEXOS}{}% 59
+\BOOKMARK [2][-]{section*.24}{Anexo A: Formato inicial de los archivos JSON.}{section.7}% 60
+\BOOKMARK [2][-]{section*.26}{Anexo B: CascadingDropDown}{section.7}% 61

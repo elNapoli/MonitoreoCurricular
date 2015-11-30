@@ -37,9 +37,6 @@
 \contentsline {paragraph}{\numberline {2.2.3.1}GitHub}{17}{paragraph.2.2.3.1}
 \contentsline {paragraph}{\numberline {2.2.3.2}Firebug}{17}{paragraph.2.2.3.2}
 \contentsline {subsection}{\numberline {2.3}Tipos de documentos}{18}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Resoluci\IeC {\'o}n}{18}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Comunicaci\IeC {\'o}n interna}{18}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Especificaci\IeC {\'o}n de requerimientos}{18}{subsubsection.2.3.3}
 \contentsline {section}{\numberline {3}DESARROLLO DEL SISTEMA}{19}{section.3}
 \contentsline {subsection}{\numberline {3.1}Planificaci\IeC {\'o}n}{19}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Metodolog\IeC {\'\i }a}{19}{subsubsection.3.1.1}
@@ -56,11 +53,13 @@
 \contentsline {subsubsection}{\numberline {3.3.2}Modelo de datos}{28}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}M\IeC {\'o}dulo historial curricular}{29}{subsubsection.3.3.3}
 \contentsline {paragraph}{\numberline {3.3.3.1}Dise\IeC {\~n}o}{29}{paragraph.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.4}Metodolog\IeC {\'\i }a}{34}{subsubsection.3.3.4}
-\contentsline {subsection}{\numberline {3.4}Validaci\IeC {\'o}n del software}{34}{subsection.3.4}
-\contentsline {section}{\numberline {4}IMPLEMENTACI\IeC {\'O}N DEL PROTOTIPO}{35}{section.4}
-\contentsline {section}{REFERENCIAS}{36}{section*.21}
-\contentsline {section}{\numberline {5}ANEXOS}{38}{section.5}
-\contentsline {subsection}{Anexo A: Formato inicial de los archivos JSON.}{38}{section*.23}
-\contentsline {subsection}{Anexo B: CascadingDropDown}{38}{section*.25}
+\contentsline {subsubsection}{\numberline {3.3.4}M\IeC {\'o}dulo Gestor de Documentos}{34}{subsubsection.3.3.4}
+\contentsline {paragraph}{\numberline {3.3.4.1}Dise\IeC {\~n}o}{34}{paragraph.3.3.4.1}
+\contentsline {subsection}{\numberline {3.4}Validaci\IeC {\'o}n del software}{39}{subsection.3.4}
+\contentsline {section}{\numberline {4}IMPLEMENTACI\IeC {\'O}N DEL PROTOTIPO}{40}{section.4}
+\contentsline {section}{\numberline {5}CONCLUSIONES}{41}{section.5}
+\contentsline {section}{\numberline {6}REFERENCIAS}{42}{section.6}
+\contentsline {section}{\numberline {7}ANEXOS}{44}{section.7}
+\contentsline {subsection}{Anexo A: Formato inicial de los archivos JSON.}{44}{section*.24}
+\contentsline {subsection}{Anexo B: CascadingDropDown}{44}{section*.26}
 \contentsfinish 
