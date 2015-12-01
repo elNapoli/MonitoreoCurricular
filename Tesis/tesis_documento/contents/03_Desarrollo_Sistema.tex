@@ -208,7 +208,7 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 	
 \subsection{Diseño e implementación}
 
-	En esta sección se describe el diseño y la implementación para los módulos: \textit{Historial curricular} y \textit{Gestor de documentos} de la plataforma. En un principio se muestran algunos artefactos generales correspondientes al diagrama de componentes y al modelo de datos. Posteriormente para cada módulo se presentaran los casos de uso, además del diagrama de secuencia correspondiente, y un diagrama de pantallas para ver la interacción del caso de uso con el resto del sistema.
+	En esta sección se describe el diseño y la implementación para los módulos: \textit{Historial curricular} y \textit{Gestor de documentos} de la plataforma. En un principio se muestran algunos artefactos generales correspondientes al diagrama de componentes y al modelo de datos. Posteriormente para cada módulo se presentaran los casos de uso, además del diagrama de secuencia correspondiente.
 
 
 	\subsubsection{Diagramas de componentes}
@@ -319,7 +319,7 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 		
 		
 	
-		El proceso que se encarga de poblar una lista desplegable comienza cuando el HistorialCurricular.asmx  envía un mensaje a  la biblioteca Controller.vb indicando qué datos se necesitan de la base de datos (Facultad, Escuela o Carrera), una vez que el Controller.vb recibe la petición, ejecuta  la consulta correspondiente y  retorna los datos solicitados en formato IEnumerable al servicio web, con el fin de que éste último actor asigne la información retornada en la lista desplegable correspondiente.
+		El   \textbf{poblado de una lista desplegable} comienza cuando el HistorialCurricular.asmx  envía un mensaje a  la  \label{Proceso_poblado_DDL} biblioteca Controller.vb indicando qué datos se necesitan de la base de datos (Facultad, Escuela o Carrera), una vez que el Controller.vb recibe la petición, ejecuta  la consulta correspondiente y  retorna los datos solicitados en formato IEnumerable al servicio web, con el fin de que éste último actor asigne la información retornada en la lista desplegable correspondiente.
 		\\
 		
 	
@@ -331,18 +331,19 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 		\subsubsection{Módulo Gestor de Documentos}
 	
 	
-	escribir descripción del modulo
+		El  módulo Gestor de documentos permite al administrador y editor administrar el repositorio de documentos de la plataforma, dicho de otra manera, estos usuarios podrán: crear, leer, editar y eliminar registros. Con respecto al usuario de tipo suscriptor, solo poseerá permisos de lectura.
+	
 		\myparagraph{Diseño}
 		
-		A continuación se describe el diseño los casos de usos para el módulo de gestión de documentos de la plataforma, que corresponden a: subir documentos, ver documentos y eliminar documentos. Se presentará en detalle la composición de estos casos de uso y su participación en el sistema.
+		A continuación se describe el diseño los casos de usos extendidos para el módulo de gestión de documentos de la plataforma, que corresponden a: subir documentos, ver documentos y eliminar documentos. Se presentará en detalle la composición de estos casos de uso y su participación en el sistema.
 		
-		\mysubparagraph{ Casos de usos reales del módulo gestor de documentos} 
+		\mysubparagraph{ Caso de uso real del módulo gestor de documentos:``Subir documento''} 
 		
 
 
 
 
-		El caso de uso ``Subir documento'' ocurre cuando un administrador o un editor desea crear algún hito curricular en un plan de estudios El caso de uso real ``Subir documento'' se presenta en la Tabla \ref{Tabla_Caso_Uso_Subir_Documento}.
+		El caso de uso ``Subir documento'' corresponde al caso de uso extendido de ``Gestor de documentos'' y  ocurre cuando un administrador o un editor desea crear algún hito curricular en un plan de estudios. El caso de uso real ``Subir documento'' se presenta en la Tabla \ref{Tabla_Caso_Uso_Subir_Documento}.
 		
 		
 		
@@ -394,7 +395,7 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 				\textbf{Acción actor} &	\textbf{Respuesta sistema} \\ \hline
 				
 				1.- Este caso de uso comienza cuando un usuario de tipo administrador y/o editor  desea crear un hito curricular, para ello debe hacer click en \textbf{1}.
-				&	2.- El sistema despliega la pantalla \textbf{A}, el cual permite al usuario  introducir información referente al encabezado del hito curricular.\\ \hline
+				&	2.- El sistema despliega la pantalla \textbf{A}, el cual permite al usuario  introducir información referente al encabezado del hito curricular y subir documentos en formato pdf.\\ \hline
 			
 			
 				3.- El usuario ingresa toda la información relacionada con el encabezado del hito curricular en \textbf{2}.
@@ -404,7 +405,7 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 				& 6.- El sistema abre la ventana que se muestra en \textit{B}.\\ \hline
 				
 				7.- El usuario selecciona todos los archivos en formato pdf que desee subir, luego hace click en ``Abrir''.
-				& 8.- El sistema  por cada documento  agrega a la interfaz gráfica los siguientes elementos; un DropDownList, el cual corresponde al tipo de documento que es; un input, donde el usuario ingresa el número del documento y por último un Label que indica el nombre del documento.\\ \hline
+				& 8.- Por cada documento que el usuario desee subir, el sistema  agregará a la interfaz gráfica los siguientes elementos; un DropDownList, en el cual el usuario selecciona el  tipo de documento qué es; un input, donde el usuario ingresa el número del documento y por último un Label que indica el nombre del documento.\\ \hline
 				
 				9.- El usuario completa los dos campos nuevos que se agregaron a la interfaz gráfica, para luego hacer clik en ``Subir Archivos''.
 				& 10.- El sistema valida que los archivos estén en formato correcto.\\ \hline
@@ -423,8 +424,11 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 				
 			\end{longtable}
 			
-				En la Figura \ref{diagrama_secuencial_Subir_documento} se presenta el diagrama de secuencia para este mismo caso de uso, y así mostrar la interacción entre los distintos componentes del software que llevan a cabo esta tarea.
 			
+
+
+			
+			En la Figura \ref{diagrama_secuencial_Subir_documento} se presenta el diagrama de secuencia para este mismo caso de uso, y así mostrar la interacción entre los distintos componentes del software que llevan a cabo esta tarea, a continuación se explicará el diagrama presentado.
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=1\textwidth]{images/Capitulo_3/Subir_Documentos.png}
@@ -433,5 +437,89 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 			\end{figure}
 			\footnotetext{Elaboración propia.}
 	
+	
+	Antes de describir el flujo de control de este caso de uso, hay que mencionar que el módulo Gestor de Documentos trabaja el poblado de los DropDownList del mismo modo que el módulo Historial Curricular, por lo que este proceso no se explicará  con mayor detalle en este diagrama.\\
+	
+	El flujo de este caso de uso comienza con la carga de la vista SubirResolución.aspx, para ello, antes de mostrar la vista al usuario que realizó la petición, se debe cargar previamente los elementos de las listas  desplegables correspondientes a: planes de estudios y asignaturas. Una vez   \textbf{probada las   listas  desplegables}( ver Sección \ref{Proceso_poblado_DDL} ) el sistema despliega el formulario para que el usuario lo manipule.\\
+	
+	Luego de que el usuario hay completado los campos necesarios, y haya seleccionado todos los archivos relacionados con el hito curricular que se desea crear, el usuario envía el mensaje \textbf{GuardarResolución} al componente DocumentReady.js, quien es el encargado de  enviar los datos del formulario mediante una petición POST al servicio web \textbf{SubirResolucion.asmx}.\\
+	
+	El flujo termina cuando el servicio web envía la variable Sabe:true al DocumentReady.js, con el fin de avisarle a este agente de que los cambios se almacenaron correctamente y que puede redireccionar al usuario a la vista de administración de los hitos curriculares.
+
+	
+	
+
+	
+	
+	\mysubparagraph{ Caso de uso real del módulo gestor de documentos:``Ver documentos''} 
+	
+	El caso de uso ``Ver documentos'' corresponde al segundo caso de uso extendido del caso de uso  ``Gestor de Documentos''. en este caso de uso  todo usuario autentificado tiene acceso sy ocurre cuando un  algún usuario quiere ver el repositorio de documentos que se encuentra en el sistema. El caso de uso real se presenta en la Tabla  \ref{Tabla_Caso_Uso_Ver_Documento}.
+	
+	\begin{longtable}{p{7cm}| p{7cm}}
+		
+		\caption{Caso de uso  Ver documentos}
+		\label{Tabla_Caso_Uso_Ver_Documento}\\
+		
+		
+		\hline
+		\endfirsthead
+		\multicolumn{2}{c}%
+		{\tablename\ \thetable\ -- \textit{Continuación de la página anterior}} \\
+		\hline
+		
+		\hline
+		\endhead
+		\hline \multicolumn{2}{r}{\textit{Continúa en la página siguiente}} \\
+		\endfoot
+		\hline \hline
+		\endlastfoot
+		\rowcolor{LightBlue2}  \multicolumn{2}{c}{Caso de uso  Ver documentos} \\  \hline
+		
+		
+		\textbf{Actores} & Administrador, Editor y Suscriptor.\\ \hline
+		
+		\textbf{Propósito} & Visualizar el repositorio de documentos de los cambios curriculares de los planes de estudio.\\ \hline
+		
+		\textbf{Tipo} & Secundario y esencial\\ \hline
+		
+		\multicolumn{2}{p{15cm}}{\textbf{Resumen:} El administrador, editor o analista selecciona la sección correspondiente a  ver documentos, una vez seleccionado, el sistema  mostrará una tabla con todos los documentos de todas las facultades de la universidad. El usuario tendrá opciones de filtros para buscar ya sea por facultad, escuela, carrera y/o tipo de modificación.} \\  \hline \hline
+		
+		\rowcolor{LightBlue2}  \multicolumn{2}{c}{Interfaz: Formulario Ver Historial Curricular} \\  \hline \hline
+		
+		\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/VerDocumentos1.png}} \\ 
+		
+		\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/VerDocumentos2.png}} \\ 
+		
+		\multicolumn{2}{c}{\includegraphics[width=1\textwidth]{images/Capitulo_3/VerDocumentos3.png}} \\  \hline
+		
+		\rowcolor{LightBlue2}  \multicolumn{2}{c}{Curso normal de eventos} \\ 
+		
+		\textbf{Acción actor} &	\textbf{Respuesta sistema} \\ \hline
+		
+		1.- Este caso de uso comienza cuando un usuario autentificado desea ver el repositorio de documentos, para ello debe hacer click en \textbf{1}.
+		&	2.- El sistema despliega la pantalla \textbf{A}, el cual permite al usuario visualizar una tabla con el registro de los documentos.\\ \hline
+		
+		
+		3.- El usuario puede hacer algún tipo de filtro avanzado utilizando los DropDownList que se muestran en \textbf{2}.
+		& 4.- El complemento DataTable se  encarga de leer los filtros y reducir las filas de la tabla.\\ \hline
+		
+		5.- El usuario selecciona el hito que desea visualizar, para ello hace click en el id del registro( \textit{3}).
+		& 6.- El sistema despliega el hito  con sus documentos en  la ventana que se muestra en \textit{B}.\\ \hline
+
+	
+	\end{longtable}
+	
+	
+	
+			En la Figura \ref{diagrama_secuencial_ver_documento} se presenta el diagrama de secuencia para este mismo caso de uso, y así mostrar la interacción entre los distintos componentes del software que llevan a cabo esta tarea, a continuación se explicará el diagrama presentado.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=1\textwidth]{images/Capitulo_3/ver_Documentos.png}
+				\caption[Diagrama de secuencia para el caso de uso \textit{Ver Documentos}]{Diagrama de secuencia para el caso de uso \textit{Ver Documentos} \footnote{}}
+				\label{diagrama_secuencial_ver_documento}
+			\end{figure}
+			\footnotetext{Elaboración propia.}
+			
+			
 \subsection{Validación del software}
 
