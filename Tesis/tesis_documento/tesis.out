@@ -20,42 +20,44 @@
 \BOOKMARK [1][-]{section.2}{MARCO TE\323RICO}{}% 20
 \BOOKMARK [2][-]{subsection.2.1}{Arquitectura}{section.2}% 21
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Pseudo MVC }{subsection.2.1}% 22
-\BOOKMARK [2][-]{subsection.2.2}{Tecnolog\355as para el desarrollo de la plataforma}{section.2}% 23
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Front-end}{subsection.2.2}% 24
-\BOOKMARK [4][-]{paragraph.2.2.1.1}{JQuery}{subsubsection.2.2.1}% 25
-\BOOKMARK [4][-]{paragraph.2.2.1.2}{Alertify}{subsubsection.2.2.1}% 26
-\BOOKMARK [4][-]{paragraph.2.2.1.3}{Bootstrap}{subsubsection.2.2.1}% 27
-\BOOKMARK [4][-]{paragraph.2.2.1.4}{Template Metis}{subsubsection.2.2.1}% 28
-\BOOKMARK [4][-]{paragraph.2.2.1.5}{Parsley}{subsubsection.2.2.1}% 29
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Back-end}{subsection.2.2}% 30
-\BOOKMARK [4][-]{paragraph.2.2.2.1}{Microsoft SQL Server 2008}{subsubsection.2.2.2}% 31
-\BOOKMARK [4][-]{paragraph.2.2.2.2}{ASP.NET}{subsubsection.2.2.2}% 32
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Herramientas Anexas}{subsection.2.2}% 33
-\BOOKMARK [4][-]{paragraph.2.2.3.1}{GitHub}{subsubsection.2.2.3}% 34
-\BOOKMARK [4][-]{paragraph.2.2.3.2}{Firebug}{subsubsection.2.2.3}% 35
-\BOOKMARK [2][-]{subsection.2.3}{Tipos de documentos}{section.2}% 36
-\BOOKMARK [1][-]{section.3}{DESARROLLO DEL SISTEMA}{}% 37
-\BOOKMARK [2][-]{subsection.3.1}{Planificaci\363n}{section.3}% 38
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Metodolog\355a}{subsection.3.1}% 39
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Plan de trabajo}{subsection.3.1}% 40
-\BOOKMARK [2][-]{subsection.3.2}{An\341lisis}{section.3}% 41
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Requerimientos}{subsection.3.2}% 42
-\BOOKMARK [4][-]{paragraph.3.2.1.1}{Requisitos funcionales}{subsubsection.3.2.1}% 43
-\BOOKMARK [4][-]{paragraph.3.2.1.2}{Requisitos no funcionales}{subsubsection.3.2.1}% 44
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Modelo conceptual}{subsection.3.2}% 45
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Casos de uso}{subsection.3.2}% 46
-\BOOKMARK [4][-]{paragraph.3.2.3.1}{Descripci\363n de los actores del sistema}{subsubsection.3.2.3}% 47
-\BOOKMARK [2][-]{subsection.3.3}{Dise\361o e implementaci\363n}{section.3}% 48
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Diagramas de componentes}{subsection.3.3}% 49
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Modelo de datos}{subsection.3.3}% 50
-\BOOKMARK [3][-]{subsubsection.3.3.3}{M\363dulo historial curricular}{subsection.3.3}% 51
-\BOOKMARK [4][-]{paragraph.3.3.3.1}{Dise\361o}{subsubsection.3.3.3}% 52
-\BOOKMARK [3][-]{subsubsection.3.3.4}{M\363dulo Gestor de Documentos}{subsection.3.3}% 53
-\BOOKMARK [4][-]{paragraph.3.3.4.1}{Dise\361o}{subsubsection.3.3.4}% 54
-\BOOKMARK [2][-]{subsection.3.4}{Validaci\363n del software}{section.3}% 55
-\BOOKMARK [1][-]{section.4}{IMPLEMENTACI\323N DEL PROTOTIPO}{}% 56
-\BOOKMARK [1][-]{section.5}{CONCLUSIONES}{}% 57
-\BOOKMARK [1][-]{section.6}{REFERENCIAS}{}% 58
-\BOOKMARK [1][-]{section.7}{ANEXOS}{}% 59
-\BOOKMARK [2][-]{section*.26}{Anexo A: Formato inicial de los archivos JSON.}{section.7}% 60
-\BOOKMARK [2][-]{section*.28}{Anexo B: CascadingDropDown}{section.7}% 61
+\BOOKMARK [4][-]{paragraph.2.1.1.1}{Biblioteca de servicios WCF}{subsubsection.2.1.1}% 23
+\BOOKMARK [2][-]{subsection.2.2}{Tecnolog\355as para el desarrollo de la plataforma}{section.2}% 24
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Front-end}{subsection.2.2}% 25
+\BOOKMARK [4][-]{paragraph.2.2.1.1}{JQuery}{subsubsection.2.2.1}% 26
+\BOOKMARK [4][-]{paragraph.2.2.1.2}{Alertify}{subsubsection.2.2.1}% 27
+\BOOKMARK [4][-]{paragraph.2.2.1.3}{Bootstrap}{subsubsection.2.2.1}% 28
+\BOOKMARK [4][-]{paragraph.2.2.1.4}{Template Metis}{subsubsection.2.2.1}% 29
+\BOOKMARK [4][-]{paragraph.2.2.1.5}{Parsley}{subsubsection.2.2.1}% 30
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Back-end}{subsection.2.2}% 31
+\BOOKMARK [4][-]{paragraph.2.2.2.1}{Microsoft SQL Server 2008}{subsubsection.2.2.2}% 32
+\BOOKMARK [4][-]{paragraph.2.2.2.2}{ASP.NET}{subsubsection.2.2.2}% 33
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Herramientas Anexas}{subsection.2.2}% 34
+\BOOKMARK [4][-]{paragraph.2.2.3.1}{GitHub}{subsubsection.2.2.3}% 35
+\BOOKMARK [4][-]{paragraph.2.2.3.2}{Firebug}{subsubsection.2.2.3}% 36
+\BOOKMARK [2][-]{subsection.2.3}{Tipos de documentos}{section.2}% 37
+\BOOKMARK [1][-]{section.3}{DESARROLLO DEL SISTEMA}{}% 38
+\BOOKMARK [2][-]{subsection.3.1}{Planificaci\363n}{section.3}% 39
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Metodolog\355a}{subsection.3.1}% 40
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Plan de trabajo}{subsection.3.1}% 41
+\BOOKMARK [2][-]{subsection.3.2}{An\341lisis}{section.3}% 42
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Requerimientos}{subsection.3.2}% 43
+\BOOKMARK [4][-]{paragraph.3.2.1.1}{Requisitos funcionales}{subsubsection.3.2.1}% 44
+\BOOKMARK [4][-]{paragraph.3.2.1.2}{Requisitos no funcionales}{subsubsection.3.2.1}% 45
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Modelo conceptual}{subsection.3.2}% 46
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Casos de uso}{subsection.3.2}% 47
+\BOOKMARK [4][-]{paragraph.3.2.3.1}{Descripci\363n de los actores del sistema}{subsubsection.3.2.3}% 48
+\BOOKMARK [2][-]{subsection.3.3}{Dise\361o e implementaci\363n}{section.3}% 49
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Diagramas de componentes}{subsection.3.3}% 50
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Modelo de datos}{subsection.3.3}% 51
+\BOOKMARK [4][-]{paragraph.3.3.2.1}{Diccionario de datos}{subsubsection.3.3.2}% 52
+\BOOKMARK [3][-]{subsubsection.3.3.3}{M\363dulo historial curricular}{subsection.3.3}% 53
+\BOOKMARK [4][-]{paragraph.3.3.3.1}{Dise\361o}{subsubsection.3.3.3}% 54
+\BOOKMARK [3][-]{subsubsection.3.3.4}{M\363dulo Gestor de Documentos}{subsection.3.3}% 55
+\BOOKMARK [4][-]{paragraph.3.3.4.1}{Dise\361o}{subsubsection.3.3.4}% 56
+\BOOKMARK [1][-]{section.4}{IMPLEMENTACI\323N DEL PROTOTIPO}{}% 57
+\BOOKMARK [2][-]{subsection.4.1}{Configuraci\363n ambiente de desarrollo y problemas enfrentados}{section.4}% 58
+\BOOKMARK [1][-]{section.5}{CONCLUSIONES}{}% 59
+\BOOKMARK [1][-]{section.6}{REFERENCIAS}{}% 60
+\BOOKMARK [1][-]{section.7}{ANEXOS}{}% 61
+\BOOKMARK [2][-]{section*.29}{Anexo A: Formato inicial de los archivos JSON.}{section.7}% 62
+\BOOKMARK [2][-]{section*.31}{Anexo B: CascadingDropDown}{section.7}% 63

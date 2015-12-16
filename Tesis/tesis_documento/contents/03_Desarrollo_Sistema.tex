@@ -87,7 +87,8 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 		\textbf{Descripción} & El sistema debe permitir que los usuarios puedan modificar su contraseña. Además  debe permitir que el Administrador pueda modificar los datos que el usuario ingresó al momento de registrarse.\\ \hline \hline
 		
 		\rowcolor{LightBlue2} REQF-03 & Desplegar historial curricular\\  \hline
-		\textbf{Descripción} &El sistema debe permitir que  todos los usuarios  puedan ver el conjunto de hitos curriculares de una carrera en particular, mediante la facultad, la escuela y la carrera previamente ingresados por el usuario.\\  \hline \hline
+		\textbf{Descripción} &El sistema debe permitir que  todos los usuarios  puedan ver el conjunto de hitos curriculares de una carrera en particular, mediante la facultad, la escuela y la carrera previamente ingresados por el usuario.\\ \\ \\
+		\\  \hline \hline
 		
 		\rowcolor{LightBlue2} REQF-04 & Registro de usuarios\\ \hline
 		\textbf{Descripción} & El sistema deberá permitir el registro de nuevos usuarios, los cuales deben ser creados por el Administrador. Los datos a solicitar son: RUT, nombre, apellido paterno, apellido materno, correo electrónico y rol. La contraseña será los 6 primeros dígitos del  RUT ingresado.\\ \hline
@@ -212,6 +213,29 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 
 
 	\subsubsection{Diagramas de componentes}
+	
+	En la Figura \ref{diagrama_Componente_SW} y \ref{diagrama_Componente_HW} se muestran los diagramas de componentes software y hardware respectivamente. Ambos diagramas son congruentes con lo visto en el Capítulo \ref{PseudoMVC}, correspondiente al patrón de diseño de programación que utiliza ASP.NET.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=1\textwidth]{images/Capitulo_3/Componente_SW.png}
+				\caption[Diagrama de componentes Software del sistema]{Diagrama de componentes Software del sistema\footnote{}}
+				\label{diagrama_Componente_SW}
+			\end{figure}
+	\begin{itemize}
+		\item \textbf{Interfaz de usuario:} La interfaz de usuario  consta de los archivos aspx, los cuales no solo definen la estructura de las páginas en el sistema sino también  es el encargado de llamar todos los archivos CSS y JS necesarios para el correcto funcionamiento.
+		
+		
+		\item \textbf{Code Behind:} Como se mencionó en la Sección \ref{ASP.NET}, ASP.NET permite organizar  los eventos  en forma separada de la interfaz. Todo lo relacionado con Interfaz de usuario se maneja en el archivo .aspx y el control de los eventos en un archivo separado .aspx.vb.
+		
+		\item \textbf{biblioteca de clases WCF:} Windows Communication Foundation (WCF) es un motor de ejecución y un conjunto de APIs para la creación de sistemas que envíen mensajes entre servicios y clientes. Se utilizan la misma infraestructura y API tanto para crear aplicaciones que se comuniquen entre sí en el mismo sistema, como para aplicaciones en equipos separados en distintas compañías que se comuniquen a través de Internet. 
+	\end{itemize}		
+			
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{images/Capitulo_3/Componente_HW.png}
+			\caption[Diagrama de componentes Hardware del sistema]{Diagrama de componentes Hardware del sistema\footnote{}}
+			\label{diagrama_Componente_HW}
+		\end{figure}
 	\subsubsection{Modelo de datos}
 	
 	El contexto en el que se desenvuelve el software contempla 14 entidades, de las cuales 8 de ellas se exportaron desde la base de datos de la Universidad para poder trabajar en un ambiente de desarrollo, estas entidades son: Facultad, Escuelas, Carreras, PlanEstudio, PlanAsignatura, Plan\_asig\_requisito,institutos y asignaturas.
@@ -227,6 +251,13 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 		\label{Modelo_E_R}
 	\end{figure}
 	\footnotetext{Elaboración propia.}
+	
+	\myparagraph{Diccionario de datos}
+	
+	
+	
+	
+	
 	\subsubsection{Módulo historial curricular}
 	
 	El módulo historial curricular esta diseñado para que todos los usuarios definidos en la Sección \ref{usuarios_Sistema} tengan acceso a él, a causa de que su principal objetivo es ver la trazabilidad de una carrera en particular.
@@ -335,7 +366,7 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 	
 		\myparagraph{Diseño}
 		
-		A continuación se describe el diseño los casos de usos extendidos para el módulo de gestión de documentos de la plataforma, que corresponden a: subir documentos, ver documentos y eliminar documentos. Se presentará en detalle la composición de estos casos de uso y su participación en el sistema.
+		A continuación se describe el diseño de los dos  casos de usos extendidos del módulo de gestión de documentos de la plataforma, que corresponden a: subir documentos y  ver documentos. Se presentará en detalle la composición de estos casos de uso y su participación en el sistema.
 		
 		\mysubparagraph{ Caso de uso real del módulo gestor de documentos:``Subir documento''} 
 		
@@ -453,7 +484,7 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 	
 	\mysubparagraph{ Caso de uso real del módulo gestor de documentos:``Ver documentos''} 
 	
-	El caso de uso ``Ver documentos'' corresponde al segundo caso de uso extendido del caso de uso  ``Gestor de Documentos''. en este caso de uso  todo usuario autentificado tiene acceso sy ocurre cuando un  algún usuario quiere ver el repositorio de documentos que se encuentra en el sistema. El caso de uso real se presenta en la Tabla  \ref{Tabla_Caso_Uso_Ver_Documento}.
+	El caso de uso ``Ver documentos'' corresponde al segundo caso de uso extendido del caso de uso  ``Gestor de Documentos''. en este caso de uso  todo usuario autentificado tiene acceso y ocurre cuando un  algún usuario quiere ver el repositorio de documentos que se encuentra en el sistema. El caso de uso real se presenta en la Tabla  \ref{Tabla_Caso_Uso_Ver_Documento}.
 	
 	\begin{longtable}{p{7cm}| p{7cm}}
 		
@@ -520,6 +551,20 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 			\end{figure}
 			\footnotetext{Elaboración propia.}
 			
-			
-\subsection{Validación del software}
+
+	Cuando un usuario autentificado desea ver algún documento almacenado en la base de datos (resolución, comunicación interna, decretos, etc.), la vista VerResolucion.aspx es la que comienza con toda la secuencia que permite que este caso de uso se ejecute satisfactoriamente.
+	\\
+	
+	El primero lugar VerResolucion.aspx solicita los datos de todas las resoluciones a la biblioteca Controller.vb mediante la acción CallResolucion(), una vez que esta biblioteca reciba el mensaje, ejecuta el procedimiento almacenado TraeResoluciones().
+	\\
+	
+	Una vez que la consulta se haya efectuado exitosamente, la biblioteca Controller tiene que dar formato a estos  datos obtenidos de la base de datos, para que posteriormente se envíen al \textit{code behind} \footnote{Archivo que contiene el código ejecutable de las vistas en ASP.NET} de la vista VerResolucion.aspx.
+	\\
+	
+	Después de que la vista VerResolucion.aspx reciba los datos del Controller.vb, crea el Archivo JSON y se envía una variable JSON = true al agente DocumentReady.js. Al recibir la variable de éxito, DocumentReady.js se encarga de cargar los datos del archivo a la tabla y finalmente mostrar formulario final al usuario autentificado.
+
+
+
+
+
 

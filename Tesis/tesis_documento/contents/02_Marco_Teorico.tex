@@ -3,7 +3,7 @@ En esta sección se exploran los elementos que intervienen en el desarrollo del 
  
  En este capítulo se presenta la arquitectura y las tecnologías involucradas en el desarrollo de la plataforma. Debido a que en los requisitos del proyecto se contempla que la plataforma quede operativa en la  DTI\footnote{Dirección de tecnologías e información} de la Universidad, el proyecto se tuvo que adaptar a la arquitectura con la que trabaja este departamento.
 
-\subsubsection{Pseudo MVC }
+\subsubsection{Pseudo MVC } \label{PseudoMVC}
 
 El patrón de arquitectura MVC\footnote{Modelo-vista-Controlador} es una filosofía de diseño de aplicaciones que define la organización independiente del Modelo, la Vista  y el Controlador \cite{eje15}. De esta forma, el sistema se divide en tres capas donde el \textbf{modelo}  contiene una representación de los datos que maneja el sistema, es decir, el modelo de datos, la \textbf{ vista}  o interfaz de usuario contiene la información que se envía al cliente y los mecanismos de interacción con éste, y por ultimo, el \textbf{controlador} es el intermediario entre el modelo y la vista, gestionando el flujo de información entre ellos.
 \\
@@ -28,6 +28,49 @@ En la Figura \ref{FiguraMVC} se puede apreciar las 3 capas de esta arquitectua. 
 	\item \textbf{Aplicación Web:} Esta capa es la encargada de interactuar con el usuario, en ella se muestra toda la información ordenada y entendible por el usuario, sin embargo no solo posee código front-end (html, css, JavaScript, etc), si no también métodos que se comunican con los servicios WCF. Es por ello que la vista  no esta del todo separada de las reglas de negocio.
 \end{enumerate}
 
+Si bien estas tres capas son importantes, la capa  que se explicará a continuación es la primera, es decir, la biblioteca de servicios WCF, puesto que las bibliotecas de clase no son mas que un conjunto de clases que definen las entidades de la base de datos, y la aplicación web es  el  conjunto de archivos(aspx, js, css, jpg, etc) que permiten al usuario realizar acciones sobre el Sitio Web.
+\\
+
+\myparagraph{Biblioteca de servicios WCF}
+
+Hasta el momento, el servicio de mensajería entre aplicaciones se realizaba mediante los protocolos COM, DCOM o MSQM, que obligaba a los programadores a ceñirse no sólo a una forma de programación concreta, sino que también estaba atada a la plataforma y al lenguaje de programación. Los servicios web surgen con el propósito de cambiar esta filosofía, permitiendo hacer la comunicación independiente de lenguaje de programación y plataforma gracias a la creación de estándares de comunicación \cite{WCF15}.
+\\
+
+Hoy en día  existen diversos protocolos sobre los que los servicios web pueden operar, sin embargo  son dos los protocolos mas usados por los servicios web:
+\begin{itemize}
+	\item \textbf{SOAP:} \textit{Simple Object Access Protocol.} Utiliza XML como lenguaje de codificación, y su principal ventaja es que puede ser transmitido por cualquier capa de transporte (HTTP, TCP/IP, SMTP, etc).
+
+	
+	\item \textbf{REST:} \textit{Representational State Transfer.} A diferencia del protocolo  aterior, REST solo puede utilizar la capa de transporte HTTP, sin embargo su filosofía se  basa en la ausencia de estado y la “equivalencia” entre los cuatro verbos que pueden utilizarse en el protocolo HTTP y las cuatro operaciones CRUD (Create, Read, Update, Delete) básicas que pueden realizarse sobre una fuente de datos. 
+\end{itemize}
+
+
+
+ 
+Windows Communication Foundation (WCF)  es un marco de trabajo para la creación de aplicaciones orientadas a servicios, su principal objetivo  es el de unificar las comunicaciones, es decir las aplicaciones que utilicen WCF pueden  implementar varios protocolos de servicio web, por lo que permite que el código sea independiente del protocolo que se utilice.
+\\
+
+WCF logra su independencia mediante la separación entre operaciones y datos, en otras palabras, un servicio web WCF establece un contrato a través de una interfaz y una clase se encarga de implementarla. De este modo, un servicio WCF, se compondrá, a grandes rasgos, de:
+
+\begin{itemize}
+	
+	\item \textbf{Contrato de servicio (ServiceContract):} expone una operación que el servicio web es capaz de ejecutar. Corresponde a una interfaz.
+	
+	\item \textbf{ Contrato de datos (DataContract):} implementa un tipo de dato que el servicio web será capaz de manejar. Generalmente, será el tipo de dato que manejará el contrato de servicio.
+	
+	\item \textbf{Implementación del servicio:} implementará la interfaz correspondiente al contrato de servicio, haciendo uso del contrato de datos para intercambiar la información.
+	
+\end{itemize}
+ 
+ Los anteriores componentes de un servicio WCF se pueden apreciar gráficamente en la Figura \ref{FiguraWCF}.
+ 
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics[width=1\textwidth]{images/Capitulo_2/WFC.png}
+ 		\caption[Diagrama de componentes de un servicio WCF]{Diagrama de componentes de un servicio WCF \footnote{}}
+ 		\label{FiguraWCF}
+ 	\end{figure}
+ 	\footnotetext{Elaboración propia.}
 
 Podemos condensar lo dicho hasta aquí, que el framework que utiliza la Universidad Austral de Chile es una forma distinta de crear aplicaciones web, si bien, se identifican claramente  la división tradicional en 3 capas (presentación, lógica de negocio y datos) no es la misma que propone el patrón MVC. En particular, en esta arquitectura  la capa \textbf{Controller} no tendría una clara correspondencia en la estructura clásica, si no que es  una mezcla de la interfaz gráfica y la lógica del negocio.
 

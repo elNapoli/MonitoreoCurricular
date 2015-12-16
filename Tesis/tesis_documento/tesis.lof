@@ -3,14 +3,17 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Proceso de presentaci\IeC {\'o}n de nuevos proyectos}}{6}{figure.caption.10}
 \contentsline {figure}{\numberline {3}{\ignorespaces Procesos de cambios Curriculares Mayores y/o menores }}{9}{figure.caption.11}
 \contentsline {figure}{\numberline {4}{\ignorespaces Arquitectura pseudo MVC Universidad Austral de Chile}}{12}{figure.caption.12}
-\contentsline {figure}{\numberline {5}{\ignorespaces Carta Gantt que exhibe las etapas de desarrollo del sistema}}{20}{figure.caption.13}
-\contentsline {figure}{\numberline {6}{\ignorespaces Modelo conceptual del proyecto}}{24}{figure.caption.14}
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de caso de uso para el Administrador}}{25}{figure.caption.15}
-\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de caso de uso para el Editor}}{26}{figure.caption.16}
-\contentsline {figure}{\numberline {9}{\ignorespaces Diagrama de caso de uso para el Suscriptor}}{27}{figure.caption.17}
-\contentsline {figure}{\numberline {10}{\ignorespaces Modelo de datos Entidad-Relaci\IeC {\'o}n}}{29}{figure.caption.18}
-\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de secuencia para el caso de uso \textit {Ver Historial Curricular}}}{33}{figure.caption.20}
-\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de secuencia para el caso de uso \textit {Subir Documentos}}}{39}{figure.caption.22}
-\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de secuencia para el caso de uso \textit {Ver Documentos}}}{42}{figure.caption.24}
-\contentsline {figure}{\numberline {14}{\ignorespaces Formato inicial de los archivos JSON. }}{47}{figure.caption.27}
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama de componentes de un servicio WCF}}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {6}{\ignorespaces Carta Gantt que exhibe las etapas de desarrollo del sistema}}{22}{figure.caption.14}
+\contentsline {figure}{\numberline {7}{\ignorespaces Modelo conceptual del proyecto}}{26}{figure.caption.15}
+\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de caso de uso para el Administrador}}{27}{figure.caption.16}
+\contentsline {figure}{\numberline {9}{\ignorespaces Diagrama de caso de uso para el Editor}}{28}{figure.caption.17}
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de caso de uso para el Suscriptor}}{29}{figure.caption.18}
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de componentes Software del sistema}}{30}{figure.caption.19}
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de componentes Hardware del sistema}}{31}{figure.caption.20}
+\contentsline {figure}{\numberline {13}{\ignorespaces Modelo de datos Entidad-Relaci\IeC {\'o}n}}{32}{figure.caption.21}
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de secuencia para el caso de uso \textit {Ver Historial Curricular}}}{36}{figure.caption.23}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de secuencia para el caso de uso \textit {Subir Documentos}}}{42}{figure.caption.25}
+\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de secuencia para el caso de uso \textit {Ver Documentos}}}{45}{figure.caption.27}
+\contentsline {figure}{\numberline {17}{\ignorespaces Formato inicial de los archivos JSON. }}{51}{figure.caption.30}
 \contentsfinish 
