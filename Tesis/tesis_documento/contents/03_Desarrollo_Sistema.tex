@@ -221,13 +221,18 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 				\caption[Diagrama de componentes Software del sistema]{Diagrama de componentes Software del sistema\footnote{}}
 				\label{diagrama_Componente_SW}
 			\end{figure}
+			\footnotetext{Elaboración propia.}
 	\begin{itemize}
 		\item \textbf{Interfaz de usuario:} La interfaz de usuario  consta de los archivos aspx, los cuales no solo definen la estructura de las páginas en el sistema sino también  es el encargado de llamar todos los archivos CSS y JS necesarios para el correcto funcionamiento.
 		
 		
 		\item \textbf{Code Behind:} Como se mencionó en la Sección \ref{ASP.NET}, ASP.NET permite organizar  los eventos  en forma separada de la interfaz. Todo lo relacionado con Interfaz de usuario se maneja en el archivo .aspx y el control de los eventos en un archivo separado .aspx.vb.
 		
-		\item \textbf{biblioteca de clases WCF:} Windows Communication Foundation (WCF) es un motor de ejecución y un conjunto de APIs para la creación de sistemas que envíen mensajes entre servicios y clientes. Se utilizan la misma infraestructura y API tanto para crear aplicaciones que se comuniquen entre sí en el mismo sistema, como para aplicaciones en equipos separados en distintas compañías que se comuniquen a través de Internet. 
+		\item \textbf{biblioteca de clases WCF:} Este componente contiene los servicios web de la aplicación.
+		
+		\item \textbf{biblioteca de clases:} Conjunto de clases que definen las estructuras de las  entidades de la base de datos.
+		
+		\item \textbf{Acceso a la base de datos:} El acceso a la base de datos se realiza  mediante un DLL que fue facilitado por la DTI.
 	\end{itemize}		
 			
 		\begin{figure}[H]
@@ -236,6 +241,8 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 			\caption[Diagrama de componentes Hardware del sistema]{Diagrama de componentes Hardware del sistema\footnote{}}
 			\label{diagrama_Componente_HW}
 		\end{figure}
+		\footnotetext{Elaboración propia.}
+		
 	\subsubsection{Modelo de datos}
 	
 	El contexto en el que se desenvuelve el software contempla 14 entidades, de las cuales 8 de ellas se exportaron desde la base de datos de la Universidad para poder trabajar en un ambiente de desarrollo, estas entidades son: Facultad, Escuelas, Carreras, PlanEstudio, PlanAsignatura, Plan\_asig\_requisito,institutos y asignaturas.
@@ -254,7 +261,10 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 	
 	\myparagraph{Diccionario de datos}
 	
+	Es importante que todo proyecto el cual involucre un almacenamiento de datos, posea un diccionario de datos, puesto que el  objetivo de un diccionario de datos  es dar precisión sobre los datos	que se manejan en un sistema, evitando así  malas interpretaciones.
+	\\
 	
+	Como se mencionó anteriormente, no todas las entidades son de creación propia, por lo que el en Anexo C se puede ver el diccionario de datos correspondiente solo a las tablas creadas.
 	
 	
 	

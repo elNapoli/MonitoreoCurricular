@@ -16,4 +16,10 @@
 \contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de secuencia para el caso de uso \textit {Subir Documentos}}}{42}{figure.caption.25}
 \contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de secuencia para el caso de uso \textit {Ver Documentos}}}{45}{figure.caption.27}
 \contentsline {figure}{\numberline {17}{\ignorespaces Formato inicial de los archivos JSON. }}{51}{figure.caption.30}
+\contentsline {figure}{\numberline {18}{\ignorespaces Tabla ROLES }}{52}{figure.caption.33}
+\contentsline {figure}{\numberline {19}{\ignorespaces Tabla USUARIOS }}{52}{figure.caption.34}
+\contentsline {figure}{\numberline {20}{\ignorespaces Tabla REGISTRO }}{53}{figure.caption.35}
+\contentsline {figure}{\numberline {21}{\ignorespaces Tabla HISTORIAL CURRICULAR }}{53}{figure.caption.36}
+\contentsline {figure}{\numberline {22}{\ignorespaces Tabla RESOLUCIONES }}{53}{figure.caption.37}
+\contentsline {figure}{\numberline {23}{\ignorespaces Tabla ASIGNATURA HISTORIAL }}{53}{figure.caption.38}
 \contentsfinish 
