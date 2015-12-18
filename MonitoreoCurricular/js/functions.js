@@ -158,8 +158,8 @@ function ActualizarUsuario() {
     var ApMaterno = $('#ContentPlaceHolder1_txt_apMaterno').val();
     var Email = $('#ContentPlaceHolder1_txt_email').val();
     var Rol = $('#ContentPlaceHolder1_DDRol').val();
-    var Rut = $('#CookRut').val();
-    var Usuario = { "Rut": Rut, "Nombre": Nombre, "ApPaterno": ApPaterno, "ApMaterno": ApMaterno, "Email": Email, "Rol": Rol, "rutLogin": Rut };
+    var Rut_login = $('#CookRut').val();
+    var Usuario = { "Rut": Rut, "Nombre": Nombre, "ApPaterno": ApPaterno, "ApMaterno": ApMaterno, "Email": Email, "Rol": Rol, "rutLogin": Rut_login };
     $.ajax({
         type: "POST",
         url: "/SubirResolucion.asmx/ActualizarUsuario",

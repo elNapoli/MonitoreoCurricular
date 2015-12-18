@@ -2,4 +2,72 @@ Este capítulo describe las diferentes etapas por las que ha atravesado el desar
 este sistema hasta llegar a su última iteración. Se inicia con una breve reseña de los pasos
 previos al desarrollo, es decir, la instalación de herramientas y configuración de la máquina
 de trabajo donde se desarrolló la aplicación web. Posteriormente se muestran los tres incrementos del prototipo del sistema.
-\subsection{Configuración ambiente de desarrollo y problemas enfrentados}
+
+\subsection{Configuración del ambiente de desarrollo}
+
+Como se mencionó en la Sección \ref{SecReCNoF}, uno de los requisitos no funcionales es que el proyecto este programado con la estructura con la que trabaja la DTI, dado que el proyecto quedará funcionando en estas dependencias. Para llevar acabo este requisito, el alumno tesista tuvo aproximadamente cinco reuniones con Don Milton Muñoz, encargado del desarrollo y mantenimiento de sistemas y con la Sra. Paola Juarez Morales, encargada del Desarrollo de Sistemas. El propósito de estas reuniones se describen a continuación.
+\\
+
+En primero lugar fue necesario entender el contexto en el cual estaba inmerso el proyecto, por lo que fue necesario que Don Milton Muñoz facilitara todas las entidades de la base de datos de la Universidad que tenían relación directa con el sistema.
+\\
+
+Una vez entregado el modelo relacional, se procedió a instalar las herramientas necesarias para el desarrollo en el equipo de trabajo, las herramientas instaladas fueron:
+\begin{itemize}
+	\item Microsoft Visual Studio Professional 20013
+	\item Microsoft SQL Server 2008 R2
+\end{itemize}
+
+Durante la instalación de las herramientas mencionadas no hubo mayores problemas.
+\\
+
+Finalmente, en conjunto con la Sra. Paola, el alumno tesista creó el ``esqueleto'' de la plataforma web, el cual estaba separa por las 3 capas de negocio (aplicación web, biblioteca de clases y biblioteca de servicios WCF) y además se realizó la configuración de la conexión a la base de datos.
+
+
+
+\subsection{Consideraciones Técnicas}
+
+Esta sección describe los elementos necesarios para que el sistema funcione de manera óptima:
+
+\begin{itemize}
+	\item alertify v0.3.11
+	\item Metis - Bootstrap-Admin-Template v2.3.2
+	\item daterangepicker v1.3.22
+	\item jQuery  bpopup v0.11.0
+	\item DataTables v1.10.7
+	\item jQuery wizard plug-in v3.0.7
+	\item jQuery Input Limiter plugin v1.3.1
+	\item jQuery Rut v0.5
+	\item jQuery Validation Plugin v1.14.0
+	\item jQuery validVal v5.0.2
+	\item Parsleyjs v2.2.0-rc1
+	\item Visual Basic 2013
+	\item Sql Server 2008 R2\end{itemize}
+
+
+\subsection{Dificultades de la implementación} \label{Dificultades}
+
+
+
+Una de las principales dificultades que se presentó al momento de desarrollar la aplicación, fue el trabajar con una arquitectura orientada a servicios, si bien este paradigma esta siendo usado por la mayoría de las aplicaciones web distribuidas, el alumno  tesista no tenia experiencia en este tipo de programación, por lo que antes de programar todos los servicios web necesarios para el buen funcionamiento de la aplicación, el alumno tesista tuvo que leer sobre esta paradigma, y esto entorpeció bastante el comienzo del desarrollo.\\
+
+Otra dificultad detectada mientras se desarrollaba la aplicación, fue entender el paradigma de desarrollo de ASP.NET, en vista de que al usar \textit{code behind}, ASP.NET utiliza sus propios controles, y  al momento de compilar, estos controles se transforman en elementos HTML. Así, por ejemplo, el control \textit{DropDownList} de ASP.NET es equivalente a la etiqueta HTML \textit{select}. El trabajar con estos tipos de  controles hace que ciertas peticiones (GET, POST, PUT, etc.) se efectúen de forma diferente, y como se mencionó anteriormente, el alumno no poseía ni conocimientos ni experiencia en la la forma en la que trabaja ASP.NET.
+\\
+
+ASP.NET trabaja con la variable \textit{IsPostBack}, el cual nos entrega un valor que indica si la página se está cargando como respuesta a un valor devuelto por el cliente, o si es la primera vez que se obtiene acceso a ella. Esto ocasionó  problemas con alguno de los plugins que se incorporaron  al proyecto, como por ejemplo el sistema de notificaciones(alertify.js), el cual utiliza un una etiqueta \textit{div} como un  \textit{popUp} para mostrar un \textit{alert} modificado. Al principio se pensó que el sistema de notificaciones no funcionaba correctamente, ya que los valores de las alertas no se almacenaban, sin  embargo después de depurar las acciones sobre las alertas con Firebug, se verificó que el problema no era de plugin, si no que era de la variable \textit{isPostBack}.
+\\
+
+En cuanto a la base de datos, el único problema que hubo, fue el tratar de dar un correcto formato a la salida de los procedimientos almacenados. En principio el retorno de los procedimientos era  un \textit{1} si el procedimiento se ejecutaba correctamente, o un \textit{-1} si no se ejecutaba, sin embargo este tipo de codificación era bastante ambigua, ya que si salía un \textit{-1}, no se sabia que tipo de error había ocurrido en el sistema, a si que se procedió a trabajar en una codificación 
+ mucho más precisa.
+\\
+
+Por último, hay que mencionar que una de las tareas  que presentó complicaciones, fue la depuración de la aplicación, y esto ocurrió a causa de que las salidas de los procedimientos y servicios web no estaban estandarizados, y al momento de depurar la aplicación no se sabia con exactitud en que sección del código habia ocurrido la excepción.
+\\
+
+En resumen las mayores dificultades se presentaron en el desconocimiento de las tecnologías utilizadas.
+
+
+\subsection{Presentación de prototipos}
+
+El propósito de esta sección, es mostrar el crecimiento del sistema en las diferentes iteraciones. En cada incremento se describen los pasos que efectuaron para finalizar con la iteración exitosamente.
+
+

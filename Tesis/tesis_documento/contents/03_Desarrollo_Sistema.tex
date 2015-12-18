@@ -96,22 +96,22 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 		\rowcolor{LightBlue2} REQF-05 & Gestión de documentos\\  \hline
 		\textbf{Descripción} & El sistema debe permitir al Administrador y Editor crear nuevos registros curriculares, indicando el plan de estudio, la carrera y el tipo de hito: Modificación mayor, Modificación menor o Innovación Curricular, además  debe permitir subir uno o mas archivos en formato PDF por registros, los cuales el sistema los  tienen que clasificar en: Resolución, Comunicación Interna y Petición de requisitos.\\  \hline
 		
-		\rowcolor{LightBlue2} REQF-07 & Visor de PDF\\  \hline
+		\rowcolor{LightBlue2} REQF-06 & Visor de PDF\\  \hline
 		\textbf{Descripción} & El sistema debe permitir al usuario ver  cualquier documento que se encuentre almacenado en la base de datos.\\  \hline \hline
 		
 		
-		\rowcolor{LightBlue2} REQF-08 & Notificaciones\\  \hline
+		\rowcolor{LightBlue2} REQF-07 & Notificaciones\\  \hline
 		\textbf{Descripción} & El sistema desplegará distintos tipos de notificaciones al momento de realizar cualquier tipo de cambio (guardar, editar, eliminar). Los dos tipos de alertas que se consideraron en la plataforma web son : \textbf{Success} y \textbf{Error}. \\  \hline \hline
 		
-		\rowcolor{LightBlue2} REQF-09 & Almacenar bitácora de los usuarios\\  \hline
+		\rowcolor{LightBlue2} REQF-08 & Almacenar bitácora de los usuarios\\  \hline
 		\textbf{Descripción} & El sistema internamente debe almacenar todas las notificaciones de los eventos ocurridos en la plataforma a fin de tener un registro de  todas  las actividades  que realizan los usuarios en la plataforma. Un registro de la bitácora debe tener necesariamente esta compuesto por: Código de la alerta, mensaje de la alerta, fecha y el RUT de usuario quien ejecutó dicha alerta.\\  \hline
 		
-		\rowcolor{LightBlue2} REQF-10 & Visualización de bitácora\\  \hline
+		\rowcolor{LightBlue2} REQF-09 & Visualización de bitácora\\  \hline
 		\textbf{Descripción} & El sistema debe permitir al administrador visualizar todos los eventos ocurridos en el sistama.\\ 
 	
 	\end{longtable}
 
-	\myparagraph{Requisitos no funcionales}
+	\myparagraph{Requisitos no funcionales} \label{SecReCNoF}
 	Los requisitos no funcionales se presentan en la Tabla \ref{Tabla_requisitos_no_funcionales}.
 	\\
 
@@ -150,10 +150,14 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 			
 			\rowcolor{LightBlue2} REQNF-05 & Validación\\ \hline
 			\textbf{Descripción} & El sistema tiene que poseer una interfaz en la cual se validen los campos obligatorios y  manejo de datos que se ingresan.\\ 
+			
+			\rowcolor{LightBlue2} REQNF-06 & Acoplación\\ \hline
+			\textbf{Descripción} & El sistema tiene que estar programado  con la estructura que utiliza la DTI, esto es para facilitar el acoplamiento una vez finalizado el proyecto\\ 
 	\end{longtable}
 
 	\subsubsection{Modelo conceptual}
-	Para facilitar la compresión de la problemática que se desea solucionar mediante el producto software, en la Figura \ref{Figura_Modelo_conceptual}  se presenta un modelo conceptual, que muestra el dominio dentro del cual se encuentra inmerso el proyecto.
+	
+	Como apoyo al análisis de requisitos,  en la Figura \ref{Figura_Modelo_conceptual} se muestra a continuación un modelo conceptual tomando en cuenta todos los requisitos, de esta manera se tiene una visión global del dominio del problema a abordar, y de los distintos conceptos presentes en él y de cómo se relacionan.
 	\\
 		\begin{figure}[H]
 			\centering
@@ -207,7 +211,7 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 	
 	
 	
-\subsection{Diseño e implementación}
+\subsection{Diseño}
 
 	En esta sección se describe el diseño y la implementación para los módulos: \textit{Historial curricular} y \textit{Gestor de documentos} de la plataforma. En un principio se muestran algunos artefactos generales correspondientes al diagrama de componentes y al modelo de datos. Posteriormente para cada módulo se presentaran los casos de uso, además del diagrama de secuencia correspondiente.
 
@@ -572,7 +576,6 @@ En este capítulo no solo se detallan los  procesos de ingeniería de software; 
 	\\
 	
 	Después de que la vista VerResolucion.aspx reciba los datos del Controller.vb, crea el Archivo JSON y se envía una variable JSON = true al agente DocumentReady.js. Al recibir la variable de éxito, DocumentReady.js se encarga de cargar los datos del archivo a la tabla y finalmente mostrar formulario final al usuario autentificado.
-
 
 
 

@@ -46,7 +46,7 @@
 \BOOKMARK [3][-]{subsubsection.3.2.2}{Modelo conceptual}{subsection.3.2}% 46
 \BOOKMARK [3][-]{subsubsection.3.2.3}{Casos de uso}{subsection.3.2}% 47
 \BOOKMARK [4][-]{paragraph.3.2.3.1}{Descripci\363n de los actores del sistema}{subsubsection.3.2.3}% 48
-\BOOKMARK [2][-]{subsection.3.3}{Dise\361o e implementaci\363n}{section.3}% 49
+\BOOKMARK [2][-]{subsection.3.3}{Dise\361o}{section.3}% 49
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Diagramas de componentes}{subsection.3.3}% 50
 \BOOKMARK [3][-]{subsubsection.3.3.2}{Modelo de datos}{subsection.3.3}% 51
 \BOOKMARK [4][-]{paragraph.3.3.2.1}{Diccionario de datos}{subsubsection.3.3.2}% 52
@@ -54,11 +54,25 @@
 \BOOKMARK [4][-]{paragraph.3.3.3.1}{Dise\361o}{subsubsection.3.3.3}% 54
 \BOOKMARK [3][-]{subsubsection.3.3.4}{M\363dulo Gestor de Documentos}{subsection.3.3}% 55
 \BOOKMARK [4][-]{paragraph.3.3.4.1}{Dise\361o}{subsubsection.3.3.4}% 56
-\BOOKMARK [1][-]{section.4}{IMPLEMENTACI\323N DEL PROTOTIPO}{}% 57
-\BOOKMARK [2][-]{subsection.4.1}{Configuraci\363n ambiente de desarrollo y problemas enfrentados}{section.4}% 58
-\BOOKMARK [1][-]{section.5}{CONCLUSIONES}{}% 59
-\BOOKMARK [1][-]{section.6}{REFERENCIAS}{}% 60
-\BOOKMARK [1][-]{section.7}{ANEXOS}{}% 61
-\BOOKMARK [2][-]{section*.29}{Anexo A: Formato inicial de los archivos JSON.}{section.7}% 62
-\BOOKMARK [2][-]{section*.31}{Anexo B: CascadingDropDown}{section.7}% 63
-\BOOKMARK [2][-]{section*.32}{Anexo C: Diccionario de datos.}{section.7}% 64
+\BOOKMARK [1][-]{section.4}{IMPLEMENTACI\323N}{}% 57
+\BOOKMARK [2][-]{subsection.4.1}{Configuraci\363n del ambiente de desarrollo}{section.4}% 58
+\BOOKMARK [2][-]{subsection.4.2}{Consideraciones T\351cnicas}{section.4}% 59
+\BOOKMARK [2][-]{subsection.4.3}{Dificultades de la implementaci\363n}{section.4}% 60
+\BOOKMARK [2][-]{subsection.4.4}{Presentaci\363n de prototipos}{section.4}% 61
+\BOOKMARK [1][-]{section.5}{VALIDACI\323N DE LA PLATAFORMA}{}% 62
+\BOOKMARK [2][-]{subsection.5.1}{REQF-01: Autentificaci\363n de usuario}{section.5}% 63
+\BOOKMARK [2][-]{subsection.5.2}{REQF-02: Gesti\363n de perfil}{section.5}% 64
+\BOOKMARK [2][-]{subsection.5.3}{REQF-03: Desplegar historial curricular}{section.5}% 65
+\BOOKMARK [2][-]{subsection.5.4}{REQF-04: Registro de usuarios}{section.5}% 66
+\BOOKMARK [2][-]{subsection.5.5}{REQF-05:Gesti\363n de documentos}{section.5}% 67
+\BOOKMARK [2][-]{subsection.5.6}{REQF-06:Visor de PDF}{section.5}% 68
+\BOOKMARK [2][-]{subsection.5.7}{REQF-07:Notificaciones}{section.5}% 69
+\BOOKMARK [2][-]{subsection.5.8}{REQF-08:Almacenar bit\341cora de los usuarios}{section.5}% 70
+\BOOKMARK [2][-]{subsection.5.9}{REQF-09:Visualizaci\363n de bit\341cora}{section.5}% 71
+\BOOKMARK [1][-]{section.6}{CONCLUSIONES}{}% 72
+\BOOKMARK [2][-]{subsubsection.6.0.1}{Trabajo futuro}{section.6}% 73
+\BOOKMARK [1][-]{section.7}{REFERENCIAS}{}% 74
+\BOOKMARK [1][-]{section.8}{ANEXOS}{}% 75
+\BOOKMARK [2][-]{section*.40}{Anexo A: Formato inicial de los archivos JSON.}{section.8}% 76
+\BOOKMARK [2][-]{section*.42}{Anexo B: CascadingDropDown}{section.8}% 77
+\BOOKMARK [2][-]{section*.43}{Anexo C: Diccionario de datos.}{section.8}% 78
