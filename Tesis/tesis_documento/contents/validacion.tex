@@ -1,5 +1,5 @@
 Las pruebas que serán mostradas en este último capítulo, corresponden a una demostración funcional del sistema web.
-Se demostrará que los requisitos funcionales descritos en el Capítulo \ref{Desarrollo_Sistema} se cumplan.
+se efectuarán distintas pruebas con el objetivo de verificar  el correcto funcionamiento de todos los requisitos funcionales descritos en el Capítulo \ref{Desarrollo_Sistema}.
 \subsection{REQF-01: Autentificación de usuario}
 
 
@@ -103,7 +103,7 @@ Comprobar el correcto funcionamiento del mensaje de alerta que se muestra en la 
 	\label{REQF-02-eliminar}
 \end{figure}
 
-La acción eliminar usuario no presentó mayores problemas.
+La verificación de esta acción se realizó mediante eliminaciones de registro. Se comprobó que los botones de la alerta generada(``Cancel'' y ``Ok'') realizaran sus respectivas acciones, además, se verificó de que si el registro eliminado poseía algún documento, éste fuera eliminado del servidor.
 
 
 \subsection{REQF-03: Desplegar historial curricular}
@@ -112,7 +112,7 @@ Este requerimiento no necesitó mayores pruebas puesto que es un requerimiento d
 
 \subsection{REQF-04: Registro de usuarios}
 
-Uno de los datos que NO se pueden modificar una vez que se haya creado el usuario, es el R.U.N., por lo que es de vital importancia que este dato se ingrese correctamente al momento de ingresar el usuario, para ello se consideró validar la existencia del R.U.N. ingresado mediante el plugins jQuery.Rut.js. \\
+Uno de los datos que NO se pueden modificar una vez que se haya creado el usuario, es el R.U.N., por lo que es de vital importancia que este dato se ingrese correctamente al momento de registrar al usuario, para ello se consideró validar la existencia del R.U.N. ingresado mediante el plugins jQuery.Rut.js. \\
 
 En caso de que el R.U.N. ingresado no existiera el sistema muestra gráficamente un mensaje de que el R.U.N. no existe (Ver Figura \ref{REQF-02-rut}), impidiendo que el usuario se almacene en la base de datos.
 
@@ -146,12 +146,18 @@ Se realizaron distintas pruebas para comprobar el correcto funcionamiento de est
 \end{figure}
 \subsection{REQF-06:Visor de PDF}
 
-Se realizaron distintas pruebas para comprobar el correcto funcionamiento de este requisito. A continuación se describen las distintas pruebas realizadas:
+Este requerimiento no necesitó mayores pruebas puesto que es un requerimiento de visualización.
 
 \subsection{REQF-07:Notificaciones}
 
 
-El sistema de notificaciones esta presente en todo el sistema, por lo que este requerimiento  fue validado a medida que se fueron validando los demás  requisitos, en la Figura \ref{REQF-07} se muestra un ejemplo de una notificación exitosa.
+Este requisito se validó en conjunto con los demás requisitos, ya que el sistema de notificaciones esta presente en todo el sistema.
+\\
+
+Básicamente el usuario se cercioró de que el sistema de alertas este presente cuando un usuario autentificado realizara alguna operación sobre los datos del sistema.
+\\
+
+ En la Figura \ref{REQF-07} se muestra un ejemplo de una notificación exitosa.
  
 \begin{figure}[H]
 	\centering
@@ -160,54 +166,33 @@ El sistema de notificaciones esta presente en todo el sistema, por lo que este r
 	\label{REQF-07}
 \end{figure}
 
-
+A  pesar de que el sistema de notificaciones esta presente en toda la plataforma, éste requisito fue casi uno de los últimos en ser programados, a causa de esto, hubieron muchas acciones que NO tenían su alerta activa.
 
 \subsection{REQF-08:Almacenar bitácora de los usuarios}
 
 
-El objetivo de este requisito es tener un control y un historial de todas las notificaciones de los eventos ocurridos en la plataforma.
-Este requerimiento utiliza las salidas de los procedimientos y los servicios para posteriormente almacenarlos en una tabla de la base de datos.
+El objetivo de este requisito es facilitar la identificación  de la localización de los errores del sistema, por lo que es de vital importancia su correcto funcionamiento.\\
 
-
-Es de vital importancia que este requisito funcione en su totalidad, ya que es el encargado de registrar todos los eventos de todos los otros requisitos.
-
-
-depende mucho de las salidas de los procedimientos y de las salidas de los servicios
-
-
-En principio este requisito surgió en la última iteración del proyecto,  por lo que fue una de las validaciones más complicadas y de las que demandó más tiempo, ya que, y
-
-
-La validación de este requisito fue muy distinta   a las otras validaciones del sistema, ya que las validaciones anteriores se hicieron sobre la plataforma y los resultados se visualizaban sobre el sistema, por el contrario esta validación se tuvo que realizar depurando la aplicación web.\\
-
-Hay que mencionar que este requisito surgió en la iteración final del proyecto, por lo que la mayoría de los procedimientos y servicios web ya estaban programados y esto ocasionó que la depuración de la plataforma sea engorrosa.
+La validación de este requerimiento es muy distinta a todas las otras validaciones, ya que las validaciones anteriores dependían de los mensajes de alerta que el sistema entregaba, mientras que la validación de este requerimiento depende estrictamente de las salidas de los procedimientos almacenados de la base de datos y de las salidas de los servicios web del sistema, a causa de esto, el alumno tesista se enfocó en validar  los procedimientos y los servicios web. Las distintas pruebas realizadas se describirán a continuación.
 \\
 
-En primer lugar se hizo una validación de los procedimientos de la base de datos, con el objetivo de que todos los procedimientos tengan una salida estándar y así poder tener un formato de los eventos ocurridos en el sistema.
-\\
+En primer lugar, el alumno tuvo que validar que las salidas de todos los procedimientos sean estándar, puesto que las salidas se almacenan en la tabla REGISTRO, y esta tabla posee  campos obligatorios. El proceso de validación se realizó mediante la ejecución de los procedimientos almacenados y la lectura de las salidas de estos mismos en la consola de SQL Server. Los campos de las salidas de los procedimientos que producen cambios en el sistema son los siguientes:
 
-
-
-
-
-Este fue uno de los requerimientos que surgió en la última iteración, por lo que fue una de las validaciones más complicadas y de las que demandó más tiempo, razón por la cual los eventos no poseían un formato definitivo de cómo se almacenarían los datos.
-\\
-
-Se realizaron distintas pruebas para comprobar el correcto funcionamiento de este requisito. A continuación se describen las distintas pruebas realizadas:
 
 \begin{itemize}
-	\item validación salida de procedimientos:En un principio los procesos almacenados de la base de datos no poseían una salida estándar, por lo que el primer paso para lograr con éxito este requerimiento, fue reprogramar todos los procedimientos almacenados y validar de que todos tuvieran la misma salida.
-	
-	\item validación salida de los servicios web: al igual que en los procedimientos almacenados, los servicios web se tuvieron que estandarizar y verificar mediante la consola de Firefox el retorno de éstos servicios.
+	\item \textbf{ErrorNumber:} Identificador único del mensaje.
+	\item \textbf{ErrorMessage:} Descripción del mensaje.
+	\item \textbf{ErrorDate:} Fecha en la que ocurrió en evento.
 \end{itemize}
 
+Una vez  validados los procedimientos, se procedió  a validar los servicios web, para ello fue de gran ayuda el complemento Firebug, ya que el Alumno validó las salidas de los servicios, mediante textos enviados  a la consola de Firebug. En la Figura \ref{REQF-09}, se puede apreciar una salida de un mensaje de error de un servicio web.
 
-
-
-
-El proceso de validación de este requerimiento comenzó validando el mensaje de salida de los procedimientos almacenados de la base de datos, el cual no fue fácil ya que como en un principio este requerimiento no existía, los procedimientos no tenían una salida estándar,
-
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{images/Capitulo_5/REQF-09.png}
+	\caption[REQF-09: Almacenar bitácora de los usuarios, salida de un procedimiento. ]{REQF-07: Almacenar bitácora de los usuarios, salida de un procedimiento. }
+	\label{REQF-09}
+\end{figure}
 \subsection{REQF-09:Visualización de bitácora}
 
 Este requerimiento no necesitó mayores pruebas puesto que es un requerimiento de visualización.
