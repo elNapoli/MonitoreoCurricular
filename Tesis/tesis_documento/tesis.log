@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  1 MAR 2016 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  2 MAR 2016 12:05
 entering extended mode
 **./tesis.tex
 (tesis.tex
@@ -889,12 +889,6 @@ LaTeX Info: Redefining \% on input line 23.
 
 LaTeX Warning: Label `Figura2' multiply defined.
 
-
-LaTeX Warning: Label `JQu15' multiply defined.
-
-
-LaTeX Warning: Label `git15' multiply defined.
-
 )
 \openout1 = `tesis.aux'.
 
@@ -1421,6 +1415,12 @@ Package babel Info: Redefining spanish shorthand "?
 Underfull \hbox (badness 1552) in paragraph at lines 3--5
 \T1/txr/m/n/12 and graduates of undergraduate and postgraduate, with a stamp ch
 aracterized by
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 3--5
+\T1/txr/m/n/12 academic excellence, commitment to freedom and the socio cultura
+l environment,
  []
 
 
@@ -2442,6 +2442,9 @@ Package babel Info: Redefining spanish shorthand "?
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
+
+
+LaTeX Warning: Citation `mic15b' on page 17 undefined on input line 137.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 137--139
@@ -4806,84 +4809,73 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 328.
  (contents/Bibliografia.tex
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 18.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 9.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\t1txtt.fd"
 File: t1txtt.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
-\T1/txr/m/n/12 en [][]$\T1/txtt/m/n/12 https : / / danielggarcia . wordpress . 
-com / 2013 / 12 / 11 /$
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+$\T1/txtt/m/n/12 cl / organizacion / direccion-[]de-[]pregrado / admision-[]y-[
+]matricula /$
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 27--30
-[] \T1/txr/m/n/12 Mozilla,Firebug  Disponible en [][]$\T1/txtt/m/n/12 https : /
- / addons . mozilla . org / es /$
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
+[] \T1/txr/m/n/12 Departamento de Aseguramiento de
+ []
+
+
+Underfull \hbox (badness 7081) in paragraph at lines 41--45
+[] \T1/txr/m/n/12 EjemplosTIW.  Patrón de arquitectura Modelo Vista Controlador
+
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 48--52
-[]
+\T1/txr/m/n/12 Disponible en [][]$\T1/txtt/m/n/12 https : / / danielggarcia . w
+ordpress . com / 2013 / 12 / 11 /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--58
+Underfull \hbox (badness 10000) in paragraph at lines 86--90
 $\T1/txtt/m/n/12 / / msdn . microsoft . com / es-[]es / library / ms174173 % 28
 v = sql . 120 % 29 . aspx$[][]\T1/txr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 65--68
-[] \T1/txr/m/n/12 Parsleyjs  Disponible en [][]$\T1/txtt/m/n/12 http : / / pars
-leyjs . org / doc / about . html$[][]\T1/txr/m/n/12 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
-[] \T1/txr/m/n/12 Departamento de
+Underfull \hbox (badness 1694) in paragraph at lines 92--95
+[] \T1/txr/m/n/12 Microsoft SQL Server 2008 Express  Disponible en [][]$\T1/txt
+t/m/n/12 https : / / www .$
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 88.
-[60pdfTeX warning (ext4): destination with the same identifier (name{cite.JQu15
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.88 
-     pdfTeX warning (ext4): destination with the same identifier (name{cite.git
-15}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.88 
-     ]
-Underfull \hbox (badness 10000) in paragraph at lines 100--103
-$\T1/txtt/m/n/12 cl / organizacion / direccion-[]de-[]pregrado / admision-[]y-[
-]matricula /$
+(babel)             in language  on input line 96.
+[60]
+Underfull \hbox (badness 3323) in paragraph at lines 105--108
+[] \T1/txr/m/n/12 Parsleyjs.  Disponible en [][]$\T1/txtt/m/n/12 http : / / par
+sleyjs . org / doc / about . html$[][]\T1/txr/m/n/12 .
  []
 
 )
@@ -5126,15 +5118,18 @@ Package rerunfilecheck Info: File `tesis.out' has not changed.
 (rerunfilecheck)             Checksum: 4819E675DCC2434EE1A8FB830662563F;5987.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
- 13469 strings out of 493634
- 196425 string characters out of 3134831
- 423723 words of memory out of 3000000
- 16284 multiletter control sequences out of 15000+200000
+ 13472 strings out of 493634
+ 196456 string characters out of 3134831
+ 423853 words of memory out of 3000000
+ 16286 multiletter control sequences out of 15000+200000
  89065 words of font info for 132 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,13n,49p,876b,1146s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -5146,9 +5141,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/rtxsc.pfb><C:/Program Files
 /Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/napoli/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/napo
 li/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tesis.pdf (73 pages, 3297264 bytes).
+Output written on tesis.pdf (73 pages, 3290618 bytes).
 PDF statistics:
- 1094 PDF objects out of 1200 (max. 8388607)
- 240 named destinations out of 1000 (max. 500000)
+ 1095 PDF objects out of 1200 (max. 8388607)
+ 241 named destinations out of 1000 (max. 500000)
  860 words of extra memory for PDF output out of 10000 (max. 10000000)
 

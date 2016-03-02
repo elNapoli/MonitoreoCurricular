@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  1 MAR 2016 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  2 MAR 2016 12:04
 entering extended mode
 **./02_Marco_Teorico.tex
 (02_Marco_Teorico.tex
@@ -11001,11 +11001,11 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no [ in font nullfont!
-\citation{mic15}
+\citation{mic15b}
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.137 ...y almacenes de datos locales \cite{mic15}
+l.137 ... almacenes de datos locales \cite{mic15b}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11014,7 +11014,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `mic15' on page  undefined on input line 137.
+LaTeX Warning: Citation `mic15b' on page  undefined on input line 137.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -11589,11 +11589,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no " in font nullfont!
 Missing character: There is no [ in font nullfont!
-\citation{mic15}
+\citation{mic15c}
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.146 ...s obtener acceso SQL Server" \cite{mic15}
+l.146 ... obtener acceso SQL Server" \cite{mic15c}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -11602,7 +11602,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `mic15' on page  undefined on input line 146.
+LaTeX Warning: Citation `mic15c' on page  undefined on input line 146.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -13296,11 +13296,11 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no [ in font nullfont!
-\citation{git15}
+\citation{gitH15}
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.169 ...s específicas más adelante \cite{git15}
+l.169 ... específicas más adelante \cite{gitH15}
                                                   , dicho de otra manera, un...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13309,7 +13309,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `git15' on page  undefined on input line 169.
+LaTeX Warning: Citation `gitH15' on page  undefined on input line 169.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -15850,10 +15850,10 @@ Missing character: There is no . in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 35 strings out of 493634
- 392 string characters out of 3134831
+ 37 strings out of 493634
+ 409 string characters out of 3134831
  60604 words of memory out of 3000000
- 3516 multiletter control sequences out of 15000+200000
+ 3518 multiletter control sequences out of 15000+200000
  4294 words of font info for 16 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  24i,7n,21p,732b,143s stack positions out of 5000i,500n,10000p,200000b,50000s
