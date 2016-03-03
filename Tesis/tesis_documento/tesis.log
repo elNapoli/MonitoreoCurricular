@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  2 MAR 2016 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  2 MAR 2016 20:19
 entering extended mode
 **./tesis.tex
 (tesis.tex
@@ -2444,9 +2444,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
  []
 
 
-LaTeX Warning: Citation `mic15b' on page 17 undefined on input line 137.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
@@ -2758,7 +2755,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 32.
- <images/Capitulo_3/carta_gantt.png, id=693, 1430.34375pt x 746.79pt>
+ <images/Capitulo_3/carta_gantt.png, id=695, 1430.34375pt x 746.79pt>
 File: images/Capitulo_3/carta_gantt.png Graphic file (type png)
 
 <use images/Capitulo_3/carta_gantt.png>
@@ -2934,7 +2931,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 158.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 158.
-<images/Capitulo_3/Modelo_Conceptual.png, id=710, 429.10312pt x 214.55156pt>
+<images/Capitulo_3/Modelo_Conceptual.png, id=712, 429.10312pt x 214.55156pt>
 File: images/Capitulo_3/Modelo_Conceptual.png Graphic file (type png)
 
 <use images/Capitulo_3/Modelo_Conceptual.png>
@@ -2984,7 +2981,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 169.
 
-<images/Capitulo_3/caso_uso_Administrador.png, id=718, 430.7292pt x 427.71796pt
+<images/Capitulo_3/caso_uso_Administrador.png, id=720, 430.7292pt x 427.71796pt
 >
 File: images/Capitulo_3/caso_uso_Administrador.png Graphic file (type png)
  <use images/Capitulo_3/caso_uso_Administrador.png>
@@ -3016,7 +3013,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 180.
  [26 <./images/Capitulo_3/Modelo_Conceptual.png>]
-<images/Capitulo_3/caso_uso_Editor.png, id=724, 419.4069pt x 370.5042pt>
+<images/Capitulo_3/caso_uso_Editor.png, id=726, 419.4069pt x 370.5042pt>
 File: images/Capitulo_3/caso_uso_Editor.png Graphic file (type png)
 
 <use images/Capitulo_3/caso_uso_Editor.png>
@@ -3048,7 +3045,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 188.
  [27 <./images/Capitulo_3/caso_uso_Administrador.png>]
-<images/Capitulo_3/caso_uso_Suscriptor.png, id=729, 423.984pt x 314.01315pt>
+<images/Capitulo_3/caso_uso_Suscriptor.png, id=731, 423.984pt x 314.01315pt>
 File: images/Capitulo_3/caso_uso_Suscriptor.png Graphic file (type png)
 
 <use images/Capitulo_3/caso_uso_Suscriptor.png>
@@ -3152,7 +3149,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 219.
 
-<images/Capitulo_3/Componente_SW.png, id=742, 487.94295pt x 275.71005pt>
+<images/Capitulo_3/Componente_SW.png, id=744, 487.94295pt x 275.71005pt>
 File: images/Capitulo_3/Componente_SW.png Graphic file (type png)
 
 <use images/Capitulo_3/Componente_SW.png>
@@ -3184,7 +3181,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 236.
  [30 <./images/Capitulo_3/Componente_SW.png>]
-<images/Capitulo_3/Componente_HW.png, id=748, 566.95815pt x 259.08795pt>
+<images/Capitulo_3/Componente_HW.png, id=750, 566.95815pt x 259.08795pt>
 File: images/Capitulo_3/Componente_HW.png Graphic file (type png)
 
 <use images/Capitulo_3/Componente_HW.png>
@@ -3213,7 +3210,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
-<images/Capitulo_3/Modelo_E_R.png, id=750, 835.62187pt x 612.03656pt>
+<images/Capitulo_3/Modelo_E_R.png, id=752, 835.62187pt x 612.03656pt>
 File: images/Capitulo_3/Modelo_E_R.png Graphic file (type png)
 
 <use images/Capitulo_3/Modelo_E_R.png>
@@ -3341,7 +3338,7 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 301--303
  []
 
 
-<images/Capitulo_3/F_historialCurricular1.png, id=762, 1009.52156pt x 445.665pt
+<images/Capitulo_3/F_historialCurricular1.png, id=764, 1009.52156pt x 445.665pt
 >
 File: images/Capitulo_3/F_historialCurricular1.png Graphic file (type png)
  <use images/Capitulo_3/F_historialCurricular1.png>
@@ -3349,7 +3346,7 @@ Package pdftex.def Info: images/Capitulo_3/F_historialCurricular1.png used on i
 nput line 317.
 (pdftex.def)             Requested size: 429.63661pt x 189.66693pt.
 
-<images/Capitulo_3/F_historialCurricular2.png, id=763, 825.0825pt x 448.67625pt
+<images/Capitulo_3/F_historialCurricular2.png, id=765, 825.0825pt x 448.67625pt
 >
 File: images/Capitulo_3/F_historialCurricular2.png Graphic file (type png)
  <use images/Capitulo_3/F_historialCurricular2.png>
@@ -3357,7 +3354,7 @@ Package pdftex.def Info: images/Capitulo_3/F_historialCurricular2.png used on i
 nput line 319.
 (pdftex.def)             Requested size: 429.63661pt x 233.63477pt.
 
-<images/Capitulo_3/F_historialCurricular3.png, id=764, 831.85782pt x 491.58656p
+<images/Capitulo_3/F_historialCurricular3.png, id=766, 831.85782pt x 491.58656p
 t>
 File: images/Capitulo_3/F_historialCurricular3.png Graphic file (type png)
  <use images/Capitulo_3/F_historialCurricular3.png>
@@ -3365,7 +3362,7 @@ Package pdftex.def Info: images/Capitulo_3/F_historialCurricular3.png used on i
 nput line 321.
 (pdftex.def)             Requested size: 429.63661pt x 253.89375pt.
 
-<images/Capitulo_3/F_historialCurricular4.png, id=765, 748.29562pt x 472.01344p
+<images/Capitulo_3/F_historialCurricular4.png, id=767, 748.29562pt x 472.01344p
 t>
 File: images/Capitulo_3/F_historialCurricular4.png Graphic file (type png)
  <use images/Capitulo_3/F_historialCurricular4.png>
@@ -3438,7 +3435,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 345.
  [34 <./images/Capitulo_3/F_historialCurricular2.png> <./images/Capitulo_3/F_hi
 storialCurricular3.png>]
-<images/Capitulo_3/diagrama_secuencial_Historial_Curricular.png, id=780, 629.47
+<images/Capitulo_3/diagrama_secuencial_Historial_Curricular.png, id=782, 629.47
 17pt x 632.48296pt>
 File: images/Capitulo_3/diagrama_secuencial_Historial_Curricular.png Graphic fi
 le (type png)
@@ -3593,7 +3590,7 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 411--413
  [] [] 
  []
 
-<images/Capitulo_3/subir_documento1.png, id=796, 1011.02719pt x 469.00218pt>
+<images/Capitulo_3/subir_documento1.png, id=798, 1011.02719pt x 469.00218pt>
 File: images/Capitulo_3/subir_documento1.png Graphic file (type png)
 
 <use images/Capitulo_3/subir_documento1.png>
@@ -3601,7 +3598,7 @@ Package pdftex.def Info: images/Capitulo_3/subir_documento1.png used on input l
 ine 427.
 (pdftex.def)             Requested size: 429.63661pt x 199.30539pt.
 
-<images/Capitulo_3/subir_documento2.png, id=797, 1014.03844pt x 476.53032pt>
+<images/Capitulo_3/subir_documento2.png, id=799, 1014.03844pt x 476.53032pt>
 File: images/Capitulo_3/subir_documento2.png Graphic file (type png)
 
 <use images/Capitulo_3/subir_documento2.png>
@@ -3609,7 +3606,7 @@ Package pdftex.def Info: images/Capitulo_3/subir_documento2.png used on input l
 ine 429.
 (pdftex.def)             Requested size: 429.63661pt x 201.90102pt.
 
-<images/Capitulo_3/subir_documento3.png, id=798, 1011.02719pt x 478.03593pt>
+<images/Capitulo_3/subir_documento3.png, id=800, 1011.02719pt x 478.03593pt>
 File: images/Capitulo_3/subir_documento3.png Graphic file (type png)
 
 <use images/Capitulo_3/subir_documento3.png>
@@ -3617,7 +3614,7 @@ Package pdftex.def Info: images/Capitulo_3/subir_documento3.png used on input l
 ine 431.
 (pdftex.def)             Requested size: 429.63661pt x 203.14435pt.
 
-<images/Capitulo_3/subir_documento5.png, id=799, 1015.54407pt x 491.58656pt>
+<images/Capitulo_3/subir_documento5.png, id=801, 1015.54407pt x 491.58656pt>
 File: images/Capitulo_3/subir_documento5.png Graphic file (type png)
 
 <use images/Capitulo_3/subir_documento5.png>
@@ -3625,7 +3622,7 @@ Package pdftex.def Info: images/Capitulo_3/subir_documento5.png used on input l
 ine 433.
 (pdftex.def)             Requested size: 429.63661pt x 207.97264pt.
 
-<images/Capitulo_3/subir_documento6.png, id=800, 880.03781pt x 505.13719pt>
+<images/Capitulo_3/subir_documento6.png, id=802, 880.03781pt x 505.13719pt>
 File: images/Capitulo_3/subir_documento6.png Graphic file (type png)
 
 <use images/Capitulo_3/subir_documento6.png>
@@ -3778,7 +3775,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 470.
  [40 <./images/Capitulo_3/subir_documento6.png>]
-<images/Capitulo_3/Subir_Documentos.png, id=821, 3830.31pt x 2625.81pt>
+<images/Capitulo_3/Subir_Documentos.png, id=823, 3830.31pt x 2625.81pt>
 File: images/Capitulo_3/Subir_Documentos.png Graphic file (type png)
 
 <use images/Capitulo_3/Subir_Documentos.png>
@@ -3873,7 +3870,7 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 518--520
  [] [] 
  []
 
-<images/Capitulo_3/VerDocumentos1.png, id=833, 1022.31938pt x 438.13687pt>
+<images/Capitulo_3/VerDocumentos1.png, id=835, 1022.31938pt x 438.13687pt>
 File: images/Capitulo_3/VerDocumentos1.png Graphic file (type png)
 
 <use images/Capitulo_3/VerDocumentos1.png>
@@ -3881,7 +3878,7 @@ Package pdftex.def Info: images/Capitulo_3/VerDocumentos1.png used on input lin
 e 534.
 (pdftex.def)             Requested size: 429.63661pt x 184.12987pt.
 
-<images/Capitulo_3/VerDocumentos2.png, id=834, 1008.76875pt x 441.14813pt>
+<images/Capitulo_3/VerDocumentos2.png, id=836, 1008.76875pt x 441.14813pt>
 File: images/Capitulo_3/VerDocumentos2.png Graphic file (type png)
 
 <use images/Capitulo_3/VerDocumentos2.png>
@@ -3889,7 +3886,7 @@ Package pdftex.def Info: images/Capitulo_3/VerDocumentos2.png used on input lin
 e 536.
 (pdftex.def)             Requested size: 429.63661pt x 187.88599pt.
 
-<images/Capitulo_3/VerDocumentos3.png, id=835, 858.20625pt x 501.37312pt>
+<images/Capitulo_3/VerDocumentos3.png, id=837, 858.20625pt x 501.37312pt>
 File: images/Capitulo_3/VerDocumentos3.png Graphic file (type png)
 
 <use images/Capitulo_3/VerDocumentos3.png>
@@ -3962,7 +3959,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 555.
  [44 <./images/Capitulo_3/VerDocumentos2.png> <./images/Capitulo_3/VerDocumento
 s3.png>]
-<images/Capitulo_3/ver_Documentos.png, id=849, 697.28505pt x 320.8788pt>
+<images/Capitulo_3/ver_Documentos.png, id=851, 697.28505pt x 320.8788pt>
 File: images/Capitulo_3/ver_Documentos.png Graphic file (type png)
 
 <use images/Capitulo_3/ver_Documentos.png>
@@ -4237,7 +4234,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 3.
 
-<images/Capitulo_5/REQF-01.png, id=874, 251.43938pt x 323.70938pt>
+<images/Capitulo_5/REQF-01.png, id=876, 251.43938pt x 323.70938pt>
 File: images/Capitulo_5/REQF-01.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-01.png>
@@ -4274,7 +4271,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 24.
 [50 <./images/Capitulo_5/REQF-01.png>]
-<images/Capitulo_5/REQF-01-null.png, id=881, 269.50688pt x 144.54pt>
+<images/Capitulo_5/REQF-01-null.png, id=883, 269.50688pt x 144.54pt>
 File: images/Capitulo_5/REQF-01-null.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-01-null.png>
@@ -4294,7 +4291,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 33.
 
-<images/Capitulo_5/REQF-02.png, id=882, 762.59906pt x 247.67531pt>
+<images/Capitulo_5/REQF-02.png, id=884, 762.59906pt x 247.67531pt>
 File: images/Capitulo_5/REQF-02.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-02.png>
@@ -4329,7 +4326,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-<images/Capitulo_5/REQF-02-agregar1.png, id=892, 764.8575pt x 311.66437pt>
+<images/Capitulo_5/REQF-02-agregar1.png, id=894, 764.8575pt x 311.66437pt>
 File: images/Capitulo_5/REQF-02-agregar1.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-02-agregar1.png>
@@ -4337,7 +4334,7 @@ Package pdftex.def Info: images/Capitulo_5/REQF-02-agregar1.png used on input l
 ine 83.
 (pdftex.def)             Requested size: 429.63661pt x 175.06824pt.
 
-<images/Capitulo_5/REQF-02-post.png, id=894, 918.43124pt x 182.18062pt>
+<images/Capitulo_5/REQF-02-post.png, id=896, 918.43124pt x 182.18062pt>
 File: images/Capitulo_5/REQF-02-post.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-02-post.png>
@@ -4373,7 +4370,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-<images/Capitulo_5/REQF-02-Eliminar.png, id=903, 414.04688pt x 103.13531pt>
+<images/Capitulo_5/REQF-02-Eliminar.png, id=905, 414.04688pt x 103.13531pt>
 File: images/Capitulo_5/REQF-02-Eliminar.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-02-Eliminar.png>
@@ -4434,7 +4431,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 117.
 [53 <./images/Capitulo_5/REQF-02-post.png> <./images/Capitulo_5/REQF-02-Elimina
-r.png>] <images/Capitulo_5/REQF-02-rut.png, id=911, 445.665pt x 57.21375pt>
+r.png>] <images/Capitulo_5/REQF-02-rut.png, id=913, 445.665pt x 57.21375pt>
 File: images/Capitulo_5/REQF-02-rut.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-02-rut.png>
@@ -4454,7 +4451,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 129.
 
-<images/Capitulo_5/REQF-05.png, id=913, 207.77625pt x 111.41624pt>
+<images/Capitulo_5/REQF-05.png, id=915, 207.77625pt x 111.41624pt>
 File: images/Capitulo_5/REQF-05.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-05.png>
@@ -4519,7 +4516,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
-<images/Capitulo_5/REQF-07.png, id=920, 228.10219pt x 56.46094pt>
+<images/Capitulo_5/REQF-07.png, id=922, 228.10219pt x 56.46094pt>
 File: images/Capitulo_5/REQF-07.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-07.png>
@@ -4572,7 +4569,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 178.
 [55 <./images/Capitulo_5/REQF-05.png> <./images/Capitulo_5/REQF-07.png>]
-<images/Capitulo_5/REQF-09.png, id=926, 1014.79124pt x 92.59593pt>
+<images/Capitulo_5/REQF-09.png, id=928, 1014.79124pt x 92.59593pt>
 File: images/Capitulo_5/REQF-09.png Graphic file (type png)
 
 <use images/Capitulo_5/REQF-09.png>
@@ -4930,7 +4927,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
 
-<images/Anexos/Formato_JSON.png, id=988, 717.43031pt x 314.67563pt>
+<images/Anexos/Formato_JSON.png, id=989, 717.43031pt x 314.67563pt>
 File: images/Anexos/Formato_JSON.png Graphic file (type png)
 
 <use images/Anexos/Formato_JSON.png>
@@ -5007,14 +5004,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 58.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 58.
-<images/Anexos/TABLA_ROLES.png, id=993, 679.03688pt x 74.52844pt>
+<images/Anexos/TABLA_ROLES.png, id=994, 679.03688pt x 74.52844pt>
 File: images/Anexos/TABLA_ROLES.png Graphic file (type png)
 
 <use images/Anexos/TABLA_ROLES.png>
 Package pdftex.def Info: images/Anexos/TABLA_ROLES.png used on input line 62.
 (pdftex.def)             Requested size: 429.63661pt x 47.15443pt.
 
-<images/Anexos/TABLA_USUARIOS.png, id=994, 679.03688pt x 170.88844pt>
+<images/Anexos/TABLA_USUARIOS.png, id=995, 679.03688pt x 170.88844pt>
 File: images/Anexos/TABLA_USUARIOS.png Graphic file (type png)
 
 <use images/Anexos/TABLA_USUARIOS.png>
@@ -5022,7 +5019,7 @@ Package pdftex.def Info: images/Anexos/TABLA_USUARIOS.png used on input line 69
 .
 (pdftex.def)             Requested size: 429.63661pt x 108.12181pt.
 
-<images/Anexos/TABLA_REGISTRO.png, id=995, 679.03688pt x 143.03438pt>
+<images/Anexos/TABLA_REGISTRO.png, id=996, 679.03688pt x 143.03438pt>
 File: images/Anexos/TABLA_REGISTRO.png Graphic file (type png)
 
 <use images/Anexos/TABLA_REGISTRO.png>
@@ -5054,7 +5051,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 80.
  [63 <./images/Anexos/TABLA_ROLES.png> <./images/Anexos/TABLA_USUARIOS.png>]
-<images/Anexos/TABLA_HISTORIAL_CURRICULAR.png, id=1007, 679.03688pt x 157.33781
+<images/Anexos/TABLA_HISTORIAL_CURRICULAR.png, id=1008, 679.03688pt x 157.33781
 pt>
 File: images/Anexos/TABLA_HISTORIAL_CURRICULAR.png Graphic file (type png)
  <use images/Anexos/TABLA_HISTORIAL_CURRICULAR.png>
@@ -5062,7 +5059,7 @@ Package pdftex.def Info: images/Anexos/TABLA_HISTORIAL_CURRICULAR.png used on i
 nput line 83.
 (pdftex.def)             Requested size: 429.63661pt x 99.54828pt.
 
-<images/Anexos/TABLA_RESOLUCIONES.png, id=1008, 680.5425pt x 100.12407pt>
+<images/Anexos/TABLA_RESOLUCIONES.png, id=1009, 680.5425pt x 100.12407pt>
 File: images/Anexos/TABLA_RESOLUCIONES.png Graphic file (type png)
 
 <use images/Anexos/TABLA_RESOLUCIONES.png>
@@ -5070,7 +5067,7 @@ Package pdftex.def Info: images/Anexos/TABLA_RESOLUCIONES.png used on input lin
 e 90.
 (pdftex.def)             Requested size: 429.63661pt x 63.20987pt.
 
-<images/Anexos/TABLA_ASIGNATURA_HISTORIAL.png, id=1009, 680.5425pt x 75.28125pt
+<images/Anexos/TABLA_ASIGNATURA_HISTORIAL.png, id=1010, 680.5425pt x 75.28125pt
 >
 File: images/Anexos/TABLA_ASIGNATURA_HISTORIAL.png Graphic file (type png)
  <use images/Anexos/TABLA_ASIGNATURA_HISTORIAL.png>
@@ -5118,18 +5115,15 @@ Package rerunfilecheck Info: File `tesis.out' has not changed.
 (rerunfilecheck)             Checksum: 4819E675DCC2434EE1A8FB830662563F;5987.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
- 13472 strings out of 493634
- 196456 string characters out of 3134831
- 423853 words of memory out of 3000000
- 16286 multiletter control sequences out of 15000+200000
+ 13471 strings out of 493634
+ 196448 string characters out of 3134831
+ 423817 words of memory out of 3000000
+ 16285 multiletter control sequences out of 15000+200000
  89065 words of font info for 132 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,13n,49p,876b,1146s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -5141,9 +5135,9 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/rtxsc.pfb><C:/Program Files
 /Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/napoli/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/napo
 li/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tesis.pdf (73 pages, 3290618 bytes).
+Output written on tesis.pdf (73 pages, 3290433 bytes).
 PDF statistics:
- 1095 PDF objects out of 1200 (max. 8388607)
+ 1096 PDF objects out of 1200 (max. 8388607)
  241 named destinations out of 1000 (max. 500000)
  860 words of extra memory for PDF output out of 10000 (max. 10000000)
 
