@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  3 MAR 2016 10:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  3 MAR 2016 12:16
 entering extended mode
 **./ppt_defensa.tex
 (ppt_defensa.tex
@@ -1244,7 +1244,7 @@ LaTeX Info: Redefining \includegraphics on input line 101.
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
 
-(ppt_defensa.nav) <img/logo_uach.png, id=80, 102.3825pt x 121.95563pt>
+(ppt_defensa.nav) <img/logo_uach.png, id=76, 102.3825pt x 121.95563pt>
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
@@ -1265,189 +1265,271 @@ Package pdftex.def Info: img/logo_uach.png used on input line 105.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
-Overfull \vbox (6.44514pt too high) detected at line 110
- []
-
 File: img/logo_uach.png Graphic file (type png)
+
 <use img/logo_uach.png>
 Package pdftex.def Info: img/logo_uach.png used on input line 110.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [2
 
+] (ppt_defensa.toc
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+)
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 110.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [3
+
 ]
-<img/modelo_centrado_ensenianza.png, id=215, 882.29625pt x 352.31625pt>
+(ppt_defensa.toc
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+)
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 110.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [4
+
+] (ppt_defensa.toc
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+)
+File: img/logo_uach.png Graphic file (type png)
+
+<use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 110.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [5
+
+] (ppt_defensa.toc
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+)
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 110.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [6
+
+]
+<img/modelo_centrado_ensenianza.png, id=444, 882.29625pt x 352.31625pt>
 File: img/modelo_centrado_ensenianza.png Graphic file (type png)
 
 <use img/modelo_centrado_ensenianza.png>
 Package pdftex.def Info: img/modelo_centrado_ensenianza.png used on input line 
-126.
+127.
 (pdftex.def)             Requested size: 299.26323pt x 119.50148pt.
 
-Overfull \hbox (8.5206pt too wide) in paragraph at lines 126--126
+Overfull \hbox (8.5206pt too wide) in paragraph at lines 127--127
  [] 
  []
 
 File: img/logo_uach.png Graphic file (type png)
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 126.
+Package pdftex.def Info: img/logo_uach.png used on input line 127.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [3
+ [7
 
  <./img/modelo_centrado_ensenianza.png>]
-<img/modelo_centrado_alumno.png, id=262, 566.115pt x 358.33875pt>
+<img/modelo_centrado_alumno.png, id=491, 566.115pt x 358.33875pt>
 File: img/modelo_centrado_alumno.png Graphic file (type png)
 
 <use img/modelo_centrado_alumno.png>
-Package pdftex.def Info: img/modelo_centrado_alumno.png used on input line 136.
+Package pdftex.def Info: img/modelo_centrado_alumno.png used on input line 138.
 
 (pdftex.def)             Requested size: 269.70213pt x 170.71652pt.
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 136.
+Package pdftex.def Info: img/logo_uach.png used on input line 138.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [4
+ [8
 
  <./img/modelo_centrado_alumno.png>]
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 157.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [5
-
-]
-<img/Procesos_cambios_curriculares.png, id=355, 930.47626pt x 664.73344pt>
-File: img/Procesos_cambios_curriculares.png Graphic file (type png)
-
-<use img/Procesos_cambios_curriculares.png>
-Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
-ne 174.
-(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
-File: img/logo_uach.png Graphic file (type png)
- <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 174.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [6
-
- <./img/Procesos_cambios_curriculares.png>]
-File: img/Procesos_cambios_curriculares.png Graphic file (type png)
- <use img/Procesos_cambios_curriculares.png>
-Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
-ne 174.
-(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
-File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 174.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [7
-
-]
-File: img/Procesos_cambios_curriculares.png Graphic file (type png)
- <use img/Procesos_cambios_curriculares.png>
-Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
-ne 174.
-(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
-File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 174.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [8
-
-]
-File: img/Procesos_cambios_curriculares.png Graphic file (type png)
- <use img/Procesos_cambios_curriculares.png>
-Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
-ne 174.
-(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
-File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 174.
+Package pdftex.def Info: img/logo_uach.png used on input line 159.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [9
 
 ]
-<img/Procesos_Registro_academico.png, id=539, 977.15062pt x 577.40718pt>
-File: img/Procesos_Registro_academico.png Graphic file (type png)
+<img/Procesos_cambios_curriculares.png, id=582, 930.47626pt x 664.73344pt>
+File: img/Procesos_cambios_curriculares.png Graphic file (type png)
 
-<use img/Procesos_Registro_academico.png>
-Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
- 187.
-(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
+<use img/Procesos_cambios_curriculares.png>
+Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
+ne 177.
+(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
+
+Overfull \vbox (11.3074pt too high) detected at line 177
+ []
+
 File: img/logo_uach.png Graphic file (type png)
- <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 187.
+<use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 177.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [10
 
- <./img/Procesos_Registro_academico.png>]
-File: img/Procesos_Registro_academico.png Graphic file (type png)
- <use img/Procesos_Registro_academico.png>
-Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
- 187.
-(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
-File: img/logo_uach.png Graphic file (type png)
+ <./img/Procesos_cambios_curriculares.png>]
+File: img/Procesos_cambios_curriculares.png Graphic file (type png)
 
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 187.
+<use img/Procesos_cambios_curriculares.png>
+Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
+ne 177.
+(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 177.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [11
 
 ]
-File: img/Procesos_Registro_academico.png Graphic file (type png)
- <use img/Procesos_Registro_academico.png>
-Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
- 187.
-(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
-File: img/logo_uach.png Graphic file (type png)
+File: img/Procesos_cambios_curriculares.png Graphic file (type png)
 
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 187.
+<use img/Procesos_cambios_curriculares.png>
+Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
+ne 177.
+(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 177.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [12
 
 ]
-File: img/Procesos_Registro_academico.png Graphic file (type png)
- <use img/Procesos_Registro_academico.png>
-Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
- 187.
-(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
-File: img/logo_uach.png Graphic file (type png)
+File: img/Procesos_cambios_curriculares.png Graphic file (type png)
 
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 187.
+<use img/Procesos_cambios_curriculares.png>
+Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
+ne 177.
+(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 177.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [13
 
 ]
+<img/Procesos_Registro_academico.png, id=762, 977.15062pt x 577.40718pt>
+File: img/Procesos_Registro_academico.png Graphic file (type png)
+
+<use img/Procesos_Registro_academico.png>
+Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
+ 191.
+(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
+
+Overfull \vbox (2.85185pt too high) detected at line 191
+ []
+
 File: img/logo_uach.png Graphic file (type png)
- <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 202.
+<use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 191.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [14
 
-]
-File: img/logo_uach.png Graphic file (type png)
+ <./img/Procesos_Registro_academico.png>]
+File: img/Procesos_Registro_academico.png Graphic file (type png)
 
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 202.
+<use img/Procesos_Registro_academico.png>
+Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
+ 191.
+(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 191.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [15
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 229.
+File: img/Procesos_Registro_academico.png Graphic file (type png)
+
+<use img/Procesos_Registro_academico.png>
+Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
+ 191.
+(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 191.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [16
+
+]
+File: img/Procesos_Registro_academico.png Graphic file (type png)
+
+<use img/Procesos_Registro_academico.png>
+Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
+ 191.
+(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 191.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [17
+
+]
+<img/intento_numero_1000.png, id=938, 861.2175pt x 852.18375pt>
+File: img/intento_numero_1000.png Graphic file (type png)
+
+<use img/intento_numero_1000.png>
+Package pdftex.def Info: img/intento_numero_1000.png used on input line 203.
+(pdftex.def)             Requested size: 172.5164pt x 170.71652pt.
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 203.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [18
+
+ <./img/intento_numero_1000.png>]
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 218.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [19
+
+]
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 218.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [20
+
+]
+<img/pseudoMVC.png, id=1076, 654.94687pt x 336.50719pt>
+File: img/pseudoMVC.png Graphic file (type png)
+
+<use img/pseudoMVC.png>
+Package pdftex.def Info: img/pseudoMVC.png used on input line 238.
+(pdftex.def)             Requested size: 332.26959pt x 170.71652pt.
+
+Overfull \hbox (41.52696pt too wide) in paragraph at lines 238--238
+ [] 
+ []
+
+
+Overfull \vbox (5.45186pt too high) detected at line 238
+ []
+
+File: img/logo_uach.png Graphic file (type png)
+<use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 238.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [21
+
+ <./img/pseudoMVC.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 256.
 
 ("C:\Users\napoli\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 229.
+LaTeX Font Info:    Try loading font information for U+msb on input line 256.
  ("C:\Users\napoli\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 229.
+line 256.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd
 "
@@ -1456,59 +1538,14 @@ thkerncmss.
 )
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 229.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [16
-
-]
-File: img/logo_uach.png Graphic file (type png)
- <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 246.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [17
-
-]
-File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 263.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [18
-
-]
-File: img/logo_uach.png Graphic file (type png)
- <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 287.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [19
-
-]
-File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 304.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [20
-
-]
-File: img/logo_uach.png Graphic file (type png)
- <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 322.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [21
-
-]
-File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 339.
+Package pdftex.def Info: img/logo_uach.png used on input line 256.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [22
 
 ]
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 358.
+Package pdftex.def Info: img/logo_uach.png used on input line 275.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [23
 
@@ -1516,14 +1553,14 @@ Package pdftex.def Info: img/logo_uach.png used on input line 358.
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 376.
+Package pdftex.def Info: img/logo_uach.png used on input line 293.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [24
 
 ]
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 394.
+Package pdftex.def Info: img/logo_uach.png used on input line 310.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [25
 
@@ -1531,14 +1568,14 @@ Package pdftex.def Info: img/logo_uach.png used on input line 394.
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 412.
+Package pdftex.def Info: img/logo_uach.png used on input line 334.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [26
 
 ]
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 424.
+Package pdftex.def Info: img/logo_uach.png used on input line 351.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [27
 
@@ -1546,16 +1583,69 @@ Package pdftex.def Info: img/logo_uach.png used on input line 424.
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 447.
+Package pdftex.def Info: img/logo_uach.png used on input line 369.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [28
 
 ]
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 457.
+Package pdftex.def Info: img/logo_uach.png used on input line 386.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [29
+
+]
+File: img/logo_uach.png Graphic file (type png)
+
+<use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 405.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [30
+
+]
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 423.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [31
+
+]
+File: img/logo_uach.png Graphic file (type png)
+
+<use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 441.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [32
+
+]
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 459.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [33
+
+]
+File: img/logo_uach.png Graphic file (type png)
+
+<use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 471.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [34
+
+]
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 494.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [35
+
+]
+File: img/logo_uach.png Graphic file (type png)
+
+<use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 504.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [36
 
 ]
 \tf@nav=\write6
@@ -1567,43 +1657,82 @@ Package pdftex.def Info: img/logo_uach.png used on input line 457.
 \tf@snm=\write8
 \openout8 = `ppt_defensa.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 508.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 508.
  (ppt_defensa.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
-Package rerunfilecheck Info: File `ppt_defensa.out' has not changed.
-(rerunfilecheck)             Checksum: 06B6011584F65A32F94402DD80898948;1080.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 508.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 508.
 
+
+Package rerunfilecheck Warning: File `ppt_defensa.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `ppt_defensa.out':
+(rerunfilecheck)             Before: 8B29C25D587DEFEA64D4DB30AB3458AC;1016
+(rerunfilecheck)             After:  006B38E46D4CF6DE37FF67E19C992127;1016.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 508.
  ) 
 Here is how much of TeX's memory you used:
- 18044 strings out of 493634
- 346111 string characters out of 3134831
- 420277 words of memory out of 3000000
- 20912 multiletter control sequences out of 15000+200000
+ 18094 strings out of 493634
+ 346990 string characters out of 3134831
+ 421277 words of memory out of 3000000
+ 20928 multiletter control sequences out of 15000+200000
  11952 words of font info for 43 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 56i,20n,62p,394b,835s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmss10.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmss12.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/napoli/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/napoli/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users
-/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx
-10.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmssi8.pfb>
-Output written on ppt_defensa.pdf (29 pages, 502721 bytes).
+ 56i,20n,63p,394b,877s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Outline0.4.1.34} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.8.32} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.7.31} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.6.30} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.5.29} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.4.28} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.3.27} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.2.26} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.1.25} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.2.2.24} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.2.1.23} has been referenced but does not e
+xist, replaced by a fixed one
+
+<C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmss10.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/napoli/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/napoli/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/n
+apoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10
+.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmssi8.pfb>
+Output written on ppt_defensa.pdf (36 pages, 740697 bytes).
 PDF statistics:
- 1450 PDF objects out of 1728 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1797 PDF objects out of 2073 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
