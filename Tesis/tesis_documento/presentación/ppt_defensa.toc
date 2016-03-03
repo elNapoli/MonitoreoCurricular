@@ -1,18 +1,18 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{7}{0}{1}
-\beamer@sectionintoc {2}{Marco te\IeC {\'o}rico}{21}{0}{2}
-\beamer@subsectionintoc {2}{1}{Peudo MVC}{24}{0}{2}
-\beamer@subsectionintoc {2}{2}{Tecnolog\IeC {\'\i }as}{25}{0}{2}
-\beamer@sectionintoc {3}{Desarrollo}{26}{0}{3}
-\beamer@subsectionintoc {3}{1}{Metodolog\IeC {\'\i }a}{26}{0}{3}
-\beamer@subsectionintoc {3}{2}{Requerimientos funcionales}{27}{0}{3}
-\beamer@subsectionintoc {3}{3}{requerimientos no funcionales}{28}{0}{3}
-\beamer@subsectionintoc {3}{4}{Modelo Conceptual}{29}{0}{3}
-\beamer@subsectionintoc {3}{5}{Modelo de datos}{30}{0}{3}
-\beamer@subsectionintoc {3}{6}{Casos de usos}{31}{0}{3}
-\beamer@subsectionintoc {3}{7}{Actores del sistema}{32}{0}{3}
-\beamer@subsectionintoc {3}{8}{casos de usos}{33}{0}{3}
-\beamer@sectionintoc {4}{Validaci\IeC {\'o}n}{35}{0}{4}
-\beamer@subsectionintoc {4}{1}{Metodolog\IeC {\'\i }a}{35}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones y trabajos futuros}{36}{0}{5}
+\beamer@sectionintoc {2}{Marco te\IeC {\'o}rico}{22}{0}{2}
+\beamer@subsectionintoc {2}{1}{Peudo MVC}{26}{0}{2}
+\beamer@subsectionintoc {2}{2}{Tecnolog\IeC {\'\i }as}{27}{0}{2}
+\beamer@sectionintoc {3}{Desarrollo}{28}{0}{3}
+\beamer@subsectionintoc {3}{1}{Metodolog\IeC {\'\i }a}{28}{0}{3}
+\beamer@subsectionintoc {3}{2}{Requerimientos funcionales}{29}{0}{3}
+\beamer@subsectionintoc {3}{3}{requerimientos no funcionales}{30}{0}{3}
+\beamer@subsectionintoc {3}{4}{Modelo Conceptual}{31}{0}{3}
+\beamer@subsectionintoc {3}{5}{Modelo de datos}{32}{0}{3}
+\beamer@subsectionintoc {3}{6}{Casos de usos}{33}{0}{3}
+\beamer@subsectionintoc {3}{7}{Actores del sistema}{34}{0}{3}
+\beamer@subsectionintoc {3}{8}{casos de usos}{35}{0}{3}
+\beamer@sectionintoc {4}{Validaci\IeC {\'o}n}{37}{0}{4}
+\beamer@subsectionintoc {4}{1}{Metodolog\IeC {\'\i }a}{37}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones y trabajos futuros}{38}{0}{5}
