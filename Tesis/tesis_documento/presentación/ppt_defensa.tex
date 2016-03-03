@@ -255,6 +255,7 @@ Universidad Austral de Chile \\ % Your institution for the title page
 \begin{frame}
 \frametitle{Marco teórico}
 \framesubtitle{Tecnologías}
+\pause
 \begin{block}{Frond-End}
 \begin{itemize}
 	\item Jquery.
@@ -264,14 +265,7 @@ Universidad Austral de Chile \\ % Your institution for the title page
 	\item Parsley.
 \end{itemize}
 \end{block}
-\end{frame}
-
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Marco teórico}
-\framesubtitle{Tecnologías}
+\pause
 \begin{block}{Back-End}
 \begin{itemize}
 	\item Microsoft SQL Server 2008.
@@ -280,83 +274,68 @@ Universidad Austral de Chile \\ % Your institution for the title page
 \end{block}
 \end{frame}
 
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Marco teórico}
-\framesubtitle{Tecnologías}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-
-%------------------------------------------------
-\subsection{Peudo MVC} 
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-%------------------------------------------------
-\subsection{Tecnologías} 
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-%------------------------------------------------
-
-
 
 
 %------------------------------------------------
 \section{Desarrollo}
 %------------------------------------------------
-\subsection{Metodología} 
 \begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
+\frametitle{Desarrollo}
+\framesubtitle{Metodología}
+
+    \begin{figure}
+        \includegraphics[height=4cm]{img/INCREMENTAL.png}
+        \caption{Ciclo de vida incremental}
+    \end{figure} 
+   	\begin{itemize}[<+->]
+   	
+		\item Incremento 1: Historial curricular.
+		\item Incremento 2: Gestión de documentos.
+		\item Incremento 3: Gestión de usuarios.
+	\end{itemize} 
 \end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Desarrollo}
+\framesubtitle{Requerimientos}
+
+    \begin{block}{Requerimientos funcionales}
+    	\begin{itemize}
+    		\item<1-> Autentificación de usuario.
+    		\item<2-> Gestión de perfil.
+    		\item<3-|alert@10> Desplegar historial curricular.
+    		\item<4-> Registro de usuarios.
+    		\item<5-|alert@10> Gestión de documentos.
+    		\item<6-> Visor de PDF.
+    		\item<7-> Notificaciones.
+    		\item<8-> Almacenar bitácora de los usuarios.
+    		\item<9-> Visualización de la bitácora.
+    		
+    	\end{itemize}
+	\end{block}     
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Desarrollo}
+\framesubtitle{Requerimientos}
+
+    \begin{block}{Requerimientos no  funcionales}
+    	\begin{itemize}
+    		\item<1-> Ambiente web.
+    		\item<2-> Escalabilidad.
+    		\item<3-> Fácil de usar.
+    		\item<4-> Facilidad de pruebas.
+    		\item<5-> Reglas de validación.
+    		\item<6-> Acoplación.
+    		
+    	\end{itemize}
+	\end{block}     
+\end{frame}
+
+
+
 %------------------------------------------------
 \subsection{Requerimientos funcionales} 
 \begin{frame}
