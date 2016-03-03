@@ -1,19 +1,19 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
-\beamer@sectionintoc {2}{Marco te\IeC {\'o}rico}{15}{0}{2}
-\beamer@subsectionintoc {2}{1}{Arquitectura}{15}{0}{2}
-\beamer@subsectionintoc {2}{2}{Peudo MVC}{16}{0}{2}
-\beamer@subsectionintoc {2}{3}{Tecnolog\IeC {\'\i }as}{17}{0}{2}
-\beamer@sectionintoc {3}{Desarrollo}{18}{0}{3}
-\beamer@subsectionintoc {3}{1}{Metodolog\IeC {\'\i }a}{18}{0}{3}
-\beamer@subsectionintoc {3}{2}{Requerimientos funcionales}{19}{0}{3}
-\beamer@subsectionintoc {3}{3}{requerimientos no funcionales}{20}{0}{3}
-\beamer@subsectionintoc {3}{4}{Modelo Conceptual}{21}{0}{3}
-\beamer@subsectionintoc {3}{5}{Modelo de datos}{22}{0}{3}
-\beamer@subsectionintoc {3}{6}{Casos de usos}{23}{0}{3}
-\beamer@subsectionintoc {3}{7}{Actores del sistema}{24}{0}{3}
-\beamer@subsectionintoc {3}{8}{casos de usos}{25}{0}{3}
-\beamer@sectionintoc {4}{Validaci\IeC {\'o}n}{27}{0}{4}
-\beamer@subsectionintoc {4}{1}{Metodolog\IeC {\'\i }a}{27}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones y trabajos futuros}{28}{0}{5}
+\beamer@sectionintoc {2}{Marco te\IeC {\'o}rico}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{Arquitectura}{16}{0}{2}
+\beamer@subsectionintoc {2}{2}{Peudo MVC}{17}{0}{2}
+\beamer@subsectionintoc {2}{3}{Tecnolog\IeC {\'\i }as}{18}{0}{2}
+\beamer@sectionintoc {3}{Desarrollo}{19}{0}{3}
+\beamer@subsectionintoc {3}{1}{Metodolog\IeC {\'\i }a}{19}{0}{3}
+\beamer@subsectionintoc {3}{2}{Requerimientos funcionales}{20}{0}{3}
+\beamer@subsectionintoc {3}{3}{requerimientos no funcionales}{21}{0}{3}
+\beamer@subsectionintoc {3}{4}{Modelo Conceptual}{22}{0}{3}
+\beamer@subsectionintoc {3}{5}{Modelo de datos}{23}{0}{3}
+\beamer@subsectionintoc {3}{6}{Casos de usos}{24}{0}{3}
+\beamer@subsectionintoc {3}{7}{Actores del sistema}{25}{0}{3}
+\beamer@subsectionintoc {3}{8}{casos de usos}{26}{0}{3}
+\beamer@sectionintoc {4}{Validaci\IeC {\'o}n}{28}{0}{4}
+\beamer@subsectionintoc {4}{1}{Metodolog\IeC {\'\i }a}{28}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones y trabajos futuros}{29}{0}{5}

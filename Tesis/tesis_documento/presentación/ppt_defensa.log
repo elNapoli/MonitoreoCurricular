@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  3 MAR 2016 00:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  3 MAR 2016 10:50
 entering extended mode
 **./ppt_defensa.tex
 (ppt_defensa.tex
@@ -1080,20 +1080,20 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `ppt_defensa.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1144,7 +1144,7 @@ LaTeX Font Info:    ... okay on input line 100.
 \everyMPtoPDFconversion=\toks47
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 100.
+Package hyperref Info: Link coloring OFF on input line 101.
 
 ("C:\Users\napoli\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
 sty"
@@ -1156,65 +1156,65 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count165
 )
-LaTeX Info: Redefining \ref on input line 100.
-LaTeX Info: Redefining \pageref on input line 100.
-LaTeX Info: Redefining \nameref on input line 100.
+LaTeX Info: Redefining \ref on input line 101.
+LaTeX Info: Redefining \pageref on input line 101.
+LaTeX Info: Redefining \nameref on input line 101.
  (ppt_defensa.out) (ppt_defensa.out)
 \@outlinefile=\write5
 \openout5 = `ppt_defensa.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 100.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 101.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 100.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 101.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 100.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 100.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 100.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 100.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 101.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 100.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 100.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 100.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 101.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 100.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 100.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 100.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 101.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 100.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 100.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 101.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 100.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 101.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 100.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 100.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 100.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 100.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 100.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 100.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 100.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 101.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 101.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-00.
+01.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-100.
+101.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 100.
+ut line 101.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\tran
 slator-basic-dictionary\translator-basic-dictionary-English.dict"
@@ -1240,28 +1240,24 @@ Dictionary: translator-numbers-dictionary, Language: English
 slator-theorem-dictionary\translator-theorem-dictionary-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 100.
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
+LaTeX Info: Redefining \includegraphics on input line 101.
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
 
-(ppt_defensa.nav) <img/logo_uach.png, id=92, 102.3825pt x 121.95563pt>
+(ppt_defensa.nav) <img/logo_uach.png, id=80, 102.3825pt x 121.95563pt>
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 100.
+Package pdftex.def Info: img/logo_uach.png used on input line 101.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 104.
-
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
+(Font)              size <5> substituted on input line 105.
 
 File: img/logo_uach.png Graphic file (type png)
-
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 104.
+Package pdftex.def Info: img/logo_uach.png used on input line 105.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [1{C:/Users/napoli/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
@@ -1269,102 +1265,79 @@ Package pdftex.def Info: img/logo_uach.png used on input line 104.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
-Overfull \vbox (60.84517pt too high) detected at line 109
+Overfull \vbox (6.44514pt too high) detected at line 110
  []
 
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 109.
+Package pdftex.def Info: img/logo_uach.png used on input line 110.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [2
 
 ]
-<img/modelo_centrado_ensenianza.png, id=240, 882.29625pt x 352.31625pt>
+<img/modelo_centrado_ensenianza.png, id=215, 882.29625pt x 352.31625pt>
 File: img/modelo_centrado_ensenianza.png Graphic file (type png)
 
 <use img/modelo_centrado_ensenianza.png>
 Package pdftex.def Info: img/modelo_centrado_ensenianza.png used on input line 
-122.
+126.
 (pdftex.def)             Requested size: 299.26323pt x 119.50148pt.
 
-Overfull \hbox (8.5206pt too wide) in paragraph at lines 122--122
-[][]  
+Overfull \hbox (8.5206pt too wide) in paragraph at lines 126--126
+ [] 
  []
 
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 122.
+Package pdftex.def Info: img/logo_uach.png used on input line 126.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [3
 
  <./img/modelo_centrado_ensenianza.png>]
-<img/modelo_centrado_alumno.png, id=288, 566.115pt x 358.33875pt>
+<img/modelo_centrado_alumno.png, id=262, 566.115pt x 358.33875pt>
 File: img/modelo_centrado_alumno.png Graphic file (type png)
 
 <use img/modelo_centrado_alumno.png>
-Package pdftex.def Info: img/modelo_centrado_alumno.png used on input line 129.
+Package pdftex.def Info: img/modelo_centrado_alumno.png used on input line 136.
 
 (pdftex.def)             Requested size: 269.70213pt x 170.71652pt.
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 129.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 136.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [4
 
  <./img/modelo_centrado_alumno.png>]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 149.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 157.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [5
 
 ]
-<img/Procesos_cambios_curriculares.png, id=385, 930.47626pt x 664.73344pt>
+<img/Procesos_cambios_curriculares.png, id=355, 930.47626pt x 664.73344pt>
 File: img/Procesos_cambios_curriculares.png Graphic file (type png)
 
 <use img/Procesos_cambios_curriculares.png>
 Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
-ne 165.
+ne 174.
 (pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 165.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 174.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [6
 
  <./img/Procesos_cambios_curriculares.png>]
 File: img/Procesos_cambios_curriculares.png Graphic file (type png)
-
-<use img/Procesos_cambios_curriculares.png>
+ <use img/Procesos_cambios_curriculares.png>
 Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
-ne 165.
+ne 174.
 (pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 165.
+Package pdftex.def Info: img/logo_uach.png used on input line 174.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [7
 
@@ -1372,15 +1345,12 @@ Package pdftex.def Info: img/logo_uach.png used on input line 165.
 File: img/Procesos_cambios_curriculares.png Graphic file (type png)
  <use img/Procesos_cambios_curriculares.png>
 Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
-ne 165.
+ne 174.
 (pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 165.
+Package pdftex.def Info: img/logo_uach.png used on input line 174.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [8
 
@@ -1388,50 +1358,39 @@ Package pdftex.def Info: img/logo_uach.png used on input line 165.
 File: img/Procesos_cambios_curriculares.png Graphic file (type png)
  <use img/Procesos_cambios_curriculares.png>
 Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
-ne 165.
+ne 174.
 (pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 165.
+Package pdftex.def Info: img/logo_uach.png used on input line 174.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [9
 
 ]
-<img/Procesos_Registro_academico.png, id=582, 977.15062pt x 577.40718pt>
+<img/Procesos_Registro_academico.png, id=539, 977.15062pt x 577.40718pt>
 File: img/Procesos_Registro_academico.png Graphic file (type png)
 
 <use img/Procesos_Registro_academico.png>
 Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
- 177.
+ 187.
 (pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 177.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 187.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [10
 
  <./img/Procesos_Registro_academico.png>]
 File: img/Procesos_Registro_academico.png Graphic file (type png)
-
-<use img/Procesos_Registro_academico.png>
+ <use img/Procesos_Registro_academico.png>
 Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
- 177.
+ 187.
 (pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 177.
+Package pdftex.def Info: img/logo_uach.png used on input line 187.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [11
 
@@ -1439,15 +1398,12 @@ Package pdftex.def Info: img/logo_uach.png used on input line 177.
 File: img/Procesos_Registro_academico.png Graphic file (type png)
  <use img/Procesos_Registro_academico.png>
 Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
- 177.
+ 187.
 (pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 177.
+Package pdftex.def Info: img/logo_uach.png used on input line 187.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [12
 
@@ -1455,185 +1411,151 @@ Package pdftex.def Info: img/logo_uach.png used on input line 177.
 File: img/Procesos_Registro_academico.png Graphic file (type png)
  <use img/Procesos_Registro_academico.png>
 Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
- 177.
+ 187.
 (pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
-
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 177.
+Package pdftex.def Info: img/logo_uach.png used on input line 187.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [13
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 193.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 202.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [14
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 220.
+File: img/logo_uach.png Graphic file (type png)
+
+<use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 202.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [15
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 229.
 
 ("C:\Users\napoli\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 220.
+LaTeX Font Info:    Try loading font information for U+msb on input line 229.
  ("C:\Users\napoli\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 220.
+line 229.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd
 "
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 220.
-(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
- [15
-
-]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
-File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 237.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 229.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [16
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 254.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 246.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [17
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 278.
+Package pdftex.def Info: img/logo_uach.png used on input line 263.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [18
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 295.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 287.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [19
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 313.
+Package pdftex.def Info: img/logo_uach.png used on input line 304.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [20
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 330.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 322.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [21
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 349.
+Package pdftex.def Info: img/logo_uach.png used on input line 339.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [22
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 367.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 358.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [23
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 385.
+Package pdftex.def Info: img/logo_uach.png used on input line 376.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [24
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 403.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 394.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [25
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 415.
+Package pdftex.def Info: img/logo_uach.png used on input line 412.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [26
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
-
-<use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 438.
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 424.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [27
 
 ]
-Overfull \vbox (53.18736pt too high) has occurred while \output is active []
-
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
-Package pdftex.def Info: img/logo_uach.png used on input line 448.
+Package pdftex.def Info: img/logo_uach.png used on input line 447.
 (pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
  [28
+
+]
+File: img/logo_uach.png Graphic file (type png)
+ <use img/logo_uach.png>
+Package pdftex.def Info: img/logo_uach.png used on input line 457.
+(pdftex.def)             Requested size: 35.82971pt x 42.67912pt.
+ [29
 
 ]
 \tf@nav=\write6
@@ -1645,57 +1567,43 @@ Package pdftex.def Info: img/logo_uach.png used on input line 448.
 \tf@snm=\write8
 \openout8 = `ppt_defensa.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 452.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
  (ppt_defensa.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
+Package rerunfilecheck Info: File `ppt_defensa.out' has not changed.
+(rerunfilecheck)             Checksum: 06B6011584F65A32F94402DD80898948;1080.
 
-
-Package rerunfilecheck Warning: File `ppt_defensa.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ppt_defensa.out':
-(rerunfilecheck)             Before: 24F1A914A5B5C3E30E960B34CB961C7F;1372
-(rerunfilecheck)             After:  0C6F756B7D0E4B0CB2C6C054F13895BC;1080.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 452.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
  ) 
 Here is how much of TeX's memory you used:
- 18015 strings out of 493634
- 345005 string characters out of 3134831
- 422262 words of memory out of 3000000
- 20882 multiletter control sequences out of 15000+200000
+ 18044 strings out of 493634
+ 346111 string characters out of 3134831
+ 420277 words of memory out of 3000000
+ 20912 multiletter control sequences out of 15000+200000
  11952 words of font info for 43 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  56i,20n,62p,394b,835s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Outline0.1.3.14} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.2.6} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1.1.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-<C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmss10.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmss12.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/napoli/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/napoli/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/User
-s/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi
-8.pfb>
-Output written on ppt_defensa.pdf (28 pages, 499772 bytes).
+<C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmss10.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmss12.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/napoli/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/napoli/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users
+/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx
+10.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmssi8.pfb>
+Output written on ppt_defensa.pdf (29 pages, 502721 bytes).
 PDF statistics:
- 1493 PDF objects out of 1728 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1450 PDF objects out of 1728 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 
