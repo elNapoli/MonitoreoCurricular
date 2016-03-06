@@ -1,0 +1,3 @@
+{"data":
+[{"id":"1","codigoError":"1","mensajeError":"Se ha guardado el registro con id= 1 exitosamente","fechaError":"06-03-2016 12:47:42","rut":"17536925"},{"id":"2","codigoError":"1","mensajeError":"Se ha guardado la asignatura con código =DMIB041   exitosamente","fechaError":"06-03-2016 12:47:42","rut":"17536925"},{"id":"3","codigoError":"1","mensajeError":"Se ha guardado la asignatura con código =INFO013   exitosamente","fechaError":"06-03-2016 12:47:42","rut":"17536925"},{"id":"4","codigoError":"1","mensajeError":"Se ha guardado la resolucion con id= 1 exitosamente","fechaError":"06-03-2016 12:47:42","rut":"17536925"}]
+}

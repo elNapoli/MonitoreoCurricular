@@ -273,6 +273,7 @@ Public Class Controller
         Return ret.AsEnumerable
     End Function
 
+
     Public Function TraePlan() As IEnumerable(Of Parametros) Implements IController.TraePlan
         Dim dr As IEnumerable(Of DataRow) = Nothing
         Dim ret As New List(Of Parametros)
@@ -808,6 +809,44 @@ Public Class Controller
 
     End Function
 
+    Public Function TrearBitacora() As IEnumerable(Of Bitacora) Implements IController.TrearBitacora
+        Dim dr As IEnumerable(Of DataRow) = Nothing
+        Dim ret As New List(Of Bitacora)
+        Try
+            dr = cnn.Ejecuta("getBitacora") ' colocar nombre del procedimiento
+
+            If dr Is Nothing Then Throw New Exception("La función a valor")
+
+            'Tipos
+            For Each item As DataRow In dr
+
+
+                ret.Add(New Bitacora With {
+                        .id = item(0),
+                        .codigoError = item(1),
+                        .mensajeError = item(2),
+                        .fechaError = item(3),
+                        .rut = item(4)
+                    }
+                )
+            Next
+        Catch ex As Exception
+            Dim logError As New LogNapoli
+
+            logError.CodigoError = "-2"
+            logError.mensajeError = ex.Message.ToString
+            logError.fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+            logError.origenError = "Controller/TraeUsuarios"
+            logError.Rut = "0"
+            RegistrarLog(logError)
+
+            MsgBox(logError.mensajeError)
+        End Try
+
+        Return ret.AsEnumerable
+
+
+    End Function
 
 
     Public Function TraeUsuarios() As IEnumerable(Of Usuario) Implements IController.TraeUsuarios
@@ -899,6 +938,7 @@ Public Class Controller
 
 
     End Function
+
 
 
     Public Function TraeUsuarioPorRut(Rut As Integer) As Usuario Implements IController.TraeUsuarioPorRut

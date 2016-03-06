@@ -262,6 +262,21 @@
                     </ul>
                 </li>
 
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="fa fa-building "></i>
+                        <span class="link-title">Bitácora</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="/Admin/bitacora.aspx">
+                                <i class="fa fa-angle-right"></i>&nbsp; Ver Bitácora </a>
+                        </li>
+
+                    </ul>
+                </li>
+
 
 
 

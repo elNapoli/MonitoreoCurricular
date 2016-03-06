@@ -90,6 +90,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\bitacora.aspx" />
     <Content Include="Admin\CrearUsuario.aspx" />
     <Content Include="Admin\Reports.aspx" />
     <Content Include="Admin\viewUser.aspx" />
@@ -365,6 +366,7 @@
     <Content Include="Models.Parametros.datasource" />
     <Content Include="Models.Resoluciones.datasource" />
     <Content Include="Models.Asignaturas.datasource" />
+    <Content Include="Models.Bitacora.datasource" />
     <Content Include="VerResolucion.aspx" />
     <Content Include="Models.Usuario.datasource" />
     <Content Include="Admin\Web.config" />
@@ -1222,6 +1224,13 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\bitacora.aspx.designer.vb">
+      <DependentUpon>bitacora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\bitacora.aspx.vb">
+      <DependentUpon>bitacora.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Admin\CrearUsuario.aspx.designer.vb">
       <DependentUpon>CrearUsuario.aspx</DependentUpon>
     </Compile>

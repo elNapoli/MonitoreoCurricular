@@ -78,6 +78,9 @@ Public Interface IController
     Function TraeUsuarioPorRut(rut As Integer) As Usuario
 
     <OperationContract()>
+    Function TrearBitacora() As IEnumerable(Of Bitacora)
+
+    <OperationContract()>
     Function EliminarUsuario(Rut As Integer) As LogNapoli
 
     <OperationContract()>

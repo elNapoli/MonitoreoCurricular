@@ -151,6 +151,12 @@
   <wsdl:message name="IController_TraeUsuarioPorRut_OutputMessage">
     <wsdl:part name="parameters" element="tns:TraeUsuarioPorRutResponse" />
   </wsdl:message>
+  <wsdl:message name="IController_TrearBitacora_InputMessage">
+    <wsdl:part name="parameters" element="tns:TrearBitacora" />
+  </wsdl:message>
+  <wsdl:message name="IController_TrearBitacora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TrearBitacoraResponse" />
+  </wsdl:message>
   <wsdl:message name="IController_EliminarUsuario_InputMessage">
     <wsdl:part name="parameters" element="tns:EliminarUsuario" />
   </wsdl:message>
@@ -259,6 +265,10 @@
     <wsdl:operation name="TraeUsuarioPorRut">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/TraeUsuarioPorRut" message="tns:IController_TraeUsuarioPorRut_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IController/TraeUsuarioPorRutResponse" message="tns:IController_TraeUsuarioPorRut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TrearBitacora">
+      <wsdl:input wsaw:Action="http://tempuri.org/IController/TrearBitacora" message="tns:IController_TrearBitacora_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IController/TrearBitacoraResponse" message="tns:IController_TrearBitacora_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="EliminarUsuario">
       <wsdl:input wsaw:Action="http://tempuri.org/IController/EliminarUsuario" message="tns:IController_EliminarUsuario_InputMessage" />
@@ -480,6 +490,15 @@
     </wsdl:operation>
     <wsdl:operation name="TraeUsuarioPorRut">
       <soap:operation soapAction="http://tempuri.org/IController/TraeUsuarioPorRut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrearBitacora">
+      <soap:operation soapAction="http://tempuri.org/IController/TrearBitacora" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

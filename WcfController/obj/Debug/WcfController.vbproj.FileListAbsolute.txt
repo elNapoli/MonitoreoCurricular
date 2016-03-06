@@ -88,3 +88,18 @@ D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.vbproj.GenerateResou
 D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.dll
 D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.xml
 D:\Nueva carpeta\algo\WcfController\obj\Debug\WcfController.pdb
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\bin\Debug\WcfController.dll.config
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\bin\Debug\WcfController.dll
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\bin\Debug\WcfController.pdb
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\bin\Debug\WcfController.xml
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\bin\Debug\Models.dll
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\bin\Debug\Models.pdb
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\bin\Debug\Models.xml
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\bin\Debug\Conexion.pdb
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\bin\Debug\Conexion.xml
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbprojResolveAssemblyReference.cache
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\obj\Debug\WcfController.Resources.resources
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\obj\Debug\WcfController.vbproj.GenerateResource.Cache
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\obj\Debug\WcfController.dll
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\obj\Debug\WcfController.xml
+C:\Users\napoli\Desktop\MonitoreoCurricular\WcfController\obj\Debug\WcfController.pdb

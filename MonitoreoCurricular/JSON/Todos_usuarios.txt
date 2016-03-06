@@ -1,3 +1,0 @@
-{"data":
-[{"Rut":4945150,"Nombre":"Editor","Rol":"Editor","apPaterno":"Editor","apMaterno":"Editor","email":"Editor@gmail.com","password":null},{"Rut":17166983,"Nombre":"Suscriptor","Rol":"Suscriptor","apPaterno":"Suscriptor","apMaterno":"Suscriptor","email":"Suscriptor@gmail.com","password":null},{"Rut":17536925,"Nombre":"Editor","Rol":"Editor","apPaterno":"Editor","apMaterno":"Editor","email":"Editor@gmail.com","password":null}]
-}

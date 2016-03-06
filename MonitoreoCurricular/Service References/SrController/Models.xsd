@@ -103,4 +103,20 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfUsuario" nillable="true" type="tns:ArrayOfUsuario" />
+  <xs:complexType name="ArrayOfBitacora">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Bitacora" nillable="true" type="tns:Bitacora" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBitacora" nillable="true" type="tns:ArrayOfBitacora" />
+  <xs:complexType name="Bitacora">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rut" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Bitacora" nillable="true" type="tns:Bitacora" />
 </xs:schema>

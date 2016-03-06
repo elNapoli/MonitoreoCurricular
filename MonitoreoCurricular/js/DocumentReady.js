@@ -180,7 +180,7 @@
 
 
 
-    var ResolucionTable = $('#UsuarioTable').DataTable({
+    var UsuariosTable = $('#UsuarioTable').DataTable({
         "ajax": "/JSON/Todos_usuarios.txt",
 
 
@@ -199,6 +199,28 @@
              { "data": "apMaterno" },
              { "data": "email" },
              { "data": "Rol" }
+        ],
+
+
+    });
+
+
+
+
+    var bitacoraTable = $('#bitacoraTable').DataTable({
+        "ajax": "/JSON/bitacora.txt",
+        "scrollX": true,
+
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "aoColumns": [
+
+             { "data": "id" },
+             { "data": "codigoError" },
+             { "data": "mensajeError" },
+             { "data": "fechaError" },
+             { "data": "rut" }
         ],
 
 

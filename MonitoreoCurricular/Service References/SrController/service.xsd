@@ -327,6 +327,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="TrearBitacora">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TrearBitacoraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="TrearBitacoraResult" nillable="true" type="q28:ArrayOfBitacora" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="EliminarUsuario">
     <xs:complexType>
       <xs:sequence>
@@ -337,21 +349,21 @@
   <xs:element name="EliminarUsuarioResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="EliminarUsuarioResult" nillable="true" type="q28:LogNapoli" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="EliminarUsuarioResult" nillable="true" type="q29:LogNapoli" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ActualizarUsuario">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Usuario" nillable="true" type="q29:Usuario" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="Usuario" nillable="true" type="q30:Usuario" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ActualizarUsuarioResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="ActualizarUsuarioResult" nillable="true" type="q30:LogNapoli" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Models" minOccurs="0" name="ActualizarUsuarioResult" nillable="true" type="q31:LogNapoli" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
