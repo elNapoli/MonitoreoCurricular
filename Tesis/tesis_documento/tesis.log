@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  4 MAR 2016 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  22 MAR 2016 10:31
 entering extended mode
 **./tesis.tex
 (tesis.tex
@@ -1759,29 +1759,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 115.
+(babel)             in language  on input line 114.
 [4]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 122.
@@ -3306,7 +3306,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--282
  []
 
 
-Overfull \hbox (12.24864pt too wide) in alignment at lines 286--293
+Overfull \hbox (12.0pt too wide) in alignment at lines 286--293
+ [] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 293--299
+ [] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 299--301
+ [] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 301--303
  [] [] 
  []
 
@@ -3356,10 +3371,6 @@ Underfull \hbox (badness 2142) in paragraph at lines 333--334
 Overfull \hbox (12.0pt too wide) in alignment at lines 303--345
  [] [] 
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3 on input line 345.
 
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 345.
@@ -3548,7 +3559,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 385--386
  []
 
 
-Overfull \hbox (12.24864pt too wide) in alignment at lines 396--403
+Overfull \hbox (12.0pt too wide) in alignment at lines 396--403
+ [] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 403--409
+ [] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 409--411
+ [] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 411--413
  [] [] 
  []
 
@@ -3737,10 +3763,6 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 470.
  [39 <./images/Capitulo_3/subir_documento6.png>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4 on input line 470.
-
 <images/Capitulo_3/Subir_Documentos.png, id=823, 3830.31pt x 2625.81pt>
 File: images/Capitulo_3/Subir_Documentos.png Graphic file (type png)
 
@@ -3817,7 +3839,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 499--500
  []
 
 
-Overfull \hbox (12.24864pt too wide) in alignment at lines 503--510
+Overfull \hbox (12.0pt too wide) in alignment at lines 503--510
+ [] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 510--516
+ [] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 516--518
+ [] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 518--520
  [] [] 
  []
 
@@ -3858,10 +3895,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 548--549
 Overfull \hbox (12.0pt too wide) in alignment at lines 520--555
  [] [] 
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5 on input line 555.
 
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 555.
@@ -4277,11 +4310,6 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 46.
  [50 <./images/Capitulo_5/REQF-01-null.png> <./images/Capitulo_5/REQF-02.png>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 6 on input line 72.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
@@ -4636,10 +4664,6 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 21.
 [56]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 25.
-
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 25.
 Package babel Info: Redefining spanish shorthand >>
@@ -4652,11 +4676,6 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 25.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 25.
-
-Overfull \hbox (100.51263pt too wide) in alignment at lines 29--36
- [] [] [] 
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 51--51
 \T1/txr/m/n/12 ci-nan-te,Encargado de
@@ -4696,10 +4715,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 Underfull \hbox (badness 1102) in paragraph at lines 68--69
 \T1/txr/m/n/12 Secretaria de Registro
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 7 on input line 72.
 
 
 Underfull \hbox (badness 1184) in paragraph at lines 75--77
@@ -5044,9 +5059,6 @@ Package pdftex.def Info: images/Anexos/TABLA_ASIGNATURA_HISTORIAL.png used on i
 nput line 97.
 (pdftex.def)             Requested size: 429.63661pt x 47.52621pt.
 )
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 345.
@@ -5072,24 +5084,25 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 345.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 345.
-[63 <./images/Anexos/TABLA_REGISTRO.png> <./images/Anexos/TABLA_HISTORIAL_CURRI
-CULAR.png> <./images/Anexos/TABLA_RESOLUCIONES.png> <./images/Anexos/TABLA_ASIG
-NATURA_HISTORIAL.png>]
+ [63 <./images/Anexos/TABLA_REGISTRO.png> <./images/Anexos/TABLA_HISTORIAL_CURR
+ICULAR.png> <./images/Anexos/TABLA_RESOLUCIONES.png> <./images/Anexos/TABLA_ASI
+GNATURA_HISTORIAL.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
- (tesis.aux
+
+(tesis.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
 Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4819E675DCC2434EE1A8FB830662563F;5987.
+(rerunfilecheck)             Checksum: 034F4BF31840C77EAF09CFAE2DF175E9;5981.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
  13470 strings out of 493634
- 196434 string characters out of 3134831
- 423844 words of memory out of 3000000
+ 196424 string characters out of 3134831
+ 423853 words of memory out of 3000000
  16284 multiletter control sequences out of 15000+200000
  89065 words of font info for 132 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -5102,7 +5115,7 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/rtxsc.pfb><C:/Program Files
 /Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/napoli/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/napo
 li/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tesis.pdf (73 pages, 3334547 bytes).
+Output written on tesis.pdf (73 pages, 3334272 bytes).
 PDF statistics:
  1096 PDF objects out of 1200 (max. 8388607)
  241 named destinations out of 1000 (max. 500000)

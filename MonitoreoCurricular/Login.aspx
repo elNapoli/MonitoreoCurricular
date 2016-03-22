@@ -120,7 +120,7 @@
          
             <div class="checkbox">
               <label>
-                  <asp:CheckBox id="rememberLogin" runat="server" /> Recordárme
+                  <asp:CheckBox id="rememberLogin" runat="server" /> Recordarme
            
         
               </label>

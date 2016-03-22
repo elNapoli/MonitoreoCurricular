@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  3 MAR 2016 13:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.29)  8 MAR 2016 23:19
 entering extended mode
 **./ppt_defensa.tex
 (ppt_defensa.tex
@@ -1402,13 +1402,13 @@ Package pdftex.def Info: img/alta-color-60x30.png used on input line 192.
  [9
 
 ]
-<img/Procesos_cambios_curriculares.png, id=528, 930.47626pt x 664.73344pt>
+<img/Procesos_cambios_curriculares.png, id=528, 1023.825pt x 721.94719pt>
 File: img/Procesos_cambios_curriculares.png Graphic file (type png)
 
 <use img/Procesos_cambios_curriculares.png>
 Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
 ne 210.
-(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
+(pdftex.def)             Requested size: 242.09865pt x 170.71652pt.
 
 Overfull \vbox (11.3074pt too high) detected at line 210
  []
@@ -1428,7 +1428,7 @@ File: img/Procesos_cambios_curriculares.png Graphic file (type png)
  <use img/Procesos_cambios_curriculares.png>
 Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
 ne 210.
-(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
+(pdftex.def)             Requested size: 242.09865pt x 170.71652pt.
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
@@ -1446,7 +1446,7 @@ File: img/Procesos_cambios_curriculares.png Graphic file (type png)
 <use img/Procesos_cambios_curriculares.png>
 Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
 ne 210.
-(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
+(pdftex.def)             Requested size: 242.09865pt x 170.71652pt.
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
 Package pdftex.def Info: img/logo_uach.png used on input line 210.
@@ -1464,7 +1464,7 @@ File: img/Procesos_cambios_curriculares.png Graphic file (type png)
 <use img/Procesos_cambios_curriculares.png>
 Package pdftex.def Info: img/Procesos_cambios_curriculares.png used on input li
 ne 210.
-(pdftex.def)             Requested size: 238.96495pt x 170.71652pt.
+(pdftex.def)             Requested size: 242.09865pt x 170.71652pt.
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
 Package pdftex.def Info: img/logo_uach.png used on input line 210.
@@ -1477,13 +1477,13 @@ Package pdftex.def Info: img/alta-color-60x30.png used on input line 210.
  [13
 
 ]
-<img/Procesos_Registro_academico.png, id=696, 977.15062pt x 577.40718pt>
+<img/Procesos_Registro_academico.png, id=696, 941.01563pt x 839.38594pt>
 File: img/Procesos_Registro_academico.png Graphic file (type png)
 
 <use img/Procesos_Registro_academico.png>
 Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
  224.
-(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
+(pdftex.def)             Requested size: 191.38742pt x 170.71652pt.
 
 Overfull \vbox (2.85185pt too high) detected at line 224
  []
@@ -1503,7 +1503,7 @@ File: img/Procesos_Registro_academico.png Graphic file (type png)
  <use img/Procesos_Registro_academico.png>
 Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
  224.
-(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
+(pdftex.def)             Requested size: 191.38742pt x 170.71652pt.
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
@@ -1521,7 +1521,7 @@ File: img/Procesos_Registro_academico.png Graphic file (type png)
 <use img/Procesos_Registro_academico.png>
 Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
  224.
-(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
+(pdftex.def)             Requested size: 191.38742pt x 170.71652pt.
 File: img/logo_uach.png Graphic file (type png)
  <use img/logo_uach.png>
 Package pdftex.def Info: img/logo_uach.png used on input line 224.
@@ -1538,7 +1538,7 @@ File: img/Procesos_Registro_academico.png Graphic file (type png)
  <use img/Procesos_Registro_academico.png>
 Package pdftex.def Info: img/Procesos_Registro_academico.png used on input line
  224.
-(pdftex.def)             Requested size: 288.89807pt x 170.71652pt.
+(pdftex.def)             Requested size: 191.38742pt x 170.71652pt.
 File: img/logo_uach.png Graphic file (type png)
 
 <use img/logo_uach.png>
@@ -2089,7 +2089,7 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users
 /napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx
 10.pfb><C:/Users/napoli/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmssi8.pfb>
-Output written on ppt_defensa.pdf (54 pages, 1401648 bytes).
+Output written on ppt_defensa.pdf (54 pages, 1446504 bytes).
 PDF statistics:
  2374 PDF objects out of 2487 (max. 8388607)
  128 named destinations out of 1000 (max. 500000)
